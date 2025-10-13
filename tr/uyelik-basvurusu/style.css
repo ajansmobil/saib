@@ -1,0 +1,317 @@
+
+  .s94zzmenulist-menu:hover .dropdown-content-s94zz {
+    display: flex;
+    flex-direction: column;
+  }
+  .s94zzmenulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .s94zzmenulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+  .s94zzmenulist-menu:hover > a {
+    color: #000 !important;
+  }
+
+  .s94zzmenulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+  }
+
+  .dropdown-content-active-s94zz {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .dropdown-content-active-s94zz > a {
+    color: #000 !important;
+  }
+
+  .dropdown-content-s94zz {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 102;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .dropdown-content-s94zz > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+  .dropdown-content-s94zz > a:hover {
+    background-color: #000;
+  }
+  .module-logo {
+    width: 300px;
+  }
+  .s94zzbody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .s94zzbody > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+  .s94zz-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+  .s94zz-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+  .s94zz-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+  .s94zz {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .s94zztitle {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .s94zztitlebody {
+    color: #fff;
+    width: var(--max);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+  }
+  .s94zztitlebodytitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .s94zztitlebodylang {
+    width: auto;
+    margin: -5px 0px -5px 0px;
+  }
+  .s94zztitlebodylang ul {
+    display: flex;
+    gap: 5px;
+    position: relative;
+  }
+  .s94zztitlebodylang li {
+    position: relative;
+    list-style: none;
+  }
+  .s94zzmenu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: var(--max);
+  }
+  .s94zzmenulist {
+    width: calc(100% - 20px);
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .s94zzmenubody {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .s94zzmenulist {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    /* overflow-x: auto; */
+  }
+  .s94zzmenulistbody {
+    width: 100%;
+  }
+  @media screen and (max-width: 1024px) {
+    .s94zzmenu {
+      overflow-x: auto;
+    }
+    .s94zzmenulist {
+      flex-direction: row;
+    }
+    .module-logo {
+      width: 200px;
+    }
+    .s94zzbody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  .moduleimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .moduleimg > img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .footer {
+    position: relative;
+    background: #85260f;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  } 
+
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff !important;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+
+  .menu__link:hover {
+    opacity: 1;
+  }
+
+  .footer p { 
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='katman_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 640 65' style='enable-background:new 0 0 640 65;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2385260f;%7D %3C/style%3E %3Cpath class='st0' d='M0,22.4C0,22.4,74.1,0,153,0c176.5,0,328.1,76.6,487,22.4V65H0V22.4z'/%3E%3C/svg%3E");
+    background-size: 1000px 102px;
+  }
+
+  .wave#wave1 {
+    z-index: 100;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+
+  .wave#wave2 {
+    z-index: 99;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+
+  .wave#wave3 {
+    z-index: 100;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+
+  .wave#wave4 {
+    z-index: 99;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+
