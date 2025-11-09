@@ -1,9 +1,10 @@
 
-  .fp6trmenulist-menu:hover .dropdown-content-fp6tr {
+  .dg3hamenulist-menu:hover .dropdown-content-dg3ha {
     display: flex;
     flex-direction: column;
   }
-  .fp6trmenulist-menu {
+
+  .dg3hamenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,35 +18,37 @@
     display: inline-block;
     white-space: nowrap;
   }
-  .fp6trmenulist-menu:hover {
+
+  .dg3hamenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
-  .fp6trmenulist-menu:hover > a {
+
+  .dg3hamenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .fp6trmenulist-menu > a {
+  .dg3hamenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-fp6tr {
+  .dropdown-content-active-dg3ha {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-fp6tr > a {
+  .dropdown-content-active-dg3ha>a {
     color: #000 !important;
   }
 
-  .dropdown-content-fp6tr {
+  .dropdown-content-dg3ha {
     display: none;
     position: absolute;
     background-color: #333;
@@ -54,7 +57,8 @@
     margin-top: 10px;
     padding: 5px;
   }
-  .dropdown-content-fp6tr > a {
+
+  .dropdown-content-dg3ha>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -62,13 +66,16 @@
     text-align: left;
     color: #fff;
   }
-  .dropdown-content-fp6tr > a:hover {
+
+  .dropdown-content-dg3ha>a:hover {
     background-color: #000;
   }
+
   .module-logo {
     width: 300px;
   }
-  .fp6trbody {
+
+  .dg3habody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -76,112 +83,205 @@
     gap: 20px;
     justify-content: space-between;
   }
-  .fp6trbody > a {
+
+  .dg3habody > a {
     display: flex;
     align-items: center;
     justify-content: left;
     position: relative;
     gap: 10px;
   }
-  .fp6tr-title {
-    font-size: 16px;
-    font-weight: 500;
-    color: --titlecolor--;
+
+  .dg3haright {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
-  .fp6tr-spot {
+
+  .dg3halanguages {
+    margin: -5px 0px -5px 0px;
+  }
+
+  .dg3halanguages.lang-hidden {
+    display: none;
+  }
+
+  .dg3halanguages ul {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .dg3halanguages li {
+    list-style: none;
+  }
+
+  .dg3hacontactlist {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .dg3hacontactlist a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .dg3ha-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
-  .fp6tr-icon {
+
+  .dg3ha-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
-  .fp6tr {
+
+  .dg3ha {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .fp6trtitle {
-    width: 100%;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .fp6trtitlebody {
-    color: #fff;
-    width: var(--max);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0px 10px 0px;
-  }
-  .fp6trtitlebodytitle {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-  }
-  .fp6trtitlebodylang {
-    width: auto;
-    margin: -5px 0px -5px 0px;
-  }
-  .fp6trtitlebodylang ul {
-    display: flex;
-    gap: 5px;
-    position: relative;
-  }
-  .fp6trtitlebodylang li {
-    position: relative;
-    list-style: none;
-  }
-  .fp6trmenu {
+
+  .dg3hamenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
+    position: relative;
   }
-  .fp6trmenulist {
-    width: calc(100% - 20px);
-    background-color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .fp6trmenubody {
+
+  .dg3hamenubody {
     width: 100%;
     background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .fp6trmenulist {
-    width: 100%;
+
+
+  .dg3hamenulist {
+    padding: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 10px;
     margin: 0;
-    padding: 0;
-    padding: 10px;
-    /* overflow-x: auto; */
+    box-sizing: border-box;
   }
-  .fp6trmenulistbody {
+  
+  .dg3hamenulistbody {
     width: 100%;
   }
+
+  .dg3ha-mobile-toggle {
+    display: none;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .dg3ha-mobile-toggle span {
+    font-size: 24px;
+  }
+
   @media screen and (max-width: 1024px) {
-    .fp6trmenu {
+    .dg3hamenu {
       overflow-x: auto;
     }
-    .fp6trmenulist {
+
+    .dg3hamenulist {
       flex-direction: row;
     }
+
     .module-logo {
       width: 200px;
     }
-    .fp6trbody {
+
+    .dg3habody {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .dg3habody {
+      width: calc(100% - 20px);
+      padding: 0 10px;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .dg3haright {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .dg3hacontactlist {
+      display: none;
+    }
+
+    .dg3halanguages.lang-hidden {
+      display: none;
+    }
+
+    .dg3halanguages {
+      display: flex;
+    }
+
+    .dg3ha-mobile-toggle {
+      display: inline-flex;
+    }
+
+    .dg3hamenulist {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      width: calc(100% - 24px);
+      padding: 12px;
+    }
+
+    .dg3hamenu.dg3hamenu-open .dg3hamenulist {
+      display: flex;
+    }
+
+    .dg3hamenulist-menu {
+      justify-content: flex-start;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown-content-dg3ha {
+      position: static;
+      background-color: rgba(0, 0, 0, 0.85);
+      margin-top: 6px;
+      padding: 0;
+      width: 100%;
+    }
+
+    .dropdown-content-dg3ha>a {
+      border-width: 0 0 1px 0;
+      padding: 12px;
     }
   }
 
