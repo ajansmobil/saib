@@ -21,12 +21,22 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=doaq6" />
-  <link rel="shortcut icon" href="/img/icon.png?v=doaq6" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=gmylf" />
+  <link rel="shortcut icon" href="/img/icon.png?v=gmylf" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  <script>
+  
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-functions.js"></script>
+
+
+<script>
   const firebaseConfig = {
   apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
   authDomain: "saib-f1295.firebaseapp.com",
@@ -39,87 +49,88 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=doaq6"></script>
-<link rel="stylesheet" href="style.css?v=doaq6">
+
+  <script type="text/javascript" src="/src/firebase.js?v=gmylf"></script>
+<link rel="stylesheet" href="style.css?v=gmylf">
 </head>
 
 <body>
-  <div id="header"><div class="f3gey">
+  <div id="header"><div class="huaix">
 
-  <div class="f3geybody">
-    <a href="/ar/"><img src="/img/logo.svg?v=doaq6" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="huaixbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=gmylf" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="f3geyright">
-      <div class="f3geylanguages ">
+    <div class="huaixright">
+      <div class="huaixlanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="f3geycontactlist">
+      <div class="huaixcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined f3gey-icon">phone</div>
+     <div class="material-symbols-outlined huaix-icon">phone</div>
      <div>
-      <div  class="f3gey-title">undefined</div>
-      <div  class="f3gey-spot">0342 341 41 31</div>
+      <div  class="huaix-title">undefined</div>
+      <div  class="huaix-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined f3gey-icon">mail</div>
+     <div class="material-symbols-outlined huaix-icon">mail</div>
      <div>
-      <div  class="f3gey-title">undefined</div>
-      <div  class="f3gey-spot">info@saibdernegi.org</div>
+      <div  class="huaix-title">undefined</div>
+      <div  class="huaix-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined f3gey-icon">location_on</div>
+     <div class="material-symbols-outlined huaix-icon">location_on</div>
      <div>
-      <div  class="f3gey-title">undefined</div>
-      <div  class="f3gey-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="huaix-title">undefined</div>
+      <div  class="huaix-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="f3gey-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="huaix-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="f3geymenubody">
-    <div class="f3geymenu" id="menu-3-root">
-      <div class="f3geymenulistbody">
-        <div class="f3geymenulist"><a class="f3geymenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="f3geymenulist-menu " >
+  <div class="huaixmenubody">
+    <div class="huaixmenu" id="menu-3-root">
+      <div class="huaixmenulistbody">
+        <div class="huaixmenulist"><a class="huaixmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="huaixmenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="f3geymenulist-menu " >
+    <div class="huaixmenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="f3geymenulist-menu " >
+    <div class="huaixmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="f3geymenulist-menu " >
+    <div class="huaixmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="f3geymenulist-menu " >
+    <div class="huaixmenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -139,51 +150,51 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("f3geymenu-open")) {
-        root.classList.remove("f3geymenu-open");
+      if (root.classList.contains("huaixmenu-open")) {
+        root.classList.remove("huaixmenu-open");
       } else {
-        root.classList.add("f3geymenu-open");
+        root.classList.add("huaixmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="nl0et-title f36">
+  <div id="content"><div class="rb1dt-title f36">
   <span>undefined</span>
 </div>
-<div class="nl0et">
-  <div class="nl0et-menu-btn">
+<div class="rb1dt">
+  <div class="rb1dt-menu-btn">
     <span>قائمة الصفحات</span>
-    <span class="material-symbols-outlined nl0et-icon">menu</span>
+    <span class="material-symbols-outlined rb1dt-icon">menu</span>
   </div>
-  <div class="nl0et-menu"><a class="nl0et-menu-link active" href="/ar/baskanin-mesaji">Başkanın Mesajı</a><a class="nl0et-menu-link" href="/ar/yonetim-kurulu">Yönetim Kurulu</a><a class="nl0et-menu-link" href="/ar/saib-kimdir">Saib Kimdir ?</a><a class="nl0et-menu-link" href="/ar/misyon">Misyon</a><a class="nl0et-menu-link" href="/ar/vizyon">Vizyon</a><a class="nl0et-menu-link" href="/ar/uyelik-bilgileri">Üyelik Bilgileri</a><a class="nl0et-menu-link" href="/ar/gizlilik-politikasi">Gizlilik Politikası</a><a class="nl0et-menu-link" href="/ar/kisisel-veriler">Kişisel Veriler</a><a class="nl0et-menu-link" href="/ar/kullanici-haklari">Kullanıcı Hakları</a><a class="nl0et-menu-link" href="/ar/yasal-uyari">Yasal Uyarı</a></div>
-  <div class="nl0et-desc">
+  <div class="rb1dt-menu"><a class="rb1dt-menu-link active" href="/ar/baskanin-mesaji">Başkanın Mesajı</a><a class="rb1dt-menu-link" href="/ar/yonetim-kurulu">Yönetim Kurulu</a><a class="rb1dt-menu-link" href="/ar/saib-kimdir">Saib Kimdir ?</a><a class="rb1dt-menu-link" href="/ar/misyon">Misyon</a><a class="rb1dt-menu-link" href="/ar/vizyon">Vizyon</a><a class="rb1dt-menu-link" href="/ar/uyelik-bilgileri">Üyelik Bilgileri</a><a class="rb1dt-menu-link" href="/ar/gizlilik-politikasi">Gizlilik Politikası</a><a class="rb1dt-menu-link" href="/ar/kisisel-veriler">Kişisel Veriler</a><a class="rb1dt-menu-link" href="/ar/kullanici-haklari">Kullanıcı Hakları</a><a class="rb1dt-menu-link" href="/ar/yasal-uyari">Yasal Uyarı</a></div>
+  <div class="rb1dt-desc">
     
-    <div class="nl0et-body"></div>
+    <div class="rb1dt-body"></div>
   </div>
 </div>
 
 <script>
-  const menuToggleBtn = document.querySelector(".nl0et-menu-btn");
+  const menuToggleBtn = document.querySelector(".rb1dt-menu-btn");
   if (menuToggleBtn) {
     menuToggleBtn.addEventListener("click", function () {
-      const menu = document.querySelector(".nl0et-menu");
+      const menu = document.querySelector(".rb1dt-menu");
       if (!menu) return;
       const isOpen = menu.classList.toggle("active");
-      const icon = this.querySelector(".nl0et-icon");
+      const icon = this.querySelector(".rb1dt-icon");
       if (icon) {
         icon.textContent = isOpen ? "close" : "menu";
       }
     });
   }
 
-  document.querySelectorAll(".nl0et-top").forEach(function (button) {
+  document.querySelectorAll(".rb1dt-top").forEach(function (button) {
     button.addEventListener("click", function () {
-      const group = this.closest(".nl0et-menu-group");
+      const group = this.closest(".rb1dt-menu-group");
       if (!group) return;
-      const sub = group.querySelector(".nl0et-sub");
+      const sub = group.querySelector(".rb1dt-sub");
       const isOpen = group.classList.toggle("open");
       this.classList.toggle("active", isOpen);
-      const icon = this.querySelector(".nl0et-icon");
+      const icon = this.querySelector(".rb1dt-icon");
       if (icon) {
         icon.textContent = isOpen ? "expand_less" : "expand_more";
       }
@@ -247,7 +258,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=doaq6"></script>
-<script src="/src/cookie.js?v=doaq6"></script>
+<script type="text/javascript" src="/src/js.js?v=gmylf"></script>
+<script src="/src/cookie.js?v=gmylf"></script>
 
 </html>
