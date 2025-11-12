@@ -1,10 +1,10 @@
 
-  .kuwijmenulist-menu:hover .dropdown-content-kuwij {
+  .fdtdlmenulist-menu:hover .dropdown-content-fdtdl {
     display: flex;
     flex-direction: column;
   }
 
-  .kuwijmenulist-menu {
+  .fdtdlmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .kuwijmenulist-menu:hover {
+  .fdtdlmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .kuwijmenulist-menu:hover>a {
+  .fdtdlmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .kuwijmenulist-menu>a {
+  .fdtdlmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-kuwij {
+  .dropdown-content-active-fdtdl {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-kuwij>a {
+  .dropdown-content-active-fdtdl>a {
     color: #000 !important;
   }
 
-  .dropdown-content-kuwij {
+  .dropdown-content-fdtdl {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-kuwij>a {
+  .dropdown-content-fdtdl>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-kuwij>a:hover {
+  .dropdown-content-fdtdl>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .kuwijbody {
+  .fdtdlbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .kuwijbody > a {
+  .fdtdlbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .kuwijright {
+  .fdtdlright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .kuwijlanguages {
+  .fdtdllanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .kuwijlanguages.lang-hidden {
+  .fdtdllanguages.lang-hidden {
     display: none;
   }
 
-  .kuwijlanguages ul {
+  .fdtdllanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,18 +117,18 @@
     list-style: none;
   }
 
-  .kuwijlanguages li {
+  .fdtdllanguages li {
     list-style: none;
   }
 
-  .kuwijcontactlist {
+  .fdtdlcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .kuwijcontactlist a {
+  .fdtdlcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -136,17 +136,17 @@
     color: inherit;
   }
 
-  .kuwij-spot {
+  .fdtdl-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .kuwij-icon {
+  .fdtdl-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .kuwij {
+  .fdtdl {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -154,7 +154,7 @@
     justify-content: center;
   }
 
-  .kuwijmenu {
+  .fdtdlmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -162,7 +162,7 @@
     position: relative;
   }
 
-  .kuwijmenubody {
+  .fdtdlmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -171,7 +171,7 @@
   }
 
 
-  .kuwijmenulist {
+  .fdtdlmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -182,11 +182,11 @@
     box-sizing: border-box;
   }
   
-  .kuwijmenulistbody {
+  .fdtdlmenulistbody {
     width: 100%;
   }
 
-  .kuwij-mobile-toggle {
+  .fdtdl-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -198,16 +198,16 @@
     font-size: 20px;
   }
 
-  .kuwij-mobile-toggle span {
+  .fdtdl-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .kuwijmenu {
+    .fdtdlmenu {
       overflow-x: auto;
     }
 
-    .kuwijmenulist {
+    .fdtdlmenulist {
       flex-direction: row;
     }
 
@@ -215,7 +215,7 @@
       width: 200px;
     }
 
-    .kuwijbody {
+    .fdtdlbody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -223,37 +223,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .kuwijbody {
+    .fdtdlbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .kuwijright {
+    .fdtdlright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .kuwijcontactlist {
+    .fdtdlcontactlist {
       display: none;
     }
 
-    .kuwijlanguages.lang-hidden {
+    .fdtdllanguages.lang-hidden {
       display: none;
     }
 
-    .kuwijlanguages {
+    .fdtdllanguages {
       display: flex;
     }
 
-    .kuwij-mobile-toggle {
+    .fdtdl-mobile-toggle {
       display: inline-flex;
     }
 
-    .kuwijmenulist {
+    .fdtdlmenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -261,17 +261,17 @@
       padding: 12px;
     }
 
-    .kuwijmenu.kuwijmenu-open .kuwijmenulist {
+    .fdtdlmenu.fdtdlmenu-open .fdtdlmenulist {
       display: flex;
     }
 
-    .kuwijmenulist-menu {
+    .fdtdlmenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-kuwij {
+    .dropdown-content-fdtdl {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -279,21 +279,21 @@
       width: 100%;
     }
 
-    .dropdown-content-kuwij>a {
+    .dropdown-content-fdtdl>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
   }
 
 
-  .vqqrr-page {
+  .naqyi-page {
     width: var(--max);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 36px;
   }
-  .vqqrr-header {
+  .naqyi-header {
     background: #ffffff;
     border-radius: 20px;
     padding: 36px 40px;
@@ -303,7 +303,7 @@
     flex-direction: column;
     gap: 16px;
   }
-  .vqqrr-header-meta {
+  .naqyi-header-meta {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -313,7 +313,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
-  .vqqrr-header-title {
+  .naqyi-header-title {
     margin: 0;
     font-size: clamp(2.2rem, 3vw, 3rem);
     font-weight: 700;
@@ -321,19 +321,19 @@
     line-height: 1.25;
     letter-spacing: -0.01em;
   }
-  .vqqrr-header-spot {
+  .naqyi-header-spot {
     margin: 0;
     max-width: 900px;
     font-size: 1.05em;
     line-height: 1.75;
     color: #334155;
   }
-  .vqqrr-body {
+  .naqyi-body {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0, 0.85fr);
     gap: 32px;
   }
-  .vqqrr-article {
+  .naqyi-article {
     background: #ffffff;
     border-radius: 20px;
     padding: 32px;
@@ -343,35 +343,35 @@
     flex-direction: column;
     gap: 28px;
   }
-  .vqqrr-article-media {
+  .naqyi-article-media {
     margin: 0;
     border-radius: 16px;
     overflow: hidden;
     background: rgba(226, 232, 240, 0.6);
   }
-  .vqqrr-article-media img {
+  .naqyi-article-media img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
   }
-  .vqqrr-article-media img[src=""],
-  .vqqrr-article-media img[src="null"],
-  .vqqrr-article-media img:not([src]) {
+  .naqyi-article-media img[src=""],
+  .naqyi-article-media img[src="null"],
+  .naqyi-article-media img:not([src]) {
     display: none;
   }
-  .vqqrr-article-content {
+  .naqyi-article-content {
     font-size: 1.05em;
     line-height: 1.85;
     color: #1f2937;
   }
-  .vqqrr-article-content p {
+  .naqyi-article-content p {
     margin-bottom: 1.6em;
   }
-  .vqqrr-article-content p:last-child {
+  .naqyi-article-content p:last-child {
     margin-bottom: 0;
   }
-  .vqqrr-sidebar {
+  .naqyi-sidebar {
     background: #ffffff;
     border-radius: 20px;
     padding: 28px;
@@ -381,7 +381,7 @@
     flex-direction: column;
     gap: 20px;
   }
-  .vqqrr-sidebar-head {
+  .naqyi-sidebar-head {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -389,12 +389,12 @@
     font-size: 1.05em;
     color: #0f172a;
   }
-  .vqqrr-sidebar-list {
+  .naqyi-sidebar-list {
     display: flex;
     flex-direction: column;
     gap: 18px;
   }
-  .vqqrr-menu-item {
+  .naqyi-menu-item {
     display: flex;
     gap: 14px;
     text-decoration: none;
@@ -408,22 +408,22 @@
     color: inherit;
     overflow: hidden;
   }
-  .vqqrr-menu-item:hover {
+  .naqyi-menu-item:hover {
     border-color: rgba(59, 130, 246, 0.45);
     box-shadow: 0 18px 32px rgba(59, 130, 246, 0.12);
     transform: translateY(-4px);
   }
-  .vqqrr-menu-img {
+  .naqyi-menu-img {
     width: 120px;
     flex-shrink: 0;
   }
-  .vqqrr-menu-img img {
+  .naqyi-menu-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-  .vqqrr-menu-placeholder {
+  .naqyi-menu-placeholder {
     width: 120px;
     height: 100%;
     display: flex;
@@ -433,20 +433,20 @@
     color: rgba(71, 85, 105, 0.8);
     font-size: 26px;
   }
-  .vqqrr-menu-content {
+  .naqyi-menu-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
     padding: 16px 18px 16px 0;
   }
-  .vqqrr-menu-name {
+  .naqyi-menu-name {
     font-weight: 600;
     font-size: 1em;
     line-height: 1.4;
     color: #0f172a;
   }
-  .vqqrr-menu-spot {
+  .naqyi-menu-spot {
     font-size: 0.9em;
     line-clamp: 3;
     -webkit-line-clamp: 3;
@@ -458,48 +458,48 @@
     margin: 0;
   }
   @media screen and (max-width: 1280px) {
-    .vqqrr-body {
+    .naqyi-body {
       grid-template-columns: 1fr;
     }
-    .vqqrr-sidebar {
+    .naqyi-sidebar {
       position: relative;
     }
   }
   @media screen and (max-width: 960px) {
-    .vqqrr-page {
+    .naqyi-page {
       width: 100%;
       padding: 0 18px;
     }
-    .vqqrr-header {
+    .naqyi-header {
       padding: 28px 24px;
     }
-    .vqqrr-article {
+    .naqyi-article {
       padding: 26px 22px;
     }
-    .vqqrr-sidebar {
+    .naqyi-sidebar {
       padding: 24px;
     }
   }
   @media screen and (max-width: 640px) {
-    .vqqrr-header {
+    .naqyi-header {
       padding: 24px 20px;
       gap: 12px;
     }
-    .vqqrr-header-meta {
+    .naqyi-header-meta {
       font-size: 0.8em;
     }
-    .vqqrr-header-title {
+    .naqyi-header-title {
       font-size: clamp(1.6rem, 6vw, 2.4rem);
     }
-    .vqqrr-body {
+    .naqyi-body {
       gap: 24px;
     }
-    .vqqrr-menu-item {
+    .naqyi-menu-item {
       border-radius: 12px;
       flex-direction: column;
     }
-    .vqqrr-menu-img,
-    .vqqrr-menu-placeholder {
+    .naqyi-menu-img,
+    .naqyi-menu-placeholder {
       width: 100%;
       height: 180px;
     }

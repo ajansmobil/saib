@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=vzxv3" />
-  <link rel="shortcut icon" href="/img/icon.png?v=vzxv3" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=wndzg" />
+  <link rel="shortcut icon" href="/img/icon.png?v=wndzg" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=vzxv3"></script>
-<link rel="stylesheet" href="style.css?v=vzxv3">
+  <script type="text/javascript" src="/src/firebase.js?v=wndzg"></script>
+<link rel="stylesheet" href="style.css?v=wndzg">
 </head>
 
 <body>
-  <div id="header"><div class="bc006">
+  <div id="header"><div class="snjfb">
 
-  <div class="bc006body">
-    <a href="/en/"><img src="/img/logo.svg?v=vzxv3" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="snjfbbody">
+    <a href="/en/"><img src="/img/logo.svg?v=wndzg" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="bc006right">
-      <div class="bc006languages ">
+    <div class="snjfbright">
+      <div class="snjfblanguages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="bc006contactlist">
+      <div class="snjfbcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined bc006-icon">phone</div>
+     <div class="material-symbols-outlined snjfb-icon">phone</div>
      <div>
-      <div  class="bc006-title">undefined</div>
-      <div  class="bc006-spot">0342 341 41 31</div>
+      <div  class="snjfb-title">undefined</div>
+      <div  class="snjfb-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined bc006-icon">mail</div>
+     <div class="material-symbols-outlined snjfb-icon">mail</div>
      <div>
-      <div  class="bc006-title">undefined</div>
-      <div  class="bc006-spot">info@saibdernegi.org</div>
+      <div  class="snjfb-title">undefined</div>
+      <div  class="snjfb-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined bc006-icon">location_on</div>
+     <div class="material-symbols-outlined snjfb-icon">location_on</div>
      <div>
-      <div  class="bc006-title">undefined</div>
-      <div  class="bc006-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="snjfb-title">undefined</div>
+      <div  class="snjfb-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="bc006-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="snjfb-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="bc006menubody">
-    <div class="bc006menu" id="menu-3-root">
-      <div class="bc006menulistbody">
-        <div class="bc006menulist"><a class="bc006menulist-menu" href="/en/">Home </a><div class="bc006menulist-menu dropdown-content-active-bc006" >
+  <div class="snjfbmenubody">
+    <div class="snjfbmenu" id="menu-3-root">
+      <div class="snjfbmenulistbody">
+        <div class="snjfbmenulist"><a class="snjfbmenulist-menu" href="/en/">Home </a><div class="snjfbmenulist-menu dropdown-content-active-snjfb" >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="bc006menulist-menu " >
+    <div class="snjfbmenulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="bc006menulist-menu " >
+    <div class="snjfbmenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="bc006menulist-menu " >
+    <div class="snjfbmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="bc006menulist-menu " >
+    <div class="snjfbmenulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -128,10 +139,10 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("bc006menu-open")) {
-        root.classList.remove("bc006menu-open");
+      if (root.classList.contains("snjfbmenu-open")) {
+        root.classList.remove("snjfbmenu-open");
       } else {
-        root.classList.add("bc006menu-open");
+        root.classList.add("snjfbmenu-open");
       }
     }
   }
@@ -189,7 +200,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=vzxv3"></script>
-<script src="/src/cookie.js?v=vzxv3"></script>
+<script type="text/javascript" src="/src/js.js?v=wndzg"></script>
+<script src="/src/cookie.js?v=wndzg"></script>
 
 </html>

@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=ovwax" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ovwax" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=hytuq" />
+  <link rel="shortcut icon" href="/img/icon.png?v=hytuq" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=ovwax"></script>
-<link rel="stylesheet" href="style.css?v=ovwax">
+  <script type="text/javascript" src="/src/firebase.js?v=hytuq"></script>
+<link rel="stylesheet" href="style.css?v=hytuq">
 </head>
 
 <body>
-  <div id="header"><div class="ii5pw">
+  <div id="header"><div class="rwjwe">
 
-  <div class="ii5pwbody">
-    <a href="/en/"><img src="/img/logo.svg?v=ovwax" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="rwjwebody">
+    <a href="/en/"><img src="/img/logo.svg?v=hytuq" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="ii5pwright">
-      <div class="ii5pwlanguages ">
+    <div class="rwjweright">
+      <div class="rwjwelanguages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="ii5pwcontactlist">
+      <div class="rwjwecontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined ii5pw-icon">phone</div>
+     <div class="material-symbols-outlined rwjwe-icon">phone</div>
      <div>
-      <div  class="ii5pw-title">undefined</div>
-      <div  class="ii5pw-spot">0342 341 41 31</div>
+      <div  class="rwjwe-title">undefined</div>
+      <div  class="rwjwe-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined ii5pw-icon">mail</div>
+     <div class="material-symbols-outlined rwjwe-icon">mail</div>
      <div>
-      <div  class="ii5pw-title">undefined</div>
-      <div  class="ii5pw-spot">info@saibdernegi.org</div>
+      <div  class="rwjwe-title">undefined</div>
+      <div  class="rwjwe-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined ii5pw-icon">location_on</div>
+     <div class="material-symbols-outlined rwjwe-icon">location_on</div>
      <div>
-      <div  class="ii5pw-title">undefined</div>
-      <div  class="ii5pw-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="rwjwe-title">undefined</div>
+      <div  class="rwjwe-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="ii5pw-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="rwjwe-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="ii5pwmenubody">
-    <div class="ii5pwmenu" id="menu-3-root">
-      <div class="ii5pwmenulistbody">
-        <div class="ii5pwmenulist"><a class="ii5pwmenulist-menu" href="/en/">Home </a><div class="ii5pwmenulist-menu " >
+  <div class="rwjwemenubody">
+    <div class="rwjwemenu" id="menu-3-root">
+      <div class="rwjwemenulistbody">
+        <div class="rwjwemenulist"><a class="rwjwemenulist-menu" href="/en/">Home </a><div class="rwjwemenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="ii5pwmenulist-menu " >
+    <div class="rwjwemenulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="ii5pwmenulist-menu " >
+    <div class="rwjwemenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="ii5pwmenulist-menu " >
+    <div class="rwjwemenulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="ii5pwmenulist-menu " >
+    <div class="rwjwemenulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -128,15 +139,15 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("ii5pwmenu-open")) {
-        root.classList.remove("ii5pwmenu-open");
+      if (root.classList.contains("rwjwemenu-open")) {
+        root.classList.remove("rwjwemenu-open");
       } else {
-        root.classList.add("ii5pwmenu-open");
+        root.classList.add("rwjwemenu-open");
       }
     }
   }
-</script><div class="swiper-container b0lr3">
-  <div class="swiper-wrapper" id="b0lr3"><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1762647569383" /></div><div class="swiper-slide"><img src="/img/mfzpnk/2.jpg?v=1762647569383" /></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1762647569383" /></div></div>
+</script><div class="swiper-container on3qx">
+  <div class="swiper-wrapper" id="on3qx"><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1762934849422" /></div><div class="swiper-slide"><img src="/img/mfzpnk/2.jpg?v=1762934849422" /></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1762934849422" /></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
@@ -145,7 +156,7 @@
 <script>
 
 setTimeout(() => {
-  var swiper = new Swiper(".b0lr3", {
+  var swiper = new Swiper(".on3qx", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -164,73 +175,73 @@ setTimeout(() => {
   });}, 500);
 </script>
 </div>
-  <div id="content"><div class="sliderxkgqcs">
-  <div class="slider-kgqcst-itle"></div>
-  <div class="kgqcs swiper-container">
+  <div id="content"><div class="sliderxr2ysh">
+  <div class="slider-r2ysht-itle"></div>
+  <div class="r2ysh swiper-container">
     <div class="swiper-wrapper">
     <a href="/en/bize-katilin" class="swiper-slide">
-      <div class="swiper-kgqcs">
-        <img class="img-kgqcs" src="/page/we5uhxruok/ixfhw.jpg" alt="" />
-        <div class="title-spot-kgqcs">
-          <div class="title-kgqcs"></div>
-          <div class="spot-kgqcs"></div>
+      <div class="swiper-r2ysh">
+        <img class="img-r2ysh" src="/page/we5uhxruok/ixfhw.jpg" alt="" />
+        <div class="title-spot-r2ysh">
+          <div class="title-r2ysh"></div>
+          <div class="spot-r2ysh"></div>
         </div>
-        <div class="button-kgqcs">Read more...</div>
+        <div class="button-r2ysh">Read more...</div>
       </div>
     </a>
   
     <a href="/en/faaliyetlerimiz" class="swiper-slide">
-      <div class="swiper-kgqcs">
-        <img class="img-kgqcs" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="" />
-        <div class="title-spot-kgqcs">
-          <div class="title-kgqcs"></div>
-          <div class="spot-kgqcs"></div>
+      <div class="swiper-r2ysh">
+        <img class="img-r2ysh" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="" />
+        <div class="title-spot-r2ysh">
+          <div class="title-r2ysh"></div>
+          <div class="spot-r2ysh"></div>
         </div>
-        <div class="button-kgqcs">Read more...</div>
+        <div class="button-r2ysh">Read more...</div>
       </div>
     </a>
   
     <a href="/en/ihracat-rehberi" class="swiper-slide">
-      <div class="swiper-kgqcs">
-        <img class="img-kgqcs" src="/page/zq84rqm7rn/tk4uh.jpg" alt="" />
-        <div class="title-spot-kgqcs">
-          <div class="title-kgqcs"></div>
-          <div class="spot-kgqcs"></div>
+      <div class="swiper-r2ysh">
+        <img class="img-r2ysh" src="/page/zq84rqm7rn/tk4uh.jpg" alt="" />
+        <div class="title-spot-r2ysh">
+          <div class="title-r2ysh"></div>
+          <div class="spot-r2ysh"></div>
         </div>
-        <div class="button-kgqcs">Read more...</div>
+        <div class="button-r2ysh">Read more...</div>
       </div>
     </a>
   
     <a href="/en/is-agi" class="swiper-slide">
-      <div class="swiper-kgqcs">
-        <img class="img-kgqcs" src="/page/wxalr76gjn/kgn90.jpg" alt="" />
-        <div class="title-spot-kgqcs">
-          <div class="title-kgqcs"></div>
-          <div class="spot-kgqcs"></div>
+      <div class="swiper-r2ysh">
+        <img class="img-r2ysh" src="/page/wxalr76gjn/kgn90.jpg" alt="" />
+        <div class="title-spot-r2ysh">
+          <div class="title-r2ysh"></div>
+          <div class="spot-r2ysh"></div>
         </div>
-        <div class="button-kgqcs">Read more...</div>
+        <div class="button-r2ysh">Read more...</div>
       </div>
     </a>
   
     <a href="/en/uyelerimiz" class="swiper-slide">
-      <div class="swiper-kgqcs">
-        <img class="img-kgqcs" src="/page/h4qvry5vf3/llr1n.jpg" alt="" />
-        <div class="title-spot-kgqcs">
-          <div class="title-kgqcs"></div>
-          <div class="spot-kgqcs"></div>
+      <div class="swiper-r2ysh">
+        <img class="img-r2ysh" src="/page/h4qvry5vf3/llr1n.jpg" alt="" />
+        <div class="title-spot-r2ysh">
+          <div class="title-r2ysh"></div>
+          <div class="spot-r2ysh"></div>
         </div>
-        <div class="button-kgqcs">Read more...</div>
+        <div class="button-r2ysh">Read more...</div>
       </div>
     </a>
   </div>
-    <div class="swiper-pagination-kgqcs"></div>
+    <div class="swiper-pagination-r2ysh"></div>
   </div>
-  <div class="swiper-button-next swiper-button-next-kgqcs"></div>
-  <div class="swiper-button-prev swiper-button-prev-kgqcs"></div>
+  <div class="swiper-button-next swiper-button-next-r2ysh"></div>
+  <div class="swiper-button-prev swiper-button-prev-r2ysh"></div>
 </div>
 
 <script> setTimeout(() => {
-  new Swiper(".kgqcs", {
+  new Swiper(".r2ysh", {
     slidesPerView: 2,
     simulateTouch: true,
     loop: true,
@@ -245,36 +256,36 @@ setTimeout(() => {
       disableOnInteraction: true,
     },
     pagination: {
-      el: ".swiper-pagination-kgqcs",
+      el: ".swiper-pagination-r2ysh",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next-kgqcs",
-      prevEl: ".swiper-button-prev-kgqcs",
+      nextEl: ".swiper-button-next-r2ysh",
+      prevEl: ".swiper-button-prev-r2ysh",
     },
   });}, 100);
 </script>
-<div class="xb8ku-out">
-  <div class="xb8ku">
-    <div class="xb8ku-left">
+<div class="x1dlf-out">
+  <div class="x1dlf">
+    <div class="x1dlf-left">
       <img
-        src="/img/sykhyk/profil.webp?v=ovwax"
-        class="xb8ku-left-img"
+        src="/img/sykhyk/profil.webp?v=hytuq"
+        class="x1dlf-left-img"
         alt="{{title}}"
       />
     </div>
-    <div class="xb8ku-right">
-      <div class="xb8ku-right-body">
-        <div class="xb8ku-right-body-name"></div>
-        <div class="xb8ku-right-body-spot"></div>
-        <div class="xb8ku-right-body-chile">
-          <div class="xb8ku-right-body-chile-row">
-            <div class="xb8ku-right-body-chile-row-name"></div>
-            <div class="xb8ku-right-body-chile-row-spot"></div>
+    <div class="x1dlf-right">
+      <div class="x1dlf-right-body">
+        <div class="x1dlf-right-body-name"></div>
+        <div class="x1dlf-right-body-spot"></div>
+        <div class="x1dlf-right-body-chile">
+          <div class="x1dlf-right-body-chile-row">
+            <div class="x1dlf-right-body-chile-row-name"></div>
+            <div class="x1dlf-right-body-chile-row-spot"></div>
           </div>
-          <div class="xb8ku-right-body-chile-row">
-            <div class="xb8ku-right-body-chile-row-name"></div>
-            <div class="xb8ku-right-body-chile-row-spot"></div>
+          <div class="x1dlf-right-body-chile-row">
+            <div class="x1dlf-right-body-chile-row-name"></div>
+            <div class="x1dlf-right-body-chile-row-spot"></div>
           </div>
         </div>
       </div>
@@ -335,7 +346,7 @@ setTimeout(() => {
 
 
 
-<script type="text/javascript" src="/src/js.js?v=ovwax"></script>
-<script src="/src/cookie.js?v=ovwax"></script>
+<script type="text/javascript" src="/src/js.js?v=hytuq"></script>
+<script src="/src/cookie.js?v=hytuq"></script>
 
 </html>

@@ -7,10 +7,10 @@
       "local": "header",
       "category": "menu",
       "desing": {
-        "color": "#000",
         "logo": "logo.svg",
         "logosize": 300,
-        "logosizemobil": 200
+        "logosizemobil": 200,
+        "color": "#000"
       },
       "id": "ebbpbt",
       "version": "1.0.0",
@@ -264,6 +264,247 @@
         "max": 6
       },
       "index": 9
+    },
+    {
+      "index": 10,
+      "name": "Dernek Üyelik Formu",
+      "path": "uyelikform",
+      "local": "body",
+      "category": "form",
+      "id": "xunfad",
+      "version": "1.0.0",
+      "icon": "approval_delegation",
+      "desing": {
+        "color": "#0d2f66",
+        "bgcolor": "#f2f5fb",
+        "name": {
+          "tr": "Üyelik Başvuru Formu",
+          "en": "",
+          "ar": ""
+        }
+      },
+      "data": {
+        "organization": "Uluslararası İş İnsanları Derneği",
+        "formTitle": "Üyelik Başvuru Formu",
+        "formSubtitle": "Lütfen kişisel ve firma bilgilerinizi eksiksiz doldurunuz.",
+        "formFooter": "Formu doldurup imzaladıktan sonra dernek merkezi ile paylaşınız.",
+        "sections": [
+          {
+            "title": "Nüfus ile İlgili Bilgiler",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "Ad Soyad"
+                  },
+                  {
+                    "type": "line",
+                    "label": "TC Kimlik No"
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "Doğum Tarihi",
+                    "hint": "(Gün-Ay-Yıl)"
+                  },
+                  {
+                    "type": "line",
+                    "label": "Doğum Yeri"
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "Nüfusa Kayıtlı Olduğunuz İl"
+                  },
+                  {
+                    "type": "line",
+                    "label": "İlçe"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Öğrenim ile İlgili Bilgiler",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "type": "checkbox-list",
+                    "label": "Öğrenim Durumu",
+                    "columns": 3,
+                    "options": [
+                      "İlkokul",
+                      "Ortaokul",
+                      "Lise",
+                      "Lisans",
+                      "Lisans Üstü"
+                    ]
+                  },
+                  {
+                    "type": "line",
+                    "label": "Okul"
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "Yabancı Dil"
+                  },
+                  {
+                    "type": "checkbox-list",
+                    "label": "Seviye",
+                    "columns": 3,
+                    "options": [
+                      "Orta",
+                      "İyi",
+                      "Çok İyi"
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "İkinci Yabancı Dil"
+                  },
+                  {
+                    "type": "checkbox-list",
+                    "label": "Seviye",
+                    "columns": 3,
+                    "options": [
+                      "Orta",
+                      "İyi",
+                      "Çok İyi"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Firmanıza Ait Bilgiler",
+            "rows": [
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "Firmanızın Adı"
+                  },
+                  {
+                    "type": "line-small",
+                    "label": "Kuruluş Yılı"
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "subheading",
+                    "label": "İletişim Bilgileri"
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "line-long",
+                    "label": "Adres"
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "Web Site"
+                  },
+                  {
+                    "type": "line",
+                    "label": "Cep No"
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "checkbox-list",
+                    "label": "Sektörünüz",
+                    "columns": 3,
+                    "options": [
+                      "Sanayi",
+                      "Hizmetler",
+                      "Tarım",
+                      "Finansal",
+                      "Yüklenici (Contractor)",
+                      "Diğer"
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "checkbox-list",
+                    "label": "Faaliyet Tipi",
+                    "columns": 3,
+                    "options": [
+                      "Üretici",
+                      "Toptancı",
+                      "İthalatçı",
+                      "İhracatçı",
+                      "Lojistik",
+                      "Diğer"
+                    ]
+                  }
+                ]
+              },
+              {
+                "columns": [
+                  {
+                    "type": "line",
+                    "label": "Yıllık Cirosu"
+                  },
+                  {
+                    "type": "line",
+                    "label": "Çalışan Sayısı"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Halen Üye Olunan Diğer Kuruluşlar",
+            "subtitle": "(Parti, Dernek, Vakıf, Grup, Kulüp)",
+            "rows": [
+              {
+                "type": "line-list",
+                "count": 6
+              }
+            ]
+          },
+          {
+            "title": "Başvuru Sahibinin Üyeliği Kabul için Refer",
+            "rows": [
+              {
+                "type": "line-list",
+                "count": 2,
+                "prefix": "Ad Soyad"
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }

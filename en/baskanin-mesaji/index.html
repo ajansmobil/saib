@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=nypcc" />
-  <link rel="shortcut icon" href="/img/icon.png?v=nypcc" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=petna" />
+  <link rel="shortcut icon" href="/img/icon.png?v=petna" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=nypcc"></script>
-<link rel="stylesheet" href="style.css?v=nypcc">
+  <script type="text/javascript" src="/src/firebase.js?v=petna"></script>
+<link rel="stylesheet" href="style.css?v=petna">
 </head>
 
 <body>
-  <div id="header"><div class="qu0l7">
+  <div id="header"><div class="vuce2">
 
-  <div class="qu0l7body">
-    <a href="/en/"><img src="/img/logo.svg?v=nypcc" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="vuce2body">
+    <a href="/en/"><img src="/img/logo.svg?v=petna" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="qu0l7right">
-      <div class="qu0l7languages ">
+    <div class="vuce2right">
+      <div class="vuce2languages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="qu0l7contactlist">
+      <div class="vuce2contactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined qu0l7-icon">phone</div>
+     <div class="material-symbols-outlined vuce2-icon">phone</div>
      <div>
-      <div  class="qu0l7-title">undefined</div>
-      <div  class="qu0l7-spot">0342 341 41 31</div>
+      <div  class="vuce2-title">undefined</div>
+      <div  class="vuce2-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined qu0l7-icon">mail</div>
+     <div class="material-symbols-outlined vuce2-icon">mail</div>
      <div>
-      <div  class="qu0l7-title">undefined</div>
-      <div  class="qu0l7-spot">info@saibdernegi.org</div>
+      <div  class="vuce2-title">undefined</div>
+      <div  class="vuce2-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined qu0l7-icon">location_on</div>
+     <div class="material-symbols-outlined vuce2-icon">location_on</div>
      <div>
-      <div  class="qu0l7-title">undefined</div>
-      <div  class="qu0l7-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="vuce2-title">undefined</div>
+      <div  class="vuce2-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="qu0l7-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="vuce2-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="qu0l7menubody">
-    <div class="qu0l7menu" id="menu-3-root">
-      <div class="qu0l7menulistbody">
-        <div class="qu0l7menulist"><a class="qu0l7menulist-menu" href="/en/">Home </a><div class="qu0l7menulist-menu " >
+  <div class="vuce2menubody">
+    <div class="vuce2menu" id="menu-3-root">
+      <div class="vuce2menulistbody">
+        <div class="vuce2menulist"><a class="vuce2menulist-menu" href="/en/">Home </a><div class="vuce2menulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="qu0l7menulist-menu " >
+    <div class="vuce2menulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="qu0l7menulist-menu " >
+    <div class="vuce2menulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="qu0l7menulist-menu " >
+    <div class="vuce2menulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="qu0l7menulist-menu " >
+    <div class="vuce2menulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -128,46 +139,61 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("qu0l7menu-open")) {
-        root.classList.remove("qu0l7menu-open");
+      if (root.classList.contains("vuce2menu-open")) {
+        root.classList.remove("vuce2menu-open");
       } else {
-        root.classList.add("qu0l7menu-open");
+        root.classList.add("vuce2menu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="dbe54-title f36">
+  <div id="content"><div class="h9ri7-title f36">
   <span>undefined</span>
 </div>
-<div class="dbe54">
-  <div class="dbe54-menu-btn">
+<div class="h9ri7">
+  <div class="h9ri7-menu-btn">
     <span>Menu</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined h9ri7-icon">menu</span>
   </div>
-  <div class="dbe54-menu"><a class="active"  href="/en/baskanin-mesaji" >[object Object]</a><a   href="/en/yonetim-kurulu" >[object Object]</a><a   href="/en/saib-kimdir" >[object Object]</a><a   href="/en/misyon" >[object Object]</a><a   href="/en/vizyon" >[object Object]</a><a   href="/en/uyelik-bilgileri" >[object Object]</a><a   href="/en/gizlilik-politikasi" >[object Object]</a><a   href="/en/kisisel-veriler" >[object Object]</a><a   href="/en/kullanici-haklari" >[object Object]</a><a   href="/en/yasal-uyari" >[object Object]</a></div>
-  <div class="dbe54-desc">
+  <div class="h9ri7-menu"><a class="h9ri7-menu-link active" href="/en/baskanin-mesaji">Başkanın Mesajı</a><a class="h9ri7-menu-link" href="/en/yonetim-kurulu">Yönetim Kurulu</a></div>
+  <div class="h9ri7-desc">
     
-    <div class="dbe54-body"></div>
+    <div class="h9ri7-body"></div>
   </div>
 </div>
 
 <script>
-  document
-    .querySelector(".dbe54-menu-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".dbe54-menu").classList.toggle("active");
-      const icon = this.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
+  const menuToggleBtn = document.querySelector(".h9ri7-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".h9ri7-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".h9ri7-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
     });
+  }
+
+  document.querySelectorAll(".h9ri7-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".h9ri7-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".h9ri7-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".h9ri7-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
 </script>
 
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-</head>
 </div>
   <div id="footer"><footer class="footer">
   <div class="waves">
@@ -221,7 +247,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=nypcc"></script>
-<script src="/src/cookie.js?v=nypcc"></script>
+<script type="text/javascript" src="/src/js.js?v=petna"></script>
+<script src="/src/cookie.js?v=petna"></script>
 
 </html>

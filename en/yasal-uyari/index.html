@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=xnmi5" />
-  <link rel="shortcut icon" href="/img/icon.png?v=xnmi5" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=fh9jk" />
+  <link rel="shortcut icon" href="/img/icon.png?v=fh9jk" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=xnmi5"></script>
-<link rel="stylesheet" href="style.css?v=xnmi5">
+  <script type="text/javascript" src="/src/firebase.js?v=fh9jk"></script>
+<link rel="stylesheet" href="style.css?v=fh9jk">
 </head>
 
 <body>
-  <div id="header"><div class="vqvli">
+  <div id="header"><div class="ovh4h">
 
-  <div class="vqvlibody">
-    <a href="/en/"><img src="/img/logo.svg?v=xnmi5" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="ovh4hbody">
+    <a href="/en/"><img src="/img/logo.svg?v=fh9jk" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="vqvliright">
-      <div class="vqvlilanguages ">
+    <div class="ovh4hright">
+      <div class="ovh4hlanguages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="vqvlicontactlist">
+      <div class="ovh4hcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined vqvli-icon">phone</div>
+     <div class="material-symbols-outlined ovh4h-icon">phone</div>
      <div>
-      <div  class="vqvli-title">undefined</div>
-      <div  class="vqvli-spot">0342 341 41 31</div>
+      <div  class="ovh4h-title">undefined</div>
+      <div  class="ovh4h-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined vqvli-icon">mail</div>
+     <div class="material-symbols-outlined ovh4h-icon">mail</div>
      <div>
-      <div  class="vqvli-title">undefined</div>
-      <div  class="vqvli-spot">info@saibdernegi.org</div>
+      <div  class="ovh4h-title">undefined</div>
+      <div  class="ovh4h-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined vqvli-icon">location_on</div>
+     <div class="material-symbols-outlined ovh4h-icon">location_on</div>
      <div>
-      <div  class="vqvli-title">undefined</div>
-      <div  class="vqvli-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="ovh4h-title">undefined</div>
+      <div  class="ovh4h-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="vqvli-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="ovh4h-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="vqvlimenubody">
-    <div class="vqvlimenu" id="menu-3-root">
-      <div class="vqvlimenulistbody">
-        <div class="vqvlimenulist"><a class="vqvlimenulist-menu" href="/en/">Home </a><div class="vqvlimenulist-menu " >
+  <div class="ovh4hmenubody">
+    <div class="ovh4hmenu" id="menu-3-root">
+      <div class="ovh4hmenulistbody">
+        <div class="ovh4hmenulist"><a class="ovh4hmenulist-menu" href="/en/">Home </a><div class="ovh4hmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="vqvlimenulist-menu " >
+    <div class="ovh4hmenulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="vqvlimenulist-menu " >
+    <div class="ovh4hmenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="vqvlimenulist-menu " >
+    <div class="ovh4hmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="vqvlimenulist-menu " >
+    <div class="ovh4hmenulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -128,46 +139,61 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("vqvlimenu-open")) {
-        root.classList.remove("vqvlimenu-open");
+      if (root.classList.contains("ovh4hmenu-open")) {
+        root.classList.remove("ovh4hmenu-open");
       } else {
-        root.classList.add("vqvlimenu-open");
+        root.classList.add("ovh4hmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="c0eap-title f36">
+  <div id="content"><div class="a4jdp-title f36">
   <span>undefined</span>
 </div>
-<div class="c0eap">
-  <div class="c0eap-menu-btn">
+<div class="a4jdp">
+  <div class="a4jdp-menu-btn">
     <span>Menu</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined a4jdp-icon">menu</span>
   </div>
-  <div class="c0eap-menu"><a   href="/en/baskanin-mesaji" >[object Object]</a><a   href="/en/yonetim-kurulu" >[object Object]</a><a   href="/en/saib-kimdir" >[object Object]</a><a   href="/en/misyon" >[object Object]</a><a   href="/en/vizyon" >[object Object]</a><a   href="/en/uyelik-bilgileri" >[object Object]</a><a   href="/en/gizlilik-politikasi" >[object Object]</a><a   href="/en/kisisel-veriler" >[object Object]</a><a   href="/en/kullanici-haklari" >[object Object]</a><a class="active"  href="/en/yasal-uyari" >[object Object]</a></div>
-  <div class="c0eap-desc">
+  <div class="a4jdp-menu"><a class="a4jdp-menu-link" href="/en/baskanin-mesaji">Başkanın Mesajı</a><a class="a4jdp-menu-link" href="/en/yonetim-kurulu">Yönetim Kurulu</a></div>
+  <div class="a4jdp-desc">
     
-    <div class="c0eap-body"></div>
+    <div class="a4jdp-body"></div>
   </div>
 </div>
 
 <script>
-  document
-    .querySelector(".c0eap-menu-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".c0eap-menu").classList.toggle("active");
-      const icon = this.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
+  const menuToggleBtn = document.querySelector(".a4jdp-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".a4jdp-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".a4jdp-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
     });
+  }
+
+  document.querySelectorAll(".a4jdp-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".a4jdp-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".a4jdp-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".a4jdp-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
 </script>
 
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-</head>
 </div>
   <div id="footer"><footer class="footer">
   <div class="waves">
@@ -221,7 +247,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=xnmi5"></script>
-<script src="/src/cookie.js?v=xnmi5"></script>
+<script type="text/javascript" src="/src/js.js?v=fh9jk"></script>
+<script src="/src/cookie.js?v=fh9jk"></script>
 
 </html>

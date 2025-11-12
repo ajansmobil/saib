@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=syc5j" />
-  <link rel="shortcut icon" href="/img/icon.png?v=syc5j" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=erwwc" />
+  <link rel="shortcut icon" href="/img/icon.png?v=erwwc" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=syc5j"></script>
-<link rel="stylesheet" href="style.css?v=syc5j">
+  <script type="text/javascript" src="/src/firebase.js?v=erwwc"></script>
+<link rel="stylesheet" href="style.css?v=erwwc">
 </head>
 
 <body>
-  <div id="header"><div class="svq98">
+  <div id="header"><div class="rmkh8">
 
-  <div class="svq98body">
-    <a href="/ar/"><img src="/img/logo.svg?v=syc5j" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="rmkh8body">
+    <a href="/ar/"><img src="/img/logo.svg?v=erwwc" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="svq98right">
-      <div class="svq98languages ">
+    <div class="rmkh8right">
+      <div class="rmkh8languages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="svq98contactlist">
+      <div class="rmkh8contactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined svq98-icon">phone</div>
+     <div class="material-symbols-outlined rmkh8-icon">phone</div>
      <div>
-      <div  class="svq98-title">undefined</div>
-      <div  class="svq98-spot">0342 341 41 31</div>
+      <div  class="rmkh8-title">undefined</div>
+      <div  class="rmkh8-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined svq98-icon">mail</div>
+     <div class="material-symbols-outlined rmkh8-icon">mail</div>
      <div>
-      <div  class="svq98-title">undefined</div>
-      <div  class="svq98-spot">info@saibdernegi.org</div>
+      <div  class="rmkh8-title">undefined</div>
+      <div  class="rmkh8-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined svq98-icon">location_on</div>
+     <div class="material-symbols-outlined rmkh8-icon">location_on</div>
      <div>
-      <div  class="svq98-title">undefined</div>
-      <div  class="svq98-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="rmkh8-title">undefined</div>
+      <div  class="rmkh8-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="svq98-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="rmkh8-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="svq98menubody">
-    <div class="svq98menu" id="menu-3-root">
-      <div class="svq98menulistbody">
-        <div class="svq98menulist"><a class="svq98menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="svq98menulist-menu " >
+  <div class="rmkh8menubody">
+    <div class="rmkh8menu" id="menu-3-root">
+      <div class="rmkh8menulistbody">
+        <div class="rmkh8menulist"><a class="rmkh8menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="rmkh8menulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="svq98menulist-menu " >
+    <div class="rmkh8menulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="svq98menulist-menu " >
+    <div class="rmkh8menulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="svq98menulist-menu " >
+    <div class="rmkh8menulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="svq98menulist-menu " >
+    <div class="rmkh8menulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -128,15 +139,15 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("svq98menu-open")) {
-        root.classList.remove("svq98menu-open");
+      if (root.classList.contains("rmkh8menu-open")) {
+        root.classList.remove("rmkh8menu-open");
       } else {
-        root.classList.add("svq98menu-open");
+        root.classList.add("rmkh8menu-open");
       }
     }
   }
-</script><div class="swiper-container oi8tv">
-  <div class="swiper-wrapper" id="oi8tv"><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1762647569448" /></div><div class="swiper-slide"><img src="/img/mfzpnk/2.jpg?v=1762647569448" /></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1762647569448" /></div></div>
+</script><div class="swiper-container ctom7">
+  <div class="swiper-wrapper" id="ctom7"><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1762934849486" /></div><div class="swiper-slide"><img src="/img/mfzpnk/2.jpg?v=1762934849486" /></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1762934849486" /></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
@@ -145,7 +156,7 @@
 <script>
 
 setTimeout(() => {
-  var swiper = new Swiper(".oi8tv", {
+  var swiper = new Swiper(".ctom7", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -164,73 +175,73 @@ setTimeout(() => {
   });}, 500);
 </script>
 </div>
-  <div id="content"><div class="sliderxackbo">
-  <div class="slider-ackbot-itle"></div>
-  <div class="ackbo swiper-container">
+  <div id="content"><div class="sliderxfb330">
+  <div class="slider-fb330t-itle"></div>
+  <div class="fb330 swiper-container">
     <div class="swiper-wrapper">
     <a href="/ar/bize-katilin" class="swiper-slide">
-      <div class="swiper-ackbo">
-        <img class="img-ackbo" src="/page/we5uhxruok/ixfhw.jpg" alt="" />
-        <div class="title-spot-ackbo">
-          <div class="title-ackbo"></div>
-          <div class="spot-ackbo"></div>
+      <div class="swiper-fb330">
+        <img class="img-fb330" src="/page/we5uhxruok/ixfhw.jpg" alt="" />
+        <div class="title-spot-fb330">
+          <div class="title-fb330"></div>
+          <div class="spot-fb330"></div>
         </div>
-        <div class="button-ackbo">اقرأ المزيد...</div>
+        <div class="button-fb330">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/faaliyetlerimiz" class="swiper-slide">
-      <div class="swiper-ackbo">
-        <img class="img-ackbo" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="" />
-        <div class="title-spot-ackbo">
-          <div class="title-ackbo"></div>
-          <div class="spot-ackbo"></div>
+      <div class="swiper-fb330">
+        <img class="img-fb330" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="" />
+        <div class="title-spot-fb330">
+          <div class="title-fb330"></div>
+          <div class="spot-fb330"></div>
         </div>
-        <div class="button-ackbo">اقرأ المزيد...</div>
+        <div class="button-fb330">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/ihracat-rehberi" class="swiper-slide">
-      <div class="swiper-ackbo">
-        <img class="img-ackbo" src="/page/zq84rqm7rn/tk4uh.jpg" alt="" />
-        <div class="title-spot-ackbo">
-          <div class="title-ackbo"></div>
-          <div class="spot-ackbo"></div>
+      <div class="swiper-fb330">
+        <img class="img-fb330" src="/page/zq84rqm7rn/tk4uh.jpg" alt="" />
+        <div class="title-spot-fb330">
+          <div class="title-fb330"></div>
+          <div class="spot-fb330"></div>
         </div>
-        <div class="button-ackbo">اقرأ المزيد...</div>
+        <div class="button-fb330">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/is-agi" class="swiper-slide">
-      <div class="swiper-ackbo">
-        <img class="img-ackbo" src="/page/wxalr76gjn/kgn90.jpg" alt="" />
-        <div class="title-spot-ackbo">
-          <div class="title-ackbo"></div>
-          <div class="spot-ackbo"></div>
+      <div class="swiper-fb330">
+        <img class="img-fb330" src="/page/wxalr76gjn/kgn90.jpg" alt="" />
+        <div class="title-spot-fb330">
+          <div class="title-fb330"></div>
+          <div class="spot-fb330"></div>
         </div>
-        <div class="button-ackbo">اقرأ المزيد...</div>
+        <div class="button-fb330">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/uyelerimiz" class="swiper-slide">
-      <div class="swiper-ackbo">
-        <img class="img-ackbo" src="/page/h4qvry5vf3/llr1n.jpg" alt="" />
-        <div class="title-spot-ackbo">
-          <div class="title-ackbo"></div>
-          <div class="spot-ackbo"></div>
+      <div class="swiper-fb330">
+        <img class="img-fb330" src="/page/h4qvry5vf3/llr1n.jpg" alt="" />
+        <div class="title-spot-fb330">
+          <div class="title-fb330"></div>
+          <div class="spot-fb330"></div>
         </div>
-        <div class="button-ackbo">اقرأ المزيد...</div>
+        <div class="button-fb330">اقرأ المزيد...</div>
       </div>
     </a>
   </div>
-    <div class="swiper-pagination-ackbo"></div>
+    <div class="swiper-pagination-fb330"></div>
   </div>
-  <div class="swiper-button-next swiper-button-next-ackbo"></div>
-  <div class="swiper-button-prev swiper-button-prev-ackbo"></div>
+  <div class="swiper-button-next swiper-button-next-fb330"></div>
+  <div class="swiper-button-prev swiper-button-prev-fb330"></div>
 </div>
 
 <script> setTimeout(() => {
-  new Swiper(".ackbo", {
+  new Swiper(".fb330", {
     slidesPerView: 2,
     simulateTouch: true,
     loop: true,
@@ -245,36 +256,36 @@ setTimeout(() => {
       disableOnInteraction: true,
     },
     pagination: {
-      el: ".swiper-pagination-ackbo",
+      el: ".swiper-pagination-fb330",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next-ackbo",
-      prevEl: ".swiper-button-prev-ackbo",
+      nextEl: ".swiper-button-next-fb330",
+      prevEl: ".swiper-button-prev-fb330",
     },
   });}, 100);
 </script>
-<div class="ylc3u-out">
-  <div class="ylc3u">
-    <div class="ylc3u-left">
+<div class="j49w5-out">
+  <div class="j49w5">
+    <div class="j49w5-left">
       <img
-        src="/img/sykhyk/profil.webp?v=syc5j"
-        class="ylc3u-left-img"
+        src="/img/sykhyk/profil.webp?v=erwwc"
+        class="j49w5-left-img"
         alt="{{title}}"
       />
     </div>
-    <div class="ylc3u-right">
-      <div class="ylc3u-right-body">
-        <div class="ylc3u-right-body-name"></div>
-        <div class="ylc3u-right-body-spot"></div>
-        <div class="ylc3u-right-body-chile">
-          <div class="ylc3u-right-body-chile-row">
-            <div class="ylc3u-right-body-chile-row-name"></div>
-            <div class="ylc3u-right-body-chile-row-spot"></div>
+    <div class="j49w5-right">
+      <div class="j49w5-right-body">
+        <div class="j49w5-right-body-name"></div>
+        <div class="j49w5-right-body-spot"></div>
+        <div class="j49w5-right-body-chile">
+          <div class="j49w5-right-body-chile-row">
+            <div class="j49w5-right-body-chile-row-name"></div>
+            <div class="j49w5-right-body-chile-row-spot"></div>
           </div>
-          <div class="ylc3u-right-body-chile-row">
-            <div class="ylc3u-right-body-chile-row-name"></div>
-            <div class="ylc3u-right-body-chile-row-spot"></div>
+          <div class="j49w5-right-body-chile-row">
+            <div class="j49w5-right-body-chile-row-name"></div>
+            <div class="j49w5-right-body-chile-row-spot"></div>
           </div>
         </div>
       </div>
@@ -335,7 +346,7 @@ setTimeout(() => {
 
 
 
-<script type="text/javascript" src="/src/js.js?v=syc5j"></script>
-<script src="/src/cookie.js?v=syc5j"></script>
+<script type="text/javascript" src="/src/js.js?v=erwwc"></script>
+<script src="/src/cookie.js?v=erwwc"></script>
 
 </html>

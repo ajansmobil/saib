@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=wd3qf" />
-  <link rel="shortcut icon" href="/img/icon.png?v=wd3qf" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=xmcbf" />
+  <link rel="shortcut icon" href="/img/icon.png?v=xmcbf" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=wd3qf"></script>
-<link rel="stylesheet" href="style.css?v=wd3qf">
+  <script type="text/javascript" src="/src/firebase.js?v=xmcbf"></script>
+<link rel="stylesheet" href="style.css?v=xmcbf">
 </head>
 
 <body>
-  <div id="header"><div class="dd7az">
+  <div id="header"><div class="jwdxp">
 
-  <div class="dd7azbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=wd3qf" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="jwdxpbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=xmcbf" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="dd7azright">
-      <div class="dd7azlanguages ">
+    <div class="jwdxpright">
+      <div class="jwdxplanguages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="dd7azcontactlist">
+      <div class="jwdxpcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined dd7az-icon">phone</div>
+     <div class="material-symbols-outlined jwdxp-icon">phone</div>
      <div>
-      <div  class="dd7az-title">undefined</div>
-      <div  class="dd7az-spot">0342 341 41 31</div>
+      <div  class="jwdxp-title">undefined</div>
+      <div  class="jwdxp-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined dd7az-icon">mail</div>
+     <div class="material-symbols-outlined jwdxp-icon">mail</div>
      <div>
-      <div  class="dd7az-title">undefined</div>
-      <div  class="dd7az-spot">info@saibdernegi.org</div>
+      <div  class="jwdxp-title">undefined</div>
+      <div  class="jwdxp-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined dd7az-icon">location_on</div>
+     <div class="material-symbols-outlined jwdxp-icon">location_on</div>
      <div>
-      <div  class="dd7az-title">undefined</div>
-      <div  class="dd7az-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="jwdxp-title">undefined</div>
+      <div  class="jwdxp-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="dd7az-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="jwdxp-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="dd7azmenubody">
-    <div class="dd7azmenu" id="menu-3-root">
-      <div class="dd7azmenulistbody">
-        <div class="dd7azmenulist"><a class="dd7azmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="dd7azmenulist-menu " >
+  <div class="jwdxpmenubody">
+    <div class="jwdxpmenu" id="menu-3-root">
+      <div class="jwdxpmenulistbody">
+        <div class="jwdxpmenulist"><a class="jwdxpmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="jwdxpmenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="dd7azmenulist-menu " >
+    <div class="jwdxpmenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="dd7azmenulist-menu " >
+    <div class="jwdxpmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="dd7azmenulist-menu " >
+    <div class="jwdxpmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="dd7azmenulist-menu " >
+    <div class="jwdxpmenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -128,49 +139,64 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("dd7azmenu-open")) {
-        root.classList.remove("dd7azmenu-open");
+      if (root.classList.contains("jwdxpmenu-open")) {
+        root.classList.remove("jwdxpmenu-open");
       } else {
-        root.classList.add("dd7azmenu-open");
+        root.classList.add("jwdxpmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="xbd27-title f36">
+  <div id="content"><div class="p29e6-title f36">
   <span>undefined</span>
 </div>
-<div class="xbd27">
-  <div class="xbd27-menu-btn">
+<div class="p29e6">
+  <div class="p29e6-menu-btn">
     <span>قائمة الصفحات</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined p29e6-icon">menu</span>
   </div>
-  <div class="xbd27-menu"><a   href="/ar/bize-katilin" >[object Object]</a><a   href="/ar/faaliyetlerimiz" >[object Object]</a><a   href="/ar/ihracat-rehberi" >[object Object]</a><a class="active"  href="/ar/is-agi" >[object Object]</a><a   href="/ar/uyelerimiz" >[object Object]</a></div>
-  <div class="xbd27-desc">
+  <div class="p29e6-menu"><a class="p29e6-menu-link" href="/ar/bize-katilin">Bize Katılın</a><a class="p29e6-menu-link" href="/ar/faaliyetlerimiz">Faaliyetlerimiz</a><a class="p29e6-menu-link" href="/ar/ihracat-rehberi">İhracat Rehberi</a><a class="p29e6-menu-link active" href="/ar/is-agi">İş Ağı</a><a class="p29e6-menu-link" href="/ar/uyelerimiz">Üyelerimiz</a></div>
+  <div class="p29e6-desc">
     
-    <div class="xbd27-desc-body">
-            <img src="/page/wxalr76gjn/kgn90.jpg?v=wd3qf" width="100%" alt="{{title}}" />
+    <div class="p29e6-desc-body">
+            <img src="/page/wxalr76gjn/kgn90.jpg?v=xmcbf" width="100%" alt="{{title}}" />
     </div>
-    <div class="xbd27-body"></div>
+    <div class="p29e6-body"></div>
   </div>
 </div>
 
 <script>
-  document
-    .querySelector(".xbd27-menu-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".xbd27-menu").classList.toggle("active");
-      const icon = this.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
+  const menuToggleBtn = document.querySelector(".p29e6-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".p29e6-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".p29e6-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
     });
+  }
+
+  document.querySelectorAll(".p29e6-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".p29e6-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".p29e6-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".p29e6-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
 </script>
 
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-</head>
 </div>
   <div id="footer"><footer class="footer">
   <div class="waves">
@@ -224,7 +250,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=wd3qf"></script>
-<script src="/src/cookie.js?v=wd3qf"></script>
+<script type="text/javascript" src="/src/js.js?v=xmcbf"></script>
+<script src="/src/cookie.js?v=xmcbf"></script>
 
 </html>

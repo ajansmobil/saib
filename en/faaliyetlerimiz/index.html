@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=i8lls" />
-  <link rel="shortcut icon" href="/img/icon.png?v=i8lls" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=nslvj" />
+  <link rel="shortcut icon" href="/img/icon.png?v=nslvj" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=i8lls"></script>
-<link rel="stylesheet" href="style.css?v=i8lls">
+  <script type="text/javascript" src="/src/firebase.js?v=nslvj"></script>
+<link rel="stylesheet" href="style.css?v=nslvj">
 </head>
 
 <body>
-  <div id="header"><div class="ecpi9">
+  <div id="header"><div class="rdeu1">
 
-  <div class="ecpi9body">
-    <a href="/en/"><img src="/img/logo.svg?v=i8lls" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="rdeu1body">
+    <a href="/en/"><img src="/img/logo.svg?v=nslvj" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="ecpi9right">
-      <div class="ecpi9languages ">
+    <div class="rdeu1right">
+      <div class="rdeu1languages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="ecpi9contactlist">
+      <div class="rdeu1contactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined ecpi9-icon">phone</div>
+     <div class="material-symbols-outlined rdeu1-icon">phone</div>
      <div>
-      <div  class="ecpi9-title">undefined</div>
-      <div  class="ecpi9-spot">0342 341 41 31</div>
+      <div  class="rdeu1-title">undefined</div>
+      <div  class="rdeu1-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined ecpi9-icon">mail</div>
+     <div class="material-symbols-outlined rdeu1-icon">mail</div>
      <div>
-      <div  class="ecpi9-title">undefined</div>
-      <div  class="ecpi9-spot">info@saibdernegi.org</div>
+      <div  class="rdeu1-title">undefined</div>
+      <div  class="rdeu1-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined ecpi9-icon">location_on</div>
+     <div class="material-symbols-outlined rdeu1-icon">location_on</div>
      <div>
-      <div  class="ecpi9-title">undefined</div>
-      <div  class="ecpi9-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="rdeu1-title">undefined</div>
+      <div  class="rdeu1-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="ecpi9-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="rdeu1-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="ecpi9menubody">
-    <div class="ecpi9menu" id="menu-3-root">
-      <div class="ecpi9menulistbody">
-        <div class="ecpi9menulist"><a class="ecpi9menulist-menu" href="/en/">Home </a><div class="ecpi9menulist-menu " >
+  <div class="rdeu1menubody">
+    <div class="rdeu1menu" id="menu-3-root">
+      <div class="rdeu1menulistbody">
+        <div class="rdeu1menulist"><a class="rdeu1menulist-menu" href="/en/">Home </a><div class="rdeu1menulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="ecpi9menulist-menu " >
+    <div class="rdeu1menulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="ecpi9menulist-menu " >
+    <div class="rdeu1menulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="ecpi9menulist-menu " >
+    <div class="rdeu1menulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="ecpi9menulist-menu " >
+    <div class="rdeu1menulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -128,49 +139,64 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("ecpi9menu-open")) {
-        root.classList.remove("ecpi9menu-open");
+      if (root.classList.contains("rdeu1menu-open")) {
+        root.classList.remove("rdeu1menu-open");
       } else {
-        root.classList.add("ecpi9menu-open");
+        root.classList.add("rdeu1menu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="lpxr3-title f36">
+  <div id="content"><div class="x52ou-title f36">
   <span>undefined</span>
 </div>
-<div class="lpxr3">
-  <div class="lpxr3-menu-btn">
+<div class="x52ou">
+  <div class="x52ou-menu-btn">
     <span>Menu</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined x52ou-icon">menu</span>
   </div>
-  <div class="lpxr3-menu"><a   href="/en/bize-katilin" >[object Object]</a><a class="active"  href="/en/faaliyetlerimiz" >[object Object]</a><a   href="/en/ihracat-rehberi" >[object Object]</a><a   href="/en/is-agi" >[object Object]</a><a   href="/en/uyelerimiz" >[object Object]</a></div>
-  <div class="lpxr3-desc">
+  <div class="x52ou-menu"><a class="x52ou-menu-link" href="/en/bize-katilin">Bize Katılın</a><a class="x52ou-menu-link active" href="/en/faaliyetlerimiz">Faaliyetlerimiz</a><a class="x52ou-menu-link" href="/en/ihracat-rehberi">İhracat Rehberi</a><a class="x52ou-menu-link" href="/en/is-agi">İş Ağı</a><a class="x52ou-menu-link" href="/en/uyelerimiz">Üyelerimiz</a></div>
+  <div class="x52ou-desc">
     
-    <div class="lpxr3-desc-body">
-            <img src="/page/ztx6fcnzrt/r5vhs.jpg?v=i8lls" width="100%" alt="{{title}}" />
+    <div class="x52ou-desc-body">
+            <img src="/page/ztx6fcnzrt/r5vhs.jpg?v=nslvj" width="100%" alt="{{title}}" />
     </div>
-    <div class="lpxr3-body"></div>
+    <div class="x52ou-body"></div>
   </div>
 </div>
 
 <script>
-  document
-    .querySelector(".lpxr3-menu-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".lpxr3-menu").classList.toggle("active");
-      const icon = this.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
+  const menuToggleBtn = document.querySelector(".x52ou-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".x52ou-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".x52ou-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
     });
+  }
+
+  document.querySelectorAll(".x52ou-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".x52ou-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".x52ou-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".x52ou-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
 </script>
 
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-</head>
 </div>
   <div id="footer"><footer class="footer">
   <div class="waves">
@@ -224,7 +250,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=i8lls"></script>
-<script src="/src/cookie.js?v=i8lls"></script>
+<script type="text/javascript" src="/src/js.js?v=nslvj"></script>
+<script src="/src/cookie.js?v=nslvj"></script>
 
 </html>

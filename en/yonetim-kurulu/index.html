@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=txty7" />
-  <link rel="shortcut icon" href="/img/icon.png?v=txty7" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=e8qno" />
+  <link rel="shortcut icon" href="/img/icon.png?v=e8qno" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=txty7"></script>
-<link rel="stylesheet" href="style.css?v=txty7">
+  <script type="text/javascript" src="/src/firebase.js?v=e8qno"></script>
+<link rel="stylesheet" href="style.css?v=e8qno">
 </head>
 
 <body>
-  <div id="header"><div class="i7bex">
+  <div id="header"><div class="afgsw">
 
-  <div class="i7bexbody">
-    <a href="/en/"><img src="/img/logo.svg?v=txty7" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="afgswbody">
+    <a href="/en/"><img src="/img/logo.svg?v=e8qno" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="i7bexright">
-      <div class="i7bexlanguages ">
+    <div class="afgswright">
+      <div class="afgswlanguages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="i7bexcontactlist">
+      <div class="afgswcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined i7bex-icon">phone</div>
+     <div class="material-symbols-outlined afgsw-icon">phone</div>
      <div>
-      <div  class="i7bex-title">undefined</div>
-      <div  class="i7bex-spot">0342 341 41 31</div>
+      <div  class="afgsw-title">undefined</div>
+      <div  class="afgsw-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined i7bex-icon">mail</div>
+     <div class="material-symbols-outlined afgsw-icon">mail</div>
      <div>
-      <div  class="i7bex-title">undefined</div>
-      <div  class="i7bex-spot">info@saibdernegi.org</div>
+      <div  class="afgsw-title">undefined</div>
+      <div  class="afgsw-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined i7bex-icon">location_on</div>
+     <div class="material-symbols-outlined afgsw-icon">location_on</div>
      <div>
-      <div  class="i7bex-title">undefined</div>
-      <div  class="i7bex-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="afgsw-title">undefined</div>
+      <div  class="afgsw-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="i7bex-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="afgsw-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="i7bexmenubody">
-    <div class="i7bexmenu" id="menu-3-root">
-      <div class="i7bexmenulistbody">
-        <div class="i7bexmenulist"><a class="i7bexmenulist-menu" href="/en/">Home </a><div class="i7bexmenulist-menu " >
+  <div class="afgswmenubody">
+    <div class="afgswmenu" id="menu-3-root">
+      <div class="afgswmenulistbody">
+        <div class="afgswmenulist"><a class="afgswmenulist-menu" href="/en/">Home </a><div class="afgswmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="i7bexmenulist-menu " >
+    <div class="afgswmenulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="i7bexmenulist-menu " >
+    <div class="afgswmenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="i7bexmenulist-menu " >
+    <div class="afgswmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="i7bexmenulist-menu " >
+    <div class="afgswmenulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -128,46 +139,61 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("i7bexmenu-open")) {
-        root.classList.remove("i7bexmenu-open");
+      if (root.classList.contains("afgswmenu-open")) {
+        root.classList.remove("afgswmenu-open");
       } else {
-        root.classList.add("i7bexmenu-open");
+        root.classList.add("afgswmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="dn6gt-title f36">
+  <div id="content"><div class="bqn55-title f36">
   <span>undefined</span>
 </div>
-<div class="dn6gt">
-  <div class="dn6gt-menu-btn">
+<div class="bqn55">
+  <div class="bqn55-menu-btn">
     <span>Menu</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined bqn55-icon">menu</span>
   </div>
-  <div class="dn6gt-menu"><a   href="/en/baskanin-mesaji" >[object Object]</a><a class="active"  href="/en/yonetim-kurulu" >[object Object]</a><a   href="/en/saib-kimdir" >[object Object]</a><a   href="/en/misyon" >[object Object]</a><a   href="/en/vizyon" >[object Object]</a><a   href="/en/uyelik-bilgileri" >[object Object]</a><a   href="/en/gizlilik-politikasi" >[object Object]</a><a   href="/en/kisisel-veriler" >[object Object]</a><a   href="/en/kullanici-haklari" >[object Object]</a><a   href="/en/yasal-uyari" >[object Object]</a></div>
-  <div class="dn6gt-desc">
+  <div class="bqn55-menu"><a class="bqn55-menu-link" href="/en/baskanin-mesaji">Başkanın Mesajı</a><a class="bqn55-menu-link active" href="/en/yonetim-kurulu">Yönetim Kurulu</a></div>
+  <div class="bqn55-desc">
     
-    <div class="dn6gt-body"></div>
+    <div class="bqn55-body"></div>
   </div>
 </div>
 
 <script>
-  document
-    .querySelector(".dn6gt-menu-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".dn6gt-menu").classList.toggle("active");
-      const icon = this.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
+  const menuToggleBtn = document.querySelector(".bqn55-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".bqn55-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".bqn55-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
     });
+  }
+
+  document.querySelectorAll(".bqn55-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".bqn55-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".bqn55-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".bqn55-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
 </script>
 
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-</head>
 </div>
   <div id="footer"><footer class="footer">
   <div class="waves">
@@ -221,7 +247,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=txty7"></script>
-<script src="/src/cookie.js?v=txty7"></script>
+<script type="text/javascript" src="/src/js.js?v=e8qno"></script>
+<script src="/src/cookie.js?v=e8qno"></script>
 
 </html>

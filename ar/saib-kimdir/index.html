@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=jg2aw" />
-  <link rel="shortcut icon" href="/img/icon.png?v=jg2aw" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=getua" />
+  <link rel="shortcut icon" href="/img/icon.png?v=getua" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=jg2aw"></script>
-<link rel="stylesheet" href="style.css?v=jg2aw">
+  <script type="text/javascript" src="/src/firebase.js?v=getua"></script>
+<link rel="stylesheet" href="style.css?v=getua">
 </head>
 
 <body>
-  <div id="header"><div class="fcyaj">
+  <div id="header"><div class="t4m4u">
 
-  <div class="fcyajbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=jg2aw" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="t4m4ubody">
+    <a href="/ar/"><img src="/img/logo.svg?v=getua" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="fcyajright">
-      <div class="fcyajlanguages ">
+    <div class="t4m4uright">
+      <div class="t4m4ulanguages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="fcyajcontactlist">
+      <div class="t4m4ucontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined fcyaj-icon">phone</div>
+     <div class="material-symbols-outlined t4m4u-icon">phone</div>
      <div>
-      <div  class="fcyaj-title">undefined</div>
-      <div  class="fcyaj-spot">0342 341 41 31</div>
+      <div  class="t4m4u-title">undefined</div>
+      <div  class="t4m4u-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined fcyaj-icon">mail</div>
+     <div class="material-symbols-outlined t4m4u-icon">mail</div>
      <div>
-      <div  class="fcyaj-title">undefined</div>
-      <div  class="fcyaj-spot">info@saibdernegi.org</div>
+      <div  class="t4m4u-title">undefined</div>
+      <div  class="t4m4u-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined fcyaj-icon">location_on</div>
+     <div class="material-symbols-outlined t4m4u-icon">location_on</div>
      <div>
-      <div  class="fcyaj-title">undefined</div>
-      <div  class="fcyaj-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="t4m4u-title">undefined</div>
+      <div  class="t4m4u-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="fcyaj-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="t4m4u-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="fcyajmenubody">
-    <div class="fcyajmenu" id="menu-3-root">
-      <div class="fcyajmenulistbody">
-        <div class="fcyajmenulist"><a class="fcyajmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="fcyajmenulist-menu " >
+  <div class="t4m4umenubody">
+    <div class="t4m4umenu" id="menu-3-root">
+      <div class="t4m4umenulistbody">
+        <div class="t4m4umenulist"><a class="t4m4umenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="t4m4umenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="fcyajmenulist-menu " >
+    <div class="t4m4umenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="fcyajmenulist-menu " >
+    <div class="t4m4umenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="fcyajmenulist-menu " >
+    <div class="t4m4umenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="fcyajmenulist-menu " >
+    <div class="t4m4umenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -128,46 +139,61 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("fcyajmenu-open")) {
-        root.classList.remove("fcyajmenu-open");
+      if (root.classList.contains("t4m4umenu-open")) {
+        root.classList.remove("t4m4umenu-open");
       } else {
-        root.classList.add("fcyajmenu-open");
+        root.classList.add("t4m4umenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="b2262-title f36">
+  <div id="content"><div class="sd3a0-title f36">
   <span>undefined</span>
 </div>
-<div class="b2262">
-  <div class="b2262-menu-btn">
+<div class="sd3a0">
+  <div class="sd3a0-menu-btn">
     <span>قائمة الصفحات</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined sd3a0-icon">menu</span>
   </div>
-  <div class="b2262-menu"><a   href="/ar/baskanin-mesaji" >[object Object]</a><a   href="/ar/yonetim-kurulu" >[object Object]</a><a class="active"  href="/ar/saib-kimdir" >[object Object]</a><a   href="/ar/misyon" >[object Object]</a><a   href="/ar/vizyon" >[object Object]</a><a   href="/ar/uyelik-bilgileri" >[object Object]</a><a   href="/ar/gizlilik-politikasi" >[object Object]</a><a   href="/ar/kisisel-veriler" >[object Object]</a><a   href="/ar/kullanici-haklari" >[object Object]</a><a   href="/ar/yasal-uyari" >[object Object]</a></div>
-  <div class="b2262-desc">
+  <div class="sd3a0-menu"><a class="sd3a0-menu-link" href="/ar/baskanin-mesaji">Başkanın Mesajı</a><a class="sd3a0-menu-link" href="/ar/yonetim-kurulu">Yönetim Kurulu</a></div>
+  <div class="sd3a0-desc">
     
-    <div class="b2262-body"></div>
+    <div class="sd3a0-body"></div>
   </div>
 </div>
 
 <script>
-  document
-    .querySelector(".b2262-menu-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".b2262-menu").classList.toggle("active");
-      const icon = this.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
+  const menuToggleBtn = document.querySelector(".sd3a0-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".sd3a0-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".sd3a0-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
     });
+  }
+
+  document.querySelectorAll(".sd3a0-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".sd3a0-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".sd3a0-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".sd3a0-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
 </script>
 
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-</head>
 </div>
   <div id="footer"><footer class="footer">
   <div class="waves">
@@ -221,7 +247,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=jg2aw"></script>
-<script src="/src/cookie.js?v=jg2aw"></script>
+<script type="text/javascript" src="/src/js.js?v=getua"></script>
+<script src="/src/cookie.js?v=getua"></script>
 
 </html>

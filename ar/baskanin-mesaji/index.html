@@ -21,94 +21,105 @@
 
 
   <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=zrpsu" />
-  <link rel="shortcut icon" href="/img/icon.png?v=zrpsu" type="image/png" />
+  <link rel="stylesheet" href="/src/css.css?v=jfeyh" />
+  <link rel="shortcut icon" href="/img/icon.png?v=jfeyh" type="image/png" />
 
   <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
   <script src="/src/swiper-bundle.min.js"></script>
-  
+  <script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyCxiMseSYm9d32b-3Ddj9VJLH68KiTANDE",
+  authDomain: "saib-f1295.firebaseapp.com",
+  projectId: "saib-f1295",
+  storageBucket: "saib-f1295.firebasestorage.app",
+  messagingSenderId: "531536840125",
+  appId: "1:531536840125:web:37dd5d979a288ee78bbed4"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=zrpsu"></script>
-<link rel="stylesheet" href="style.css?v=zrpsu">
+  <script type="text/javascript" src="/src/firebase.js?v=jfeyh"></script>
+<link rel="stylesheet" href="style.css?v=jfeyh">
 </head>
 
 <body>
-  <div id="header"><div class="im6n6">
+  <div id="header"><div class="kjhkk">
 
-  <div class="im6n6body">
-    <a href="/ar/"><img src="/img/logo.svg?v=zrpsu" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="kjhkkbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=jfeyh" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="im6n6right">
-      <div class="im6n6languages ">
+    <div class="kjhkkright">
+      <div class="kjhkklanguages ">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"  alt="tr"></a></li><li><a href="/en/"><img height="25" src="/src/lang/en.png"  alt="en"></a></li><li><a href="/ar/"><img height="25" src="/src/lang/ar.png"  alt="ar"></a></li>
         </ul>
       </div>
-      <div class="im6n6contactlist">
+      <div class="kjhkkcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined im6n6-icon">phone</div>
+     <div class="material-symbols-outlined kjhkk-icon">phone</div>
      <div>
-      <div  class="im6n6-title">undefined</div>
-      <div  class="im6n6-spot">0342 341 41 31</div>
+      <div  class="kjhkk-title">undefined</div>
+      <div  class="kjhkk-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined im6n6-icon">mail</div>
+     <div class="material-symbols-outlined kjhkk-icon">mail</div>
      <div>
-      <div  class="im6n6-title">undefined</div>
-      <div  class="im6n6-spot">info@saibdernegi.org</div>
+      <div  class="kjhkk-title">undefined</div>
+      <div  class="kjhkk-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined im6n6-icon">location_on</div>
+     <div class="material-symbols-outlined kjhkk-icon">location_on</div>
      <div>
-      <div  class="im6n6-title">undefined</div>
-      <div  class="im6n6-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="kjhkk-title">undefined</div>
+      <div  class="kjhkk-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="im6n6-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="kjhkk-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="im6n6menubody">
-    <div class="im6n6menu" id="menu-3-root">
-      <div class="im6n6menulistbody">
-        <div class="im6n6menulist"><a class="im6n6menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="im6n6menulist-menu " >
+  <div class="kjhkkmenubody">
+    <div class="kjhkkmenu" id="menu-3-root">
+      <div class="kjhkkmenulistbody">
+        <div class="kjhkkmenulist"><a class="kjhkkmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="kjhkkmenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="im6n6menulist-menu " >
+    <div class="kjhkkmenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="im6n6menulist-menu " >
+    <div class="kjhkkmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="im6n6menulist-menu " >
+    <div class="kjhkkmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="im6n6menulist-menu " >
+    <div class="kjhkkmenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -128,46 +139,61 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("im6n6menu-open")) {
-        root.classList.remove("im6n6menu-open");
+      if (root.classList.contains("kjhkkmenu-open")) {
+        root.classList.remove("kjhkkmenu-open");
       } else {
-        root.classList.add("im6n6menu-open");
+        root.classList.add("kjhkkmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="ezyht-title f36">
+  <div id="content"><div class="ri6mz-title f36">
   <span>undefined</span>
 </div>
-<div class="ezyht">
-  <div class="ezyht-menu-btn">
+<div class="ri6mz">
+  <div class="ri6mz-menu-btn">
     <span>قائمة الصفحات</span>
-    <i class="fas fa-bars"></i>
+    <span class="material-symbols-outlined ri6mz-icon">menu</span>
   </div>
-  <div class="ezyht-menu"><a class="active"  href="/ar/baskanin-mesaji" >[object Object]</a><a   href="/ar/yonetim-kurulu" >[object Object]</a><a   href="/ar/saib-kimdir" >[object Object]</a><a   href="/ar/misyon" >[object Object]</a><a   href="/ar/vizyon" >[object Object]</a><a   href="/ar/uyelik-bilgileri" >[object Object]</a><a   href="/ar/gizlilik-politikasi" >[object Object]</a><a   href="/ar/kisisel-veriler" >[object Object]</a><a   href="/ar/kullanici-haklari" >[object Object]</a><a   href="/ar/yasal-uyari" >[object Object]</a></div>
-  <div class="ezyht-desc">
+  <div class="ri6mz-menu"><a class="ri6mz-menu-link active" href="/ar/baskanin-mesaji">Başkanın Mesajı</a><a class="ri6mz-menu-link" href="/ar/yonetim-kurulu">Yönetim Kurulu</a></div>
+  <div class="ri6mz-desc">
     
-    <div class="ezyht-body"></div>
+    <div class="ri6mz-body"></div>
   </div>
 </div>
 
 <script>
-  document
-    .querySelector(".ezyht-menu-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".ezyht-menu").classList.toggle("active");
-      const icon = this.querySelector("i");
-      icon.classList.toggle("fa-bars");
-      icon.classList.toggle("fa-times");
+  const menuToggleBtn = document.querySelector(".ri6mz-menu-btn");
+  if (menuToggleBtn) {
+    menuToggleBtn.addEventListener("click", function () {
+      const menu = document.querySelector(".ri6mz-menu");
+      if (!menu) return;
+      const isOpen = menu.classList.toggle("active");
+      const icon = this.querySelector(".ri6mz-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "close" : "menu";
+      }
     });
+  }
+
+  document.querySelectorAll(".ri6mz-top").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const group = this.closest(".ri6mz-menu-group");
+      if (!group) return;
+      const sub = group.querySelector(".ri6mz-sub");
+      const isOpen = group.classList.toggle("open");
+      this.classList.toggle("active", isOpen);
+      const icon = this.querySelector(".ri6mz-icon");
+      if (icon) {
+        icon.textContent = isOpen ? "expand_less" : "expand_more";
+      }
+      if (sub) {
+        sub.classList.toggle("show", isOpen);
+      }
+    });
+  });
 </script>
 
-<head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-</head>
 </div>
   <div id="footer"><footer class="footer">
   <div class="waves">
@@ -221,7 +247,7 @@
 
 
 
-<script type="text/javascript" src="/src/js.js?v=zrpsu"></script>
-<script src="/src/cookie.js?v=zrpsu"></script>
+<script type="text/javascript" src="/src/js.js?v=jfeyh"></script>
+<script src="/src/cookie.js?v=jfeyh"></script>
 
 </html>

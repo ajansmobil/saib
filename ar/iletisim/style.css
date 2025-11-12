@@ -1,10 +1,10 @@
 
-  .ifiucmenulist-menu:hover .dropdown-content-ifiuc {
+  .ns442menulist-menu:hover .dropdown-content-ns442 {
     display: flex;
     flex-direction: column;
   }
 
-  .ifiucmenulist-menu {
+  .ns442menulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .ifiucmenulist-menu:hover {
+  .ns442menulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .ifiucmenulist-menu:hover>a {
+  .ns442menulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .ifiucmenulist-menu>a {
+  .ns442menulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-ifiuc {
+  .dropdown-content-active-ns442 {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-ifiuc>a {
+  .dropdown-content-active-ns442>a {
     color: #000 !important;
   }
 
-  .dropdown-content-ifiuc {
+  .dropdown-content-ns442 {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-ifiuc>a {
+  .dropdown-content-ns442>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-ifiuc>a:hover {
+  .dropdown-content-ns442>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .ifiucbody {
+  .ns442body {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .ifiucbody > a {
+  .ns442body > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .ifiucright {
+  .ns442right {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .ifiuclanguages {
+  .ns442languages {
     margin: -5px 0px -5px 0px;
   }
 
-  .ifiuclanguages.lang-hidden {
+  .ns442languages.lang-hidden {
     display: none;
   }
 
-  .ifiuclanguages ul {
+  .ns442languages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,18 +117,18 @@
     list-style: none;
   }
 
-  .ifiuclanguages li {
+  .ns442languages li {
     list-style: none;
   }
 
-  .ifiuccontactlist {
+  .ns442contactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .ifiuccontactlist a {
+  .ns442contactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -136,17 +136,17 @@
     color: inherit;
   }
 
-  .ifiuc-spot {
+  .ns442-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .ifiuc-icon {
+  .ns442-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .ifiuc {
+  .ns442 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -154,7 +154,7 @@
     justify-content: center;
   }
 
-  .ifiucmenu {
+  .ns442menu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -162,7 +162,7 @@
     position: relative;
   }
 
-  .ifiucmenubody {
+  .ns442menubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -171,7 +171,7 @@
   }
 
 
-  .ifiucmenulist {
+  .ns442menulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -182,11 +182,11 @@
     box-sizing: border-box;
   }
   
-  .ifiucmenulistbody {
+  .ns442menulistbody {
     width: 100%;
   }
 
-  .ifiuc-mobile-toggle {
+  .ns442-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -198,16 +198,16 @@
     font-size: 20px;
   }
 
-  .ifiuc-mobile-toggle span {
+  .ns442-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .ifiucmenu {
+    .ns442menu {
       overflow-x: auto;
     }
 
-    .ifiucmenulist {
+    .ns442menulist {
       flex-direction: row;
     }
 
@@ -215,7 +215,7 @@
       width: 200px;
     }
 
-    .ifiucbody {
+    .ns442body {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -223,37 +223,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .ifiucbody {
+    .ns442body {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .ifiucright {
+    .ns442right {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .ifiuccontactlist {
+    .ns442contactlist {
       display: none;
     }
 
-    .ifiuclanguages.lang-hidden {
+    .ns442languages.lang-hidden {
       display: none;
     }
 
-    .ifiuclanguages {
+    .ns442languages {
       display: flex;
     }
 
-    .ifiuc-mobile-toggle {
+    .ns442-mobile-toggle {
       display: inline-flex;
     }
 
-    .ifiucmenulist {
+    .ns442menulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -261,17 +261,17 @@
       padding: 12px;
     }
 
-    .ifiucmenu.ifiucmenu-open .ifiucmenulist {
+    .ns442menu.ns442menu-open .ns442menulist {
       display: flex;
     }
 
-    .ifiucmenulist-menu {
+    .ns442menulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-ifiuc {
+    .dropdown-content-ns442 {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -279,14 +279,14 @@
       width: 100%;
     }
 
-    .dropdown-content-ifiuc>a {
+    .dropdown-content-ns442>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
   }
 
 
-  .cvz26 {
+  .bv9qs {
     width: 100%;
     margin: 30px 0px 30px 0px;
     display: flex;
@@ -295,14 +295,14 @@
     position: relative;
   }
 
-  .cvz26containertitle {
+  .bv9qscontainertitle {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
   }
 
-  .cvz26containerlist {
+  .bv9qscontainerlist {
     padding: 10px;
     display: flex;
     border-radius: 8px;
@@ -311,26 +311,26 @@
     transition: background-color 0.3s ease;
   }
 
-  .cvz26containerlist>div {
+  .bv9qscontainerlist>div {
     display: flex;
     align-items: center;
     font-size: 20px;
     color: #444;
   }
 
-  .cvz26containerlist:hover {
+  .bv9qscontainerlist:hover {
     background-color: #f9f9f9;
     border-bottom-color: #1e3046;
   }
 
-  .cvz26container {
+  .bv9qscontainer {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
   }
 
-  .cvz26containerbody {
+  .bv9qscontainerbody {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -340,7 +340,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .cvz26body {
+  .bv9qsbody {
     width: calc(var(--max) - 40px);
     background-color: #ebebeb;
     border: 1px solid #dedede;
@@ -348,19 +348,19 @@
     padding: 20px;
   }
 
-  .cvz26containerlist>span {
+  .bv9qscontainerlist>span {
     font-size: 24px;
     color: #1e3046;
   }
 
   @media screen and (max-width: 1024px) {
-    .cvz26body {
+    .bv9qsbody {
       width: 100%;
       padding: 20px;
       flex-direction: column;
     }
 
-    .cvz26containerbody {
+    .bv9qscontainerbody {
       padding: 15px;
     }
   }
@@ -390,13 +390,13 @@
       transform: scale(1);
     }
   }
-  .g5rm4-body {
+  .o9pic-body {
     display: flex;
     align-items: center;
     justify-content: center;
     width: var(--max);
   }
-  .g5rm4-body-chile {
+  .o9pic-body-chile {
     padding: 20px;
     display: flex;
     align-items: top;
@@ -404,10 +404,10 @@
     flex-direction: column;
     position: absolute;
   }
-  .g5rm4-body-chile > div {
+  .o9pic-body-chile > div {
     width: 100% !important;
   }
-  .g5rm42 {
+  .o9pic2 {
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -418,21 +418,21 @@
     overflow: hidden;
     cursor: pointer;
   }
-  .g5rm4 {
+  .o9pic {
     display: flex;
     flex-direction: column;
   }
-  .g5rm4 > svg {
+  .o9pic > svg {
     width: 100vw;
   }
-  .g5rm4botton {
+  .o9picbotton {
     transform: scaleY(-1);
     margin-bottom: -1px;
   }
-  .g5rm4-svg {
+  .o9pic-svg {
     fill: #fff;
   }
-  .g5rm4-bg {
+  .o9pic-bg {
     background-image: url("/img/mct10p/map.jpg?v={{random}}") !important;
     background-size: cover;
     background-position: center center;
