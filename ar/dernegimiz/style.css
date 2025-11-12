@@ -1,10 +1,10 @@
 
-  .km8ktmenulist-menu:hover .dropdown-content-km8kt {
+  .ioogjmenulist-menu:hover .dropdown-content-ioogj {
     display: flex;
     flex-direction: column;
   }
 
-  .km8ktmenulist-menu {
+  .ioogjmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .km8ktmenulist-menu:hover {
+  .ioogjmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .km8ktmenulist-menu:hover>a {
+  .ioogjmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .km8ktmenulist-menu>a {
+  .ioogjmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-km8kt {
+  .dropdown-content-active-ioogj {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-km8kt>a {
+  .dropdown-content-active-ioogj>a {
     color: #000 !important;
   }
 
-  .dropdown-content-km8kt {
+  .dropdown-content-ioogj {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-km8kt>a {
+  .dropdown-content-ioogj>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-km8kt>a:hover {
+  .dropdown-content-ioogj>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .km8ktbody {
+  .ioogjbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .km8ktbody > a {
+  .ioogjbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .km8ktright {
+  .ioogjright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .km8ktlanguages {
+  .ioogjlanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .km8ktlanguages.lang-hidden {
+  .ioogjlanguages.lang-hidden {
     display: none;
   }
 
-  .km8ktlanguages ul {
+  .ioogjlanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,18 +117,46 @@
     list-style: none;
   }
 
-  .km8ktlanguages li {
+  .ioogjlanguages li {
     list-style: none;
+    border: 1px solid #111;
+    padding: 5px;
+    aspect-ratio: 1/1;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
   }
 
-  .km8ktcontactlist {
+  .ioogjlanguages li a {
+    color: #fff !important;
+  }
+
+  .ioogjlanguages li a:hover {
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  .ioogjlanguages li:hover {
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  .ioogjcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .km8ktcontactlist a {
+  .ioogjcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -136,17 +164,17 @@
     color: inherit;
   }
 
-  .km8kt-spot {
+  .ioogj-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .km8kt-icon {
+  .ioogj-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .km8kt {
+  .ioogj {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -154,7 +182,7 @@
     justify-content: center;
   }
 
-  .km8ktmenu {
+  .ioogjmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -162,7 +190,7 @@
     position: relative;
   }
 
-  .km8ktmenubody {
+  .ioogjmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -171,7 +199,7 @@
   }
 
 
-  .km8ktmenulist {
+  .ioogjmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -182,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .km8ktmenulistbody {
+  .ioogjmenulistbody {
     width: 100%;
   }
 
-  .km8kt-mobile-toggle {
+  .ioogj-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -198,16 +226,16 @@
     font-size: 20px;
   }
 
-  .km8kt-mobile-toggle span {
+  .ioogj-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .km8ktmenu {
+    .ioogjmenu {
       overflow-x: auto;
     }
 
-    .km8ktmenulist {
+    .ioogjmenulist {
       flex-direction: row;
     }
 
@@ -215,7 +243,7 @@
       width: 200px;
     }
 
-    .km8ktbody {
+    .ioogjbody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -223,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .km8ktbody {
+    .ioogjbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .km8ktright {
+    .ioogjright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .km8ktcontactlist {
+    .ioogjcontactlist {
       display: none;
     }
 
-    .km8ktlanguages.lang-hidden {
+    .ioogjlanguages.lang-hidden {
       display: none;
     }
 
-    .km8ktlanguages {
+    .ioogjlanguages {
       display: flex;
     }
 
-    .km8kt-mobile-toggle {
+    .ioogj-mobile-toggle {
       display: inline-flex;
     }
 
-    .km8ktmenulist {
+    .ioogjmenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -261,17 +289,17 @@
       padding: 12px;
     }
 
-    .km8ktmenu.km8ktmenu-open .km8ktmenulist {
+    .ioogjmenu.ioogjmenu-open .ioogjmenulist {
       display: flex;
     }
 
-    .km8ktmenulist-menu {
+    .ioogjmenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-km8kt {
+    .dropdown-content-ioogj {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -279,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-km8kt>a {
+    .dropdown-content-ioogj>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }

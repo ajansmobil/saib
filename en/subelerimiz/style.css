@@ -1,10 +1,10 @@
 
-  .rcr8smenulist-menu:hover .dropdown-content-rcr8s {
+  .jwu8bmenulist-menu:hover .dropdown-content-jwu8b {
     display: flex;
     flex-direction: column;
   }
 
-  .rcr8smenulist-menu {
+  .jwu8bmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .rcr8smenulist-menu:hover {
+  .jwu8bmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .rcr8smenulist-menu:hover>a {
+  .jwu8bmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .rcr8smenulist-menu>a {
+  .jwu8bmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-rcr8s {
+  .dropdown-content-active-jwu8b {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-rcr8s>a {
+  .dropdown-content-active-jwu8b>a {
     color: #000 !important;
   }
 
-  .dropdown-content-rcr8s {
+  .dropdown-content-jwu8b {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-rcr8s>a {
+  .dropdown-content-jwu8b>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-rcr8s>a:hover {
+  .dropdown-content-jwu8b>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .rcr8sbody {
+  .jwu8bbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .rcr8sbody > a {
+  .jwu8bbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .rcr8sright {
+  .jwu8bright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .rcr8slanguages {
+  .jwu8blanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .rcr8slanguages.lang-hidden {
+  .jwu8blanguages.lang-hidden {
     display: none;
   }
 
-  .rcr8slanguages ul {
+  .jwu8blanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,18 +117,46 @@
     list-style: none;
   }
 
-  .rcr8slanguages li {
+  .jwu8blanguages li {
     list-style: none;
+    border: 1px solid #111;
+    padding: 5px;
+    aspect-ratio: 1/1;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
   }
 
-  .rcr8scontactlist {
+  .jwu8blanguages li a {
+    color: #fff !important;
+  }
+
+  .jwu8blanguages li a:hover {
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  .jwu8blanguages li:hover {
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  .jwu8bcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .rcr8scontactlist a {
+  .jwu8bcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -136,17 +164,17 @@
     color: inherit;
   }
 
-  .rcr8s-spot {
+  .jwu8b-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .rcr8s-icon {
+  .jwu8b-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .rcr8s {
+  .jwu8b {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -154,7 +182,7 @@
     justify-content: center;
   }
 
-  .rcr8smenu {
+  .jwu8bmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -162,7 +190,7 @@
     position: relative;
   }
 
-  .rcr8smenubody {
+  .jwu8bmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -171,7 +199,7 @@
   }
 
 
-  .rcr8smenulist {
+  .jwu8bmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -182,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .rcr8smenulistbody {
+  .jwu8bmenulistbody {
     width: 100%;
   }
 
-  .rcr8s-mobile-toggle {
+  .jwu8b-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -198,16 +226,16 @@
     font-size: 20px;
   }
 
-  .rcr8s-mobile-toggle span {
+  .jwu8b-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .rcr8smenu {
+    .jwu8bmenu {
       overflow-x: auto;
     }
 
-    .rcr8smenulist {
+    .jwu8bmenulist {
       flex-direction: row;
     }
 
@@ -215,7 +243,7 @@
       width: 200px;
     }
 
-    .rcr8sbody {
+    .jwu8bbody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -223,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .rcr8sbody {
+    .jwu8bbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .rcr8sright {
+    .jwu8bright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .rcr8scontactlist {
+    .jwu8bcontactlist {
       display: none;
     }
 
-    .rcr8slanguages.lang-hidden {
+    .jwu8blanguages.lang-hidden {
       display: none;
     }
 
-    .rcr8slanguages {
+    .jwu8blanguages {
       display: flex;
     }
 
-    .rcr8s-mobile-toggle {
+    .jwu8b-mobile-toggle {
       display: inline-flex;
     }
 
-    .rcr8smenulist {
+    .jwu8bmenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -261,17 +289,17 @@
       padding: 12px;
     }
 
-    .rcr8smenu.rcr8smenu-open .rcr8smenulist {
+    .jwu8bmenu.jwu8bmenu-open .jwu8bmenulist {
       display: flex;
     }
 
-    .rcr8smenulist-menu {
+    .jwu8bmenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-rcr8s {
+    .dropdown-content-jwu8b {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -279,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-rcr8s>a {
+    .dropdown-content-jwu8b>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }

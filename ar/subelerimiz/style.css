@@ -1,10 +1,10 @@
 
-  .co3p8menulist-menu:hover .dropdown-content-co3p8 {
+  .ltxd1menulist-menu:hover .dropdown-content-ltxd1 {
     display: flex;
     flex-direction: column;
   }
 
-  .co3p8menulist-menu {
+  .ltxd1menulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .co3p8menulist-menu:hover {
+  .ltxd1menulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .co3p8menulist-menu:hover>a {
+  .ltxd1menulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .co3p8menulist-menu>a {
+  .ltxd1menulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-co3p8 {
+  .dropdown-content-active-ltxd1 {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-co3p8>a {
+  .dropdown-content-active-ltxd1>a {
     color: #000 !important;
   }
 
-  .dropdown-content-co3p8 {
+  .dropdown-content-ltxd1 {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-co3p8>a {
+  .dropdown-content-ltxd1>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-co3p8>a:hover {
+  .dropdown-content-ltxd1>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .co3p8body {
+  .ltxd1body {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .co3p8body > a {
+  .ltxd1body > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .co3p8right {
+  .ltxd1right {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .co3p8languages {
+  .ltxd1languages {
     margin: -5px 0px -5px 0px;
   }
 
-  .co3p8languages.lang-hidden {
+  .ltxd1languages.lang-hidden {
     display: none;
   }
 
-  .co3p8languages ul {
+  .ltxd1languages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,18 +117,46 @@
     list-style: none;
   }
 
-  .co3p8languages li {
+  .ltxd1languages li {
     list-style: none;
+    border: 1px solid #111;
+    padding: 5px;
+    aspect-ratio: 1/1;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
   }
 
-  .co3p8contactlist {
+  .ltxd1languages li a {
+    color: #fff !important;
+  }
+
+  .ltxd1languages li a:hover {
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  .ltxd1languages li:hover {
+    border: 1px solid #000;
+    color: #000;
+  }
+
+  .ltxd1contactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .co3p8contactlist a {
+  .ltxd1contactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -136,17 +164,17 @@
     color: inherit;
   }
 
-  .co3p8-spot {
+  .ltxd1-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .co3p8-icon {
+  .ltxd1-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .co3p8 {
+  .ltxd1 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -154,7 +182,7 @@
     justify-content: center;
   }
 
-  .co3p8menu {
+  .ltxd1menu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -162,7 +190,7 @@
     position: relative;
   }
 
-  .co3p8menubody {
+  .ltxd1menubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -171,7 +199,7 @@
   }
 
 
-  .co3p8menulist {
+  .ltxd1menulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -182,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .co3p8menulistbody {
+  .ltxd1menulistbody {
     width: 100%;
   }
 
-  .co3p8-mobile-toggle {
+  .ltxd1-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -198,16 +226,16 @@
     font-size: 20px;
   }
 
-  .co3p8-mobile-toggle span {
+  .ltxd1-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .co3p8menu {
+    .ltxd1menu {
       overflow-x: auto;
     }
 
-    .co3p8menulist {
+    .ltxd1menulist {
       flex-direction: row;
     }
 
@@ -215,7 +243,7 @@
       width: 200px;
     }
 
-    .co3p8body {
+    .ltxd1body {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -223,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .co3p8body {
+    .ltxd1body {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .co3p8right {
+    .ltxd1right {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .co3p8contactlist {
+    .ltxd1contactlist {
       display: none;
     }
 
-    .co3p8languages.lang-hidden {
+    .ltxd1languages.lang-hidden {
       display: none;
     }
 
-    .co3p8languages {
+    .ltxd1languages {
       display: flex;
     }
 
-    .co3p8-mobile-toggle {
+    .ltxd1-mobile-toggle {
       display: inline-flex;
     }
 
-    .co3p8menulist {
+    .ltxd1menulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -261,17 +289,17 @@
       padding: 12px;
     }
 
-    .co3p8menu.co3p8menu-open .co3p8menulist {
+    .ltxd1menu.ltxd1menu-open .ltxd1menulist {
       display: flex;
     }
 
-    .co3p8menulist-menu {
+    .ltxd1menulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-co3p8 {
+    .dropdown-content-ltxd1 {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -279,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-co3p8>a {
+    .dropdown-content-ltxd1>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
