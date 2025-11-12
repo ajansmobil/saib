@@ -249,8 +249,18 @@
         "category": "",
         "aspect-ratio": "3 / 2",
         "margin": "0px 0px 0px 0px",
-        "max": 20
-      }
+        "max": 20,
+        "readMore": {
+          "tr": "Haberi Oku",
+          "en": "Read More",
+          "ar": "اقرأ المزيد"
+        }
+      },
+      "version": "1.0.0",
+      "icon": "newsmode",
+      "type": "module",
+      "author": "Code Matrix",
+      "data": {}
     },
     {
       "name": "Page Haber",
@@ -267,244 +277,713 @@
     },
     {
       "index": 10,
+      "name": "Üyelerimiz",
+      "path": "module-slider-list",
+      "local": "body",
+      "category": "slider",
+      "id": "nm9rmo",
+      "desing": {
+        "name": {
+          "tr": "Üyelerimiz",
+          "en": "",
+          "ar": ""
+        },
+        "size": 6,
+        "button": "true",
+        "aspect-ratio": "1/1",
+        "color1": "#fff",
+        "color2": "#e9e9e9"
+      },
+      "data": [
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        },
+        {
+          "img": "saib.jpg"
+        }
+      ],
+      "version": "1.0.0",
+      "icon": "view_carousel"
+    },
+    {
+      "index": 11,
       "name": "Dernek Üyelik Formu",
       "path": "uyelikform",
       "local": "body",
       "category": "form",
-      "id": "xunfad",
-      "version": "1.0.0",
+      "id": "vd8h6j",
+      "version": "1.1.0",
       "icon": "approval_delegation",
       "desing": {
-        "color": "#0d2f66",
-        "bgcolor": "#f2f5fb",
         "name": {
           "tr": "Üyelik Başvuru Formu",
+          "en": "Membership Application Form",
+          "ar": ""
+        },
+        "colors": {
+          "primary": "#0d2f66",
+          "primaryDark": "#153b7a",
+          "background": "#f2f5fb",
+          "surface": "#ffffff",
+          "border": "#c6d2eb",
+          "accent": "#4c5d86",
+          "muted": "#5b6c8f",
+          "textPrimary": "#1c2c4f",
+          "textSecondary": "#58698f",
+          "success": "#1f8f4d",
+          "error": "#d93025",
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "texts": {
+          "organization": {
+            "tr": "Uluslararası İş İnsanları Derneği",
+            "en": "International Business Association"
+          },
+          "formTitle": {
+            "tr": "Üyelik Başvuru Formu",
+            "en": "Membership Application Form"
+          },
+          "formSubtitle": {
+            "tr": "Lütfen kişisel ve firma bilgilerinizi eksiksiz doldurunuz.",
+            "en": "Please fill in your personal and company information completely."
+          },
+          "formFooter": {
+            "tr": "Formu kaydettikten sonra dernek yönetimi başvurunuzu değerlendirecektir.",
+            "en": "After submitting the form, the association board will review your application."
+          },
+          "submit": {
+            "tr": "Başvuruyu Gönder",
+            "en": "Submit Application"
+          },
+          "submitting": {
+            "tr": "Başvurunuz gönderiliyor...",
+            "en": "Submitting your application..."
+          },
+          "success": {
+            "tr": "Başvurunuz başarıyla alındı. En kısa sürede sizinle iletişime geçilecektir.",
+            "en": "Your application has been received. We will contact you as soon as possible."
+          },
+          "error": {
+            "tr": "Başvurunuz gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+            "en": "An error occurred while sending your application. Please try again."
+          },
+          "loginRequired": {
+            "tr": "Başvuru göndermek için giriş yapmalısınız.",
+            "en": "You need to sign in to submit the application."
+          },
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "firebase": {
+          "collection": "membershipApplications",
+          "requireAuth": false,
+          "statusField": "status",
+          "defaultStatus": "new",
+          "tr": "",
           "en": "",
           "ar": ""
         }
       },
-      "data": {
-        "organization": "Uluslararası İş İnsanları Derneği",
-        "formTitle": "Üyelik Başvuru Formu",
-        "formSubtitle": "Lütfen kişisel ve firma bilgilerinizi eksiksiz doldurunuz.",
-        "formFooter": "Formu doldurup imzaladıktan sonra dernek merkezi ile paylaşınız.",
-        "sections": [
-          {
-            "title": "Nüfus ile İlgili Bilgiler",
-            "rows": [
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "Ad Soyad"
-                  },
-                  {
-                    "type": "line",
-                    "label": "TC Kimlik No"
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "Doğum Tarihi",
-                    "hint": "(Gün-Ay-Yıl)"
-                  },
-                  {
-                    "type": "line",
-                    "label": "Doğum Yeri"
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "Nüfusa Kayıtlı Olduğunuz İl"
-                  },
-                  {
-                    "type": "line",
-                    "label": "İlçe"
-                  }
-                ]
-              }
-            ]
+      "data": [
+        {
+          "type": "section",
+          "id": "personal",
+          "title": {
+            "tr": "Nüfus ile İlgili Bilgiler",
+            "en": "Personal Information"
           },
-          {
-            "title": "Öğrenim ile İlgili Bilgiler",
-            "rows": [
-              {
-                "columns": [
-                  {
-                    "type": "checkbox-list",
-                    "label": "Öğrenim Durumu",
-                    "columns": 3,
-                    "options": [
-                      "İlkokul",
-                      "Ortaokul",
-                      "Lise",
-                      "Lisans",
-                      "Lisans Üstü"
-                    ]
+          "rows": [
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "fullName",
+                  "label": {
+                    "tr": "Ad Soyad",
+                    "en": "Full Name"
                   },
-                  {
-                    "type": "line",
-                    "label": "Okul"
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "Yabancı Dil"
+                  "placeholder": {
+                    "tr": "Adınızı ve soyadınızı giriniz",
+                    "en": "Enter your full name"
                   },
-                  {
-                    "type": "checkbox-list",
-                    "label": "Seviye",
-                    "columns": 3,
-                    "options": [
-                      "Orta",
-                      "İyi",
-                      "Çok İyi"
-                    ]
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "İkinci Yabancı Dil"
+                  "required": true
+                },
+                {
+                  "type": "text",
+                  "name": "identityNumber",
+                  "label": {
+                    "tr": "TC Kimlik No",
+                    "en": "National ID Number"
                   },
-                  {
-                    "type": "checkbox-list",
-                    "label": "Seviye",
-                    "columns": 3,
-                    "options": [
-                      "Orta",
-                      "İyi",
-                      "Çok İyi"
-                    ]
-                  }
-                ]
-              }
-            ]
+                  "placeholder": {
+                    "tr": "11 haneli kimlik numarası",
+                    "en": "11-digit national ID number"
+                  },
+                  "maxLength": 11,
+                  "required": true
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "birthDate",
+                  "inputType": "date",
+                  "label": {
+                    "tr": "Doğum Tarihi",
+                    "en": "Date of Birth"
+                  },
+                  "placeholder": {
+                    "tr": "Gün-Ay-Yıl",
+                    "en": "Day-Month-Year"
+                  },
+                  "required": true
+                },
+                {
+                  "type": "text",
+                  "name": "birthPlace",
+                  "label": {
+                    "tr": "Doğum Yeri",
+                    "en": "Place of Birth"
+                  },
+                  "placeholder": {
+                    "tr": "Şehir / Ülke",
+                    "en": "City / Country"
+                  },
+                  "required": true
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "registeredProvince",
+                  "label": {
+                    "tr": "Nüfusa Kayıtlı Olduğunuz İl",
+                    "en": "Registered Province"
+                  },
+                  "placeholder": {
+                    "tr": "İl adı",
+                    "en": "Province name"
+                  },
+                  "required": true
+                },
+                {
+                  "type": "text",
+                  "name": "registeredDistrict",
+                  "label": {
+                    "tr": "İlçe",
+                    "en": "District"
+                  },
+                  "placeholder": {
+                    "tr": "İlçe adı",
+                    "en": "District name"
+                  },
+                  "required": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "education",
+          "title": {
+            "tr": "Öğrenim ile İlgili Bilgiler",
+            "en": "Education Information"
           },
-          {
-            "title": "Firmanıza Ait Bilgiler",
-            "rows": [
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "Firmanızın Adı"
+          "rows": [
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "checkbox-list",
+                  "name": "educationLevels",
+                  "columns": 3,
+                  "label": {
+                    "tr": "Öğrenim Durumu",
+                    "en": "Education Level"
                   },
-                  {
-                    "type": "line-small",
-                    "label": "Kuruluş Yılı"
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "subheading",
-                    "label": "İletişim Bilgileri"
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "line-long",
-                    "label": "Adres"
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "Web Site"
+                  "options": [
+                    {
+                      "value": "primary",
+                      "label": {
+                        "tr": "İlkokul",
+                        "en": "Primary School"
+                      }
+                    },
+                    {
+                      "value": "secondary",
+                      "label": {
+                        "tr": "Ortaokul",
+                        "en": "Middle School"
+                      }
+                    },
+                    {
+                      "value": "highschool",
+                      "label": {
+                        "tr": "Lise",
+                        "en": "High School"
+                      }
+                    },
+                    {
+                      "value": "bachelor",
+                      "label": {
+                        "tr": "Lisans",
+                        "en": "Bachelor's"
+                      }
+                    },
+                    {
+                      "value": "postgraduate",
+                      "label": {
+                        "tr": "Lisans Üstü",
+                        "en": "Postgraduate"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "graduatedSchool",
+                  "label": {
+                    "tr": "Okul",
+                    "en": "School"
                   },
-                  {
-                    "type": "line",
-                    "label": "Cep No"
+                  "placeholder": {
+                    "tr": "Mezun olduğunuz kurum",
+                    "en": "Institution you graduated from"
                   }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "checkbox-list",
-                    "label": "Sektörünüz",
-                    "columns": 3,
-                    "options": [
-                      "Sanayi",
-                      "Hizmetler",
-                      "Tarım",
-                      "Finansal",
-                      "Yüklenici (Contractor)",
-                      "Diğer"
-                    ]
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "checkbox-list",
-                    "label": "Faaliyet Tipi",
-                    "columns": 3,
-                    "options": [
-                      "Üretici",
-                      "Toptancı",
-                      "İthalatçı",
-                      "İhracatçı",
-                      "Lojistik",
-                      "Diğer"
-                    ]
-                  }
-                ]
-              },
-              {
-                "columns": [
-                  {
-                    "type": "line",
-                    "label": "Yıllık Cirosu"
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "primaryForeignLanguage",
+                  "label": {
+                    "tr": "Yabancı Dil",
+                    "en": "Foreign Language"
                   },
-                  {
-                    "type": "line",
-                    "label": "Çalışan Sayısı"
+                  "placeholder": {
+                    "tr": "Dil adı",
+                    "en": "Language name"
                   }
-                ]
-              }
-            ]
+                },
+                {
+                  "type": "select",
+                  "name": "primaryForeignLanguageLevel",
+                  "label": {
+                    "tr": "Seviye",
+                    "en": "Proficiency"
+                  },
+                  "options": [
+                    {
+                      "value": "intermediate",
+                      "label": {
+                        "tr": "Orta",
+                        "en": "Intermediate"
+                      }
+                    },
+                    {
+                      "value": "good",
+                      "label": {
+                        "tr": "İyi",
+                        "en": "Good"
+                      }
+                    },
+                    {
+                      "value": "excellent",
+                      "label": {
+                        "tr": "Çok İyi",
+                        "en": "Excellent"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "secondaryForeignLanguage",
+                  "label": {
+                    "tr": "İkinci Yabancı Dil",
+                    "en": "Second Foreign Language"
+                  },
+                  "placeholder": {
+                    "tr": "Dil adı",
+                    "en": "Language name"
+                  }
+                },
+                {
+                  "type": "select",
+                  "name": "secondaryForeignLanguageLevel",
+                  "label": {
+                    "tr": "Seviye",
+                    "en": "Proficiency"
+                  },
+                  "options": [
+                    {
+                      "value": "intermediate",
+                      "label": {
+                        "tr": "Orta",
+                        "en": "Intermediate"
+                      }
+                    },
+                    {
+                      "value": "good",
+                      "label": {
+                        "tr": "İyi",
+                        "en": "Good"
+                      }
+                    },
+                    {
+                      "value": "excellent",
+                      "label": {
+                        "tr": "Çok İyi",
+                        "en": "Excellent"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "company",
+          "title": {
+            "tr": "Firmanıza Ait Bilgiler",
+            "en": "Company Information"
           },
-          {
-            "title": "Halen Üye Olunan Diğer Kuruluşlar",
-            "subtitle": "(Parti, Dernek, Vakıf, Grup, Kulüp)",
-            "rows": [
-              {
-                "type": "line-list",
-                "count": 6
-              }
-            ]
+          "rows": [
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "companyName",
+                  "label": {
+                    "tr": "Firmanızın Adı",
+                    "en": "Company Name"
+                  },
+                  "placeholder": {
+                    "tr": "Ticari unvan",
+                    "en": "Registered name"
+                  },
+                  "required": true
+                },
+                {
+                  "type": "text",
+                  "name": "establishmentYear",
+                  "inputType": "number",
+                  "label": {
+                    "tr": "Kuruluş Yılı",
+                    "en": "Year Founded"
+                  },
+                  "placeholder": {
+                    "tr": "YYYY",
+                    "en": "YYYY"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "subheading",
+                  "label": {
+                    "tr": "İletişim Bilgileri",
+                    "en": "Contact Information"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "textarea",
+                  "name": "companyAddress",
+                  "label": {
+                    "tr": "Adres",
+                    "en": "Address"
+                  },
+                  "placeholder": {
+                    "tr": "Şirket merkez adresi",
+                    "en": "Company headquarters address"
+                  },
+                  "rows": 3
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "companyWebsite",
+                  "inputType": "url",
+                  "label": {
+                    "tr": "Web Site",
+                    "en": "Website"
+                  },
+                  "placeholder": {
+                    "tr": "https://",
+                    "en": "https://"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "companyPhone",
+                  "label": {
+                    "tr": "Cep No",
+                    "en": "Mobile Phone"
+                  },
+                  "placeholder": {
+                    "tr": "5XX XXX XX XX",
+                    "en": "+90 5XX XXX XX XX"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "checkbox-list",
+                  "name": "companySectors",
+                  "columns": 3,
+                  "label": {
+                    "tr": "Sektörünüz",
+                    "en": "Business Sector"
+                  },
+                  "options": [
+                    {
+                      "value": "industry",
+                      "label": {
+                        "tr": "Sanayi",
+                        "en": "Industry"
+                      }
+                    },
+                    {
+                      "value": "services",
+                      "label": {
+                        "tr": "Hizmetler",
+                        "en": "Services"
+                      }
+                    },
+                    {
+                      "value": "agriculture",
+                      "label": {
+                        "tr": "Tarım",
+                        "en": "Agriculture"
+                      }
+                    },
+                    {
+                      "value": "finance",
+                      "label": {
+                        "tr": "Finansal",
+                        "en": "Financial"
+                      }
+                    },
+                    {
+                      "value": "contractor",
+                      "label": {
+                        "tr": "Yüklenici (Contractor)",
+                        "en": "Contractor"
+                      }
+                    },
+                    {
+                      "value": "other",
+                      "label": {
+                        "tr": "Diğer",
+                        "en": "Other"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "checkbox-list",
+                  "name": "businessActivities",
+                  "columns": 3,
+                  "label": {
+                    "tr": "Faaliyet Tipi",
+                    "en": "Business Activity"
+                  },
+                  "options": [
+                    {
+                      "value": "producer",
+                      "label": {
+                        "tr": "Üretici",
+                        "en": "Manufacturer"
+                      }
+                    },
+                    {
+                      "value": "wholesaler",
+                      "label": {
+                        "tr": "Toptancı",
+                        "en": "Wholesaler"
+                      }
+                    },
+                    {
+                      "value": "importer",
+                      "label": {
+                        "tr": "İthalatçı",
+                        "en": "Importer"
+                      }
+                    },
+                    {
+                      "value": "exporter",
+                      "label": {
+                        "tr": "İhracatçı",
+                        "en": "Exporter"
+                      }
+                    },
+                    {
+                      "value": "logistics",
+                      "label": {
+                        "tr": "Lojistik",
+                        "en": "Logistics"
+                      }
+                    },
+                    {
+                      "value": "other",
+                      "label": {
+                        "tr": "Diğer",
+                        "en": "Other"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "fields",
+              "columns": [
+                {
+                  "type": "text",
+                  "name": "annualRevenue",
+                  "label": {
+                    "tr": "Yıllık Cirosu",
+                    "en": "Annual Revenue"
+                  },
+                  "placeholder": {
+                    "tr": "Örn: 50.000.000 ₺",
+                    "en": "e.g. 50,000,000 ₺"
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "employeeCount",
+                  "inputType": "number",
+                  "label": {
+                    "tr": "Çalışan Sayısı",
+                    "en": "Number of Employees"
+                  },
+                  "placeholder": {
+                    "tr": "Örn: 45",
+                    "en": "e.g. 45"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "memberships",
+          "title": {
+            "tr": "Halen Üye Olunan Diğer Kuruluşlar",
+            "en": "Current Memberships in Other Organizations"
           },
-          {
-            "title": "Başvuru Sahibinin Üyeliği Kabul için Refer",
-            "rows": [
-              {
-                "type": "line-list",
-                "count": 2,
-                "prefix": "Ad Soyad"
+          "subtitle": {
+            "tr": "(Parti, Dernek, Vakıf, Grup, Kulüp)",
+            "en": "(Party, Association, Foundation, Group, Club)"
+          },
+          "rows": [
+            {
+              "type": "line-list",
+              "name": "otherMemberships",
+              "count": 6,
+              "label": {
+                "tr": "Kuruluş / Görev",
+                "en": "Organization / Role"
+              },
+              "placeholder": {
+                "tr": "Kuruluş adı ve göreviniz",
+                "en": "Organization name and your role"
               }
-            ]
-          }
-        ]
-      }
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "id": "references",
+          "title": {
+            "tr": "Başvuru Sahibinin Üyeliği Kabul için Refer",
+            "en": "References Supporting the Application"
+          },
+          "rows": [
+            {
+              "type": "line-list",
+              "name": "references",
+              "count": 2,
+              "label": {
+                "tr": "Ad Soyad",
+                "en": "Full Name"
+              },
+              "placeholder": {
+                "tr": "Referans kişisinin adı ve iletişimi",
+                "en": "Reference name and contact details"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
