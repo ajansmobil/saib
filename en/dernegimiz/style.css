@@ -1,10 +1,10 @@
 
-  .awknemenulist-menu:hover .dropdown-content-awkne {
+  .tvumimenulist-menu:hover .dropdown-content-tvumi {
     display: flex;
     flex-direction: column;
   }
 
-  .awknemenulist-menu {
+  .tvumimenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .awknemenulist-menu:hover {
+  .tvumimenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .awknemenulist-menu:hover>a {
+  .tvumimenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .awknemenulist-menu>a {
+  .tvumimenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-awkne {
+  .dropdown-content-active-tvumi {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-awkne>a {
+  .dropdown-content-active-tvumi>a {
     color: #000 !important;
   }
 
-  .dropdown-content-awkne {
+  .dropdown-content-tvumi {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-awkne>a {
+  .dropdown-content-tvumi>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-awkne>a:hover {
+  .dropdown-content-tvumi>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .awknebody {
+  .tvumibody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .awknebody > a {
+  .tvumibody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .awkneright {
+  .tvumiright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .awknelanguages {
+  .tvumilanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .awknelanguages.lang-hidden {
+  .tvumilanguages.lang-hidden {
     display: none;
   }
 
-  .awknelanguages ul {
+  .tvumilanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .awknelanguages li {
+  .tvumilanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .awknelanguages li a {
+  .tvumilanguages li a {
     color: #fff !important;
   }
 
-  .awknelanguages li a:hover {
+  .tvumilanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .awknelanguages li:hover {
+  .tvumilanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .awknecontactlist {
+  .tvumicontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .awknecontactlist a {
+  .tvumicontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .awkne-spot {
+  .tvumi-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .awkne-icon {
+  .tvumi-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .awkne {
+  .tvumi {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .awknemenu {
+  .tvumimenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .awknemenubody {
+  .tvumimenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .awknemenulist {
+  .tvumimenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .awknemenulistbody {
+  .tvumimenulistbody {
     width: 100%;
   }
 
-  .awkne-mobile-toggle {
+  .tvumi-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .awkne-mobile-toggle span {
+  .tvumi-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .awknemenu {
+    .tvumimenu {
       overflow-x: auto;
     }
 
-    .awknemenulist {
+    .tvumimenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .awknebody {
+    .tvumibody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .awknebody {
+    .tvumibody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .awkneright {
+    .tvumiright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .awknecontactlist {
+    .tvumicontactlist {
       display: none;
     }
 
-    .awknelanguages.lang-hidden {
+    .tvumilanguages.lang-hidden {
       display: none;
     }
 
-    .awknelanguages {
+    .tvumilanguages {
       display: flex;
     }
 
-    .awkne-mobile-toggle {
+    .tvumi-mobile-toggle {
       display: inline-flex;
     }
 
-    .awknemenulist {
+    .tvumimenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .awknemenu.awknemenu-open .awknemenulist {
+    .tvumimenu.tvumimenu-open .tvumimenulist {
       display: flex;
     }
 
-    .awknemenulist-menu {
+    .tvumimenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-awkne {
+    .dropdown-content-tvumi {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-awkne>a {
+    .dropdown-content-tvumi>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
