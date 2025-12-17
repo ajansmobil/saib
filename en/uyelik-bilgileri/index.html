@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=rrh8e" />
-  <link rel="shortcut icon" href="/img/icon.png?v=rrh8e" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=onuh5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=onuh5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=onuh5" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=rrh8e"></script>
-<link rel="stylesheet" href="style.css?v=rrh8e">
+  <script type="text/javascript" src="/src/firebase.js?v=onuh5"></script>
+<link rel="stylesheet" href="style.css?v=onuh5">
 </head>
 
 <body>
-  <div id="header"><div class="fouop">
+  <div id="header"><div class="prnwp">
 
-  <div class="fouopbody">
-    <a href="/en/"><img src="/img/logo.svg?v=rrh8e" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="prnwpbody">
+    <a href="/en/"><img src="/img/logo.svg?v=onuh5" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="fouopright">
-      <div class="fouoplanguages ">
+    <div class="prnwpright">
+      <div class="prnwplanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="fouopcontactlist">
+      <div class="prnwpcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined fouop-icon">phone</div>
+     <div class="material-symbols-outlined prnwp-icon">phone</div>
      <div>
-      <div  class="fouop-title">undefined</div>
-      <div  class="fouop-spot">0342 341 41 31</div>
+      <div  class="prnwp-title">undefined</div>
+      <div  class="prnwp-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined fouop-icon">mail</div>
+     <div class="material-symbols-outlined prnwp-icon">mail</div>
      <div>
-      <div  class="fouop-title">undefined</div>
-      <div  class="fouop-spot">info@saibdernegi.org</div>
+      <div  class="prnwp-title">undefined</div>
+      <div  class="prnwp-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined fouop-icon">location_on</div>
+     <div class="material-symbols-outlined prnwp-icon">location_on</div>
      <div>
-      <div  class="fouop-title">undefined</div>
-      <div  class="fouop-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="prnwp-title">undefined</div>
+      <div  class="prnwp-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="fouop-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="prnwp-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="fouopmenubody">
-    <div class="fouopmenu" id="menu-3-root">
-      <div class="fouopmenulistbody">
-        <div class="fouopmenulist"><a class="fouopmenulist-menu" href="/en/">Home </a><div class="fouopmenulist-menu " >
+  <div class="prnwpmenubody">
+    <div class="prnwpmenu" id="menu-3-root">
+      <div class="prnwpmenulistbody">
+        <div class="prnwpmenulist"><a class="prnwpmenulist-menu" href="/en/">Home </a><div class="prnwpmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="fouopmenulist-menu " >
+    <div class="prnwpmenulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="fouopmenulist-menu " >
+    <div class="prnwpmenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="fouopmenulist-menu " >
+    <div class="prnwpmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="fouopmenulist-menu " >
+    <div class="prnwpmenulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -149,51 +151,51 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("fouopmenu-open")) {
-        root.classList.remove("fouopmenu-open");
+      if (root.classList.contains("prnwpmenu-open")) {
+        root.classList.remove("prnwpmenu-open");
       } else {
-        root.classList.add("fouopmenu-open");
+        root.classList.add("prnwpmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="dk7rd-title f36">
-  <span>undefined</span>
+  <div id="content"><div class="lavih-title f36">
+  <span></span>
 </div>
-<div class="dk7rd">
-  <div class="dk7rd-menu-btn">
+<div class="lavih">
+  <div class="lavih-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined dk7rd-icon">menu</span>
+    <span class="material-symbols-outlined lavih-icon">menu</span>
   </div>
-  <div class="dk7rd-menu"><a class="dk7rd-menu-link" href="/en/baskanin-mesaji">Başkanın Mesajı</a><a class="dk7rd-menu-link" href="/en/yonetim-kurulu">Yönetim Kurulu</a><a class="dk7rd-menu-link" href="/en/saib-kimdir">Saib Kimdir ?</a><a class="dk7rd-menu-link" href="/en/misyon">Misyon</a><a class="dk7rd-menu-link" href="/en/vizyon">Vizyon</a><a class="dk7rd-menu-link active" href="/en/uyelik-bilgileri">Üyelik Bilgileri</a><a class="dk7rd-menu-link" href="/en/gizlilik-politikasi">Gizlilik Politikası</a><a class="dk7rd-menu-link" href="/en/kisisel-veriler">Kişisel Veriler</a><a class="dk7rd-menu-link" href="/en/kullanici-haklari">Kullanıcı Hakları</a><a class="dk7rd-menu-link" href="/en/yasal-uyari">Yasal Uyarı</a></div>
-  <div class="dk7rd-desc">
+  <div class="lavih-menu"><a class="lavih-menu-link" href="/en/baskanin-mesaji">Başkanın Mesajı</a><a class="lavih-menu-link" href="/en/yonetim-kurulu">Yönetim Kurulu</a><a class="lavih-menu-link" href="/en/saib-kimdir">Saib Kimdir ?</a><a class="lavih-menu-link" href="/en/misyon">Misyon</a><a class="lavih-menu-link" href="/en/vizyon">Vizyon</a><a class="lavih-menu-link active" href="/en/uyelik-bilgileri">Üyelik Bilgileri</a><a class="lavih-menu-link" href="/en/gizlilik-politikasi">Gizlilik Politikası</a><a class="lavih-menu-link" href="/en/kisisel-veriler">Kişisel Veriler</a><a class="lavih-menu-link" href="/en/kullanici-haklari">Kullanıcı Hakları</a><a class="lavih-menu-link" href="/en/yasal-uyari">Yasal Uyarı</a></div>
+  <div class="lavih-desc">
     
-    <div class="dk7rd-body"></div>
+    <div class="lavih-body"></div>
   </div>
 </div>
 
 <script>
-  const menuToggleBtn = document.querySelector(".dk7rd-menu-btn");
+  const menuToggleBtn = document.querySelector(".lavih-menu-btn");
   if (menuToggleBtn) {
     menuToggleBtn.addEventListener("click", function () {
-      const menu = document.querySelector(".dk7rd-menu");
+      const menu = document.querySelector(".lavih-menu");
       if (!menu) return;
       const isOpen = menu.classList.toggle("active");
-      const icon = this.querySelector(".dk7rd-icon");
+      const icon = this.querySelector(".lavih-icon");
       if (icon) {
         icon.textContent = isOpen ? "close" : "menu";
       }
     });
   }
 
-  document.querySelectorAll(".dk7rd-top").forEach(function (button) {
+  document.querySelectorAll(".lavih-top").forEach(function (button) {
     button.addEventListener("click", function () {
-      const group = this.closest(".dk7rd-menu-group");
+      const group = this.closest(".lavih-menu-group");
       if (!group) return;
-      const sub = group.querySelector(".dk7rd-sub");
+      const sub = group.querySelector(".lavih-sub");
       const isOpen = group.classList.toggle("open");
       this.classList.toggle("active", isOpen);
-      const icon = this.querySelector(".dk7rd-icon");
+      const icon = this.querySelector(".lavih-icon");
       if (icon) {
         icon.textContent = isOpen ? "expand_less" : "expand_more";
       }
@@ -251,13 +253,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=rrh8e"></script>
-<script src="/src/cookie.js?v=rrh8e"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=onuh5"></script>
+<script defer src="/src/cookie.js?v=onuh5"></script>
 
 </html>

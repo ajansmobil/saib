@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=que85" />
-  <link rel="shortcut icon" href="/img/icon.png?v=que85" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=d59d1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=d59d1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=d59d1" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=que85"></script>
-<link rel="stylesheet" href="style.css?v=que85">
+  <script type="text/javascript" src="/src/firebase.js?v=d59d1"></script>
+<link rel="stylesheet" href="style.css?v=d59d1">
 </head>
 
 <body>
-  <div id="header"><div class="pclqd">
+  <div id="header"><div class="fmd6m">
 
-  <div class="pclqdbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=que85" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="fmd6mbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=d59d1" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="pclqdright">
-      <div class="pclqdlanguages ">
+    <div class="fmd6mright">
+      <div class="fmd6mlanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="pclqdcontactlist">
+      <div class="fmd6mcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined pclqd-icon">phone</div>
+     <div class="material-symbols-outlined fmd6m-icon">phone</div>
      <div>
-      <div  class="pclqd-title">undefined</div>
-      <div  class="pclqd-spot">0342 341 41 31</div>
+      <div  class="fmd6m-title">undefined</div>
+      <div  class="fmd6m-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined pclqd-icon">mail</div>
+     <div class="material-symbols-outlined fmd6m-icon">mail</div>
      <div>
-      <div  class="pclqd-title">undefined</div>
-      <div  class="pclqd-spot">info@saibdernegi.org</div>
+      <div  class="fmd6m-title">undefined</div>
+      <div  class="fmd6m-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined pclqd-icon">location_on</div>
+     <div class="material-symbols-outlined fmd6m-icon">location_on</div>
      <div>
-      <div  class="pclqd-title">undefined</div>
-      <div  class="pclqd-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="fmd6m-title">undefined</div>
+      <div  class="fmd6m-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="pclqd-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="fmd6m-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="pclqdmenubody">
-    <div class="pclqdmenu" id="menu-3-root">
-      <div class="pclqdmenulistbody">
-        <div class="pclqdmenulist"><a class="pclqdmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="pclqdmenulist-menu " >
+  <div class="fmd6mmenubody">
+    <div class="fmd6mmenu" id="menu-3-root">
+      <div class="fmd6mmenulistbody">
+        <div class="fmd6mmenulist"><a class="fmd6mmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="fmd6mmenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="pclqdmenulist-menu " >
+    <div class="fmd6mmenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="pclqdmenulist-menu " >
+    <div class="fmd6mmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="pclqdmenulist-menu " >
+    <div class="fmd6mmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="pclqdmenulist-menu " >
+    <div class="fmd6mmenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -149,51 +151,51 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("pclqdmenu-open")) {
-        root.classList.remove("pclqdmenu-open");
+      if (root.classList.contains("fmd6mmenu-open")) {
+        root.classList.remove("fmd6mmenu-open");
       } else {
-        root.classList.add("pclqdmenu-open");
+        root.classList.add("fmd6mmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="cmc3w-title f36">
-  <span>undefined</span>
+  <div id="content"><div class="q11s0-title f36">
+  <span></span>
 </div>
-<div class="cmc3w">
-  <div class="cmc3w-menu-btn">
+<div class="q11s0">
+  <div class="q11s0-menu-btn">
     <span>قائمة الصفحات</span>
-    <span class="material-symbols-outlined cmc3w-icon">menu</span>
+    <span class="material-symbols-outlined q11s0-icon">menu</span>
   </div>
-  <div class="cmc3w-menu"><a class="cmc3w-menu-link" href="/ar/baskanin-mesaji">Başkanın Mesajı</a><a class="cmc3w-menu-link" href="/ar/yonetim-kurulu">Yönetim Kurulu</a><a class="cmc3w-menu-link" href="/ar/saib-kimdir">Saib Kimdir ?</a><a class="cmc3w-menu-link active" href="/ar/misyon">Misyon</a><a class="cmc3w-menu-link" href="/ar/vizyon">Vizyon</a><a class="cmc3w-menu-link" href="/ar/uyelik-bilgileri">Üyelik Bilgileri</a><a class="cmc3w-menu-link" href="/ar/gizlilik-politikasi">Gizlilik Politikası</a><a class="cmc3w-menu-link" href="/ar/kisisel-veriler">Kişisel Veriler</a><a class="cmc3w-menu-link" href="/ar/kullanici-haklari">Kullanıcı Hakları</a><a class="cmc3w-menu-link" href="/ar/yasal-uyari">Yasal Uyarı</a></div>
-  <div class="cmc3w-desc">
+  <div class="q11s0-menu"><a class="q11s0-menu-link" href="/ar/baskanin-mesaji">Başkanın Mesajı</a><a class="q11s0-menu-link" href="/ar/yonetim-kurulu">Yönetim Kurulu</a><a class="q11s0-menu-link" href="/ar/saib-kimdir">Saib Kimdir ?</a><a class="q11s0-menu-link active" href="/ar/misyon">Misyon</a><a class="q11s0-menu-link" href="/ar/vizyon">Vizyon</a><a class="q11s0-menu-link" href="/ar/uyelik-bilgileri">Üyelik Bilgileri</a><a class="q11s0-menu-link" href="/ar/gizlilik-politikasi">Gizlilik Politikası</a><a class="q11s0-menu-link" href="/ar/kisisel-veriler">Kişisel Veriler</a><a class="q11s0-menu-link" href="/ar/kullanici-haklari">Kullanıcı Hakları</a><a class="q11s0-menu-link" href="/ar/yasal-uyari">Yasal Uyarı</a></div>
+  <div class="q11s0-desc">
     
-    <div class="cmc3w-body"></div>
+    <div class="q11s0-body"></div>
   </div>
 </div>
 
 <script>
-  const menuToggleBtn = document.querySelector(".cmc3w-menu-btn");
+  const menuToggleBtn = document.querySelector(".q11s0-menu-btn");
   if (menuToggleBtn) {
     menuToggleBtn.addEventListener("click", function () {
-      const menu = document.querySelector(".cmc3w-menu");
+      const menu = document.querySelector(".q11s0-menu");
       if (!menu) return;
       const isOpen = menu.classList.toggle("active");
-      const icon = this.querySelector(".cmc3w-icon");
+      const icon = this.querySelector(".q11s0-icon");
       if (icon) {
         icon.textContent = isOpen ? "close" : "menu";
       }
     });
   }
 
-  document.querySelectorAll(".cmc3w-top").forEach(function (button) {
+  document.querySelectorAll(".q11s0-top").forEach(function (button) {
     button.addEventListener("click", function () {
-      const group = this.closest(".cmc3w-menu-group");
+      const group = this.closest(".q11s0-menu-group");
       if (!group) return;
-      const sub = group.querySelector(".cmc3w-sub");
+      const sub = group.querySelector(".q11s0-sub");
       const isOpen = group.classList.toggle("open");
       this.classList.toggle("active", isOpen);
-      const icon = this.querySelector(".cmc3w-icon");
+      const icon = this.querySelector(".q11s0-icon");
       if (icon) {
         icon.textContent = isOpen ? "expand_less" : "expand_more";
       }
@@ -251,13 +253,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=que85"></script>
-<script src="/src/cookie.js?v=que85"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=d59d1"></script>
+<script defer src="/src/cookie.js?v=d59d1"></script>
 
 </html>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -12,20 +12,22 @@
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
   <title>Saib Derneği</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
   <meta property="og:title" content="Saib Derneği" />
-  <meta property="og:description" content="undefined" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=ixkre" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ixkre" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=qvcqk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=qvcqk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=qvcqk" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=ixkre"></script>
-<link rel="stylesheet" href="style.css?v=ixkre">
+  <script type="text/javascript" src="/src/firebase.js?v=qvcqk"></script>
+<link rel="stylesheet" href="style.css?v=qvcqk">
 </head>
 
 <body>
-  <div id="header"><div class="k9rop">
+  <div id="header"><div class="wc2bu">
 
-  <div class="k9ropbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=ixkre" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="wc2bubody">
+    <a href="/ar/"><img src="/img/logo.svg?v=qvcqk" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="k9ropright">
-      <div class="k9roplanguages ">
+    <div class="wc2buright">
+      <div class="wc2bulanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="k9ropcontactlist">
+      <div class="wc2bucontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined k9rop-icon">phone</div>
+     <div class="material-symbols-outlined wc2bu-icon">phone</div>
      <div>
-      <div  class="k9rop-title">undefined</div>
-      <div  class="k9rop-spot">0342 341 41 31</div>
+      <div  class="wc2bu-title">undefined</div>
+      <div  class="wc2bu-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined k9rop-icon">mail</div>
+     <div class="material-symbols-outlined wc2bu-icon">mail</div>
      <div>
-      <div  class="k9rop-title">undefined</div>
-      <div  class="k9rop-spot">info@saibdernegi.org</div>
+      <div  class="wc2bu-title">undefined</div>
+      <div  class="wc2bu-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined k9rop-icon">location_on</div>
+     <div class="material-symbols-outlined wc2bu-icon">location_on</div>
      <div>
-      <div  class="k9rop-title">undefined</div>
-      <div  class="k9rop-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="wc2bu-title">undefined</div>
+      <div  class="wc2bu-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="k9rop-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="wc2bu-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="k9ropmenubody">
-    <div class="k9ropmenu" id="menu-3-root">
-      <div class="k9ropmenulistbody">
-        <div class="k9ropmenulist"><a class="k9ropmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="k9ropmenulist-menu " >
+  <div class="wc2bumenubody">
+    <div class="wc2bumenu" id="menu-3-root">
+      <div class="wc2bumenulistbody">
+        <div class="wc2bumenulist"><a class="wc2bumenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="wc2bumenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="k9ropmenulist-menu " >
+    <div class="wc2bumenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="k9ropmenulist-menu " >
+    <div class="wc2bumenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="k9ropmenulist-menu " >
+    <div class="wc2bumenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="k9ropmenulist-menu " >
+    <div class="wc2bumenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -149,15 +151,15 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("k9ropmenu-open")) {
-        root.classList.remove("k9ropmenu-open");
+      if (root.classList.contains("wc2bumenu-open")) {
+        root.classList.remove("wc2bumenu-open");
       } else {
-        root.classList.add("k9ropmenu-open");
+        root.classList.add("wc2bumenu-open");
       }
     }
   }
-</script><div class="swiper-container uw3an">
-  <div class="swiper-wrapper" id="uw3an"><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1763132394260" /></div><div class="swiper-slide"><img src="/img/mfzpnk/2.jpg?v=1763132394260" /></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1763132394260" /></div></div>
+</script><div class="swiper-container ykrlj">
+  <div class="swiper-wrapper" id="ykrlj"><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1766010369669" alt="Saib Derneği" /></div><div class="swiper-slide"><img src="/img/mfzpnk/2.jpg?v=1766010369669" alt="Saib Derneği" /></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1766010369669" alt="Saib Derneği" /></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
@@ -166,7 +168,7 @@
 <script>
 
 setTimeout(() => {
-  var swiper = new Swiper(".uw3an", {
+  var swiper = new Swiper(".ykrlj", {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -185,73 +187,73 @@ setTimeout(() => {
   });}, 500);
 </script>
 </div>
-  <div id="content"><div class="sliderxvuh09">
-  <div class="slider-vuh09t-itle"></div>
-  <div class="vuh09 swiper-container">
+  <div id="content"><div class="sliderxd9pmd">
+  <div class="slider-d9pmdt-itle"></div>
+  <div class="d9pmd swiper-container">
     <div class="swiper-wrapper">
     <a href="/ar/bize-katilin" class="swiper-slide">
-      <div class="swiper-vuh09">
-        <img class="img-vuh09" src="/page/we5uhxruok/ixfhw.jpg" alt="" />
-        <div class="title-spot-vuh09">
-          <div class="title-vuh09"></div>
-          <div class="spot-vuh09"></div>
+      <div class="swiper-d9pmd">
+        <img class="img-d9pmd" src="/page/we5uhxruok/ixfhw.jpg" alt="" />
+        <div class="title-spot-d9pmd">
+          <div class="title-d9pmd"></div>
+          <div class="spot-d9pmd"></div>
         </div>
-        <div class="button-vuh09">اقرأ المزيد...</div>
+        <div class="button-d9pmd">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/faaliyetlerimiz" class="swiper-slide">
-      <div class="swiper-vuh09">
-        <img class="img-vuh09" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="" />
-        <div class="title-spot-vuh09">
-          <div class="title-vuh09"></div>
-          <div class="spot-vuh09"></div>
+      <div class="swiper-d9pmd">
+        <img class="img-d9pmd" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="" />
+        <div class="title-spot-d9pmd">
+          <div class="title-d9pmd"></div>
+          <div class="spot-d9pmd"></div>
         </div>
-        <div class="button-vuh09">اقرأ المزيد...</div>
+        <div class="button-d9pmd">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/ihracat-rehberi" class="swiper-slide">
-      <div class="swiper-vuh09">
-        <img class="img-vuh09" src="/page/zq84rqm7rn/tk4uh.jpg" alt="" />
-        <div class="title-spot-vuh09">
-          <div class="title-vuh09"></div>
-          <div class="spot-vuh09"></div>
+      <div class="swiper-d9pmd">
+        <img class="img-d9pmd" src="/page/zq84rqm7rn/tk4uh.jpg" alt="" />
+        <div class="title-spot-d9pmd">
+          <div class="title-d9pmd"></div>
+          <div class="spot-d9pmd"></div>
         </div>
-        <div class="button-vuh09">اقرأ المزيد...</div>
+        <div class="button-d9pmd">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/is-agi" class="swiper-slide">
-      <div class="swiper-vuh09">
-        <img class="img-vuh09" src="/page/wxalr76gjn/kgn90.jpg" alt="" />
-        <div class="title-spot-vuh09">
-          <div class="title-vuh09"></div>
-          <div class="spot-vuh09"></div>
+      <div class="swiper-d9pmd">
+        <img class="img-d9pmd" src="/page/wxalr76gjn/kgn90.jpg" alt="" />
+        <div class="title-spot-d9pmd">
+          <div class="title-d9pmd"></div>
+          <div class="spot-d9pmd"></div>
         </div>
-        <div class="button-vuh09">اقرأ المزيد...</div>
+        <div class="button-d9pmd">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/uyelerimiz" class="swiper-slide">
-      <div class="swiper-vuh09">
-        <img class="img-vuh09" src="/page/h4qvry5vf3/llr1n.jpg" alt="" />
-        <div class="title-spot-vuh09">
-          <div class="title-vuh09"></div>
-          <div class="spot-vuh09"></div>
+      <div class="swiper-d9pmd">
+        <img class="img-d9pmd" src="/page/h4qvry5vf3/llr1n.jpg" alt="" />
+        <div class="title-spot-d9pmd">
+          <div class="title-d9pmd"></div>
+          <div class="spot-d9pmd"></div>
         </div>
-        <div class="button-vuh09">اقرأ المزيد...</div>
+        <div class="button-d9pmd">اقرأ المزيد...</div>
       </div>
     </a>
   </div>
-    <div class="swiper-pagination-vuh09"></div>
+    <div class="swiper-pagination-d9pmd"></div>
   </div>
-  <div class="swiper-button-next swiper-button-next-vuh09"></div>
-  <div class="swiper-button-prev swiper-button-prev-vuh09"></div>
+  <div class="swiper-button-next swiper-button-next-d9pmd"></div>
+  <div class="swiper-button-prev swiper-button-prev-d9pmd"></div>
 </div>
 
 <script> setTimeout(() => {
-  new Swiper(".vuh09", {
+  new Swiper(".d9pmd", {
     slidesPerView: 2,
     simulateTouch: true,
     loop: true,
@@ -266,36 +268,36 @@ setTimeout(() => {
       disableOnInteraction: true,
     },
     pagination: {
-      el: ".swiper-pagination-vuh09",
+      el: ".swiper-pagination-d9pmd",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next-vuh09",
-      prevEl: ".swiper-button-prev-vuh09",
+      nextEl: ".swiper-button-next-d9pmd",
+      prevEl: ".swiper-button-prev-d9pmd",
     },
   });}, 100);
 </script>
-<div class="hnbyg-out">
-  <div class="hnbyg">
-    <div class="hnbyg-left">
+<div class="npxui-out">
+  <div class="npxui">
+    <div class="npxui-left">
       <img
-        src="/img/sykhyk/profil.webp?v=ixkre"
-        class="hnbyg-left-img"
+        src="/img/sykhyk/profil.webp?v=qvcqk"
+        class="npxui-left-img"
         alt="{{title}}"
       />
     </div>
-    <div class="hnbyg-right">
-      <div class="hnbyg-right-body">
-        <div class="hnbyg-right-body-name"></div>
-        <div class="hnbyg-right-body-spot"></div>
-        <div class="hnbyg-right-body-chile">
-          <div class="hnbyg-right-body-chile-row">
-            <div class="hnbyg-right-body-chile-row-name"></div>
-            <div class="hnbyg-right-body-chile-row-spot"></div>
+    <div class="npxui-right">
+      <div class="npxui-right-body">
+        <div class="npxui-right-body-name"></div>
+        <div class="npxui-right-body-spot"></div>
+        <div class="npxui-right-body-chile">
+          <div class="npxui-right-body-chile-row">
+            <div class="npxui-right-body-chile-row-name"></div>
+            <div class="npxui-right-body-chile-row-spot"></div>
           </div>
-          <div class="hnbyg-right-body-chile-row">
-            <div class="hnbyg-right-body-chile-row-name"></div>
-            <div class="hnbyg-right-body-chile-row-spot"></div>
+          <div class="npxui-right-body-chile-row">
+            <div class="npxui-right-body-chile-row-name"></div>
+            <div class="npxui-right-body-chile-row-spot"></div>
           </div>
         </div>
       </div>
@@ -303,73 +305,73 @@ setTimeout(() => {
   </div>
 </div>
 
-<div class="erzv6">
-  <div class="erzv6-body"><a class="erzv6-body-card" href="/ar/bakan-fidan-suriye-guvenlik-ticaret"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">Bakan Fidan: Suriye'nin Güvenliği Ticaretin Anahtarı</h3><p class="erzv6-body-description">Fidan'ın güvenlik vurgusu ticaret hattının kesintisiz işlemesine destek sağlıyor.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/ankara-suriye-diyalog-cagrisi"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">Ankara'dan Suriye'ye Diyalog Çağrısı Ticari Koridorları Güçlendiriyor</h3><p class="erzv6-body-description">Diyalog vurgusu, lojistik hatların kesintisiz işlemesi için güvence sağlıyor.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/tobb-sam-ekonomi-zirvesi"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">TOBB Heyeti Şam'da Yeniden İmar Fırsatlarını Görüştü</h3><p class="erzv6-body-description">Türk ve Suriyeli iş dünyası yeniden imar projeleri için ortak plan hazırlıyor.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/abd-suriye-yaptirim-esnemesi"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">ABD'den Suriye'ye Yaptırım Esnemesi Ekonomiyi Canlandırıyor</h3><p class="erzv6-body-description">ABD kararı, bankacılık işlemleri ve akreditif süreçleri için kritik bir eşik.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/turkiye-abd-suriye-yaptirim-destegi"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">Türkiye'den ABD'nin Suriye Adımına Destek: Yatırımlar İçin Yeşil Işık</h3><p class="erzv6-body-description">Ankara, yaptırım esnemesini Türk şirketleri için fırsat olarak görüyor.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/bmgk-suriye-yaptirim-kaldirma-karari"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">BMGK Suriye'ye Yaptırımları Kaldırdı: Ticaret İçin Yeni Sayfa</h3><p class="erzv6-body-description">BMGK kararı sınır ötesi yatırımlar için finansal kısıtları hafifletiyor.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/hatay-halep-lojistik-koridoru"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">Hatay - Halep Lojistik Koridoru Pilot Uygulaması</h3><p class="erzv6-body-description">Dijital gümrük ve soğuk zincir entegrasyonu sınır ticaretine hız kazandırdı.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/turk-un-sanayicileri-suriye-pazari"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">Türk Un Sanayicileri Suriye Pazarına Yatırım Planlıyor</h3><p class="erzv6-body-description">Halep ve Lazkiye’de kurulacak depolama merkezleriyle gıda arzı güçlenecek.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/turkiye-suriye-ticaret-yol-haritasi"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">Türkiye - Suriye Ticaret Yol Haritası Anlaşması</h3><p class="erzv6-body-description">Yeni yol haritası gümrük, enerji ve finans alanlarında iş birliğini yeniden başlatıyor.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a><a class="erzv6-body-card" href="/ar/suriye-gumruk-reformu-turkiye-ticaret"><article class="erzv6-body-item"><div class="erzv6-body-img"><div class="erzv6-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="erzv6-body-content"><div class="erzv6-body-meta"><span class="erzv6-body-chip">haberler</span></div><h3 class="erzv6-body-title">Suriye Gümrük Reformu Türk İş Dünyasını Rahatlattı</h3><p class="erzv6-body-description">Yeni gümrük düzeni bekleme süresini kısaltıp maliyetleri düşürüyor.</p><span class="erzv6-body-link">اقرأ المزيد</span></div></article></a></div>
+<div class="j9uuv">
+  <div class="j9uuv-body"><a class="j9uuv-body-card" href="/ar/bakan-fidan-suriye-guvenlik-ticaret"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">Bakan Fidan: Suriye'nin Güvenliği Ticaretin Anahtarı</h3><p class="j9uuv-body-description">Fidan'ın güvenlik vurgusu ticaret hattının kesintisiz işlemesine destek sağlıyor.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/ankara-suriye-diyalog-cagrisi"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">Ankara'dan Suriye'ye Diyalog Çağrısı Ticari Koridorları Güçlendiriyor</h3><p class="j9uuv-body-description">Diyalog vurgusu, lojistik hatların kesintisiz işlemesi için güvence sağlıyor.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/tobb-sam-ekonomi-zirvesi"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">TOBB Heyeti Şam'da Yeniden İmar Fırsatlarını Görüştü</h3><p class="j9uuv-body-description">Türk ve Suriyeli iş dünyası yeniden imar projeleri için ortak plan hazırlıyor.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/abd-suriye-yaptirim-esnemesi"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">ABD'den Suriye'ye Yaptırım Esnemesi Ekonomiyi Canlandırıyor</h3><p class="j9uuv-body-description">ABD kararı, bankacılık işlemleri ve akreditif süreçleri için kritik bir eşik.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/turkiye-abd-suriye-yaptirim-destegi"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">Türkiye'den ABD'nin Suriye Adımına Destek: Yatırımlar İçin Yeşil Işık</h3><p class="j9uuv-body-description">Ankara, yaptırım esnemesini Türk şirketleri için fırsat olarak görüyor.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/bmgk-suriye-yaptirim-kaldirma-karari"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">BMGK Suriye'ye Yaptırımları Kaldırdı: Ticaret İçin Yeni Sayfa</h3><p class="j9uuv-body-description">BMGK kararı sınır ötesi yatırımlar için finansal kısıtları hafifletiyor.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/hatay-halep-lojistik-koridoru"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">Hatay - Halep Lojistik Koridoru Pilot Uygulaması</h3><p class="j9uuv-body-description">Dijital gümrük ve soğuk zincir entegrasyonu sınır ticaretine hız kazandırdı.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/turk-un-sanayicileri-suriye-pazari"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">Türk Un Sanayicileri Suriye Pazarına Yatırım Planlıyor</h3><p class="j9uuv-body-description">Halep ve Lazkiye’de kurulacak depolama merkezleriyle gıda arzı güçlenecek.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/turkiye-suriye-ticaret-yol-haritasi"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">Türkiye - Suriye Ticaret Yol Haritası Anlaşması</h3><p class="j9uuv-body-description">Yeni yol haritası gümrük, enerji ve finans alanlarında iş birliğini yeniden başlatıyor.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a><a class="j9uuv-body-card" href="/ar/suriye-gumruk-reformu-turkiye-ticaret"><article class="j9uuv-body-item"><div class="j9uuv-body-img"><div class="j9uuv-body-img-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="j9uuv-body-content"><div class="j9uuv-body-meta"><span class="j9uuv-body-chip">haberler</span></div><h3 class="j9uuv-body-title">Suriye Gümrük Reformu Türk İş Dünyasını Rahatlattı</h3><p class="j9uuv-body-description">Yeni gümrük düzeni bekleme süresini kısaltıp maliyetleri düşürüyor.</p><span class="j9uuv-body-link">اقرأ المزيد</span></div></article></a></div>
 </div>
 
 
-<div class="sliderxizhgf">
-  <div class="sliderxizhgftitle"></div>
-  <div class="izhgf swiper-container">
+<div class="sliderxjum8o">
+  <div class="sliderxjum8otitle"></div>
+  <div class="jum8o swiper-container">
     <div class="swiper-wrapper"><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildizhgf2" />
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjum8o2" />
       </div>
     </div></div>
-    <div class="swiper-button-next swiper-button-next-izhgf"></div>
-    <div class="swiper-button-prev swiper-button-prev-izhgf"></div>
-    <div class="swiper-pagination-izhgf"></div>
+    <div class="swiper-button-next swiper-button-next-jum8o"></div>
+    <div class="swiper-button-prev swiper-button-prev-jum8o"></div>
+    <div class="swiper-pagination-jum8o"></div>
   </div>
 </div>
 
 <script> setTimeout(() => {
-  var swiper = new Swiper(".izhgf", {
+  var swiper = new Swiper(".jum8o", {
     slidesPerView: 2,
     simulateTouch: true,
     loop: true,
     pagination: {
-      el: ".swiper-pagination-izhgf",
+      el: ".swiper-pagination-jum8o",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next-izhgf",
-      prevEl: ".swiper-button-prev-izhgf",
+      nextEl: ".swiper-button-next-jum8o",
+      prevEl: ".swiper-button-prev-jum8o",
     },
     breakpoints: {
       320: {
@@ -386,6 +388,83 @@ setTimeout(() => {
       },
     },
   });}, 100);
+</script>
+<div class="popup-overlay" id="popup-overlay" onclick="popupClose()">
+  <div class="popup-container" onclick="event.stopPropagation()">
+    <button class="popup-close" onclick="popupClose()">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="popup-image">
+      <img src="/img/qoxavt/popup.jpg" alt="Popup" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'color:white;font-size:24px;padding:40px;text-align:center;\'>Resim bulunamadı: popup.jpg</div>';" />
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  // Popup açma/kapatma fonksiyonları - Global window'a ekle
+  window.popupClose = function() {
+    var overlay = document.getElementById("popup-overlay");
+    if (overlay) {
+      overlay.classList.add("hidden");
+      overlay.style.display = "none";
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.documentElement.style.overflow = "";
+    }
+  };
+
+  window.popupOpen = function() {
+    var overlay = document.getElementById("popup-overlay");
+    if (overlay) {
+      overlay.classList.remove("hidden");
+      overlay.style.display = "flex";
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+      document.documentElement.style.overflow = "hidden";
+    }
+  };
+
+  // Sayfa yüklendiğinde event listener'ları ekle
+  setTimeout(function() {
+    var overlay = document.getElementById("popup-overlay");
+    if (overlay) {
+      // Overlay'e tıklanınca kapat (boşluğa tıklama)
+      overlay.addEventListener("click", function(e) {
+        if (e.target === overlay || e.target.classList.contains("popup-overlay")) {
+          window.popupClose();
+        }
+      });
+
+      // X butonuna tıklanınca kapat
+      var closeBtn = overlay.querySelector(".popup-close");
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function(e) {
+          e.stopPropagation();
+          window.popupClose();
+        });
+      }
+
+      // ESC tuşu ile kapatma
+      document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape" || event.keyCode === 27) {
+          window.popupClose();
+        }
+      });
+
+      // Otomatik açılış kontrolü
+      var autoOpen = "false" === "true";
+      var delay = parseInt("0") || 0;
+      
+      if (autoOpen === true) {
+        setTimeout(function() {
+          window.popupOpen();
+        }, delay);
+      }
+    }
+  }, 200);
 </script>
 </div>
   <div id="footer"><footer class="footer">
@@ -434,13 +513,16 @@ setTimeout(() => {
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=ixkre"></script>
-<script src="/src/cookie.js?v=ixkre"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=qvcqk"></script>
+<script defer src="/src/cookie.js?v=qvcqk"></script>
 
 </html>

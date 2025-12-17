@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/page/h4qvry5vf3/llr1n.jpg" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=e2mr5" />
-  <link rel="shortcut icon" href="/img/icon.png?v=e2mr5" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ecfei" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ecfei" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ecfei" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=e2mr5"></script>
-<link rel="stylesheet" href="style.css?v=e2mr5">
+  <script type="text/javascript" src="/src/firebase.js?v=ecfei"></script>
+<link rel="stylesheet" href="style.css?v=ecfei">
 </head>
 
 <body>
-  <div id="header"><div class="k6i7w">
+  <div id="header"><div class="jdlbn">
 
-  <div class="k6i7wbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=e2mr5" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="jdlbnbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=ecfei" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="k6i7wright">
-      <div class="k6i7wlanguages ">
+    <div class="jdlbnright">
+      <div class="jdlbnlanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="k6i7wcontactlist">
+      <div class="jdlbncontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined k6i7w-icon">phone</div>
+     <div class="material-symbols-outlined jdlbn-icon">phone</div>
      <div>
-      <div  class="k6i7w-title">undefined</div>
-      <div  class="k6i7w-spot">0342 341 41 31</div>
+      <div  class="jdlbn-title">undefined</div>
+      <div  class="jdlbn-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined k6i7w-icon">mail</div>
+     <div class="material-symbols-outlined jdlbn-icon">mail</div>
      <div>
-      <div  class="k6i7w-title">undefined</div>
-      <div  class="k6i7w-spot">info@saibdernegi.org</div>
+      <div  class="jdlbn-title">undefined</div>
+      <div  class="jdlbn-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined k6i7w-icon">location_on</div>
+     <div class="material-symbols-outlined jdlbn-icon">location_on</div>
      <div>
-      <div  class="k6i7w-title">undefined</div>
-      <div  class="k6i7w-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="jdlbn-title">undefined</div>
+      <div  class="jdlbn-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="k6i7w-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="jdlbn-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="k6i7wmenubody">
-    <div class="k6i7wmenu" id="menu-3-root">
-      <div class="k6i7wmenulistbody">
-        <div class="k6i7wmenulist"><a class="k6i7wmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="k6i7wmenulist-menu " >
+  <div class="jdlbnmenubody">
+    <div class="jdlbnmenu" id="menu-3-root">
+      <div class="jdlbnmenulistbody">
+        <div class="jdlbnmenulist"><a class="jdlbnmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="jdlbnmenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="k6i7wmenulist-menu " >
+    <div class="jdlbnmenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="k6i7wmenulist-menu " >
+    <div class="jdlbnmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="k6i7wmenulist-menu " >
+    <div class="jdlbnmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="k6i7wmenulist-menu " >
+    <div class="jdlbnmenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -149,54 +151,54 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("k6i7wmenu-open")) {
-        root.classList.remove("k6i7wmenu-open");
+      if (root.classList.contains("jdlbnmenu-open")) {
+        root.classList.remove("jdlbnmenu-open");
       } else {
-        root.classList.add("k6i7wmenu-open");
+        root.classList.add("jdlbnmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="bh7vh-title f36">
-  <span>undefined</span>
+  <div id="content"><div class="x4h38-title f36">
+  <span></span>
 </div>
-<div class="bh7vh">
-  <div class="bh7vh-menu-btn">
+<div class="x4h38">
+  <div class="x4h38-menu-btn">
     <span>قائمة الصفحات</span>
-    <span class="material-symbols-outlined bh7vh-icon">menu</span>
+    <span class="material-symbols-outlined x4h38-icon">menu</span>
   </div>
-  <div class="bh7vh-menu"><a class="bh7vh-menu-link" href="/ar/bize-katilin">Bize Katılın</a><a class="bh7vh-menu-link" href="/ar/faaliyetlerimiz">Faaliyetlerimiz</a><a class="bh7vh-menu-link" href="/ar/ihracat-rehberi">İhracat Rehberi</a><a class="bh7vh-menu-link" href="/ar/is-agi">İş Ağı</a><a class="bh7vh-menu-link active" href="/ar/uyelerimiz">Üyelerimiz</a></div>
-  <div class="bh7vh-desc">
+  <div class="x4h38-menu"><a class="x4h38-menu-link" href="/ar/bize-katilin">Bize Katılın</a><a class="x4h38-menu-link" href="/ar/faaliyetlerimiz">Faaliyetlerimiz</a><a class="x4h38-menu-link" href="/ar/ihracat-rehberi">İhracat Rehberi</a><a class="x4h38-menu-link" href="/ar/is-agi">İş Ağı</a><a class="x4h38-menu-link active" href="/ar/uyelerimiz">Üyelerimiz</a></div>
+  <div class="x4h38-desc">
     
-    <div class="bh7vh-desc-body">
-            <img src="/page/h4qvry5vf3/llr1n.jpg?v=e2mr5" width="100%" alt="{{title}}" />
+    <div class="x4h38-desc-body">
+            <img src="/page/h4qvry5vf3/llr1n.jpg?v=ecfei" width="100%" alt="{{title}}" />
     </div>
-    <div class="bh7vh-body"></div>
+    <div class="x4h38-body"></div>
   </div>
 </div>
 
 <script>
-  const menuToggleBtn = document.querySelector(".bh7vh-menu-btn");
+  const menuToggleBtn = document.querySelector(".x4h38-menu-btn");
   if (menuToggleBtn) {
     menuToggleBtn.addEventListener("click", function () {
-      const menu = document.querySelector(".bh7vh-menu");
+      const menu = document.querySelector(".x4h38-menu");
       if (!menu) return;
       const isOpen = menu.classList.toggle("active");
-      const icon = this.querySelector(".bh7vh-icon");
+      const icon = this.querySelector(".x4h38-icon");
       if (icon) {
         icon.textContent = isOpen ? "close" : "menu";
       }
     });
   }
 
-  document.querySelectorAll(".bh7vh-top").forEach(function (button) {
+  document.querySelectorAll(".x4h38-top").forEach(function (button) {
     button.addEventListener("click", function () {
-      const group = this.closest(".bh7vh-menu-group");
+      const group = this.closest(".x4h38-menu-group");
       if (!group) return;
-      const sub = group.querySelector(".bh7vh-sub");
+      const sub = group.querySelector(".x4h38-sub");
       const isOpen = group.classList.toggle("open");
       this.classList.toggle("active", isOpen);
-      const icon = this.querySelector(".bh7vh-icon");
+      const icon = this.querySelector(".x4h38-icon");
       if (icon) {
         icon.textContent = isOpen ? "expand_less" : "expand_more";
       }
@@ -254,13 +256,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=e2mr5"></script>
-<script src="/src/cookie.js?v=e2mr5"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ecfei"></script>
+<script defer src="/src/cookie.js?v=ecfei"></script>
 
 </html>

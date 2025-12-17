@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=rv73u" />
-  <link rel="shortcut icon" href="/img/icon.png?v=rv73u" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ukxpo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ukxpo" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ukxpo" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=rv73u"></script>
-<link rel="stylesheet" href="style.css?v=rv73u">
+  <script type="text/javascript" src="/src/firebase.js?v=ukxpo"></script>
+<link rel="stylesheet" href="style.css?v=ukxpo">
 </head>
 
 <body>
-  <div id="header"><div class="zru2j">
+  <div id="header"><div class="p8opa">
 
-  <div class="zru2jbody">
-    <a href="/en/"><img src="/img/logo.svg?v=rv73u" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="p8opabody">
+    <a href="/en/"><img src="/img/logo.svg?v=ukxpo" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="zru2jright">
-      <div class="zru2jlanguages ">
+    <div class="p8oparight">
+      <div class="p8opalanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="zru2jcontactlist">
+      <div class="p8opacontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined zru2j-icon">phone</div>
+     <div class="material-symbols-outlined p8opa-icon">phone</div>
      <div>
-      <div  class="zru2j-title">undefined</div>
-      <div  class="zru2j-spot">0342 341 41 31</div>
+      <div  class="p8opa-title">undefined</div>
+      <div  class="p8opa-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined zru2j-icon">mail</div>
+     <div class="material-symbols-outlined p8opa-icon">mail</div>
      <div>
-      <div  class="zru2j-title">undefined</div>
-      <div  class="zru2j-spot">info@saibdernegi.org</div>
+      <div  class="p8opa-title">undefined</div>
+      <div  class="p8opa-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined zru2j-icon">location_on</div>
+     <div class="material-symbols-outlined p8opa-icon">location_on</div>
      <div>
-      <div  class="zru2j-title">undefined</div>
-      <div  class="zru2j-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="p8opa-title">undefined</div>
+      <div  class="p8opa-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="zru2j-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="p8opa-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="zru2jmenubody">
-    <div class="zru2jmenu" id="menu-3-root">
-      <div class="zru2jmenulistbody">
-        <div class="zru2jmenulist"><a class="zru2jmenulist-menu" href="/en/">Home </a><div class="zru2jmenulist-menu " >
+  <div class="p8opamenubody">
+    <div class="p8opamenu" id="menu-3-root">
+      <div class="p8opamenulistbody">
+        <div class="p8opamenulist"><a class="p8opamenulist-menu" href="/en/">Home </a><div class="p8opamenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="zru2jmenulist-menu " >
+    <div class="p8opamenulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="zru2jmenulist-menu " >
+    <div class="p8opamenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="zru2jmenulist-menu dropdown-content-active-zru2j" >
+    <div class="p8opamenulist-menu dropdown-content-active-p8opa" >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="zru2jmenulist-menu " >
+    <div class="p8opamenulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -149,10 +151,10 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("zru2jmenu-open")) {
-        root.classList.remove("zru2jmenu-open");
+      if (root.classList.contains("p8opamenu-open")) {
+        root.classList.remove("p8opamenu-open");
       } else {
-        root.classList.add("zru2jmenu-open");
+        root.classList.add("p8opamenu-open");
       }
     }
   }
@@ -204,13 +206,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=rv73u"></script>
-<script src="/src/cookie.js?v=rv73u"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ukxpo"></script>
+<script defer src="/src/cookie.js?v=ukxpo"></script>
 
 </html>

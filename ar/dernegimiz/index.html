@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=qmfrn" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qmfrn" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=gh8dk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=gh8dk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=gh8dk" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=qmfrn"></script>
-<link rel="stylesheet" href="style.css?v=qmfrn">
+  <script type="text/javascript" src="/src/firebase.js?v=gh8dk"></script>
+<link rel="stylesheet" href="style.css?v=gh8dk">
 </head>
 
 <body>
-  <div id="header"><div class="zfqvr">
+  <div id="header"><div class="gr2qn">
 
-  <div class="zfqvrbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=qmfrn" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="gr2qnbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=gh8dk" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="zfqvrright">
-      <div class="zfqvrlanguages ">
+    <div class="gr2qnright">
+      <div class="gr2qnlanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="zfqvrcontactlist">
+      <div class="gr2qncontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined zfqvr-icon">phone</div>
+     <div class="material-symbols-outlined gr2qn-icon">phone</div>
      <div>
-      <div  class="zfqvr-title">undefined</div>
-      <div  class="zfqvr-spot">0342 341 41 31</div>
+      <div  class="gr2qn-title">undefined</div>
+      <div  class="gr2qn-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined zfqvr-icon">mail</div>
+     <div class="material-symbols-outlined gr2qn-icon">mail</div>
      <div>
-      <div  class="zfqvr-title">undefined</div>
-      <div  class="zfqvr-spot">info@saibdernegi.org</div>
+      <div  class="gr2qn-title">undefined</div>
+      <div  class="gr2qn-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined zfqvr-icon">location_on</div>
+     <div class="material-symbols-outlined gr2qn-icon">location_on</div>
      <div>
-      <div  class="zfqvr-title">undefined</div>
-      <div  class="zfqvr-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="gr2qn-title">undefined</div>
+      <div  class="gr2qn-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="zfqvr-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="gr2qn-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="zfqvrmenubody">
-    <div class="zfqvrmenu" id="menu-3-root">
-      <div class="zfqvrmenulistbody">
-        <div class="zfqvrmenulist"><a class="zfqvrmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="zfqvrmenulist-menu dropdown-content-active-zfqvr" >
+  <div class="gr2qnmenubody">
+    <div class="gr2qnmenu" id="menu-3-root">
+      <div class="gr2qnmenulistbody">
+        <div class="gr2qnmenulist"><a class="gr2qnmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="gr2qnmenulist-menu dropdown-content-active-gr2qn" >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="zfqvrmenulist-menu " >
+    <div class="gr2qnmenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="zfqvrmenulist-menu " >
+    <div class="gr2qnmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="zfqvrmenulist-menu " >
+    <div class="gr2qnmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="zfqvrmenulist-menu " >
+    <div class="gr2qnmenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -149,10 +151,10 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("zfqvrmenu-open")) {
-        root.classList.remove("zfqvrmenu-open");
+      if (root.classList.contains("gr2qnmenu-open")) {
+        root.classList.remove("gr2qnmenu-open");
       } else {
-        root.classList.add("zfqvrmenu-open");
+        root.classList.add("gr2qnmenu-open");
       }
     }
   }
@@ -204,13 +206,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=qmfrn"></script>
-<script src="/src/cookie.js?v=qmfrn"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=gh8dk"></script>
+<script defer src="/src/cookie.js?v=gh8dk"></script>
 
 </html>

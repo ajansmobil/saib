@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=hb9ce" />
-  <link rel="shortcut icon" href="/img/icon.png?v=hb9ce" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=lh9ib" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=lh9ib" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=lh9ib" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=hb9ce"></script>
-<link rel="stylesheet" href="style.css?v=hb9ce">
+  <script type="text/javascript" src="/src/firebase.js?v=lh9ib"></script>
+<link rel="stylesheet" href="style.css?v=lh9ib">
 </head>
 
 <body>
-  <div id="header"><div class="htvd6">
+  <div id="header"><div class="r1u3o">
 
-  <div class="htvd6body">
-    <a href="/ar/"><img src="/img/logo.svg?v=hb9ce" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="r1u3obody">
+    <a href="/ar/"><img src="/img/logo.svg?v=lh9ib" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="htvd6right">
-      <div class="htvd6languages ">
+    <div class="r1u3oright">
+      <div class="r1u3olanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="htvd6contactlist">
+      <div class="r1u3ocontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined htvd6-icon">phone</div>
+     <div class="material-symbols-outlined r1u3o-icon">phone</div>
      <div>
-      <div  class="htvd6-title">undefined</div>
-      <div  class="htvd6-spot">0342 341 41 31</div>
+      <div  class="r1u3o-title">undefined</div>
+      <div  class="r1u3o-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined htvd6-icon">mail</div>
+     <div class="material-symbols-outlined r1u3o-icon">mail</div>
      <div>
-      <div  class="htvd6-title">undefined</div>
-      <div  class="htvd6-spot">info@saibdernegi.org</div>
+      <div  class="r1u3o-title">undefined</div>
+      <div  class="r1u3o-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined htvd6-icon">location_on</div>
+     <div class="material-symbols-outlined r1u3o-icon">location_on</div>
      <div>
-      <div  class="htvd6-title">undefined</div>
-      <div  class="htvd6-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="r1u3o-title">undefined</div>
+      <div  class="r1u3o-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="htvd6-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="r1u3o-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="htvd6menubody">
-    <div class="htvd6menu" id="menu-3-root">
-      <div class="htvd6menulistbody">
-        <div class="htvd6menulist"><a class="htvd6menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="htvd6menulist-menu " >
+  <div class="r1u3omenubody">
+    <div class="r1u3omenu" id="menu-3-root">
+      <div class="r1u3omenulistbody">
+        <div class="r1u3omenulist"><a class="r1u3omenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="r1u3omenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="htvd6menulist-menu " >
+    <div class="r1u3omenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="htvd6menulist-menu dropdown-content-active-htvd6" >
+    <div class="r1u3omenulist-menu dropdown-content-active-r1u3o" >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="htvd6menulist-menu " >
+    <div class="r1u3omenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="htvd6menulist-menu " >
+    <div class="r1u3omenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -149,23 +151,23 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("htvd6menu-open")) {
-        root.classList.remove("htvd6menu-open");
+      if (root.classList.contains("r1u3omenu-open")) {
+        root.classList.remove("r1u3omenu-open");
       } else {
-        root.classList.add("htvd6menu-open");
+        root.classList.add("r1u3omenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="kp6hj" id="kp6hj-membership-vd8h6j">
-  <div class="kp6hj-wrapper">
-    <div class="kp6hj-header">
-      <div class="kp6hj-organization">SAİB - Suriyeli ve Türk İş İnsanları Derneği</div>
-      <div class="kp6hj-title">SAİB Üyelik Başvuru Formu</div>
-      <div class="kp6hj-subtitle">SAİB ağına katılmak için lütfen kişisel ve firma bilgilerinizi eksiksiz doldurunuz.</div>
+  <div id="content"><div class="ywjj2" id="ywjj2-membership-vd8h6j">
+  <div class="ywjj2-wrapper">
+    <div class="ywjj2-header">
+      <div class="ywjj2-organization">SAİB - Suriyeli ve Türk İş İnsanları Derneği</div>
+      <div class="ywjj2-title">SAİB Üyelik Başvuru Formu</div>
+      <div class="ywjj2-subtitle">SAİB ağına katılmak için lütfen kişisel ve firma bilgilerinizi eksiksiz doldurunuz.</div>
     </div>
     <form
-      class="kp6hj-form"
+      class="ywjj2-form"
       autocomplete="on"
       data-collection="membershipApplications"
       data-status-field="status"
@@ -180,22 +182,22 @@
       data-organization="SAİB - Suriyeli ve Türk İş İnsanları Derneği"
       data-form-title="SAİB Üyelik Başvuru Formu"
     >
-      <div class="kp6hj-alert" role="status" aria-live="polite" style="display: none;"></div>
-      <section class="kp6hj-section"><div class="kp6hj-section-header">Nüfus ile İlgili Bilgiler</div><div class="kp6hj-section-body"><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-fullName"><span class="kp6hj-label-text">Ad Soyad</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-fullName" name="fullName" placeholder="Adınızı ve soyadınızı giriniz" required /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-identityNumber"><span class="kp6hj-label-text">TC Kimlik No</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-identityNumber" name="identityNumber" placeholder="11 haneli kimlik numarası" required maxlength="11" /></div></div><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-birthDate"><span class="kp6hj-label-text">Doğum Tarihi</span></label><input class="kp6hj-input" type="date" id="kp6hj-membership-vd8h6j-birthDate" name="birthDate" placeholder="Gün-Ay-Yıl" required /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-birthPlace"><span class="kp6hj-label-text">Doğum Yeri</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-birthPlace" name="birthPlace" placeholder="Şehir / Ülke" required /></div></div><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-registeredProvince"><span class="kp6hj-label-text">Nüfusa Kayıtlı Olduğunuz İl</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-registeredProvince" name="registeredProvince" placeholder="İl adı" required /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-registeredDistrict"><span class="kp6hj-label-text">İlçe</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-registeredDistrict" name="registeredDistrict" placeholder="İlçe adı" required /></div></div></div></section><section class="kp6hj-section"><div class="kp6hj-section-header">Öğrenim ile İlgili Bilgiler</div><div class="kp6hj-section-body"><div class="kp6hj-row"><div class="kp6hj-field kp6hj-field-checkbox" data-columns="3"><div class="kp6hj-field-label"><span class="kp6hj-label-text">Öğrenim Durumu</span></div><div class="kp6hj-checkbox-list"><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-educationLevels-0"><input type="checkbox" id="kp6hj-membership-vd8h6j-educationLevels-0" name="educationLevels[]" value="primary" /><span>İlkokul</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-educationLevels-1"><input type="checkbox" id="kp6hj-membership-vd8h6j-educationLevels-1" name="educationLevels[]" value="secondary" /><span>Ortaokul</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-educationLevels-2"><input type="checkbox" id="kp6hj-membership-vd8h6j-educationLevels-2" name="educationLevels[]" value="highschool" /><span>Lise</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-educationLevels-3"><input type="checkbox" id="kp6hj-membership-vd8h6j-educationLevels-3" name="educationLevels[]" value="bachelor" /><span>Lisans</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-educationLevels-4"><input type="checkbox" id="kp6hj-membership-vd8h6j-educationLevels-4" name="educationLevels[]" value="postgraduate" /><span>Lisans Üstü</span></label></div></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-graduatedSchool"><span class="kp6hj-label-text">Okul</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-graduatedSchool" name="graduatedSchool" placeholder="Mezun olduğunuz kurum" /></div></div><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-primaryForeignLanguage"><span class="kp6hj-label-text">Yabancı Dil</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-primaryForeignLanguage" name="primaryForeignLanguage" placeholder="Dil adı" /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-primaryForeignLanguageLevel"><span class="kp6hj-label-text">Seviye</span></label><select class="kp6hj-select" id="kp6hj-membership-vd8h6j-primaryForeignLanguageLevel" name="primaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Orta</option><option value="good">İyi</option><option value="excellent">Çok İyi</option></select></div></div><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-secondaryForeignLanguage"><span class="kp6hj-label-text">İkinci Yabancı Dil</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-secondaryForeignLanguage" name="secondaryForeignLanguage" placeholder="Dil adı" /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-secondaryForeignLanguageLevel"><span class="kp6hj-label-text">Seviye</span></label><select class="kp6hj-select" id="kp6hj-membership-vd8h6j-secondaryForeignLanguageLevel" name="secondaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Orta</option><option value="good">İyi</option><option value="excellent">Çok İyi</option></select></div></div></div></section><section class="kp6hj-section"><div class="kp6hj-section-header">Firmanıza Ait Bilgiler</div><div class="kp6hj-section-body"><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-companyName"><span class="kp6hj-label-text">Firmanızın Adı</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-companyName" name="companyName" placeholder="Ticari unvan" required /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-establishmentYear"><span class="kp6hj-label-text">Kuruluş Yılı</span></label><input class="kp6hj-input" type="number" id="kp6hj-membership-vd8h6j-establishmentYear" name="establishmentYear" placeholder="YYYY" /></div></div><div class="kp6hj-row"><div class="kp6hj-subheading">İletişim Bilgileri</div></div><div class="kp6hj-row"><div class="kp6hj-field kp6hj-field-wide"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-companyAddress"><span class="kp6hj-label-text">Adres</span></label><textarea class="kp6hj-textarea" id="kp6hj-membership-vd8h6j-companyAddress" name="companyAddress" rows="3" placeholder="Şirket merkez adresi"></textarea></div></div><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-companyWebsite"><span class="kp6hj-label-text">Web Site</span></label><input class="kp6hj-input" type="url" id="kp6hj-membership-vd8h6j-companyWebsite" name="companyWebsite" placeholder="https://" /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-companyPhone"><span class="kp6hj-label-text">Cep No</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-companyPhone" name="companyPhone" placeholder="5XX XXX XX XX" /></div></div><div class="kp6hj-row"><div class="kp6hj-field kp6hj-field-checkbox" data-columns="3"><div class="kp6hj-field-label"><span class="kp6hj-label-text">Sektörünüz</span></div><div class="kp6hj-checkbox-list"><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-companySectors-0"><input type="checkbox" id="kp6hj-membership-vd8h6j-companySectors-0" name="companySectors[]" value="industry" /><span>Sanayi</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-companySectors-1"><input type="checkbox" id="kp6hj-membership-vd8h6j-companySectors-1" name="companySectors[]" value="services" /><span>Hizmetler</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-companySectors-2"><input type="checkbox" id="kp6hj-membership-vd8h6j-companySectors-2" name="companySectors[]" value="agriculture" /><span>Tarım</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-companySectors-3"><input type="checkbox" id="kp6hj-membership-vd8h6j-companySectors-3" name="companySectors[]" value="finance" /><span>Finansal</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-companySectors-4"><input type="checkbox" id="kp6hj-membership-vd8h6j-companySectors-4" name="companySectors[]" value="contractor" /><span>Yüklenici (Contractor)</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-companySectors-5"><input type="checkbox" id="kp6hj-membership-vd8h6j-companySectors-5" name="companySectors[]" value="other" /><span>Diğer</span></label></div></div></div><div class="kp6hj-row"><div class="kp6hj-field kp6hj-field-checkbox" data-columns="3"><div class="kp6hj-field-label"><span class="kp6hj-label-text">Faaliyet Tipi</span></div><div class="kp6hj-checkbox-list"><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-businessActivities-0"><input type="checkbox" id="kp6hj-membership-vd8h6j-businessActivities-0" name="businessActivities[]" value="producer" /><span>Üretici</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-businessActivities-1"><input type="checkbox" id="kp6hj-membership-vd8h6j-businessActivities-1" name="businessActivities[]" value="wholesaler" /><span>Toptancı</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-businessActivities-2"><input type="checkbox" id="kp6hj-membership-vd8h6j-businessActivities-2" name="businessActivities[]" value="importer" /><span>İthalatçı</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-businessActivities-3"><input type="checkbox" id="kp6hj-membership-vd8h6j-businessActivities-3" name="businessActivities[]" value="exporter" /><span>İhracatçı</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-businessActivities-4"><input type="checkbox" id="kp6hj-membership-vd8h6j-businessActivities-4" name="businessActivities[]" value="logistics" /><span>Lojistik</span></label><label class="kp6hj-checkbox-item" for="kp6hj-membership-vd8h6j-businessActivities-5"><input type="checkbox" id="kp6hj-membership-vd8h6j-businessActivities-5" name="businessActivities[]" value="other" /><span>Diğer</span></label></div></div></div><div class="kp6hj-row"><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-annualRevenue"><span class="kp6hj-label-text">Yıllık Cirosu</span></label><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-annualRevenue" name="annualRevenue" placeholder="Örn: 50.000.000 ₺" /></div><div class="kp6hj-field"><label class="kp6hj-field-label" for="kp6hj-membership-vd8h6j-employeeCount"><span class="kp6hj-label-text">Çalışan Sayısı</span></label><input class="kp6hj-input" type="number" id="kp6hj-membership-vd8h6j-employeeCount" name="employeeCount" placeholder="Örn: 45" /></div></div></div></section><section class="kp6hj-section"><div class="kp6hj-section-header">Halen Üye Olunan Diğer Kuruluşlar<div class="kp6hj-section-subtitle">(Parti, Dernek, Vakıf, Grup, Kulüp)</div></div><div class="kp6hj-section-body"><div class="kp6hj-line-list-wrapper"><div class="kp6hj-field-label kp6hj-line-list-label"><span class="kp6hj-label-text">Kuruluş / Görev</span></div><div class="kp6hj-line-list"><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-otherMemberships-0"><span class="kp6hj-line-number">1)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-otherMemberships-0" name="otherMemberships[0]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-otherMemberships-1"><span class="kp6hj-line-number">2)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-otherMemberships-1" name="otherMemberships[1]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-otherMemberships-2"><span class="kp6hj-line-number">3)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-otherMemberships-2" name="otherMemberships[2]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-otherMemberships-3"><span class="kp6hj-line-number">4)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-otherMemberships-3" name="otherMemberships[3]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-otherMemberships-4"><span class="kp6hj-line-number">5)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-otherMemberships-4" name="otherMemberships[4]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-otherMemberships-5"><span class="kp6hj-line-number">6)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-otherMemberships-5" name="otherMemberships[5]" placeholder="Kuruluş adı ve göreviniz" /></label></div></div></div></section><section class="kp6hj-section"><div class="kp6hj-section-header">Başvuru Sahibinin Üyeliği Kabul için Refer</div><div class="kp6hj-section-body"><div class="kp6hj-line-list-wrapper"><div class="kp6hj-field-label kp6hj-line-list-label"><span class="kp6hj-label-text">Ad Soyad</span></div><div class="kp6hj-line-list"><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-references-0"><span class="kp6hj-line-number">1)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-references-0" name="references[0]" placeholder="Referans kişisinin adı ve iletişimi" /></label><label class="kp6hj-line-list-item" for="kp6hj-membership-vd8h6j-references-1"><span class="kp6hj-line-number">2)</span><input class="kp6hj-input" type="text" id="kp6hj-membership-vd8h6j-references-1" name="references[1]" placeholder="Referans kişisinin adı ve iletişimi" /></label></div></div></div></section>
-      <div class="kp6hj-actions">
-        <button type="submit" class="kp6hj-submit">
+      <div class="ywjj2-alert" role="status" aria-live="polite" style="display: none;"></div>
+      <section class="ywjj2-section"><div class="ywjj2-section-header">Nüfus ile İlgili Bilgiler</div><div class="ywjj2-section-body"><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-fullName"><span class="ywjj2-label-text">Ad Soyad</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-fullName" name="fullName" placeholder="Adınızı ve soyadınızı giriniz" required /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-identityNumber"><span class="ywjj2-label-text">TC Kimlik No</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-identityNumber" name="identityNumber" placeholder="11 haneli kimlik numarası" required maxlength="11" /></div></div><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-birthDate"><span class="ywjj2-label-text">Doğum Tarihi</span></label><input class="ywjj2-input" type="date" id="ywjj2-membership-vd8h6j-birthDate" name="birthDate" placeholder="Gün-Ay-Yıl" required /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-birthPlace"><span class="ywjj2-label-text">Doğum Yeri</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-birthPlace" name="birthPlace" placeholder="Şehir / Ülke" required /></div></div><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-registeredProvince"><span class="ywjj2-label-text">Nüfusa Kayıtlı Olduğunuz İl</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-registeredProvince" name="registeredProvince" placeholder="İl adı" required /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-registeredDistrict"><span class="ywjj2-label-text">İlçe</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-registeredDistrict" name="registeredDistrict" placeholder="İlçe adı" required /></div></div></div></section><section class="ywjj2-section"><div class="ywjj2-section-header">Öğrenim ile İlgili Bilgiler</div><div class="ywjj2-section-body"><div class="ywjj2-row"><div class="ywjj2-field ywjj2-field-checkbox" data-columns="3"><div class="ywjj2-field-label"><span class="ywjj2-label-text">Öğrenim Durumu</span></div><div class="ywjj2-checkbox-list"><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-educationLevels-0"><input type="checkbox" id="ywjj2-membership-vd8h6j-educationLevels-0" name="educationLevels[]" value="primary" /><span>İlkokul</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-educationLevels-1"><input type="checkbox" id="ywjj2-membership-vd8h6j-educationLevels-1" name="educationLevels[]" value="secondary" /><span>Ortaokul</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-educationLevels-2"><input type="checkbox" id="ywjj2-membership-vd8h6j-educationLevels-2" name="educationLevels[]" value="highschool" /><span>Lise</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-educationLevels-3"><input type="checkbox" id="ywjj2-membership-vd8h6j-educationLevels-3" name="educationLevels[]" value="bachelor" /><span>Lisans</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-educationLevels-4"><input type="checkbox" id="ywjj2-membership-vd8h6j-educationLevels-4" name="educationLevels[]" value="postgraduate" /><span>Lisans Üstü</span></label></div></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-graduatedSchool"><span class="ywjj2-label-text">Okul</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-graduatedSchool" name="graduatedSchool" placeholder="Mezun olduğunuz kurum" /></div></div><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-primaryForeignLanguage"><span class="ywjj2-label-text">Yabancı Dil</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-primaryForeignLanguage" name="primaryForeignLanguage" placeholder="Dil adı" /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-primaryForeignLanguageLevel"><span class="ywjj2-label-text">Seviye</span></label><select class="ywjj2-select" id="ywjj2-membership-vd8h6j-primaryForeignLanguageLevel" name="primaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Orta</option><option value="good">İyi</option><option value="excellent">Çok İyi</option></select></div></div><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-secondaryForeignLanguage"><span class="ywjj2-label-text">İkinci Yabancı Dil</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-secondaryForeignLanguage" name="secondaryForeignLanguage" placeholder="Dil adı" /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-secondaryForeignLanguageLevel"><span class="ywjj2-label-text">Seviye</span></label><select class="ywjj2-select" id="ywjj2-membership-vd8h6j-secondaryForeignLanguageLevel" name="secondaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Orta</option><option value="good">İyi</option><option value="excellent">Çok İyi</option></select></div></div></div></section><section class="ywjj2-section"><div class="ywjj2-section-header">Firmanıza Ait Bilgiler</div><div class="ywjj2-section-body"><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-companyName"><span class="ywjj2-label-text">Firmanızın Adı</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-companyName" name="companyName" placeholder="Ticari unvan" required /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-establishmentYear"><span class="ywjj2-label-text">Kuruluş Yılı</span></label><input class="ywjj2-input" type="number" id="ywjj2-membership-vd8h6j-establishmentYear" name="establishmentYear" placeholder="YYYY" /></div></div><div class="ywjj2-row"><div class="ywjj2-subheading">İletişim Bilgileri</div></div><div class="ywjj2-row"><div class="ywjj2-field ywjj2-field-wide"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-companyAddress"><span class="ywjj2-label-text">Adres</span></label><textarea class="ywjj2-textarea" id="ywjj2-membership-vd8h6j-companyAddress" name="companyAddress" rows="3" placeholder="Şirket merkez adresi"></textarea></div></div><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-companyWebsite"><span class="ywjj2-label-text">Web Site</span></label><input class="ywjj2-input" type="url" id="ywjj2-membership-vd8h6j-companyWebsite" name="companyWebsite" placeholder="https://" /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-companyPhone"><span class="ywjj2-label-text">Cep No</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-companyPhone" name="companyPhone" placeholder="5XX XXX XX XX" /></div></div><div class="ywjj2-row"><div class="ywjj2-field ywjj2-field-checkbox" data-columns="3"><div class="ywjj2-field-label"><span class="ywjj2-label-text">Sektörünüz</span></div><div class="ywjj2-checkbox-list"><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-companySectors-0"><input type="checkbox" id="ywjj2-membership-vd8h6j-companySectors-0" name="companySectors[]" value="industry" /><span>Sanayi</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-companySectors-1"><input type="checkbox" id="ywjj2-membership-vd8h6j-companySectors-1" name="companySectors[]" value="services" /><span>Hizmetler</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-companySectors-2"><input type="checkbox" id="ywjj2-membership-vd8h6j-companySectors-2" name="companySectors[]" value="agriculture" /><span>Tarım</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-companySectors-3"><input type="checkbox" id="ywjj2-membership-vd8h6j-companySectors-3" name="companySectors[]" value="finance" /><span>Finansal</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-companySectors-4"><input type="checkbox" id="ywjj2-membership-vd8h6j-companySectors-4" name="companySectors[]" value="contractor" /><span>Yüklenici (Contractor)</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-companySectors-5"><input type="checkbox" id="ywjj2-membership-vd8h6j-companySectors-5" name="companySectors[]" value="other" /><span>Diğer</span></label></div></div></div><div class="ywjj2-row"><div class="ywjj2-field ywjj2-field-checkbox" data-columns="3"><div class="ywjj2-field-label"><span class="ywjj2-label-text">Faaliyet Tipi</span></div><div class="ywjj2-checkbox-list"><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-businessActivities-0"><input type="checkbox" id="ywjj2-membership-vd8h6j-businessActivities-0" name="businessActivities[]" value="producer" /><span>Üretici</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-businessActivities-1"><input type="checkbox" id="ywjj2-membership-vd8h6j-businessActivities-1" name="businessActivities[]" value="wholesaler" /><span>Toptancı</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-businessActivities-2"><input type="checkbox" id="ywjj2-membership-vd8h6j-businessActivities-2" name="businessActivities[]" value="importer" /><span>İthalatçı</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-businessActivities-3"><input type="checkbox" id="ywjj2-membership-vd8h6j-businessActivities-3" name="businessActivities[]" value="exporter" /><span>İhracatçı</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-businessActivities-4"><input type="checkbox" id="ywjj2-membership-vd8h6j-businessActivities-4" name="businessActivities[]" value="logistics" /><span>Lojistik</span></label><label class="ywjj2-checkbox-item" for="ywjj2-membership-vd8h6j-businessActivities-5"><input type="checkbox" id="ywjj2-membership-vd8h6j-businessActivities-5" name="businessActivities[]" value="other" /><span>Diğer</span></label></div></div></div><div class="ywjj2-row"><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-annualRevenue"><span class="ywjj2-label-text">Yıllık Cirosu</span></label><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-annualRevenue" name="annualRevenue" placeholder="Örn: 50.000.000 ₺" /></div><div class="ywjj2-field"><label class="ywjj2-field-label" for="ywjj2-membership-vd8h6j-employeeCount"><span class="ywjj2-label-text">Çalışan Sayısı</span></label><input class="ywjj2-input" type="number" id="ywjj2-membership-vd8h6j-employeeCount" name="employeeCount" placeholder="Örn: 45" /></div></div></div></section><section class="ywjj2-section"><div class="ywjj2-section-header">Halen Üye Olunan Diğer Kuruluşlar<div class="ywjj2-section-subtitle">(Parti, Dernek, Vakıf, Grup, Kulüp)</div></div><div class="ywjj2-section-body"><div class="ywjj2-line-list-wrapper"><div class="ywjj2-field-label ywjj2-line-list-label"><span class="ywjj2-label-text">Kuruluş / Görev</span></div><div class="ywjj2-line-list"><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-otherMemberships-0"><span class="ywjj2-line-number">1)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-otherMemberships-0" name="otherMemberships[0]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-otherMemberships-1"><span class="ywjj2-line-number">2)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-otherMemberships-1" name="otherMemberships[1]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-otherMemberships-2"><span class="ywjj2-line-number">3)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-otherMemberships-2" name="otherMemberships[2]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-otherMemberships-3"><span class="ywjj2-line-number">4)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-otherMemberships-3" name="otherMemberships[3]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-otherMemberships-4"><span class="ywjj2-line-number">5)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-otherMemberships-4" name="otherMemberships[4]" placeholder="Kuruluş adı ve göreviniz" /></label><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-otherMemberships-5"><span class="ywjj2-line-number">6)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-otherMemberships-5" name="otherMemberships[5]" placeholder="Kuruluş adı ve göreviniz" /></label></div></div></div></section><section class="ywjj2-section"><div class="ywjj2-section-header">Başvuru Sahibinin Üyeliği Kabul için Refer</div><div class="ywjj2-section-body"><div class="ywjj2-line-list-wrapper"><div class="ywjj2-field-label ywjj2-line-list-label"><span class="ywjj2-label-text">Ad Soyad</span></div><div class="ywjj2-line-list"><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-references-0"><span class="ywjj2-line-number">1)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-references-0" name="references[0]" placeholder="Referans kişisinin adı ve iletişimi" /></label><label class="ywjj2-line-list-item" for="ywjj2-membership-vd8h6j-references-1"><span class="ywjj2-line-number">2)</span><input class="ywjj2-input" type="text" id="ywjj2-membership-vd8h6j-references-1" name="references[1]" placeholder="Referans kişisinin adı ve iletişimi" /></label></div></div></div></section>
+      <div class="ywjj2-actions">
+        <button type="submit" class="ywjj2-submit">
           <span class="material-symbols-outlined">send</span>
           <span>SAİB Başvurusunu Gönder</span>
         </button>
       </div>
     </form>
-    <div class="kp6hj-footer">
-      <div class="kp6hj-footer-note">Başvurunuz SAİB yönetimi tarafından değerlendirilecek ve en kısa sürede geri dönüş yapılacaktır.</div>
+    <div class="ywjj2-footer">
+      <div class="ywjj2-footer-note">Başvurunuz SAİB yönetimi tarafından değerlendirilecek ve en kısa sürede geri dönüş yapılacaktır.</div>
     </div>
-    <div class="kp6hj-status-overlay" aria-live="assertive" aria-hidden="true" data-thanks="Kaydolduğunuz için teşekkürler.">
-      <div class="kp6hj-status-content">
-        <div class="kp6hj-status-spinner" role="presentation"></div>
-        <div class="kp6hj-status-text">Üyelik kaydı yapılıyor...</div>
+    <div class="ywjj2-status-overlay" aria-live="assertive" aria-hidden="true" data-thanks="Kaydolduğunuz için teşekkürler.">
+      <div class="ywjj2-status-content">
+        <div class="ywjj2-status-spinner" role="presentation"></div>
+        <div class="ywjj2-status-text">Üyelik kaydı yapılıyor...</div>
       </div>
     </div>
   </div>
@@ -203,7 +205,7 @@
 
 <script>
   (function () {
-    var moduleId = "kp6hj-membership-vd8h6j";
+    var moduleId = "ywjj2-membership-vd8h6j";
     var MAX_ATTEMPTS = 40;
     var RETRY_DELAY = 200;
 
@@ -214,10 +216,10 @@
       if (!message) {
         alertBox.style.display = "none";
         alertBox.textContent = "";
-        alertBox.className = "kp6hj-alert";
+        alertBox.className = "ywjj2-alert";
         return;
       }
-      alertBox.className = "kp6hj-alert kp6hj-alert-" + type;
+      alertBox.className = "ywjj2-alert ywjj2-alert-" + type;
       alertBox.textContent = message;
       alertBox.style.display = "block";
     }
@@ -315,15 +317,15 @@
         }
         return;
       }
-      var form = root.querySelector(".kp6hj-form");
+      var form = root.querySelector(".ywjj2-form");
       if (!form) {
         return;
       }
-      if (form.getAttribute("data-kp6hj-ready") === "true") {
+      if (form.getAttribute("data-ywjj2-ready") === "true") {
         return;
       }
-      var statusOverlay = root.querySelector(".kp6hj-status-overlay");
-      var statusTextNode = statusOverlay ? statusOverlay.querySelector(".kp6hj-status-text") : null;
+      var statusOverlay = root.querySelector(".ywjj2-status-overlay");
+      var statusTextNode = statusOverlay ? statusOverlay.querySelector(".ywjj2-status-text") : null;
       var overlayTimer = null;
       var overlayThanksMessage = statusOverlay ? statusOverlay.getAttribute("data-thanks") || "" : "";
 
@@ -356,8 +358,8 @@
           applyHide();
         }
       }
-      var alertBox = form.querySelector(".kp6hj-alert");
-      var submitButton = form.querySelector(".kp6hj-submit");
+      var alertBox = form.querySelector(".ywjj2-alert");
+      var submitButton = form.querySelector(".ywjj2-submit");
       var submitLabelNode = submitButton ? submitButton.querySelector("span:last-child") : null;
       var defaultButtonText = submitLabelNode ? submitLabelNode.textContent : "";
       var firebaseReady = typeof dataAddWeb === "function" && typeof db !== "undefined";
@@ -377,10 +379,10 @@
         return;
       }
       showAlert(alertBox, "", "");
-      form.setAttribute("data-kp6hj-ready", "true");
+      form.setAttribute("data-ywjj2-ready", "true");
       if (submitButton) {
         submitButton.disabled = false;
-        submitButton.classList.remove("kp6hj-submit-disabled");
+        submitButton.classList.remove("ywjj2-submit-disabled");
       }
       var isSubmitting = false;
       form.addEventListener("submit", function (event) {
@@ -421,7 +423,7 @@
         isSubmitting = true;
         if (submitButton) {
           submitButton.disabled = true;
-          submitButton.classList.add("kp6hj-submit-disabled");
+          submitButton.classList.add("ywjj2-submit-disabled");
         }
         if (submitLabelNode) {
           submitLabelNode.textContent = form.getAttribute("data-submitting") || defaultButtonText;
@@ -452,7 +454,7 @@
             isSubmitting = false;
             if (submitButton) {
               submitButton.disabled = false;
-              submitButton.classList.remove("kp6hj-submit-disabled");
+              submitButton.classList.remove("ywjj2-submit-disabled");
             }
             if (submitLabelNode) {
               submitLabelNode.textContent = defaultButtonText;
@@ -515,13 +517,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=hb9ce"></script>
-<script src="/src/cookie.js?v=hb9ce"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=lh9ib"></script>
+<script defer src="/src/cookie.js?v=lh9ib"></script>
 
 </html>

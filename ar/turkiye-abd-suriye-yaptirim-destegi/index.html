@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/page/hb008/" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=yacwy" />
-  <link rel="shortcut icon" href="/img/icon.png?v=yacwy" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=zzvsa" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=zzvsa" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=zzvsa" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=yacwy"></script>
-<link rel="stylesheet" href="style.css?v=yacwy">
+  <script type="text/javascript" src="/src/firebase.js?v=zzvsa"></script>
+<link rel="stylesheet" href="style.css?v=zzvsa">
 </head>
 
 <body>
-  <div id="header"><div class="cho6u">
+  <div id="header"><div class="qt5zv">
 
-  <div class="cho6ubody">
-    <a href="/ar/"><img src="/img/logo.svg?v=yacwy" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="qt5zvbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=zzvsa" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="cho6uright">
-      <div class="cho6ulanguages ">
+    <div class="qt5zvright">
+      <div class="qt5zvlanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="cho6ucontactlist">
+      <div class="qt5zvcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined cho6u-icon">phone</div>
+     <div class="material-symbols-outlined qt5zv-icon">phone</div>
      <div>
-      <div  class="cho6u-title">undefined</div>
-      <div  class="cho6u-spot">0342 341 41 31</div>
+      <div  class="qt5zv-title">undefined</div>
+      <div  class="qt5zv-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined cho6u-icon">mail</div>
+     <div class="material-symbols-outlined qt5zv-icon">mail</div>
      <div>
-      <div  class="cho6u-title">undefined</div>
-      <div  class="cho6u-spot">info@saibdernegi.org</div>
+      <div  class="qt5zv-title">undefined</div>
+      <div  class="qt5zv-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined cho6u-icon">location_on</div>
+     <div class="material-symbols-outlined qt5zv-icon">location_on</div>
      <div>
-      <div  class="cho6u-title">undefined</div>
-      <div  class="cho6u-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="qt5zv-title">undefined</div>
+      <div  class="qt5zv-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="cho6u-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="qt5zv-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="cho6umenubody">
-    <div class="cho6umenu" id="menu-3-root">
-      <div class="cho6umenulistbody">
-        <div class="cho6umenulist"><a class="cho6umenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="cho6umenulist-menu " >
+  <div class="qt5zvmenubody">
+    <div class="qt5zvmenu" id="menu-3-root">
+      <div class="qt5zvmenulistbody">
+        <div class="qt5zvmenulist"><a class="qt5zvmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="qt5zvmenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="cho6umenulist-menu " >
+    <div class="qt5zvmenulist-menu " >
 
       <a href="/ar/haberler/">
        
       </a>
      
                     </div>
-    <div class="cho6umenulist-menu " >
+    <div class="qt5zvmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="cho6umenulist-menu " >
+    <div class="qt5zvmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="cho6umenulist-menu " >
+    <div class="qt5zvmenulist-menu " >
 
       <a href="/ar/iletisim/">
        
@@ -149,38 +151,38 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("cho6umenu-open")) {
-        root.classList.remove("cho6umenu-open");
+      if (root.classList.contains("qt5zvmenu-open")) {
+        root.classList.remove("qt5zvmenu-open");
       } else {
-        root.classList.add("cho6umenu-open");
+        root.classList.add("qt5zvmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="bg0nd-page">
-  <header class="bg0nd-header">
-    <div class="bg0nd-header-meta">
+  <div id="content"><div class="sw2d6-page">
+  <header class="sw2d6-header">
+    <div class="sw2d6-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>July 3, 2025 at 03:00 AM</span>
     </div>
-    <h1 class="bg0nd-header-title">undefined</h1>
-    <p class="bg0nd-header-spot">Dışişleri Bakanlığı, ABD'nin Suriye üzerindeki yaptırımları hafifletmesine destek verdi; karar bölgesel ticaret ve yeniden imar projeleri için umut yarattı.</p>
+    <h1 class="sw2d6-header-title"></h1>
+    <p class="sw2d6-header-spot">Dışişleri Bakanlığı, ABD'nin Suriye üzerindeki yaptırımları hafifletmesine destek verdi; karar bölgesel ticaret ve yeniden imar projeleri için umut yarattı.</p>
   </header>
 
-  <div class="bg0nd-body">
-    <article class="bg0nd-article">
-      <figure class="bg0nd-article-media">
-        <img src="?v=yacwy" alt="undefined" />
+  <div class="sw2d6-body">
+    <article class="sw2d6-article">
+      <figure class="sw2d6-article-media">
+        <img src="?v=zzvsa" alt="" />
       </figure>
-      <div class="bg0nd-article-content"><p>Dışişleri Bakanlığı Sözcüsü Öncü Keçeli, ABD'nin Suriye ile ilişkilerini normalleştirme yönündeki güçlü iradesini memnuniyetle karşıladıklarını belirterek, yaptırımların kaldırılmasının Suriye halkının ihtiyaçlarına cevap verilmesi ve ekonomik istikrarın sağlanmasına katkı sunacağını vurguladı. Keçeli, Türkiye'nin Suriye'nin yeniden imarına ve altyapısının ayağa kaldırılmasına destek vermeye devam edeceğini de açıkladı.</p><p>Açıklama, Türk iş dünyası için siyasi belirsizliğin azaldığına işaret ediyor. DEİK bünyesindeki Türkiye – Suriye iş konseyi, kararın ardından Ankara ve Şam'da ortak koordinasyon ofisleri kurmayı planladığını duyurdu. Böylece yatırımcılar, hem finansal teşviklerden yararlanmak hem de Suriye'deki projeler için güvenlik ve bürokrasi desteği almak amacıyla tek noktadan bilgi edinebilecek.</p><p>İstanbul ve Gaziantep'teki ticaret odaları, lojistik, enerji, sağlık ve tarım sektörlerinde faaliyet gösteren üyeleri için bilgilendirme toplantıları hazırlıyor. Bu toplantılarda, Suriye'de yürürlüğe girecek yeni gümrük düzenlemeleri, yatırım teşvik paketleri ve ortak üretim modelleri ele alınacak.</p><p>Uzmanlar, diplomatik zeminin yumuşamasının, özellikle küçük ve orta ölçekli işletmelerin Suriye pazarına yeniden girişini kolaylaştıracağını, Türk ihracatçılarının alacak sigortası ve finansman bulma süreçlerinin daha hızlı ilerlemesini sağlayacağını değerlendiriyor.</p></div>
+      <div class="sw2d6-article-content"><p>Dışişleri Bakanlığı Sözcüsü Öncü Keçeli, ABD'nin Suriye ile ilişkilerini normalleştirme yönündeki güçlü iradesini memnuniyetle karşıladıklarını belirterek, yaptırımların kaldırılmasının Suriye halkının ihtiyaçlarına cevap verilmesi ve ekonomik istikrarın sağlanmasına katkı sunacağını vurguladı. Keçeli, Türkiye'nin Suriye'nin yeniden imarına ve altyapısının ayağa kaldırılmasına destek vermeye devam edeceğini de açıkladı.</p><p>Açıklama, Türk iş dünyası için siyasi belirsizliğin azaldığına işaret ediyor. DEİK bünyesindeki Türkiye – Suriye iş konseyi, kararın ardından Ankara ve Şam'da ortak koordinasyon ofisleri kurmayı planladığını duyurdu. Böylece yatırımcılar, hem finansal teşviklerden yararlanmak hem de Suriye'deki projeler için güvenlik ve bürokrasi desteği almak amacıyla tek noktadan bilgi edinebilecek.</p><p>İstanbul ve Gaziantep'teki ticaret odaları, lojistik, enerji, sağlık ve tarım sektörlerinde faaliyet gösteren üyeleri için bilgilendirme toplantıları hazırlıyor. Bu toplantılarda, Suriye'de yürürlüğe girecek yeni gümrük düzenlemeleri, yatırım teşvik paketleri ve ortak üretim modelleri ele alınacak.</p><p>Uzmanlar, diplomatik zeminin yumuşamasının, özellikle küçük ve orta ölçekli işletmelerin Suriye pazarına yeniden girişini kolaylaştıracağını, Türk ihracatçılarının alacak sigortası ve finansman bulma süreçlerinin daha hızlı ilerlemesini sağlayacağını değerlendiriyor.</p></div>
     </article>
 
-    <aside class="bg0nd-sidebar">
-      <div class="bg0nd-sidebar-head">
+    <aside class="sw2d6-sidebar">
+      <div class="sw2d6-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="bg0nd-sidebar-list"><a class="bg0nd-menu-item" href="/ar/bakan-fidan-suriye-guvenlik-ticaret"><div class="bg0nd-menu-img"><div class="bg0nd-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="bg0nd-menu-content"><div class="bg0nd-menu-name">Bakan Fidan: Suriye'nin Güvenliği Ticaretin Anahtarı</div><p class="bg0nd-menu-spot">Dışişleri Bakanı Hakan Fidan, Suriye'nin güvenliğinin Türkiye'nin güvenliğiyle birlikte bölgesel ticaretin sürdürülebilirliği için kritik olduğunu vurguladı.</p></div></a><a class="bg0nd-menu-item" href="/ar/ankara-suriye-diyalog-cagrisi"><div class="bg0nd-menu-img"><div class="bg0nd-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="bg0nd-menu-content"><div class="bg0nd-menu-name">Ankara'dan Suriye'ye Diyalog Çağrısı Ticari Koridorları Güçlendiriyor</div><p class="bg0nd-menu-spot">Dışişleri Bakanlığı, Suriye'nin güneyindeki gerilimin diyalogla çözülmesini isterken sınır ticaretinin kesintisiz işlemesi için destek mesajı verdi.</p></div></a><a class="bg0nd-menu-item" href="/ar/tobb-sam-ekonomi-zirvesi"><div class="bg0nd-menu-img"><div class="bg0nd-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="bg0nd-menu-content"><div class="bg0nd-menu-name">TOBB Heyeti Şam'da Yeniden İmar Fırsatlarını Görüştü</div><p class="bg0nd-menu-spot">TOBB Başkanı Rifat Hisarcıklıoğlu liderliğindeki Türk iş dünyası heyeti, Temmuz 2025’te Şam’da Suriye yönetimiyle yeniden imar, sanayi ve lojistik iş birliği başlıklarını ele aldı.</p></div></a><a class="bg0nd-menu-item" href="/ar/abd-suriye-yaptirim-esnemesi"><div class="bg0nd-menu-img"><div class="bg0nd-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="bg0nd-menu-content"><div class="bg0nd-menu-name">ABD'den Suriye'ye Yaptırım Esnemesi Ekonomiyi Canlandırıyor</div><p class="bg0nd-menu-spot">ABD Hazine Bakanlığı'nın Ahmed Şara ve İçişleri Bakanı Enes Hattap'a yönelik yaptırımları kaldırması, Suriye’nin uluslararası finans sistemine erişimini hızlandırıyor.</p></div></a><a class="bg0nd-menu-item" href="/ar/bmgk-suriye-yaptirim-kaldirma-karari"><div class="bg0nd-menu-img"><div class="bg0nd-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="bg0nd-menu-content"><div class="bg0nd-menu-name">BMGK Suriye'ye Yaptırımları Kaldırdı: Ticaret İçin Yeni Sayfa</div><p class="bg0nd-menu-spot">Birleşmiş Milletler Güvenlik Konseyi'nin Ahmed Şara ve kabinesine yönelik yaptırımları kaldırması, Türkiye ve Suriye arasındaki yatırımlar için yeni pencereler açtı.</p></div></a><a class="bg0nd-menu-item" href="/ar/hatay-halep-lojistik-koridoru"><div class="bg0nd-menu-img"><div class="bg0nd-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="bg0nd-menu-content"><div class="bg0nd-menu-name">Hatay - Halep Lojistik Koridoru Pilot Uygulaması</div><p class="bg0nd-menu-spot">Cilvegözü – Bab el-Hava hattında başlatılan lojistik koridoru, dijital gümrük sistemi ve soğuk zincir altyapısıyla sevkiyat sürelerini yüzde 35 düşürdü.</p></div></a></div>
+      <div class="sw2d6-sidebar-list"><a class="sw2d6-menu-item" href="/ar/bakan-fidan-suriye-guvenlik-ticaret"><div class="sw2d6-menu-img"><div class="sw2d6-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="sw2d6-menu-content"><div class="sw2d6-menu-name">Bakan Fidan: Suriye'nin Güvenliği Ticaretin Anahtarı</div><p class="sw2d6-menu-spot">Dışişleri Bakanı Hakan Fidan, Suriye'nin güvenliğinin Türkiye'nin güvenliğiyle birlikte bölgesel ticaretin sürdürülebilirliği için kritik olduğunu vurguladı.</p></div></a><a class="sw2d6-menu-item" href="/ar/ankara-suriye-diyalog-cagrisi"><div class="sw2d6-menu-img"><div class="sw2d6-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="sw2d6-menu-content"><div class="sw2d6-menu-name">Ankara'dan Suriye'ye Diyalog Çağrısı Ticari Koridorları Güçlendiriyor</div><p class="sw2d6-menu-spot">Dışişleri Bakanlığı, Suriye'nin güneyindeki gerilimin diyalogla çözülmesini isterken sınır ticaretinin kesintisiz işlemesi için destek mesajı verdi.</p></div></a><a class="sw2d6-menu-item" href="/ar/tobb-sam-ekonomi-zirvesi"><div class="sw2d6-menu-img"><div class="sw2d6-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="sw2d6-menu-content"><div class="sw2d6-menu-name">TOBB Heyeti Şam'da Yeniden İmar Fırsatlarını Görüştü</div><p class="sw2d6-menu-spot">TOBB Başkanı Rifat Hisarcıklıoğlu liderliğindeki Türk iş dünyası heyeti, Temmuz 2025’te Şam’da Suriye yönetimiyle yeniden imar, sanayi ve lojistik iş birliği başlıklarını ele aldı.</p></div></a><a class="sw2d6-menu-item" href="/ar/abd-suriye-yaptirim-esnemesi"><div class="sw2d6-menu-img"><div class="sw2d6-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="sw2d6-menu-content"><div class="sw2d6-menu-name">ABD'den Suriye'ye Yaptırım Esnemesi Ekonomiyi Canlandırıyor</div><p class="sw2d6-menu-spot">ABD Hazine Bakanlığı'nın Ahmed Şara ve İçişleri Bakanı Enes Hattap'a yönelik yaptırımları kaldırması, Suriye’nin uluslararası finans sistemine erişimini hızlandırıyor.</p></div></a><a class="sw2d6-menu-item" href="/ar/bmgk-suriye-yaptirim-kaldirma-karari"><div class="sw2d6-menu-img"><div class="sw2d6-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="sw2d6-menu-content"><div class="sw2d6-menu-name">BMGK Suriye'ye Yaptırımları Kaldırdı: Ticaret İçin Yeni Sayfa</div><p class="sw2d6-menu-spot">Birleşmiş Milletler Güvenlik Konseyi'nin Ahmed Şara ve kabinesine yönelik yaptırımları kaldırması, Türkiye ve Suriye arasındaki yatırımlar için yeni pencereler açtı.</p></div></a><a class="sw2d6-menu-item" href="/ar/hatay-halep-lojistik-koridoru"><div class="sw2d6-menu-img"><div class="sw2d6-menu-placeholder"><span class="material-symbols-outlined">image_not_supported</span></div></div><div class="sw2d6-menu-content"><div class="sw2d6-menu-name">Hatay - Halep Lojistik Koridoru Pilot Uygulaması</div><p class="sw2d6-menu-spot">Cilvegözü – Bab el-Hava hattında başlatılan lojistik koridoru, dijital gümrük sistemi ve soğuk zincir altyapısıyla sevkiyat sürelerini yüzde 35 düşürdü.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -233,13 +235,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=yacwy"></script>
-<script src="/src/cookie.js?v=yacwy"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=zzvsa"></script>
+<script defer src="/src/cookie.js?v=zzvsa"></script>
 
 </html>

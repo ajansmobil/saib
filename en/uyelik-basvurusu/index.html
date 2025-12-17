@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta http-equiv="Page-Exit" content="BlendTrans(Duration"="0)" />
   <meta http-equiv="Page-Enter" content="BlendTrans(Duration"="0)" />
@@ -11,21 +11,23 @@
   <meta http-equiv="Cache-Control" content="max-age=3600, public" />
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
-  <title>undefined</title>
-  <meta name="description" content="undefined" />
-  <meta name="keywords" content="undefined" />
-  <meta property="og:title" content="undefined" />
-  <meta property="og:description" content="undefined" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
 
-  <link rel="stylesheet" href="/src/rubik.css" />
-  <link rel="stylesheet" href="/src/css.css?v=mwpki" />
-  <link rel="shortcut icon" href="/img/icon.png?v=mwpki" type="image/png" />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css" />
-  <script src="/src/swiper-bundle.min.js"></script>
-  
+  <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=wzonn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=wzonn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="shortcut icon" href="/img/icon.png?v=wzonn" type="image/png" />
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -49,87 +51,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=mwpki"></script>
-<link rel="stylesheet" href="style.css?v=mwpki">
+  <script type="text/javascript" src="/src/firebase.js?v=wzonn"></script>
+<link rel="stylesheet" href="style.css?v=wzonn">
 </head>
 
 <body>
-  <div id="header"><div class="dl47j">
+  <div id="header"><div class="fye6r">
 
-  <div class="dl47jbody">
-    <a href="/en/"><img src="/img/logo.svg?v=mwpki" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="fye6rbody">
+    <a href="/en/"><img src="/img/logo.svg?v=wzonn" class="module-logo" alt="Saib Derneği Logo" /></a>
 
 
-    <div class="dl47jright">
-      <div class="dl47jlanguages ">
+    <div class="fye6rright">
+      <div class="fye6rlanguages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="dl47jcontactlist">
+      <div class="fye6rcontactlist">
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined dl47j-icon">phone</div>
+     <div class="material-symbols-outlined fye6r-icon">phone</div>
      <div>
-      <div  class="dl47j-title">undefined</div>
-      <div  class="dl47j-spot">0342 341 41 31</div>
+      <div  class="fye6r-title">undefined</div>
+      <div  class="fye6r-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined dl47j-icon">mail</div>
+     <div class="material-symbols-outlined fye6r-icon">mail</div>
      <div>
-      <div  class="dl47j-title">undefined</div>
-      <div  class="dl47j-spot">info@saibdernegi.org</div>
+      <div  class="fye6r-title">undefined</div>
+      <div  class="fye6r-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined dl47j-icon">location_on</div>
+     <div class="material-symbols-outlined fye6r-icon">location_on</div>
      <div>
-      <div  class="dl47j-title">undefined</div>
-      <div  class="dl47j-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="fye6r-title">undefined</div>
+      <div  class="fye6r-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="dl47j-mobile-toggle" onclick="menu3_toggle()">
+    <button type="button" class="fye6r-mobile-toggle" onclick="menu3_toggle()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>
-  <div class="dl47jmenubody">
-    <div class="dl47jmenu" id="menu-3-root">
-      <div class="dl47jmenulistbody">
-        <div class="dl47jmenulist"><a class="dl47jmenulist-menu" href="/en/">Home </a><div class="dl47jmenulist-menu " >
+  <div class="fye6rmenubody">
+    <div class="fye6rmenu" id="menu-3-root">
+      <div class="fye6rmenulistbody">
+        <div class="fye6rmenulist"><a class="fye6rmenulist-menu" href="/en/">Home </a><div class="fye6rmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        
       </a>
      
                     </div>
-    <div class="dl47jmenulist-menu " >
+    <div class="fye6rmenulist-menu " >
 
       <a href="/en/haberler/">
        
       </a>
      
                     </div>
-    <div class="dl47jmenulist-menu dropdown-content-active-dl47j" >
+    <div class="fye6rmenulist-menu dropdown-content-active-fye6r" >
 
       <a href="/en/uyelik-basvurusu/">
        
       </a>
      
                     </div>
-    <div class="dl47jmenulist-menu " >
+    <div class="fye6rmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        
       </a>
      
                     </div>
-    <div class="dl47jmenulist-menu " >
+    <div class="fye6rmenulist-menu " >
 
       <a href="/en/iletisim/">
        
@@ -149,23 +151,23 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("dl47jmenu-open")) {
-        root.classList.remove("dl47jmenu-open");
+      if (root.classList.contains("fye6rmenu-open")) {
+        root.classList.remove("fye6rmenu-open");
       } else {
-        root.classList.add("dl47jmenu-open");
+        root.classList.add("fye6rmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="fii6p" id="fii6p-membership-vd8h6j">
-  <div class="fii6p-wrapper">
-    <div class="fii6p-header">
-      <div class="fii6p-organization">SAIB - Syrian Turkish Business Association</div>
-      <div class="fii6p-title">SAIB Membership Application Form</div>
-      <div class="fii6p-subtitle">Please complete your personal and company details to join the SAIB network.</div>
+  <div id="content"><div class="ih3me" id="ih3me-membership-vd8h6j">
+  <div class="ih3me-wrapper">
+    <div class="ih3me-header">
+      <div class="ih3me-organization">SAIB - Syrian Turkish Business Association</div>
+      <div class="ih3me-title">SAIB Membership Application Form</div>
+      <div class="ih3me-subtitle">Please complete your personal and company details to join the SAIB network.</div>
     </div>
     <form
-      class="fii6p-form"
+      class="ih3me-form"
       autocomplete="on"
       data-collection="membershipApplications"
       data-status-field="status"
@@ -180,22 +182,22 @@
       data-organization="SAIB - Syrian Turkish Business Association"
       data-form-title="SAIB Membership Application Form"
     >
-      <div class="fii6p-alert" role="status" aria-live="polite" style="display: none;"></div>
-      <section class="fii6p-section"><div class="fii6p-section-header">Personal Information</div><div class="fii6p-section-body"><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-fullName"><span class="fii6p-label-text">Full Name</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-fullName" name="fullName" placeholder="Enter your full name" required /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-identityNumber"><span class="fii6p-label-text">National ID Number</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-identityNumber" name="identityNumber" placeholder="11-digit national ID number" required maxlength="11" /></div></div><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-birthDate"><span class="fii6p-label-text">Date of Birth</span></label><input class="fii6p-input" type="date" id="fii6p-membership-vd8h6j-birthDate" name="birthDate" placeholder="Day-Month-Year" required /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-birthPlace"><span class="fii6p-label-text">Place of Birth</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-birthPlace" name="birthPlace" placeholder="City / Country" required /></div></div><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-registeredProvince"><span class="fii6p-label-text">Registered Province</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-registeredProvince" name="registeredProvince" placeholder="Province name" required /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-registeredDistrict"><span class="fii6p-label-text">District</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-registeredDistrict" name="registeredDistrict" placeholder="District name" required /></div></div></div></section><section class="fii6p-section"><div class="fii6p-section-header">Education Information</div><div class="fii6p-section-body"><div class="fii6p-row"><div class="fii6p-field fii6p-field-checkbox" data-columns="3"><div class="fii6p-field-label"><span class="fii6p-label-text">Education Level</span></div><div class="fii6p-checkbox-list"><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-educationLevels-0"><input type="checkbox" id="fii6p-membership-vd8h6j-educationLevels-0" name="educationLevels[]" value="primary" /><span>Primary School</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-educationLevels-1"><input type="checkbox" id="fii6p-membership-vd8h6j-educationLevels-1" name="educationLevels[]" value="secondary" /><span>Middle School</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-educationLevels-2"><input type="checkbox" id="fii6p-membership-vd8h6j-educationLevels-2" name="educationLevels[]" value="highschool" /><span>High School</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-educationLevels-3"><input type="checkbox" id="fii6p-membership-vd8h6j-educationLevels-3" name="educationLevels[]" value="bachelor" /><span>Bachelor&#39;s</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-educationLevels-4"><input type="checkbox" id="fii6p-membership-vd8h6j-educationLevels-4" name="educationLevels[]" value="postgraduate" /><span>Postgraduate</span></label></div></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-graduatedSchool"><span class="fii6p-label-text">School</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-graduatedSchool" name="graduatedSchool" placeholder="Institution you graduated from" /></div></div><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-primaryForeignLanguage"><span class="fii6p-label-text">Foreign Language</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-primaryForeignLanguage" name="primaryForeignLanguage" placeholder="Language name" /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-primaryForeignLanguageLevel"><span class="fii6p-label-text">Proficiency</span></label><select class="fii6p-select" id="fii6p-membership-vd8h6j-primaryForeignLanguageLevel" name="primaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-secondaryForeignLanguage"><span class="fii6p-label-text">Second Foreign Language</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-secondaryForeignLanguage" name="secondaryForeignLanguage" placeholder="Language name" /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-secondaryForeignLanguageLevel"><span class="fii6p-label-text">Proficiency</span></label><select class="fii6p-select" id="fii6p-membership-vd8h6j-secondaryForeignLanguageLevel" name="secondaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div></div></section><section class="fii6p-section"><div class="fii6p-section-header">Company Information</div><div class="fii6p-section-body"><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-companyName"><span class="fii6p-label-text">Company Name</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-companyName" name="companyName" placeholder="Registered name" required /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-establishmentYear"><span class="fii6p-label-text">Year Founded</span></label><input class="fii6p-input" type="number" id="fii6p-membership-vd8h6j-establishmentYear" name="establishmentYear" placeholder="YYYY" /></div></div><div class="fii6p-row"><div class="fii6p-subheading">Contact Information</div></div><div class="fii6p-row"><div class="fii6p-field fii6p-field-wide"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-companyAddress"><span class="fii6p-label-text">Address</span></label><textarea class="fii6p-textarea" id="fii6p-membership-vd8h6j-companyAddress" name="companyAddress" rows="3" placeholder="Company headquarters address"></textarea></div></div><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-companyWebsite"><span class="fii6p-label-text">Website</span></label><input class="fii6p-input" type="url" id="fii6p-membership-vd8h6j-companyWebsite" name="companyWebsite" placeholder="https://" /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-companyPhone"><span class="fii6p-label-text">Mobile Phone</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-companyPhone" name="companyPhone" placeholder="+90 5XX XXX XX XX" /></div></div><div class="fii6p-row"><div class="fii6p-field fii6p-field-checkbox" data-columns="3"><div class="fii6p-field-label"><span class="fii6p-label-text">Business Sector</span></div><div class="fii6p-checkbox-list"><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-companySectors-0"><input type="checkbox" id="fii6p-membership-vd8h6j-companySectors-0" name="companySectors[]" value="industry" /><span>Industry</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-companySectors-1"><input type="checkbox" id="fii6p-membership-vd8h6j-companySectors-1" name="companySectors[]" value="services" /><span>Services</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-companySectors-2"><input type="checkbox" id="fii6p-membership-vd8h6j-companySectors-2" name="companySectors[]" value="agriculture" /><span>Agriculture</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-companySectors-3"><input type="checkbox" id="fii6p-membership-vd8h6j-companySectors-3" name="companySectors[]" value="finance" /><span>Financial</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-companySectors-4"><input type="checkbox" id="fii6p-membership-vd8h6j-companySectors-4" name="companySectors[]" value="contractor" /><span>Contractor</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-companySectors-5"><input type="checkbox" id="fii6p-membership-vd8h6j-companySectors-5" name="companySectors[]" value="other" /><span>Other</span></label></div></div></div><div class="fii6p-row"><div class="fii6p-field fii6p-field-checkbox" data-columns="3"><div class="fii6p-field-label"><span class="fii6p-label-text">Business Activity</span></div><div class="fii6p-checkbox-list"><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-businessActivities-0"><input type="checkbox" id="fii6p-membership-vd8h6j-businessActivities-0" name="businessActivities[]" value="producer" /><span>Manufacturer</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-businessActivities-1"><input type="checkbox" id="fii6p-membership-vd8h6j-businessActivities-1" name="businessActivities[]" value="wholesaler" /><span>Wholesaler</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-businessActivities-2"><input type="checkbox" id="fii6p-membership-vd8h6j-businessActivities-2" name="businessActivities[]" value="importer" /><span>Importer</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-businessActivities-3"><input type="checkbox" id="fii6p-membership-vd8h6j-businessActivities-3" name="businessActivities[]" value="exporter" /><span>Exporter</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-businessActivities-4"><input type="checkbox" id="fii6p-membership-vd8h6j-businessActivities-4" name="businessActivities[]" value="logistics" /><span>Logistics</span></label><label class="fii6p-checkbox-item" for="fii6p-membership-vd8h6j-businessActivities-5"><input type="checkbox" id="fii6p-membership-vd8h6j-businessActivities-5" name="businessActivities[]" value="other" /><span>Other</span></label></div></div></div><div class="fii6p-row"><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-annualRevenue"><span class="fii6p-label-text">Annual Revenue</span></label><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-annualRevenue" name="annualRevenue" placeholder="e.g. 50,000,000 ₺" /></div><div class="fii6p-field"><label class="fii6p-field-label" for="fii6p-membership-vd8h6j-employeeCount"><span class="fii6p-label-text">Number of Employees</span></label><input class="fii6p-input" type="number" id="fii6p-membership-vd8h6j-employeeCount" name="employeeCount" placeholder="e.g. 45" /></div></div></div></section><section class="fii6p-section"><div class="fii6p-section-header">Current Memberships in Other Organizations<div class="fii6p-section-subtitle">(Party, Association, Foundation, Group, Club)</div></div><div class="fii6p-section-body"><div class="fii6p-line-list-wrapper"><div class="fii6p-field-label fii6p-line-list-label"><span class="fii6p-label-text">Organization / Role</span></div><div class="fii6p-line-list"><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-otherMemberships-0"><span class="fii6p-line-number">1)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-otherMemberships-0" name="otherMemberships[0]" placeholder="Organization name and your role" /></label><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-otherMemberships-1"><span class="fii6p-line-number">2)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-otherMemberships-1" name="otherMemberships[1]" placeholder="Organization name and your role" /></label><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-otherMemberships-2"><span class="fii6p-line-number">3)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-otherMemberships-2" name="otherMemberships[2]" placeholder="Organization name and your role" /></label><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-otherMemberships-3"><span class="fii6p-line-number">4)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-otherMemberships-3" name="otherMemberships[3]" placeholder="Organization name and your role" /></label><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-otherMemberships-4"><span class="fii6p-line-number">5)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-otherMemberships-4" name="otherMemberships[4]" placeholder="Organization name and your role" /></label><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-otherMemberships-5"><span class="fii6p-line-number">6)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-otherMemberships-5" name="otherMemberships[5]" placeholder="Organization name and your role" /></label></div></div></div></section><section class="fii6p-section"><div class="fii6p-section-header">References Supporting the Application</div><div class="fii6p-section-body"><div class="fii6p-line-list-wrapper"><div class="fii6p-field-label fii6p-line-list-label"><span class="fii6p-label-text">Full Name</span></div><div class="fii6p-line-list"><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-references-0"><span class="fii6p-line-number">1)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-references-0" name="references[0]" placeholder="Reference name and contact details" /></label><label class="fii6p-line-list-item" for="fii6p-membership-vd8h6j-references-1"><span class="fii6p-line-number">2)</span><input class="fii6p-input" type="text" id="fii6p-membership-vd8h6j-references-1" name="references[1]" placeholder="Reference name and contact details" /></label></div></div></div></section>
-      <div class="fii6p-actions">
-        <button type="submit" class="fii6p-submit">
+      <div class="ih3me-alert" role="status" aria-live="polite" style="display: none;"></div>
+      <section class="ih3me-section"><div class="ih3me-section-header">Personal Information</div><div class="ih3me-section-body"><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-fullName"><span class="ih3me-label-text">Full Name</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-fullName" name="fullName" placeholder="Enter your full name" required /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-identityNumber"><span class="ih3me-label-text">National ID Number</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-identityNumber" name="identityNumber" placeholder="11-digit national ID number" required maxlength="11" /></div></div><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-birthDate"><span class="ih3me-label-text">Date of Birth</span></label><input class="ih3me-input" type="date" id="ih3me-membership-vd8h6j-birthDate" name="birthDate" placeholder="Day-Month-Year" required /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-birthPlace"><span class="ih3me-label-text">Place of Birth</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-birthPlace" name="birthPlace" placeholder="City / Country" required /></div></div><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-registeredProvince"><span class="ih3me-label-text">Registered Province</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-registeredProvince" name="registeredProvince" placeholder="Province name" required /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-registeredDistrict"><span class="ih3me-label-text">District</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-registeredDistrict" name="registeredDistrict" placeholder="District name" required /></div></div></div></section><section class="ih3me-section"><div class="ih3me-section-header">Education Information</div><div class="ih3me-section-body"><div class="ih3me-row"><div class="ih3me-field ih3me-field-checkbox" data-columns="3"><div class="ih3me-field-label"><span class="ih3me-label-text">Education Level</span></div><div class="ih3me-checkbox-list"><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-educationLevels-0"><input type="checkbox" id="ih3me-membership-vd8h6j-educationLevels-0" name="educationLevels[]" value="primary" /><span>Primary School</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-educationLevels-1"><input type="checkbox" id="ih3me-membership-vd8h6j-educationLevels-1" name="educationLevels[]" value="secondary" /><span>Middle School</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-educationLevels-2"><input type="checkbox" id="ih3me-membership-vd8h6j-educationLevels-2" name="educationLevels[]" value="highschool" /><span>High School</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-educationLevels-3"><input type="checkbox" id="ih3me-membership-vd8h6j-educationLevels-3" name="educationLevels[]" value="bachelor" /><span>Bachelor&#39;s</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-educationLevels-4"><input type="checkbox" id="ih3me-membership-vd8h6j-educationLevels-4" name="educationLevels[]" value="postgraduate" /><span>Postgraduate</span></label></div></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-graduatedSchool"><span class="ih3me-label-text">School</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-graduatedSchool" name="graduatedSchool" placeholder="Institution you graduated from" /></div></div><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-primaryForeignLanguage"><span class="ih3me-label-text">Foreign Language</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-primaryForeignLanguage" name="primaryForeignLanguage" placeholder="Language name" /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-primaryForeignLanguageLevel"><span class="ih3me-label-text">Proficiency</span></label><select class="ih3me-select" id="ih3me-membership-vd8h6j-primaryForeignLanguageLevel" name="primaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-secondaryForeignLanguage"><span class="ih3me-label-text">Second Foreign Language</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-secondaryForeignLanguage" name="secondaryForeignLanguage" placeholder="Language name" /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-secondaryForeignLanguageLevel"><span class="ih3me-label-text">Proficiency</span></label><select class="ih3me-select" id="ih3me-membership-vd8h6j-secondaryForeignLanguageLevel" name="secondaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div></div></section><section class="ih3me-section"><div class="ih3me-section-header">Company Information</div><div class="ih3me-section-body"><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-companyName"><span class="ih3me-label-text">Company Name</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-companyName" name="companyName" placeholder="Registered name" required /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-establishmentYear"><span class="ih3me-label-text">Year Founded</span></label><input class="ih3me-input" type="number" id="ih3me-membership-vd8h6j-establishmentYear" name="establishmentYear" placeholder="YYYY" /></div></div><div class="ih3me-row"><div class="ih3me-subheading">Contact Information</div></div><div class="ih3me-row"><div class="ih3me-field ih3me-field-wide"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-companyAddress"><span class="ih3me-label-text">Address</span></label><textarea class="ih3me-textarea" id="ih3me-membership-vd8h6j-companyAddress" name="companyAddress" rows="3" placeholder="Company headquarters address"></textarea></div></div><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-companyWebsite"><span class="ih3me-label-text">Website</span></label><input class="ih3me-input" type="url" id="ih3me-membership-vd8h6j-companyWebsite" name="companyWebsite" placeholder="https://" /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-companyPhone"><span class="ih3me-label-text">Mobile Phone</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-companyPhone" name="companyPhone" placeholder="+90 5XX XXX XX XX" /></div></div><div class="ih3me-row"><div class="ih3me-field ih3me-field-checkbox" data-columns="3"><div class="ih3me-field-label"><span class="ih3me-label-text">Business Sector</span></div><div class="ih3me-checkbox-list"><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-companySectors-0"><input type="checkbox" id="ih3me-membership-vd8h6j-companySectors-0" name="companySectors[]" value="industry" /><span>Industry</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-companySectors-1"><input type="checkbox" id="ih3me-membership-vd8h6j-companySectors-1" name="companySectors[]" value="services" /><span>Services</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-companySectors-2"><input type="checkbox" id="ih3me-membership-vd8h6j-companySectors-2" name="companySectors[]" value="agriculture" /><span>Agriculture</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-companySectors-3"><input type="checkbox" id="ih3me-membership-vd8h6j-companySectors-3" name="companySectors[]" value="finance" /><span>Financial</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-companySectors-4"><input type="checkbox" id="ih3me-membership-vd8h6j-companySectors-4" name="companySectors[]" value="contractor" /><span>Contractor</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-companySectors-5"><input type="checkbox" id="ih3me-membership-vd8h6j-companySectors-5" name="companySectors[]" value="other" /><span>Other</span></label></div></div></div><div class="ih3me-row"><div class="ih3me-field ih3me-field-checkbox" data-columns="3"><div class="ih3me-field-label"><span class="ih3me-label-text">Business Activity</span></div><div class="ih3me-checkbox-list"><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-businessActivities-0"><input type="checkbox" id="ih3me-membership-vd8h6j-businessActivities-0" name="businessActivities[]" value="producer" /><span>Manufacturer</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-businessActivities-1"><input type="checkbox" id="ih3me-membership-vd8h6j-businessActivities-1" name="businessActivities[]" value="wholesaler" /><span>Wholesaler</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-businessActivities-2"><input type="checkbox" id="ih3me-membership-vd8h6j-businessActivities-2" name="businessActivities[]" value="importer" /><span>Importer</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-businessActivities-3"><input type="checkbox" id="ih3me-membership-vd8h6j-businessActivities-3" name="businessActivities[]" value="exporter" /><span>Exporter</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-businessActivities-4"><input type="checkbox" id="ih3me-membership-vd8h6j-businessActivities-4" name="businessActivities[]" value="logistics" /><span>Logistics</span></label><label class="ih3me-checkbox-item" for="ih3me-membership-vd8h6j-businessActivities-5"><input type="checkbox" id="ih3me-membership-vd8h6j-businessActivities-5" name="businessActivities[]" value="other" /><span>Other</span></label></div></div></div><div class="ih3me-row"><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-annualRevenue"><span class="ih3me-label-text">Annual Revenue</span></label><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-annualRevenue" name="annualRevenue" placeholder="e.g. 50,000,000 ₺" /></div><div class="ih3me-field"><label class="ih3me-field-label" for="ih3me-membership-vd8h6j-employeeCount"><span class="ih3me-label-text">Number of Employees</span></label><input class="ih3me-input" type="number" id="ih3me-membership-vd8h6j-employeeCount" name="employeeCount" placeholder="e.g. 45" /></div></div></div></section><section class="ih3me-section"><div class="ih3me-section-header">Current Memberships in Other Organizations<div class="ih3me-section-subtitle">(Party, Association, Foundation, Group, Club)</div></div><div class="ih3me-section-body"><div class="ih3me-line-list-wrapper"><div class="ih3me-field-label ih3me-line-list-label"><span class="ih3me-label-text">Organization / Role</span></div><div class="ih3me-line-list"><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-otherMemberships-0"><span class="ih3me-line-number">1)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-otherMemberships-0" name="otherMemberships[0]" placeholder="Organization name and your role" /></label><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-otherMemberships-1"><span class="ih3me-line-number">2)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-otherMemberships-1" name="otherMemberships[1]" placeholder="Organization name and your role" /></label><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-otherMemberships-2"><span class="ih3me-line-number">3)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-otherMemberships-2" name="otherMemberships[2]" placeholder="Organization name and your role" /></label><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-otherMemberships-3"><span class="ih3me-line-number">4)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-otherMemberships-3" name="otherMemberships[3]" placeholder="Organization name and your role" /></label><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-otherMemberships-4"><span class="ih3me-line-number">5)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-otherMemberships-4" name="otherMemberships[4]" placeholder="Organization name and your role" /></label><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-otherMemberships-5"><span class="ih3me-line-number">6)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-otherMemberships-5" name="otherMemberships[5]" placeholder="Organization name and your role" /></label></div></div></div></section><section class="ih3me-section"><div class="ih3me-section-header">References Supporting the Application</div><div class="ih3me-section-body"><div class="ih3me-line-list-wrapper"><div class="ih3me-field-label ih3me-line-list-label"><span class="ih3me-label-text">Full Name</span></div><div class="ih3me-line-list"><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-references-0"><span class="ih3me-line-number">1)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-references-0" name="references[0]" placeholder="Reference name and contact details" /></label><label class="ih3me-line-list-item" for="ih3me-membership-vd8h6j-references-1"><span class="ih3me-line-number">2)</span><input class="ih3me-input" type="text" id="ih3me-membership-vd8h6j-references-1" name="references[1]" placeholder="Reference name and contact details" /></label></div></div></div></section>
+      <div class="ih3me-actions">
+        <button type="submit" class="ih3me-submit">
           <span class="material-symbols-outlined">send</span>
           <span>Submit SAIB Application</span>
         </button>
       </div>
     </form>
-    <div class="fii6p-footer">
-      <div class="fii6p-footer-note">Your application will be reviewed by the SAIB board and we will contact you shortly.</div>
+    <div class="ih3me-footer">
+      <div class="ih3me-footer-note">Your application will be reviewed by the SAIB board and we will contact you shortly.</div>
     </div>
-    <div class="fii6p-status-overlay" aria-live="assertive" aria-hidden="true" data-thanks="Kaydolduğunuz için teşekkürler.">
-      <div class="fii6p-status-content">
-        <div class="fii6p-status-spinner" role="presentation"></div>
-        <div class="fii6p-status-text">Üyelik kaydı yapılıyor...</div>
+    <div class="ih3me-status-overlay" aria-live="assertive" aria-hidden="true" data-thanks="Kaydolduğunuz için teşekkürler.">
+      <div class="ih3me-status-content">
+        <div class="ih3me-status-spinner" role="presentation"></div>
+        <div class="ih3me-status-text">Üyelik kaydı yapılıyor...</div>
       </div>
     </div>
   </div>
@@ -203,7 +205,7 @@
 
 <script>
   (function () {
-    var moduleId = "fii6p-membership-vd8h6j";
+    var moduleId = "ih3me-membership-vd8h6j";
     var MAX_ATTEMPTS = 40;
     var RETRY_DELAY = 200;
 
@@ -214,10 +216,10 @@
       if (!message) {
         alertBox.style.display = "none";
         alertBox.textContent = "";
-        alertBox.className = "fii6p-alert";
+        alertBox.className = "ih3me-alert";
         return;
       }
-      alertBox.className = "fii6p-alert fii6p-alert-" + type;
+      alertBox.className = "ih3me-alert ih3me-alert-" + type;
       alertBox.textContent = message;
       alertBox.style.display = "block";
     }
@@ -315,15 +317,15 @@
         }
         return;
       }
-      var form = root.querySelector(".fii6p-form");
+      var form = root.querySelector(".ih3me-form");
       if (!form) {
         return;
       }
-      if (form.getAttribute("data-fii6p-ready") === "true") {
+      if (form.getAttribute("data-ih3me-ready") === "true") {
         return;
       }
-      var statusOverlay = root.querySelector(".fii6p-status-overlay");
-      var statusTextNode = statusOverlay ? statusOverlay.querySelector(".fii6p-status-text") : null;
+      var statusOverlay = root.querySelector(".ih3me-status-overlay");
+      var statusTextNode = statusOverlay ? statusOverlay.querySelector(".ih3me-status-text") : null;
       var overlayTimer = null;
       var overlayThanksMessage = statusOverlay ? statusOverlay.getAttribute("data-thanks") || "" : "";
 
@@ -356,8 +358,8 @@
           applyHide();
         }
       }
-      var alertBox = form.querySelector(".fii6p-alert");
-      var submitButton = form.querySelector(".fii6p-submit");
+      var alertBox = form.querySelector(".ih3me-alert");
+      var submitButton = form.querySelector(".ih3me-submit");
       var submitLabelNode = submitButton ? submitButton.querySelector("span:last-child") : null;
       var defaultButtonText = submitLabelNode ? submitLabelNode.textContent : "";
       var firebaseReady = typeof dataAddWeb === "function" && typeof db !== "undefined";
@@ -377,10 +379,10 @@
         return;
       }
       showAlert(alertBox, "", "");
-      form.setAttribute("data-fii6p-ready", "true");
+      form.setAttribute("data-ih3me-ready", "true");
       if (submitButton) {
         submitButton.disabled = false;
-        submitButton.classList.remove("fii6p-submit-disabled");
+        submitButton.classList.remove("ih3me-submit-disabled");
       }
       var isSubmitting = false;
       form.addEventListener("submit", function (event) {
@@ -421,7 +423,7 @@
         isSubmitting = true;
         if (submitButton) {
           submitButton.disabled = true;
-          submitButton.classList.add("fii6p-submit-disabled");
+          submitButton.classList.add("ih3me-submit-disabled");
         }
         if (submitLabelNode) {
           submitLabelNode.textContent = form.getAttribute("data-submitting") || defaultButtonText;
@@ -452,7 +454,7 @@
             isSubmitting = false;
             if (submitButton) {
               submitButton.disabled = false;
-              submitButton.classList.remove("fii6p-submit-disabled");
+              submitButton.classList.remove("ih3me-submit-disabled");
             }
             if (submitLabelNode) {
               submitLabelNode.textContent = defaultButtonText;
@@ -515,13 +517,16 @@
 
 </div>
 </body>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-
-<script type="text/javascript" src="/src/js.js?v=mwpki"></script>
-<script src="/src/cookie.js?v=mwpki"></script>
+<script defer src="/src/swiper-bundle.min.js"></script>
+<script defer type="text/javascript" src="/src/js.js?v=wzonn"></script>
+<script defer src="/src/cookie.js?v=wzonn"></script>
 
 </html>
