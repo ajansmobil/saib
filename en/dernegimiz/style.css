@@ -1,10 +1,10 @@
 
-  .wmp26menulist-menu:hover .dropdown-content-wmp26 {
+  .hnxfmmenulist-menu:hover .dropdown-content-hnxfm {
     display: flex;
     flex-direction: column;
   }
 
-  .wmp26menulist-menu {
+  .hnxfmmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .wmp26menulist-menu:hover {
+  .hnxfmmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .wmp26menulist-menu:hover>a {
+  .hnxfmmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .wmp26menulist-menu>a {
+  .hnxfmmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-wmp26 {
+  .dropdown-content-active-hnxfm {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-wmp26>a {
+  .dropdown-content-active-hnxfm>a {
     color: #000 !important;
   }
 
-  .dropdown-content-wmp26 {
+  .dropdown-content-hnxfm {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-wmp26>a {
+  .dropdown-content-hnxfm>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-wmp26>a:hover {
+  .dropdown-content-hnxfm>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .wmp26body {
+  .hnxfmbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .wmp26body > a {
+  .hnxfmbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .wmp26right {
+  .hnxfmright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .wmp26languages {
+  .hnxfmlanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .wmp26languages.lang-hidden {
+  .hnxfmlanguages.lang-hidden {
     display: none;
   }
 
-  .wmp26languages ul {
+  .hnxfmlanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .wmp26languages li {
+  .hnxfmlanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .wmp26languages li a {
+  .hnxfmlanguages li a {
     color: #fff !important;
   }
 
-  .wmp26languages li a:hover {
+  .hnxfmlanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .wmp26languages li:hover {
+  .hnxfmlanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .wmp26contactlist {
+  .hnxfmcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .wmp26contactlist a {
+  .hnxfmcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .wmp26-spot {
+  .hnxfm-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .wmp26-icon {
+  .hnxfm-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .wmp26 {
+  .hnxfm {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .wmp26menu {
+  .hnxfmmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .wmp26menubody {
+  .hnxfmmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .wmp26menulist {
+  .hnxfmmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .wmp26menulistbody {
+  .hnxfmmenulistbody {
     width: 100%;
   }
 
-  .wmp26-mobile-toggle {
+  .hnxfm-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .wmp26-mobile-toggle span {
+  .hnxfm-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .wmp26menu {
+    .hnxfmmenu {
       overflow-x: auto;
     }
 
-    .wmp26menulist {
+    .hnxfmmenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .wmp26body {
+    .hnxfmbody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .wmp26body {
+    .hnxfmbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .wmp26right {
+    .hnxfmright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .wmp26contactlist {
+    .hnxfmcontactlist {
       display: none;
     }
 
-    .wmp26languages.lang-hidden {
+    .hnxfmlanguages.lang-hidden {
       display: none;
     }
 
-    .wmp26languages {
+    .hnxfmlanguages {
       display: flex;
     }
 
-    .wmp26-mobile-toggle {
+    .hnxfm-mobile-toggle {
       display: inline-flex;
     }
 
-    .wmp26menulist {
+    .hnxfmmenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .wmp26menu.wmp26menu-open .wmp26menulist {
+    .hnxfmmenu.hnxfmmenu-open .hnxfmmenulist {
       display: flex;
     }
 
-    .wmp26menulist-menu {
+    .hnxfmmenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-wmp26 {
+    .dropdown-content-hnxfm {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-wmp26>a {
+    .dropdown-content-hnxfm>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
