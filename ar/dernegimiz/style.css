@@ -1,10 +1,10 @@
 
-  .so6ixmenulist-menu:hover .dropdown-content-so6ix {
+  .sestimenulist-menu:hover .dropdown-content-sesti {
     display: flex;
     flex-direction: column;
   }
 
-  .so6ixmenulist-menu {
+  .sestimenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .so6ixmenulist-menu:hover {
+  .sestimenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .so6ixmenulist-menu:hover>a {
+  .sestimenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .so6ixmenulist-menu>a {
+  .sestimenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-so6ix {
+  .dropdown-content-active-sesti {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-so6ix>a {
+  .dropdown-content-active-sesti>a {
     color: #000 !important;
   }
 
-  .dropdown-content-so6ix {
+  .dropdown-content-sesti {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-so6ix>a {
+  .dropdown-content-sesti>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-so6ix>a:hover {
+  .dropdown-content-sesti>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .so6ixbody {
+  .sestibody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .so6ixbody > a {
+  .sestibody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .so6ixright {
+  .sestiright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .so6ixlanguages {
+  .sestilanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .so6ixlanguages.lang-hidden {
+  .sestilanguages.lang-hidden {
     display: none;
   }
 
-  .so6ixlanguages ul {
+  .sestilanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .so6ixlanguages li {
+  .sestilanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .so6ixlanguages li a {
+  .sestilanguages li a {
     color: #fff !important;
   }
 
-  .so6ixlanguages li a:hover {
+  .sestilanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .so6ixlanguages li:hover {
+  .sestilanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .so6ixcontactlist {
+  .sesticontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .so6ixcontactlist a {
+  .sesticontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .so6ix-spot {
+  .sesti-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .so6ix-icon {
+  .sesti-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .so6ix {
+  .sesti {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .so6ixmenu {
+  .sestimenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .so6ixmenubody {
+  .sestimenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .so6ixmenulist {
+  .sestimenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .so6ixmenulistbody {
+  .sestimenulistbody {
     width: 100%;
   }
 
-  .so6ix-mobile-toggle {
+  .sesti-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .so6ix-mobile-toggle span {
+  .sesti-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .so6ixmenu {
+    .sestimenu {
       overflow-x: auto;
     }
 
-    .so6ixmenulist {
+    .sestimenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .so6ixbody {
+    .sestibody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .so6ixbody {
+    .sestibody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .so6ixright {
+    .sestiright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .so6ixcontactlist {
+    .sesticontactlist {
       display: none;
     }
 
-    .so6ixlanguages.lang-hidden {
+    .sestilanguages.lang-hidden {
       display: none;
     }
 
-    .so6ixlanguages {
+    .sestilanguages {
       display: flex;
     }
 
-    .so6ix-mobile-toggle {
+    .sesti-mobile-toggle {
       display: inline-flex;
     }
 
-    .so6ixmenulist {
+    .sestimenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .so6ixmenu.so6ixmenu-open .so6ixmenulist {
+    .sestimenu.sestimenu-open .sestimenulist {
       display: flex;
     }
 
-    .so6ixmenulist-menu {
+    .sestimenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-so6ix {
+    .dropdown-content-sesti {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-so6ix>a {
+    .dropdown-content-sesti>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
