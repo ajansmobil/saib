@@ -1,10 +1,10 @@
 
-  .zdyibmenulist-menu:hover .dropdown-content-zdyib {
+  .atvcomenulist-menu:hover .dropdown-content-atvco {
     display: flex;
     flex-direction: column;
   }
 
-  .zdyibmenulist-menu {
+  .atvcomenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .zdyibmenulist-menu:hover {
+  .atvcomenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .zdyibmenulist-menu:hover>a {
+  .atvcomenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .zdyibmenulist-menu>a {
+  .atvcomenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-zdyib {
+  .dropdown-content-active-atvco {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-zdyib>a {
+  .dropdown-content-active-atvco>a {
     color: #000 !important;
   }
 
-  .dropdown-content-zdyib {
+  .dropdown-content-atvco {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-zdyib>a {
+  .dropdown-content-atvco>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-zdyib>a:hover {
+  .dropdown-content-atvco>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .zdyibbody {
+  .atvcobody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .zdyibbody > a {
+  .atvcobody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .zdyibright {
+  .atvcoright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .zdyiblanguages {
+  .atvcolanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .zdyiblanguages.lang-hidden {
+  .atvcolanguages.lang-hidden {
     display: none;
   }
 
-  .zdyiblanguages ul {
+  .atvcolanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .zdyiblanguages li {
+  .atvcolanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .zdyiblanguages li a {
+  .atvcolanguages li a {
     color: #fff !important;
   }
 
-  .zdyiblanguages li a:hover {
+  .atvcolanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .zdyiblanguages li:hover {
+  .atvcolanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .zdyibcontactlist {
+  .atvcocontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .zdyibcontactlist a {
+  .atvcocontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .zdyib-spot {
+  .atvco-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .zdyib-icon {
+  .atvco-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .zdyib {
+  .atvco {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .zdyibmenu {
+  .atvcomenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .zdyibmenubody {
+  .atvcomenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .zdyibmenulist {
+  .atvcomenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .zdyibmenulistbody {
+  .atvcomenulistbody {
     width: 100%;
   }
 
-  .zdyib-mobile-toggle {
+  .atvco-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .zdyib-mobile-toggle span {
+  .atvco-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .zdyibmenu {
+    .atvcomenu {
       overflow-x: auto;
     }
 
-    .zdyibmenulist {
+    .atvcomenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .zdyibbody {
+    .atvcobody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .zdyibbody {
+    .atvcobody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .zdyibright {
+    .atvcoright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .zdyibcontactlist {
+    .atvcocontactlist {
       display: none;
     }
 
-    .zdyiblanguages.lang-hidden {
+    .atvcolanguages.lang-hidden {
       display: none;
     }
 
-    .zdyiblanguages {
+    .atvcolanguages {
       display: flex;
     }
 
-    .zdyib-mobile-toggle {
+    .atvco-mobile-toggle {
       display: inline-flex;
     }
 
-    .zdyibmenulist {
+    .atvcomenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .zdyibmenu.zdyibmenu-open .zdyibmenulist {
+    .atvcomenu.atvcomenu-open .atvcomenulist {
       display: flex;
     }
 
-    .zdyibmenulist-menu {
+    .atvcomenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-zdyib {
+    .dropdown-content-atvco {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-zdyib>a {
+    .dropdown-content-atvco>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
