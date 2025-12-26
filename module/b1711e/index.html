@@ -1,0 +1,713 @@
+<div class="modulex" id="{{moduleId}}">
+  <div class="modulex-wrapper">
+    <div class="modulex-header">
+      <div class="modulex-organization">{{organization}}</div>
+      <div class="modulex-title">{{formTitle}}</div>
+      <div class="modulex-subtitle">{{formSubtitle}}</div>
+    </div>
+    <form
+      class="modulex-form"
+      autocomplete="on"
+      data-collection="uyelik"
+      data-status-field="status"
+      data-default-status="new"
+      data-require-auth="false"
+      data-success="{{successMessage}}"
+      data-error="{{errorMessage}}"
+      data-login="{{loginRequiredMessage}}"
+      data-submitting="{{submittingMessage}}"
+      data-waiting="{{waitingMessage}}"
+      data-form-lang="{{formLang}}"
+      data-organization="{{organizationAttr}}"
+      data-form-title="{{formTitleAttr}}"
+    >
+      <div class="modulex-alert" role="status" aria-live="polite" style="display: none;"></div>
+      {{formSections}}
+      <div class="modulex-actions">
+        <button type="submit" class="modulex-submit">
+          <span class="material-symbols-outlined">send</span>
+          <span>{{submitLabel}}</span>
+        </button>
+      </div>
+    </form>
+    <div class="modulex-footer">
+      <div class="modulex-footer-note">{{formFooter}}</div>
+    </div>
+    <div class="modulex-status-overlay" aria-live="assertive" aria-hidden="true" data-thanks="{{thankYouMessage}}">
+      <div class="modulex-status-content">
+        <div class="modulex-status-spinner" role="presentation"></div>
+        <div class="modulex-status-text">Üyelik kaydı yapılıyor...</div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .modulex {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #faf5f3;
+    width: var(--max);
+  }
+
+  .modulex-wrapper {
+    --modulex-padding: 36px;
+    width: min(calc(var(--max) - (var(--modulex-padding) * 2)), calc(100% - (var(--modulex-padding) * 2)));
+    max-width: calc(100% - (var(--modulex-padding) * 2));
+    background-color: #ffffff;
+    border: 1px solid #e8d4cc;
+    border-radius: 18px;
+    padding: var(--modulex-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    box-shadow: 0 12px 38px rgba(133, 38, 15, 0.08);
+    box-sizing: border-box;
+  }
+
+  .modulex-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .modulex-organization {
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #8b5a4a;
+    font-weight: 600;
+  }
+
+  .modulex-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #85260f;
+  }
+
+  .modulex-subtitle {
+    font-size: 16px;
+    color: #6b4d3f;
+  }
+
+  .modulex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .modulex-alert {
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    border-left: 4px solid #a84d2f;
+    background-color: rgba(168, 77, 47, 0.08);
+    color: #2c1a15;
+  }
+
+  .modulex-alert-info {
+    border-left-color: #a84d2f;
+  }
+
+  .modulex-alert-success {
+    border-left-color: #1f8f4d;
+    color: #1f8f4d;
+  }
+
+  .modulex-alert-error {
+    border-left-color: #d93025;
+    color: #d93025;
+  }
+
+  .modulex-section {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e8d4cc;
+    background-color: #ffffff;
+  }
+
+  .modulex-section-header {
+    background: linear-gradient(92deg, #85260f 0%, #5d1a0a 100%);
+    color: #ffffff;
+    padding: 16px 22px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .modulex-section-subtitle {
+    font-size: 13px;
+    color: rgba(233, 239, 255, 0.85);
+    margin-top: 6px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .modulex-section-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .modulex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .modulex-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1 1 280px;
+  }
+
+  .modulex-field-small {
+    flex: 0 0 220px;
+  }
+
+  .modulex-field-wide {
+    flex: 1 1 100%;
+  }
+
+  .modulex-field-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c1a15;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .modulex-label-text::after {
+    content: ":";
+    margin-left: 4px;
+  }
+
+  .modulex-field-hint {
+    font-size: 12px;
+    color: #8b5a4a;
+    font-weight: 500;
+  }
+
+  .modulex-input,
+  .modulex-select,
+  .modulex-textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #e8d4cc;
+    background-color: rgba(250, 245, 243, 0.6);
+    font-size: 14px;
+    color: #2c1a15;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .modulex-input:focus,
+  .modulex-select:focus,
+  .modulex-textarea:focus {
+    outline: none;
+    border-color: #85260f;
+    box-shadow: 0 0 0 3px rgba(133, 38, 15, 0.12);
+    background-color: #ffffff;
+  }
+
+  .modulex-textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+
+  .modulex-field-checkbox .modulex-field-label {
+    margin-bottom: 8px;
+  }
+
+  .modulex-checkbox-list {
+    display: grid;
+    gap: 10px 16px;
+  }
+
+  .modulex-field-checkbox[data-columns="2"] .modulex-checkbox-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .modulex-field-checkbox[data-columns="3"] .modulex-checkbox-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .modulex-field-checkbox[data-columns="4"] .modulex-checkbox-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .modulex-checkbox-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #2c1a15;
+    font-weight: 500;
+  }
+
+  .modulex-checkbox-item input {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #85260f;
+    accent-color: #85260f;
+  }
+
+  .modulex-subheading {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #85260f;
+    padding: 8px 12px;
+    background: rgba(133, 38, 15, 0.08);
+    border: 1px solid #e8d4cc;
+    border-radius: 10px;
+  }
+
+  .modulex-line-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modulex-line-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modulex-line-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .modulex-line-number {
+    width: 32px;
+    font-weight: 600;
+    color: #85260f;
+  }
+
+  .modulex-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 6px;
+  }
+
+  .modulex-submit {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #85260f;
+    color: #ffffff;
+    padding: 14px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .modulex-submit:hover {
+    background-color: #5d1a0a;
+    transform: translateY(-1px);
+  }
+
+  .modulex-submit-disabled,
+  .modulex-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .modulex-footer {
+    padding-top: 12px;
+    border-top: 1px solid #e8d4cc;
+  }
+
+  .modulex-footer-note {
+    font-size: 13px;
+    color: #6b4d3f;
+  }
+
+  .modulex-status-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(5, 14, 32, 0.72);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+  }
+
+  .modulex-status-content {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 24px 32px;
+    min-width: min(420px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 20px 60px rgba(4, 20, 52, 0.25);
+    text-align: center;
+  }
+
+  .modulex-status-spinner {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 4px solid rgba(133, 38, 15, 0.15);
+    border-top-color: #85260f;
+    animation: modulex-spin 1s linear infinite;
+  }
+
+  .modulex-status-overlay[data-mode="success"] .modulex-status-spinner {
+    display: none;
+  }
+
+  .modulex-status-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c1a15;
+  }
+
+  @keyframes modulex-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .modulex-wrapper {
+      --modulex-padding: 22px;
+    }
+
+    .modulex-title {
+      font-size: 24px;
+    }
+
+    .modulex-row {
+      gap: 14px;
+    }
+
+    .modulex-field {
+      flex: 1 1 220px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .modulex {
+      padding: 24px 0;
+    }
+
+    .modulex-wrapper {
+      --modulex-padding: 18px;
+      border-radius: 14px;
+      gap: 22px;
+    }
+
+    .modulex-title {
+      font-size: 22px;
+    }
+
+    .modulex-subtitle {
+      font-size: 14px;
+    }
+
+    .modulex-section-header {
+      font-size: 14px;
+      padding: 14px 18px;
+    }
+
+    .modulex-section-body {
+      padding: 18px 16px;
+    }
+
+    .modulex-field-label {
+      font-size: 13px;
+    }
+
+    .modulex-checkbox-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+  }
+</style>
+<script>
+  (function () {
+    var moduleId = "{{moduleId}}";
+    var MAX_ATTEMPTS = 40;
+    var RETRY_DELAY = 200;
+
+    function showAlert(alertBox, type, message) {
+      if (!alertBox) {
+        return;
+      }
+      if (!message) {
+        alertBox.style.display = "none";
+        alertBox.textContent = "";
+        alertBox.className = "modulex-alert";
+        return;
+      }
+      alertBox.className = "modulex-alert modulex-alert-" + type;
+      alertBox.textContent = message;
+      alertBox.style.display = "block";
+    }
+
+    function buildPayload(formElement) {
+      var formData = new FormData(formElement);
+      var payload = {};
+      formData.forEach(function (value, key) {
+        if (value === null || typeof value === "undefined") {
+          value = "";
+        }
+        var stringValue = String(value).trim();
+        if (key.slice(-2) === "[]") {
+          var baseKey = key.slice(0, -2);
+          if (!payload[baseKey]) {
+            payload[baseKey] = [];
+          }
+          if (stringValue !== "") {
+            payload[baseKey].push(stringValue);
+          }
+          return;
+        }
+        var bracketIndex = key.indexOf("[");
+        if (bracketIndex !== -1 && key.slice(-1) === "]") {
+          var arrayKey = key.slice(0, bracketIndex);
+          if (!payload[arrayKey]) {
+            payload[arrayKey] = [];
+          }
+          if (stringValue !== "") {
+            payload[arrayKey].push(stringValue);
+          }
+          return;
+        }
+        if (payload[key]) {
+          if (Array.isArray(payload[key])) {
+            if (stringValue !== "") {
+              payload[key].push(stringValue);
+            }
+          } else {
+            var previousValue = payload[key];
+            payload[key] = [];
+            if (String(previousValue).trim() !== "") {
+              payload[key].push(String(previousValue).trim());
+            }
+            if (stringValue !== "") {
+              payload[key].push(stringValue);
+            }
+          }
+        } else {
+          payload[key] = stringValue;
+        }
+      });
+      return payload;
+    }
+
+    function cleanPayload(payload) {
+      var cleaned = {};
+      for (var key in payload) {
+        if (!Object.prototype.hasOwnProperty.call(payload, key)) {
+          continue;
+        }
+        var value = payload[key];
+        if (typeof value === "string") {
+          if (value.trim() !== "") {
+            cleaned[key] = value.trim();
+          }
+          continue;
+        }
+        if (Array.isArray(value)) {
+          var filtered = value.filter(function (item) {
+            return String(item).trim() !== "";
+          });
+          if (filtered.length > 0) {
+            cleaned[key] = filtered;
+          }
+          continue;
+        }
+        if (value && typeof value === "object") {
+          cleaned[key] = value;
+        }
+      }
+      return cleaned;
+    }
+
+    function initializeModule(attempt) {
+      if (typeof attempt === "undefined") {
+        attempt = 0;
+      }
+      var root = document.getElementById(moduleId);
+      if (!root) {
+        if (attempt < MAX_ATTEMPTS) {
+          setTimeout(function () {
+            initializeModule(attempt + 1);
+          }, RETRY_DELAY);
+        }
+        return;
+      }
+      var form = root.querySelector(".modulex-form");
+      if (!form) {
+        return;
+      }
+      if (form.getAttribute("data-modulex-ready") === "true") {
+        return;
+      }
+      var statusOverlay = root.querySelector(".modulex-status-overlay");
+      var statusTextNode = statusOverlay ? statusOverlay.querySelector(".modulex-status-text") : null;
+      var overlayTimer = null;
+      var overlayThanksMessage = statusOverlay ? statusOverlay.getAttribute("data-thanks") || "" : "";
+
+      function showStatusOverlay(message, mode) {
+        if (!statusOverlay) {
+          return;
+        }
+        clearTimeout(overlayTimer);
+        statusOverlay.style.display = "flex";
+        statusOverlay.setAttribute("aria-hidden", "false");
+        statusOverlay.setAttribute("data-mode", mode || "loading");
+        if (statusTextNode && message) {
+          statusTextNode.textContent = message;
+        }
+      }
+
+      function hideStatusOverlay(delay) {
+        if (!statusOverlay) {
+          return;
+        }
+        clearTimeout(overlayTimer);
+        var applyHide = function () {
+          statusOverlay.style.display = "none";
+          statusOverlay.setAttribute("aria-hidden", "true");
+          statusOverlay.removeAttribute("data-mode");
+        };
+        if (delay && delay > 0) {
+          overlayTimer = setTimeout(applyHide, delay);
+        } else {
+          applyHide();
+        }
+      }
+      var alertBox = form.querySelector(".modulex-alert");
+      var submitButton = form.querySelector(".modulex-submit");
+      var submitLabelNode = submitButton ? submitButton.querySelector("span:last-child") : null;
+      var defaultButtonText = submitLabelNode ? submitLabelNode.textContent : "";
+      var firebaseReady = typeof dataAddWeb === "function" && typeof db !== "undefined";
+      if (!firebaseReady) {
+        var waitingMessage = form.getAttribute("data-waiting") || "";
+        if (waitingMessage && form.getAttribute("data-waiting-shown") !== "true") {
+          showAlert(alertBox, "info", waitingMessage);
+          form.setAttribute("data-waiting-shown", "true");
+        }
+        if (attempt < MAX_ATTEMPTS) {
+          setTimeout(function () {
+            initializeModule(attempt + 1);
+          }, RETRY_DELAY);
+        } else {
+          showAlert(alertBox, "error", form.getAttribute("data-error") || "");
+        }
+        return;
+      }
+      showAlert(alertBox, "", "");
+      form.setAttribute("data-modulex-ready", "true");
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.classList.remove("modulex-submit-disabled");
+      }
+      var isSubmitting = false;
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (isSubmitting) {
+          return;
+        }
+        var requireAuth = form.getAttribute("data-require-auth") === "true";
+        if (requireAuth && (!window.user || !user.isLoggedIn || !user.id)) {
+          showAlert(alertBox, "error", form.getAttribute("data-login") || "");
+          return;
+        }
+        if (typeof dataAddWeb !== "function") {
+          console.error("dataAddWeb fonksiyonu tanımlı değil.");
+          showAlert(alertBox, "error", form.getAttribute("data-error") || "");
+          return;
+        }
+        var rawPayload = buildPayload(form);
+        var payload = cleanPayload(rawPayload);
+        payload.submittedAt = new Date().toISOString();
+        payload.formInfo = {
+          organization: form.getAttribute("data-organization") || "",
+          title: form.getAttribute("data-form-title") || "",
+          lang: form.getAttribute("data-form-lang") || "",
+          module: moduleId
+        };
+        if (window.user && user.isLoggedIn && user.id) {
+          payload.user = {
+            id: user.id,
+            email: user.email || "",
+            name: user.name || ""
+          };
+        }
+        var statusField = form.getAttribute("data-status-field");
+        if (statusField) {
+          payload[statusField] = form.getAttribute("data-default-status") || "new";
+        }
+        isSubmitting = true;
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.classList.add("modulex-submit-disabled");
+        }
+        if (submitLabelNode) {
+          submitLabelNode.textContent = form.getAttribute("data-submitting") || defaultButtonText;
+        }
+        
+        var submittingInfo = form.getAttribute("data-submitting") || "";
+        showAlert(alertBox, "info", submittingInfo);
+        showStatusOverlay(submittingInfo || "Üyelik kaydı yapılıyor...", "loading");
+        var collectionPath = form.getAttribute("data-collection") || "uyelik";
+        Promise.resolve(dataAddWeb(collectionPath, payload))
+          .then(function () {
+            showAlert(alertBox, "success", form.getAttribute("data-success") || "");
+            form.reset();
+            var thanksText = overlayThanksMessage || form.getAttribute("data-success") || "Kaydolduğunuz için teşekkürler.";
+            showStatusOverlay(thanksText, "success");
+            hideStatusOverlay(2200);
+          })
+          .catch(function (error) {
+            console.error("Üyelik başvurusu kaydedilirken hata:", error);
+            var errorMessage = form.getAttribute("data-error") || "";
+            if (error && typeof error.message === "string" && error.message) {
+              errorMessage = errorMessage ? errorMessage + " (" + error.message + ")" : error.message;
+            }
+            showAlert(alertBox, "error", errorMessage);
+            hideStatusOverlay();
+          })
+          .then(function () {
+            isSubmitting = false;
+            if (submitButton) {
+              submitButton.disabled = false;
+              submitButton.classList.remove("modulex-submit-disabled");
+            }
+            if (submitLabelNode) {
+              submitLabelNode.textContent = defaultButtonText;
+            }
+            if (!statusOverlay || statusOverlay.getAttribute("data-mode") !== "success") {
+              hideStatusOverlay();
+            }
+          });
+      });
+    }
+
+    setTimeout(function () {
+      initializeModule(0);
+    }, 0);
+  })();
+</script>
