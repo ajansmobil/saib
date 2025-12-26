@@ -1,10 +1,10 @@
 
-  .hpcbpmenulist-menu:hover .dropdown-content-hpcbp {
+  .mikukmenulist-menu:hover .dropdown-content-mikuk {
     display: flex;
     flex-direction: column;
   }
 
-  .hpcbpmenulist-menu {
+  .mikukmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .hpcbpmenulist-menu:hover {
+  .mikukmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .hpcbpmenulist-menu:hover>a {
+  .mikukmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .hpcbpmenulist-menu>a {
+  .mikukmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-hpcbp {
+  .dropdown-content-active-mikuk {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-hpcbp>a {
+  .dropdown-content-active-mikuk>a {
     color: #000 !important;
   }
 
-  .dropdown-content-hpcbp {
+  .dropdown-content-mikuk {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-hpcbp>a {
+  .dropdown-content-mikuk>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-hpcbp>a:hover {
+  .dropdown-content-mikuk>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .hpcbpbody {
+  .mikukbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .hpcbpbody > a {
+  .mikukbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .hpcbpright {
+  .mikukright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .hpcbplanguages {
+  .mikuklanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .hpcbplanguages.lang-hidden {
+  .mikuklanguages.lang-hidden {
     display: none;
   }
 
-  .hpcbplanguages ul {
+  .mikuklanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .hpcbplanguages li {
+  .mikuklanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .hpcbplanguages li a {
+  .mikuklanguages li a {
     color: #fff !important;
   }
 
-  .hpcbplanguages li a:hover {
+  .mikuklanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .hpcbplanguages li:hover {
+  .mikuklanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .hpcbpcontactlist {
+  .mikukcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .hpcbpcontactlist a {
+  .mikukcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .hpcbp-spot {
+  .mikuk-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .hpcbp-icon {
+  .mikuk-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .hpcbp {
+  .mikuk {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .hpcbpmenu {
+  .mikukmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .hpcbpmenubody {
+  .mikukmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .hpcbpmenulist {
+  .mikukmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .hpcbpmenulistbody {
+  .mikukmenulistbody {
     width: 100%;
   }
 
-  .hpcbp-mobile-toggle {
+  .mikuk-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .hpcbp-mobile-toggle span {
+  .mikuk-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .hpcbpmenu {
+    .mikukmenu {
       overflow-x: auto;
     }
 
-    .hpcbpmenulist {
+    .mikukmenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .hpcbpbody {
+    .mikukbody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .hpcbpbody {
+    .mikukbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .hpcbpright {
+    .mikukright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .hpcbpcontactlist {
+    .mikukcontactlist {
       display: none;
     }
 
-    .hpcbplanguages.lang-hidden {
+    .mikuklanguages.lang-hidden {
       display: none;
     }
 
-    .hpcbplanguages {
+    .mikuklanguages {
       display: flex;
     }
 
-    .hpcbp-mobile-toggle {
+    .mikuk-mobile-toggle {
       display: inline-flex;
     }
 
-    .hpcbpmenulist {
+    .mikukmenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .hpcbpmenu.hpcbpmenu-open .hpcbpmenulist {
+    .mikukmenu.mikukmenu-open .mikukmenulist {
       display: flex;
     }
 
-    .hpcbpmenulist-menu {
+    .mikukmenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-hpcbp {
+    .dropdown-content-mikuk {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,21 +307,21 @@
       width: 100%;
     }
 
-    .dropdown-content-hpcbp>a {
+    .dropdown-content-mikuk>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
   }
 
 
-  .qffc0-page {
+  .iwxls-page {
     width: var(--max);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 36px;
   }
-  .qffc0-header {
+  .iwxls-header {
     background: #ffffff;
     border-radius: 20px;
     padding: 36px 40px;
@@ -331,7 +331,7 @@
     flex-direction: column;
     gap: 16px;
   }
-  .qffc0-header-meta {
+  .iwxls-header-meta {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -341,7 +341,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
   }
-  .qffc0-header-title {
+  .iwxls-header-title {
     margin: 0;
     font-size: clamp(2.2rem, 3vw, 3rem);
     font-weight: 700;
@@ -349,19 +349,19 @@
     line-height: 1.25;
     letter-spacing: -0.01em;
   }
-  .qffc0-header-spot {
+  .iwxls-header-spot {
     margin: 0;
     max-width: 900px;
     font-size: 1.05em;
     line-height: 1.75;
     color: #334155;
   }
-  .qffc0-body {
+  .iwxls-body {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0, 0.85fr);
     gap: 32px;
   }
-  .qffc0-article {
+  .iwxls-article {
     background: #ffffff;
     border-radius: 20px;
     padding: 32px;
@@ -371,35 +371,35 @@
     flex-direction: column;
     gap: 28px;
   }
-  .qffc0-article-media {
+  .iwxls-article-media {
     margin: 0;
     border-radius: 16px;
     overflow: hidden;
     background: rgba(226, 232, 240, 0.6);
   }
-  .qffc0-article-media img {
+  .iwxls-article-media img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
   }
-  .qffc0-article-media img[src=""],
-  .qffc0-article-media img[src="null"],
-  .qffc0-article-media img:not([src]) {
+  .iwxls-article-media img[src=""],
+  .iwxls-article-media img[src="null"],
+  .iwxls-article-media img:not([src]) {
     display: none;
   }
-  .qffc0-article-content {
+  .iwxls-article-content {
     font-size: 1.05em;
     line-height: 1.85;
     color: #1f2937;
   }
-  .qffc0-article-content p {
+  .iwxls-article-content p {
     margin-bottom: 1.6em;
   }
-  .qffc0-article-content p:last-child {
+  .iwxls-article-content p:last-child {
     margin-bottom: 0;
   }
-  .qffc0-sidebar {
+  .iwxls-sidebar {
     background: #ffffff;
     border-radius: 20px;
     padding: 28px;
@@ -409,7 +409,7 @@
     flex-direction: column;
     gap: 20px;
   }
-  .qffc0-sidebar-head {
+  .iwxls-sidebar-head {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -417,12 +417,12 @@
     font-size: 1.05em;
     color: #0f172a;
   }
-  .qffc0-sidebar-list {
+  .iwxls-sidebar-list {
     display: flex;
     flex-direction: column;
     gap: 18px;
   }
-  .qffc0-menu-item {
+  .iwxls-menu-item {
     display: flex;
     gap: 14px;
     text-decoration: none;
@@ -436,22 +436,22 @@
     color: inherit;
     overflow: hidden;
   }
-  .qffc0-menu-item:hover {
+  .iwxls-menu-item:hover {
     border-color: rgba(59, 130, 246, 0.45);
     box-shadow: 0 18px 32px rgba(59, 130, 246, 0.12);
     transform: translateY(-4px);
   }
-  .qffc0-menu-img {
+  .iwxls-menu-img {
     width: 120px;
     flex-shrink: 0;
   }
-  .qffc0-menu-img img {
+  .iwxls-menu-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-  .qffc0-menu-placeholder {
+  .iwxls-menu-placeholder {
     width: 120px;
     height: 100%;
     display: flex;
@@ -461,20 +461,20 @@
     color: rgba(71, 85, 105, 0.8);
     font-size: 26px;
   }
-  .qffc0-menu-content {
+  .iwxls-menu-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
     padding: 16px 18px 16px 0;
   }
-  .qffc0-menu-name {
+  .iwxls-menu-name {
     font-weight: 600;
     font-size: 1em;
     line-height: 1.4;
     color: #0f172a;
   }
-  .qffc0-menu-spot {
+  .iwxls-menu-spot {
     font-size: 0.9em;
     line-clamp: 3;
     -webkit-line-clamp: 3;
@@ -486,48 +486,48 @@
     margin: 0;
   }
   @media screen and (max-width: 1280px) {
-    .qffc0-body {
+    .iwxls-body {
       grid-template-columns: 1fr;
     }
-    .qffc0-sidebar {
+    .iwxls-sidebar {
       position: relative;
     }
   }
   @media screen and (max-width: 960px) {
-    .qffc0-page {
+    .iwxls-page {
       width: 100%;
       padding: 0 18px;
     }
-    .qffc0-header {
+    .iwxls-header {
       padding: 28px 24px;
     }
-    .qffc0-article {
+    .iwxls-article {
       padding: 26px 22px;
     }
-    .qffc0-sidebar {
+    .iwxls-sidebar {
       padding: 24px;
     }
   }
   @media screen and (max-width: 640px) {
-    .qffc0-header {
+    .iwxls-header {
       padding: 24px 20px;
       gap: 12px;
     }
-    .qffc0-header-meta {
+    .iwxls-header-meta {
       font-size: 0.8em;
     }
-    .qffc0-header-title {
+    .iwxls-header-title {
       font-size: clamp(1.6rem, 6vw, 2.4rem);
     }
-    .qffc0-body {
+    .iwxls-body {
       gap: 24px;
     }
-    .qffc0-menu-item {
+    .iwxls-menu-item {
       border-radius: 12px;
       flex-direction: column;
     }
-    .qffc0-menu-img,
-    .qffc0-menu-placeholder {
+    .iwxls-menu-img,
+    .iwxls-menu-placeholder {
       width: 100%;
       height: 180px;
     }
