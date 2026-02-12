@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=d9gov" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=d9gov" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=cc0oe" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=cc0oe" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=d9gov" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=cc0oe" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=d9gov"></script>
-<link rel="stylesheet" href="style.css?v=d9gov">
+  <script type="text/javascript" src="/src/firebase.js?v=cc0oe"></script>
+<link rel="stylesheet" href="style.css?v=cc0oe">
 </head>
 
 <body>
-  <div id="header"><div class="fq5xo">
+  <div id="header"><div class="cr00z">
 
-  <div class="fq5xobody">
-    <a href="/en/"><img src="/img/logo.svg?v=d9gov" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="cr00zbody">
+    <a href="/en/"><img src="/img/logo.svg?v=cc0oe" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="fq5xoright">
-      <div class="fq5xolanguages ">
+    <div class="cr00zright">
+      <div class="cr00zlanguages ">
         <ul>
           <li><a href="/tr/gizlilik-politikasi/">tr</a></li><li><a href="/en/gizlilik-politikasi/">en</a></li><li><a href="/ar/gizlilik-politikasi/">ar</a></li>
         </ul>
       </div>
-      <div class="fq5xocontactlist">
+      <div class="cr00zcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined fq5xo-icon">phone</div>
+     <div class="material-symbols-outlined cr00z-icon">phone</div>
      <div>
-      <div  class="fq5xo-title">Call us now</div>
-      <div  class="fq5xo-spot">0342 341 41 31</div>
+      <div  class="cr00z-title">Call us now</div>
+      <div  class="cr00z-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined fq5xo-icon">mail</div>
+     <div class="material-symbols-outlined cr00z-icon">mail</div>
      <div>
-      <div  class="fq5xo-title">Write to us</div>
-      <div  class="fq5xo-spot">info@saibdernegi.org</div>
+      <div  class="cr00z-title">Write to us</div>
+      <div  class="cr00z-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined fq5xo-icon">location_on</div>
+     <div class="material-symbols-outlined cr00z-icon">location_on</div>
      <div>
-      <div  class="fq5xo-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="fq5xo-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="cr00z-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="cr00z-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="fq5xo-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="cr00z-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="fq5xomenubody">
-    <div class="fq5xomenu" id="menu-3-root">
-      <div class="fq5xomenulistbody">
-        <div class="fq5xomenulist"><a class="fq5xomenulist-menu" href="/en/">Home </a><div class="fq5xomenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="cr00zmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="cr00zmenubody" id="menu-3-drawer">
+    <div class="cr00zmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="cr00zmenulistbody">
+        <div class="cr00zmenulist"><a class="cr00zmenulist-menu" href="/en/">Home </a><div class="cr00zmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="fq5xomenulist-menu " >
+    <div class="cr00zmenulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="fq5xomenulist-menu " >
+    <div class="cr00zmenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="fq5xomenulist-menu " >
+    <div class="cr00zmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="fq5xomenulist-menu " >
+    <div class="cr00zmenulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -161,43 +164,186 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde cr00zright içeriği: dil + iletişim (cr00zmenulistbody altında) -->
+      <div class="cr00zmenudrawer-right">
+        <div class="cr00zmenudrawer-languages ">
+          <ul><li><a href="/tr/gizlilik-politikasi/">tr</a></li><li><a href="/en/gizlilik-politikasi/">en</a></li><li><a href="/ar/gizlilik-politikasi/">ar</a></li></ul>
+        </div>
+        <div class="cr00zmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined cr00z-icon">phone</div>
+     <div>
+      <div  class="cr00z-title">Call us now</div>
+      <div  class="cr00z-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined cr00z-icon">mail</div>
+     <div>
+      <div  class="cr00z-title">Write to us</div>
+      <div  class="cr00z-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined cr00z-icon">location_on</div>
+     <div>
+      <div  class="cr00z-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="cr00z-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="cr00zmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".cr00z-mobile-toggle");
+      if (!root || !root.classList.contains("cr00zmenu-open")) {
+        return;
+      }
+      root.classList.remove("cr00zmenu-open");
+      if (overlay) {
+        overlay.classList.remove("cr00zmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("cr00zmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".cr00z-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("fq5xomenu-open")) {
-        root.classList.remove("fq5xomenu-open");
+      var isOpen = root.classList.contains("cr00zmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("fq5xomenu-open");
+        root.classList.add("cr00zmenu-open");
+        if (overlay) {
+          overlay.classList.add("cr00zmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("cr00zmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("cr00zmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("cr00zmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("cr00zmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="cu07u-title f36">
+  <div id="content"><div class="sofo0-title f36">
   <h1>Privacy Policy</h1>
 </div>
-<div class="cu07u">
-  <div class="cu07u-menu-btn">
+<div class="sofo0">
+  <div class="sofo0-menu-btn">
     <span>Menu</span>
-    <span class="material-symbols-outlined cu07u-icon">menu</span>
+    <span class="material-symbols-outlined sofo0-icon">menu</span>
   </div>
-  <div class="cu07u-menu-overlay" id="cu07u-menu-overlay" aria-hidden="true"></div>
-  <div class="cu07u-menu" id="cu07u-menu">
-    <button class="cu07u-menu-close" type="button" aria-label="Close Menu" aria-controls="cu07u-menu">
+  <div class="sofo0-menu-overlay" id="sofo0-menu-overlay" aria-hidden="true"></div>
+  <div class="sofo0-menu" id="sofo0-menu">
+    <button class="sofo0-menu-close" type="button" aria-label="Close Menu" aria-controls="sofo0-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="cu07u-menu-link" href="/en/saib-kimdir/">Who is SAIB?</a><a class="cu07u-menu-link" href="/en/yonetim-kurulu/">Board of Directors</a><a class="cu07u-menu-link" href="/en/baskanin-mesaji/">President's Message</a><a class="cu07u-menu-link" href="/en/misyon/">Mission</a><a class="cu07u-menu-link" href="/en/vizyon/">Vision</a><a class="cu07u-menu-link" href="/en/uyelik-bilgileri/">Membership Information</a><a class="cu07u-menu-link active" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="cu07u-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="cu07u-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="cu07u-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
+    <a class="sofo0-menu-link" href="/en/saib-kimdir/">Who is SAIB?</a><a class="sofo0-menu-link" href="/en/yonetim-kurulu/">Board of Directors</a><a class="sofo0-menu-link" href="/en/baskanin-mesaji/">President's Message</a><a class="sofo0-menu-link" href="/en/misyon/">Mission</a><a class="sofo0-menu-link" href="/en/vizyon/">Vision</a><a class="sofo0-menu-link" href="/en/uyelik-bilgileri/">Membership Information</a><a class="sofo0-menu-link active" href="/en/gizlilik-politikasi/">Privacy Policy</a><a class="sofo0-menu-link" href="/en/kisisel-veriler/">Personal Data</a><a class="sofo0-menu-link" href="/en/kullanici-haklari/">User Rights</a><a class="sofo0-menu-link" href="/en/yasal-uyari/">Legal Notice</a>
   </div>
-  <div class="cu07u-desc">
+  <div class="sofo0-desc">
     
-    <div class="cu07u-body"><h2 style="font-size: 24px;">Our Privacy Policy</h2>
+    <div class="sofo0-body"><h2 style="font-size: 24px;">Our Privacy Policy</h2>
     <p style="font-size: 16px;">
         As SAIB Association, when you visit our website and use our membership system, some information is collected through cookies to improve our services and enhance user experience. This information, except for your identity information, is used to better present our association activities and improve member experience. Cookies are used to remember your preferences, optimize the operation of our site, and provide you with a better experience.
     </p>
@@ -212,10 +358,10 @@
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".cu07u-menu-btn");
-    var menu = document.querySelector(".cu07u-menu");
-    var overlay = document.querySelector(".cu07u-menu-overlay");
-    var closeButton = document.querySelector(".cu07u-menu-close");
+    var menuToggleBtn = document.querySelector(".sofo0-menu-btn");
+    var menu = document.querySelector(".sofo0-menu");
+    var overlay = document.querySelector(".sofo0-menu-overlay");
+    var closeButton = document.querySelector(".sofo0-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -285,7 +431,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".cu07u-menu-close");
+      var closeBtn = event.target.closest(".sofo0-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -333,15 +479,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".cu07u-top").forEach(function (button) {
+    document.querySelectorAll(".sofo0-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".cu07u-menu-group");
+        var group = this.closest(".sofo0-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".cu07u-sub");
+        var sub = group.querySelector(".sofo0-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".cu07u-icon");
+        var icon = this.querySelector(".sofo0-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -409,8 +555,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=d9gov"></script>
-<script defer src="/src/cookie.js?v=d9gov"></script>
+<script defer type="text/javascript" src="/src/js.js?v=cc0oe"></script>
+<script defer src="/src/cookie.js?v=cc0oe"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

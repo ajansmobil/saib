@@ -1,10 +1,16 @@
 
-  .gh1lymenulist-menu:hover .dropdown-content-gh1ly {
+
+  /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
+  .k14gemenudrawer-right {
+    display: none;
+  }
+
+  .k14gemenulist-menu:hover .dropdown-content-k14ge {
     display: flex;
     flex-direction: column;
   }
 
-  .gh1lymenulist-menu {
+  .k14gemenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,53 +18,53 @@
     padding: 10px;
     font-size: 16px;
     color: #fff !important;
-    border-bottom: 1px solid #ddd;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
   }
 
-  .gh1lymenulist-menu:hover {
+  .k14gemenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
+    border-radius: 5px;
   }
 
-  .gh1lymenulist-menu:hover>a {
+  .k14gemenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .gh1lymenulist-menu>a {
+  .k14gemenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-gh1ly {
+  .dropdown-content-active-k14ge {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-gh1ly>a {
+  .dropdown-content-active-k14ge>a {
     color: #000 !important;
   }
 
-  .dropdown-content-gh1ly {
+  .dropdown-content-k14ge {
     display: none;
     position: absolute;
     background-color: #333;
     color: #fff;
-    z-index: 102;
+    z-index: 1000000;
     margin-top: 10px;
     padding: 5px;
   }
 
-  .dropdown-content-gh1ly>a {
+  .dropdown-content-k14ge>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-gh1ly>a:hover {
+  .dropdown-content-k14ge>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +81,7 @@
     width: 300px;
   }
 
-  .gh1lybody {
+  .k14gebody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .gh1lybody > a {
+  .k14gebody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +98,7 @@
     gap: 10px;
   }
 
-  .gh1lyright {
+  .k14geright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .gh1lylanguages {
+  .k14gelanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .gh1lylanguages.lang-hidden {
+  .k14gelanguages.lang-hidden {
     display: none;
   }
 
-  .gh1lylanguages ul {
+  .k14gelanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +123,7 @@
     list-style: none;
   }
 
-  .gh1lylanguages li {
+  .k14gelanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .gh1lylanguages li a {
+  .k14gelanguages li a {
     color: #fff !important;
   }
 
-  .gh1lylanguages li a:hover {
+  .k14gelanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .gh1lylanguages li:hover {
+  .k14gelanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .gh1lycontactlist {
+  .k14gecontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .gh1lycontactlist a {
+  .k14gecontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +170,17 @@
     color: inherit;
   }
 
-  .gh1ly-spot {
+  .k14ge-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .gh1ly-icon {
+  .k14ge-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .gh1ly {
+  .k14ge {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +188,7 @@
     justify-content: center;
   }
 
-  .gh1lymenu {
+  .k14gemenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +196,7 @@
     position: relative;
   }
 
-  .gh1lymenubody {
+  .k14gemenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +205,7 @@
   }
 
 
-  .gh1lymenulist {
+  .k14gemenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +216,16 @@
     box-sizing: border-box;
   }
   
-  .gh1lymenulistbody {
+  .k14gemenulistbody {
     width: 100%;
   }
 
-  .gh1ly-mobile-toggle {
+  /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
+  .k14gemenuoverlay {
+    display: none;
+  }
+
+  .k14ge-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +237,30 @@
     font-size: 20px;
   }
 
-  .gh1ly-mobile-toggle span {
+    .k14ge-mobile-toggle span {
     font-size: 24px;
   }
 
+  /* Kapatma butonu sadece mobil drawer'da görünsün */
+  .k14gemenuclose {
+    display: none;
+  }
+
+  /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .gh1lymenu {
+    .k14ge {
+      position: sticky;
+      top: 0;
+      z-index: 1000000;
+      background-color: #fff;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .k14gemenu {
       overflow-x: auto;
     }
 
-    .gh1lymenulist {
+    .k14gemenulist {
       flex-direction: row;
     }
 
@@ -243,73 +268,286 @@
       width: 200px;
     }
 
-    .gh1lybody {
+    .k14gebody {
       display: flex;
       align-items: center;
-      justify-content: center;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .gh1lybody {
+      justify-content: space-between;
       width: calc(100% - 20px);
       padding: 0 10px;
-      justify-content: space-between;
       gap: 10px;
     }
 
-    .gh1lyright {
+    /* Mobilde dil+iletişim sadece drawer'da (k14gemenulistbody altında) */
+    .k14gebody .k14geright {
+      display: none;
+    }
+
+    .k14geright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .gh1lycontactlist {
+    .k14gecontactlist {
       display: none;
     }
 
-    .gh1lylanguages.lang-hidden {
+    .k14gelanguages.lang-hidden {
       display: none;
     }
 
-    .gh1lylanguages {
+    .k14gelanguages {
       display: flex;
     }
 
-    .gh1ly-mobile-toggle {
+    .k14ge-mobile-toggle {
       display: inline-flex;
+      min-width: 44px;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
     }
 
-    .gh1lymenulist {
+    .k14ge-mobile-toggle:active {
+      opacity: 0.85;
+    }
+
+    /* Mobil app: overlay (backdrop) */
+    .k14gemenuoverlay {
       display: none;
-      flex-direction: column;
-      gap: 6px;
-      width: calc(100% - 24px);
-      padding: 12px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9998;
+      opacity: 0;
+      transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .gh1lymenu.gh1lymenu-open .gh1lymenulist {
+    .k14gemenuoverlay.k14gemenu-open {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
+    .k14gemenubody {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 85%;
+      max-width: 320px;
+      height: 100%;
+      min-height: 100dvh;
+      padding-top: env(safe-area-inset-top, 0);
+      padding-right: env(safe-area-inset-right, 0);
+      padding-bottom: env(safe-area-inset-bottom, 0);
+      box-sizing: border-box;
+      background-color: #000;
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.2);
+      z-index: 9999999;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .k14gemenubody.k14gemenu-open {
+      right: 0;
+    }
+
+    .k14gemenubody .k14gemenu {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: none;
+      position: relative;
+      flex: 1;
+      min-height: 0;
       display: flex;
     }
 
-    .gh1lymenulist-menu {
-      justify-content: flex-start;
-      text-align: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
+    .k14gemenuclose {
+      display: flex;
+      position: absolute;
+      top: calc(env(safe-area-inset-top, 0) + 4px);
+      right: calc(env(safe-area-inset-right, 0) + 4px);
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      border-radius: 50%;
+      background-color: transparent;
+      color: #fff;
+      font-size: 24px;
+      z-index: 100;
     }
 
-    .dropdown-content-gh1ly {
+    .k14gemenuclose:active {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .k14gemenuclose span {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
+    .k14gemenubody .k14gemenulistbody {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-top: calc(56px + env(safe-area-inset-top, 0));
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 16px;
+      min-height: 0;
+    }
+
+    .k14gemenulist {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      padding: 0;
+      flex: 0 1 auto;
+    }
+
+    /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
+    .k14gemenubody .k14gemenulist-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 48px;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+    .k14gemenubody .k14gemenulist-menu:last-child {
+      border-bottom: none;
+    }
+
+    .k14gemenubody .k14gemenulist-menu:active {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Drawer: k14geright içeriği (dil + iletişim) k14gemenulistbody altında */
+    .k14gemenubody .k14gemenudrawer-right {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      gap: 16px;
+      padding: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .k14gemenudrawer-right .k14gemenudrawer-languages.lang-hidden {
+      display: none;
+    }
+
+    .k14gemenudrawer-right .k14gemenudrawer-languages ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .k14gemenudrawer-right .k14gemenudrawer-languages li {
+      list-style: none;
+      margin: 0;
+    }
+
+    .k14gemenudrawer-right .k14gemenudrawer-languages a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      min-height: 36px;
+      padding: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .k14gemenudrawer-right .k14gemenudrawer-languages a:active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .k14gemenudrawer-contactlist {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .k14gemenudrawer-contactlist a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .k14gemenudrawer-contactlist .k14ge-icon {
+      font-size: 24px;
+    }
+
+    .k14gemenudrawer-contactlist .k14ge-spot {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .dropdown-content-k14ge {
       position: static;
-      background-color: rgba(0, 0, 0, 0.85);
-      margin-top: 6px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-top: 4px;
+      margin-bottom: 8px;
       padding: 0;
       width: 100%;
+      border-radius: 8px;
     }
 
-    .dropdown-content-gh1ly>a {
+    .k14gemenubody .dropdown-content-k14ge>a {
+      display: block;
+      min-height: 44px;
+      padding: 12px 16px;
       border-width: 0 0 1px 0;
-      padding: 12px;
+      border-color: rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .k14gemenubody .dropdown-content-k14ge>a:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* Hareket azaltma tercihi: animasyonları kısalt */
+  @media (prefers-reduced-motion: reduce) {
+    .k14gemenuoverlay,
+    .k14gemenubody {
+      transition: none;
     }
   }
 
@@ -318,7 +556,7 @@
     justify-content: start;
   }
 
-  .bbqs5 {
+  .xbtou {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -327,11 +565,11 @@
     box-sizing: border-box;
   }
 
-  .bbqs5 * {
+  .xbtou * {
     box-sizing: border-box;
   }
 
-  .bbqs5-menu-btn {
+  .xbtou-menu-btn {
     display: none;
     background-color: #85260f;
     padding: 10px 20px;
@@ -343,11 +581,11 @@
     align-items: center;
   }
 
-  .bbqs5-menu-btn .bbqs5-icon {
+  .xbtou-menu-btn .xbtou-icon {
     font-size: 20px;
   }
 
-  .bbqs5-menu {
+  .xbtou-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -358,15 +596,15 @@
     float: left;
   }
 
-  .bbqs5-desc {
+  .xbtou-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .bbqs5-menu-link,
-  .bbqs5-top {
+  .xbtou-menu-link,
+  .xbtou-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -381,52 +619,52 @@
     text-align: left;
   }
 
-  .bbqs5-menu-link.active,
-  .bbqs5-menu-link:hover,
-  .bbqs5-top.active,
-  .bbqs5-top:hover {
+  .xbtou-menu-link.active,
+  .xbtou-menu-link:hover,
+  .xbtou-top.active,
+  .xbtou-top:hover {
     background-color: #85260f;
     color: #fff;
   }
 
-  .bbqs5-menu-group {
+  .xbtou-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .bbqs5-top {
+  .xbtou-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .bbqs5-top > div {
+  .xbtou-top > div {
     text-align: left;
   }
 
-  .bbqs5-top .bbqs5-icon {
+  .xbtou-top .xbtou-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .bbqs5-menu-group.open .bbqs5-top .bbqs5-icon {
+  .xbtou-menu-group.open .xbtou-top .xbtou-icon {
     transform: rotate(180deg);
   }
 
-  .bbqs5-sub {
+  .xbtou-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .bbqs5-sub.show {
+  .xbtou-sub.show {
     display: flex;
   }
 
-  .bbqs5-sub-link {
+  .xbtou-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -436,13 +674,13 @@
     text-align: left;
   }
 
-  .bbqs5-sub-link.active,
-  .bbqs5-sub-link:hover {
+  .xbtou-sub-link.active,
+  .xbtou-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .bbqs5-desc-menu {
+  .xbtou-desc-menu {
     width: 200px;
     background-color: #85260f;
     display: flex;
@@ -450,19 +688,19 @@
     border-radius: 5px;
   }
 
-  .bbqs5-desc-menu > div {
+  .xbtou-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .bbqs5-desc-body {
+  .xbtou-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .bbqs5-title {
+  .xbtou-title {
     width: 100%;
     height: 100px;
     background-color: #85260f;
@@ -475,7 +713,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .bbqs5-title::before {
+  .xbtou-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -490,7 +728,7 @@
     z-index: 1;
   }
 
-  .bbqs5-title h1 {
+  .xbtou-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -498,39 +736,39 @@
     color: #fff !important;
   }
 
-  .bbqs5-body {
+  .xbtou-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .bbqs5-img {
+  .xbtou-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .bbqs5-img img {
+  .xbtou-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .bbqs5-menu-overlay {
+    .xbtou-menu-overlay {
       display: none !important;
     }
 
-    .bbqs5-menu-close {
+    .xbtou-menu-close {
       display: none !important;
     }
 
-    .bbqs5-desc {
+    .xbtou-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .bbqs5-menu {
+    .xbtou-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -542,17 +780,17 @@
       padding: 10px;
     }
 
-    .bbqs5-menu-link {
+    .xbtou-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .bbqs5-top {
+    .xbtou-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .bbqs5-menu-btn {
+    .xbtou-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -561,13 +799,13 @@
       z-index: 1;
     }
 
-    .bbqs5-menu-btn:focus {
+    .xbtou-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .bbqs5-menu-overlay {
+    .xbtou-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -581,13 +819,13 @@
       pointer-events: none;
     }
 
-    .bbqs5-menu-overlay.active {
+    .xbtou-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .bbqs5 {
+    .xbtou {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -596,18 +834,18 @@
       margin-top: 0px;
     }
 
-    .bbqs5-img {
+    .xbtou-img {
       width: 100%;
     }
 
-    .bbqs5-body {
+    .xbtou-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .bbqs5-menu {
+    .xbtou-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -629,13 +867,13 @@
       visibility: hidden;
     }
 
-    .bbqs5-menu.active {
+    .xbtou-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .bbqs5-menu-close {
+    .xbtou-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -651,21 +889,21 @@
     }
 
     /* Menü içeriği için padding */
-    .bbqs5-menu > .bbqs5-menu-group,
-    .bbqs5-menu > .bbqs5-menu-link {
+    .xbtou-menu > .xbtou-menu-group,
+    .xbtou-menu > .xbtou-menu-link {
       padding: 10px;
     }
 
-    .bbqs5-menu-close span {
+    .xbtou-menu-close span {
       font-size: 28px;
     }
 
-    .bbqs5-menu-close:focus {
+    .xbtou-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .bbqs5-desc {
+    .xbtou-desc {
       width: 100% !important;
       order: 2;
     }

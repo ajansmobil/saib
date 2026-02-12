@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=k48rp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=k48rp" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=b86ud" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=b86ud" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=k48rp" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=b86ud" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=k48rp"></script>
-<link rel="stylesheet" href="style.css?v=k48rp">
+  <script type="text/javascript" src="/src/firebase.js?v=b86ud"></script>
+<link rel="stylesheet" href="style.css?v=b86ud">
 </head>
 
 <body>
-  <div id="header"><div class="z575o">
+  <div id="header"><div class="n00r8">
 
-  <div class="z575obody">
-    <a href="/tr/"><img src="/img/logo.svg?v=k48rp" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="n00r8body">
+    <a href="/tr/"><img src="/img/logo.svg?v=b86ud" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="z575oright">
-      <div class="z575olanguages ">
+    <div class="n00r8right">
+      <div class="n00r8languages ">
         <ul>
           <li><a href="/tr/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">tr</a></li><li><a href="/en/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">en</a></li><li><a href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">ar</a></li>
         </ul>
       </div>
-      <div class="z575ocontactlist">
+      <div class="n00r8contactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined z575o-icon">phone</div>
+     <div class="material-symbols-outlined n00r8-icon">phone</div>
      <div>
-      <div  class="z575o-title">Bizi hemen arayın</div>
-      <div  class="z575o-spot">0342 341 41 31</div>
+      <div  class="n00r8-title">Bizi hemen arayın</div>
+      <div  class="n00r8-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined z575o-icon">mail</div>
+     <div class="material-symbols-outlined n00r8-icon">mail</div>
      <div>
-      <div  class="z575o-title">Bize yazın</div>
-      <div  class="z575o-spot">info@saibdernegi.org</div>
+      <div  class="n00r8-title">Bize yazın</div>
+      <div  class="n00r8-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined z575o-icon">location_on</div>
+     <div class="material-symbols-outlined n00r8-icon">location_on</div>
      <div>
-      <div  class="z575o-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="z575o-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="n00r8-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="n00r8-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="z575o-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="n00r8-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="z575omenubody">
-    <div class="z575omenu" id="menu-3-root">
-      <div class="z575omenulistbody">
-        <div class="z575omenulist"><a class="z575omenulist-menu" href="/tr/">Anasayfa </a><div class="z575omenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="n00r8menuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="n00r8menubody" id="menu-3-drawer">
+    <div class="n00r8menu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="n00r8menulistbody">
+        <div class="n00r8menulist"><a class="n00r8menulist-menu" href="/tr/">Anasayfa </a><div class="n00r8menulist-menu " >
 
       <a href="/tr/saib-kimdir/">
        Derneğimiz
       </a>
      
                     </div>
-    <div class="z575omenulist-menu " >
+    <div class="n00r8menulist-menu " >
 
       <a href="/tr/haberler/">
        Haberler
       </a>
      
                     </div>
-    <div class="z575omenulist-menu " >
+    <div class="n00r8menulist-menu " >
 
       <a href="/tr/uyelik-basvurusu/">
        Üyelik Başvurusu
       </a>
      
                     </div>
-    <div class="z575omenulist-menu " >
+    <div class="n00r8menulist-menu " >
 
       <a href="/tr/subelerimiz/">
        Şubelerimiz
       </a>
      
                     </div>
-    <div class="z575omenulist-menu " >
+    <div class="n00r8menulist-menu " >
 
       <a href="/tr/iletisim/">
        İletişim
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde n00r8right içeriği: dil + iletişim (n00r8menulistbody altında) -->
+      <div class="n00r8menudrawer-right">
+        <div class="n00r8menudrawer-languages ">
+          <ul><li><a href="/tr/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">tr</a></li><li><a href="/en/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">en</a></li><li><a href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">ar</a></li></ul>
+        </div>
+        <div class="n00r8menudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined n00r8-icon">phone</div>
+     <div>
+      <div  class="n00r8-title">Bizi hemen arayın</div>
+      <div  class="n00r8-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined n00r8-icon">mail</div>
+     <div>
+      <div  class="n00r8-title">Bize yazın</div>
+      <div  class="n00r8-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined n00r8-icon">location_on</div>
+     <div>
+      <div  class="n00r8-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="n00r8-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="n00r8menuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".n00r8-mobile-toggle");
+      if (!root || !root.classList.contains("n00r8menu-open")) {
+        return;
+      }
+      root.classList.remove("n00r8menu-open");
+      if (overlay) {
+        overlay.classList.remove("n00r8menu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("n00r8menu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".n00r8-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("z575omenu-open")) {
-        root.classList.remove("z575omenu-open");
+      var isOpen = root.classList.contains("n00r8menu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("z575omenu-open");
+        root.classList.add("n00r8menu-open");
+        if (overlay) {
+          overlay.classList.add("n00r8menu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("n00r8menu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("n00r8menu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("n00r8menu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("n00r8menu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="xmhpv-page">
-  <header class="xmhpv-header">
-    <div class="xmhpv-header-meta">
+  <div id="content"><div class="ekjgp-page">
+  <header class="ekjgp-header">
+    <div class="ekjgp-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>26 Aralık 2025 11:21</span>
     </div>
-    <h1 class="xmhpv-header-title">ABD'li Kongre üyesi: Amerikan şirketleri Suriye'de önemli yatırımlar yapmayı hedefliyor</h1>
-    <p class="xmhpv-header-spot">ABD Kongre üyesi Stutzman, Amerikan şirketlerinin Suriye'de altyapı, enerji ve bankacılık sektörlerinde büyük yatırımlar yapmayı hedeflediğini açıkladı.</p>
+    <h1 class="ekjgp-header-title">ABD'li Kongre üyesi: Amerikan şirketleri Suriye'de önemli yatırımlar yapmayı hedefliyor</h1>
+    <p class="ekjgp-header-spot">ABD Kongre üyesi Stutzman, Amerikan şirketlerinin Suriye'de altyapı, enerji ve bankacılık sektörlerinde büyük yatırımlar yapmayı hedeflediğini açıkladı.</p>
   </header>
 
-  <div class="xmhpv-body">
-    <article class="xmhpv-article">
-      <figure class="xmhpv-article-media">
-        <img src="/page/hkjcmu0fvu/418345.jpg?v=k48rp" alt="Page Haber"  loading="lazy"/>
+  <div class="ekjgp-body">
+    <article class="ekjgp-article">
+      <figure class="ekjgp-article-media">
+        <img src="/page/hkjcmu0fvu/418345.jpg?v=b86ud" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="xmhpv-article-content"><p>Kongre üyesi Stutzman, sosyal medya platformu X üzerinden yaptığı paylaşımda "Özgür Suriye, Amerikan şirketlerinin altyapı, enerji ve bankacılık sektörlerindeki yatırımları için bir sığınak olabilir" diyerek ABD iş dünyasının Suriye'ye ilgisine dikkat çekti. Suriye'yi ziyaret eden ABD Kongre heyetinde yer alan Stutzman, ziyaret sonrası yaptığı açıklamalarda da Suriye hükümeti ile iş birliği için birçok fırsat bulunduğunu ve pek çok Amerikalı iş insanının Suriye'de büyük yatırımlar yapmaya hevesli olduğunu vurguladı. Stutzman, Suriye'nin yeniden inşası ve geleceğinin başarılı olabilmesi için ülkenin zengin dini ve kültürel çeşitliliğinin korunmasının da önemli olduğunu ifade etti. Uzmanlar, ABD'de yaptırımların gevşetilmesiyle Amerikan enerji ve inşaat şirketlerinin Suriye pazarına girmeye hazırlanabileceğini ve bunun Suriye'nin küresel finans sistemine yeniden entegrasyonu açısından kritik olduğunu belirtiyor. Stutzman'ın mesajı, uzun yıllar sonra Amerikan şirketlerinin Suriye'de yatırım fırsatlarını değerlendirmeye istekli olduğunun bir işareti olarak değerlendirildi.</p></div>
+      <div class="ekjgp-article-content"><p>Kongre üyesi Stutzman, sosyal medya platformu X üzerinden yaptığı paylaşımda "Özgür Suriye, Amerikan şirketlerinin altyapı, enerji ve bankacılık sektörlerindeki yatırımları için bir sığınak olabilir" diyerek ABD iş dünyasının Suriye'ye ilgisine dikkat çekti. Suriye'yi ziyaret eden ABD Kongre heyetinde yer alan Stutzman, ziyaret sonrası yaptığı açıklamalarda da Suriye hükümeti ile iş birliği için birçok fırsat bulunduğunu ve pek çok Amerikalı iş insanının Suriye'de büyük yatırımlar yapmaya hevesli olduğunu vurguladı. Stutzman, Suriye'nin yeniden inşası ve geleceğinin başarılı olabilmesi için ülkenin zengin dini ve kültürel çeşitliliğinin korunmasının da önemli olduğunu ifade etti. Uzmanlar, ABD'de yaptırımların gevşetilmesiyle Amerikan enerji ve inşaat şirketlerinin Suriye pazarına girmeye hazırlanabileceğini ve bunun Suriye'nin küresel finans sistemine yeniden entegrasyonu açısından kritik olduğunu belirtiyor. Stutzman'ın mesajı, uzun yıllar sonra Amerikan şirketlerinin Suriye'de yatırım fırsatlarını değerlendirmeye istekli olduğunun bir işareti olarak değerlendirildi.</p></div>
     </article>
 
-    <aside class="xmhpv-sidebar">
-      <div class="xmhpv-sidebar-head">
+    <aside class="ekjgp-sidebar">
+      <div class="ekjgp-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="xmhpv-sidebar-list"><a class="xmhpv-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="xmhpv-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="xmhpv-menu-content"><div class="xmhpv-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="xmhpv-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="xmhpv-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="xmhpv-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="xmhpv-menu-content"><div class="xmhpv-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="xmhpv-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="xmhpv-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="xmhpv-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="xmhpv-menu-content"><div class="xmhpv-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="xmhpv-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="xmhpv-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="xmhpv-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="xmhpv-menu-content"><div class="xmhpv-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="xmhpv-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="xmhpv-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="xmhpv-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="xmhpv-menu-content"><div class="xmhpv-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="xmhpv-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="xmhpv-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="xmhpv-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="xmhpv-menu-content"><div class="xmhpv-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="xmhpv-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
+      <div class="ekjgp-sidebar-list"><a class="ekjgp-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="ekjgp-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="ekjgp-menu-content"><div class="ekjgp-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="ekjgp-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="ekjgp-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="ekjgp-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="ekjgp-menu-content"><div class="ekjgp-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="ekjgp-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="ekjgp-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="ekjgp-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="ekjgp-menu-content"><div class="ekjgp-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="ekjgp-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="ekjgp-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="ekjgp-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="ekjgp-menu-content"><div class="ekjgp-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="ekjgp-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="ekjgp-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="ekjgp-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="ekjgp-menu-content"><div class="ekjgp-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="ekjgp-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="ekjgp-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="ekjgp-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="ekjgp-menu-content"><div class="ekjgp-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="ekjgp-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=k48rp"></script>
-<script defer src="/src/cookie.js?v=k48rp"></script>
+<script defer type="text/javascript" src="/src/js.js?v=b86ud"></script>
+<script defer src="/src/cookie.js?v=b86ud"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

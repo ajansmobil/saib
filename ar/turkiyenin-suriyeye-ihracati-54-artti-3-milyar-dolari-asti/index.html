@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=un80y" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=un80y" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=w4n6f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=w4n6f" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=un80y" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=w4n6f" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=un80y"></script>
-<link rel="stylesheet" href="style.css?v=un80y">
+  <script type="text/javascript" src="/src/firebase.js?v=w4n6f"></script>
+<link rel="stylesheet" href="style.css?v=w4n6f">
 </head>
 
 <body>
-  <div id="header"><div class="fxn2p">
+  <div id="header"><div class="rvkio">
 
-  <div class="fxn2pbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=un80y" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="rvkiobody">
+    <a href="/ar/"><img src="/img/logo.svg?v=w4n6f" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="fxn2pright">
-      <div class="fxn2planguages ">
+    <div class="rvkioright">
+      <div class="rvkiolanguages ">
         <ul>
           <li><a href="/tr/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">tr</a></li><li><a href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">en</a></li><li><a href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">ar</a></li>
         </ul>
       </div>
-      <div class="fxn2pcontactlist">
+      <div class="rvkiocontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined fxn2p-icon">phone</div>
+     <div class="material-symbols-outlined rvkio-icon">phone</div>
      <div>
-      <div  class="fxn2p-title">اتصل بنا الآن</div>
-      <div  class="fxn2p-spot">0342 341 41 31</div>
+      <div  class="rvkio-title">اتصل بنا الآن</div>
+      <div  class="rvkio-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined fxn2p-icon">mail</div>
+     <div class="material-symbols-outlined rvkio-icon">mail</div>
      <div>
-      <div  class="fxn2p-title">اكتب لنا</div>
-      <div  class="fxn2p-spot">info@saibdernegi.org</div>
+      <div  class="rvkio-title">اكتب لنا</div>
+      <div  class="rvkio-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined fxn2p-icon">location_on</div>
+     <div class="material-symbols-outlined rvkio-icon">location_on</div>
      <div>
-      <div  class="fxn2p-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
-      <div  class="fxn2p-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="rvkio-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="rvkio-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="fxn2p-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="rvkio-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="fxn2pmenubody">
-    <div class="fxn2pmenu" id="menu-3-root">
-      <div class="fxn2pmenulistbody">
-        <div class="fxn2pmenulist"><a class="fxn2pmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="fxn2pmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="rvkiomenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="rvkiomenubody" id="menu-3-drawer">
+    <div class="rvkiomenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="rvkiomenulistbody">
+        <div class="rvkiomenulist"><a class="rvkiomenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="rvkiomenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        جمعيتنا
       </a>
      
                     </div>
-    <div class="fxn2pmenulist-menu " >
+    <div class="rvkiomenulist-menu " >
 
       <a href="/ar/haberler/">
        الأخبار
       </a>
      
                     </div>
-    <div class="fxn2pmenulist-menu " >
+    <div class="rvkiomenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        طلب العضوية
       </a>
      
                     </div>
-    <div class="fxn2pmenulist-menu " >
+    <div class="rvkiomenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        فروعنا
       </a>
      
                     </div>
-    <div class="fxn2pmenulist-menu " >
+    <div class="rvkiomenulist-menu " >
 
       <a href="/ar/iletisim/">
        اتصل بنا
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde rvkioright içeriği: dil + iletişim (rvkiomenulistbody altında) -->
+      <div class="rvkiomenudrawer-right">
+        <div class="rvkiomenudrawer-languages ">
+          <ul><li><a href="/tr/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">tr</a></li><li><a href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">en</a></li><li><a href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">ar</a></li></ul>
+        </div>
+        <div class="rvkiomenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined rvkio-icon">phone</div>
+     <div>
+      <div  class="rvkio-title">اتصل بنا الآن</div>
+      <div  class="rvkio-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined rvkio-icon">mail</div>
+     <div>
+      <div  class="rvkio-title">اكتب لنا</div>
+      <div  class="rvkio-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined rvkio-icon">location_on</div>
+     <div>
+      <div  class="rvkio-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="rvkio-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="rvkiomenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".rvkio-mobile-toggle");
+      if (!root || !root.classList.contains("rvkiomenu-open")) {
+        return;
+      }
+      root.classList.remove("rvkiomenu-open");
+      if (overlay) {
+        overlay.classList.remove("rvkiomenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("rvkiomenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".rvkio-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("fxn2pmenu-open")) {
-        root.classList.remove("fxn2pmenu-open");
+      var isOpen = root.classList.contains("rvkiomenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("fxn2pmenu-open");
+        root.classList.add("rvkiomenu-open");
+        if (overlay) {
+          overlay.classList.add("rvkiomenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("rvkiomenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("rvkiomenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("rvkiomenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("rvkiomenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="ey4um-page">
-  <header class="ey4um-header">
-    <div class="ey4um-header-meta">
+  <div id="content"><div class="ueban-page">
+  <header class="ueban-header">
+    <div class="ueban-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="ey4um-header-title">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</h1>
-    <p class="ey4um-header-spot">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p>
+    <h1 class="ueban-header-title">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</h1>
+    <p class="ueban-header-spot">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p>
   </header>
 
-  <div class="ey4um-body">
-    <article class="ey4um-article">
-      <figure class="ey4um-article-media">
-        <img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=un80y" alt="Page Haber"  loading="lazy"/>
+  <div class="ueban-body">
+    <article class="ueban-article">
+      <figure class="ueban-article-media">
+        <img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=w4n6f" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="ey4um-article-content"><p>أفاد نائب وزير التجارة التركي أوزغور فولكان آغار أن صادرات تركيا إلى سوريا، والتي بلغت 1.95 مليار دولار في عام 2024، زادت بسرعة في عام 2025 وتجاوزت عتبة 3 مليارات دولار. أكد آغار أنه مع انتهاء فترة الصراع في سوريا، بدأت التجارة تتطور بنجاح خارج المناطق الشمالية، أيضًا مع إدارة دمشق. مؤكدًا أن حجم التجارة سينمو أكثر مع استقرار سوريا في الفترة القادمة، أعرب آغار عن أن التجارة بين البلدين، والتي كانت عند مستوى 2.3 مليار دولار قبل عام 2011، من المتوقع أن تتجاوز تلك المستويات مرة أخرى وترتفع أكثر. يُذكر أن مفاوضات اتفاقية شراكة اقتصادية شاملة مع سوريا قد بدأت أيضًا، وستُفتح التجارة المتبادلة من خلال تحديث الجمارك وخطوات التجارة الحرة.</p></div>
+      <div class="ueban-article-content"><p>أفاد نائب وزير التجارة التركي أوزغور فولكان آغار أن صادرات تركيا إلى سوريا، والتي بلغت 1.95 مليار دولار في عام 2024، زادت بسرعة في عام 2025 وتجاوزت عتبة 3 مليارات دولار. أكد آغار أنه مع انتهاء فترة الصراع في سوريا، بدأت التجارة تتطور بنجاح خارج المناطق الشمالية، أيضًا مع إدارة دمشق. مؤكدًا أن حجم التجارة سينمو أكثر مع استقرار سوريا في الفترة القادمة، أعرب آغار عن أن التجارة بين البلدين، والتي كانت عند مستوى 2.3 مليار دولار قبل عام 2011، من المتوقع أن تتجاوز تلك المستويات مرة أخرى وترتفع أكثر. يُذكر أن مفاوضات اتفاقية شراكة اقتصادية شاملة مع سوريا قد بدأت أيضًا، وستُفتح التجارة المتبادلة من خلال تحديث الجمارك وخطوات التجارة الحرة.</p></div>
     </article>
 
-    <aside class="ey4um-sidebar">
-      <div class="ey4um-sidebar-head">
+    <aside class="ueban-sidebar">
+      <div class="ueban-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="ey4um-sidebar-list"><a class="ey4um-menu-item" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="ey4um-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="ey4um-menu-content"><div class="ey4um-menu-name">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</div><p class="ey4um-menu-spot">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p></div></a><a class="ey4um-menu-item" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="ey4um-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="ey4um-menu-content"><div class="ey4um-menu-name">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</div><p class="ey4um-menu-spot">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p></div></a><a class="ey4um-menu-item" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="ey4um-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="ey4um-menu-content"><div class="ey4um-menu-name">انعقاد منتدى الأعمال التركي السوري في حلب</div><p class="ey4um-menu-spot">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p></div></a><a class="ey4um-menu-item" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="ey4um-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="ey4um-menu-content"><div class="ey4um-menu-name">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</div><p class="ey4um-menu-spot">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p></div></a><a class="ey4um-menu-item" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><div class="ey4um-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="ey4um-menu-content"><div class="ey4um-menu-name">عودة نصف السوريين على الأقل</div><p class="ey4um-menu-spot">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p></div></a><a class="ey4um-menu-item" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="ey4um-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="ey4um-menu-content"><div class="ey4um-menu-name">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</div><p class="ey4um-menu-spot">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p></div></a></div>
+      <div class="ueban-sidebar-list"><a class="ueban-menu-item" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="ueban-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="ueban-menu-content"><div class="ueban-menu-name">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</div><p class="ueban-menu-spot">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p></div></a><a class="ueban-menu-item" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="ueban-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="ueban-menu-content"><div class="ueban-menu-name">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</div><p class="ueban-menu-spot">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p></div></a><a class="ueban-menu-item" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="ueban-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="ueban-menu-content"><div class="ueban-menu-name">انعقاد منتدى الأعمال التركي السوري في حلب</div><p class="ueban-menu-spot">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p></div></a><a class="ueban-menu-item" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="ueban-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="ueban-menu-content"><div class="ueban-menu-name">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</div><p class="ueban-menu-spot">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p></div></a><a class="ueban-menu-item" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><div class="ueban-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="ueban-menu-content"><div class="ueban-menu-name">عودة نصف السوريين على الأقل</div><p class="ueban-menu-spot">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p></div></a><a class="ueban-menu-item" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="ueban-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="ueban-menu-content"><div class="ueban-menu-name">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</div><p class="ueban-menu-spot">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=un80y"></script>
-<script defer src="/src/cookie.js?v=un80y"></script>
+<script defer type="text/javascript" src="/src/js.js?v=w4n6f"></script>
+<script defer src="/src/cookie.js?v=w4n6f"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=x0581" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=x0581" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=h0kcy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=h0kcy" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=x0581" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=h0kcy" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=x0581"></script>
-<link rel="stylesheet" href="style.css?v=x0581">
+  <script type="text/javascript" src="/src/firebase.js?v=h0kcy"></script>
+<link rel="stylesheet" href="style.css?v=h0kcy">
 </head>
 
 <body>
-  <div id="header"><div class="awbdb">
+  <div id="header"><div class="ih2un">
 
-  <div class="awbdbbody">
-    <a href="/tr/"><img src="/img/logo.svg?v=x0581" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="ih2unbody">
+    <a href="/tr/"><img src="/img/logo.svg?v=h0kcy" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="awbdbright">
-      <div class="awbdblanguages ">
+    <div class="ih2unright">
+      <div class="ih2unlanguages ">
         <ul>
           <li><a href="/tr/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">tr</a></li><li><a href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">en</a></li><li><a href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">ar</a></li>
         </ul>
       </div>
-      <div class="awbdbcontactlist">
+      <div class="ih2uncontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined awbdb-icon">phone</div>
+     <div class="material-symbols-outlined ih2un-icon">phone</div>
      <div>
-      <div  class="awbdb-title">Bizi hemen arayın</div>
-      <div  class="awbdb-spot">0342 341 41 31</div>
+      <div  class="ih2un-title">Bizi hemen arayın</div>
+      <div  class="ih2un-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined awbdb-icon">mail</div>
+     <div class="material-symbols-outlined ih2un-icon">mail</div>
      <div>
-      <div  class="awbdb-title">Bize yazın</div>
-      <div  class="awbdb-spot">info@saibdernegi.org</div>
+      <div  class="ih2un-title">Bize yazın</div>
+      <div  class="ih2un-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined awbdb-icon">location_on</div>
+     <div class="material-symbols-outlined ih2un-icon">location_on</div>
      <div>
-      <div  class="awbdb-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="awbdb-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="ih2un-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="ih2un-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="awbdb-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="ih2un-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="awbdbmenubody">
-    <div class="awbdbmenu" id="menu-3-root">
-      <div class="awbdbmenulistbody">
-        <div class="awbdbmenulist"><a class="awbdbmenulist-menu" href="/tr/">Anasayfa </a><div class="awbdbmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="ih2unmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="ih2unmenubody" id="menu-3-drawer">
+    <div class="ih2unmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="ih2unmenulistbody">
+        <div class="ih2unmenulist"><a class="ih2unmenulist-menu" href="/tr/">Anasayfa </a><div class="ih2unmenulist-menu " >
 
       <a href="/tr/saib-kimdir/">
        Derneğimiz
       </a>
      
                     </div>
-    <div class="awbdbmenulist-menu " >
+    <div class="ih2unmenulist-menu " >
 
       <a href="/tr/haberler/">
        Haberler
       </a>
      
                     </div>
-    <div class="awbdbmenulist-menu " >
+    <div class="ih2unmenulist-menu " >
 
       <a href="/tr/uyelik-basvurusu/">
        Üyelik Başvurusu
       </a>
      
                     </div>
-    <div class="awbdbmenulist-menu " >
+    <div class="ih2unmenulist-menu " >
 
       <a href="/tr/subelerimiz/">
        Şubelerimiz
       </a>
      
                     </div>
-    <div class="awbdbmenulist-menu " >
+    <div class="ih2unmenulist-menu " >
 
       <a href="/tr/iletisim/">
        İletişim
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde ih2unright içeriği: dil + iletişim (ih2unmenulistbody altında) -->
+      <div class="ih2unmenudrawer-right">
+        <div class="ih2unmenudrawer-languages ">
+          <ul><li><a href="/tr/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">tr</a></li><li><a href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">en</a></li><li><a href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">ar</a></li></ul>
+        </div>
+        <div class="ih2unmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined ih2un-icon">phone</div>
+     <div>
+      <div  class="ih2un-title">Bizi hemen arayın</div>
+      <div  class="ih2un-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined ih2un-icon">mail</div>
+     <div>
+      <div  class="ih2un-title">Bize yazın</div>
+      <div  class="ih2un-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined ih2un-icon">location_on</div>
+     <div>
+      <div  class="ih2un-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="ih2un-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="ih2unmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".ih2un-mobile-toggle");
+      if (!root || !root.classList.contains("ih2unmenu-open")) {
+        return;
+      }
+      root.classList.remove("ih2unmenu-open");
+      if (overlay) {
+        overlay.classList.remove("ih2unmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("ih2unmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".ih2un-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("awbdbmenu-open")) {
-        root.classList.remove("awbdbmenu-open");
+      var isOpen = root.classList.contains("ih2unmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("awbdbmenu-open");
+        root.classList.add("ih2unmenu-open");
+        if (overlay) {
+          overlay.classList.add("ih2unmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("ih2unmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("ih2unmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("ih2unmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("ih2unmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="phiao-page">
-  <header class="phiao-header">
-    <div class="phiao-header-meta">
+  <div id="content"><div class="mvec5-page">
+  <header class="mvec5-header">
+    <div class="mvec5-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>26 Aralık 2025 11:21</span>
     </div>
-    <h1 class="phiao-header-title">Türkiye'nin Suriye'ye ihracatı %54 arttı, 3 milyar doları aştı</h1>
-    <p class="phiao-header-spot">Türkiye'nin Suriye'ye ihracatı 2025'te %54,1 artarak 3 milyar doları aştı. İlişkilerin normalleşmesi ve siyasi istikrarın pekişmesiyle sağlandı.</p>
+    <h1 class="mvec5-header-title">Türkiye'nin Suriye'ye ihracatı %54 arttı, 3 milyar doları aştı</h1>
+    <p class="mvec5-header-spot">Türkiye'nin Suriye'ye ihracatı 2025'te %54,1 artarak 3 milyar doları aştı. İlişkilerin normalleşmesi ve siyasi istikrarın pekişmesiyle sağlandı.</p>
   </header>
 
-  <div class="phiao-body">
-    <article class="phiao-article">
-      <figure class="phiao-article-media">
-        <img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=x0581" alt="Page Haber"  loading="lazy"/>
+  <div class="mvec5-body">
+    <article class="mvec5-article">
+      <figure class="mvec5-article-media">
+        <img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=h0kcy" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="phiao-article-content"><p>Türkiye Ticaret Bakan Yardımcısı Özgür Volkan Ağar, 2024'te 1,95 milyar dolar olan Türkiye'den Suriye'ye ihracatın 2025'te hızla artarak 3 milyar dolar eşiğini aştığını bildirdi. Ağar, Suriye'de çatışma döneminin sona ermesiyle ticaretin kuzey bölgelerin ötesine, Şam yönetimiyle de başarılı şekilde gelişmeye başladığını belirtti. Önümüzdeki dönemde Suriye'nin istikrar kazandıkça ticaret hacminin daha da büyüyeceğini vurgulayan Ağar, iki ülke arasında 2011 öncesi 2,3 milyar dolar seviyesinde olan ticaretin yeniden o seviyeleri geçerek daha da yukarı çıkmasının beklendiğini ifade etti. Suriye ile kapsamlı ekonomik ortaklık anlaşması müzakerelerinin de başladığı, gümrüklerin modernizasyonu ve serbest ticaret adımlarıyla karşılıklı ticaretin önünün açılacağı belirtiliyor.</p></div>
+      <div class="mvec5-article-content"><p>Türkiye Ticaret Bakan Yardımcısı Özgür Volkan Ağar, 2024'te 1,95 milyar dolar olan Türkiye'den Suriye'ye ihracatın 2025'te hızla artarak 3 milyar dolar eşiğini aştığını bildirdi. Ağar, Suriye'de çatışma döneminin sona ermesiyle ticaretin kuzey bölgelerin ötesine, Şam yönetimiyle de başarılı şekilde gelişmeye başladığını belirtti. Önümüzdeki dönemde Suriye'nin istikrar kazandıkça ticaret hacminin daha da büyüyeceğini vurgulayan Ağar, iki ülke arasında 2011 öncesi 2,3 milyar dolar seviyesinde olan ticaretin yeniden o seviyeleri geçerek daha da yukarı çıkmasının beklendiğini ifade etti. Suriye ile kapsamlı ekonomik ortaklık anlaşması müzakerelerinin de başladığı, gümrüklerin modernizasyonu ve serbest ticaret adımlarıyla karşılıklı ticaretin önünün açılacağı belirtiliyor.</p></div>
     </article>
 
-    <aside class="phiao-sidebar">
-      <div class="phiao-sidebar-head">
+    <aside class="mvec5-sidebar">
+      <div class="mvec5-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="phiao-sidebar-list"><a class="phiao-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="phiao-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="phiao-menu-content"><div class="phiao-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="phiao-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="phiao-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="phiao-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="phiao-menu-content"><div class="phiao-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="phiao-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="phiao-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="phiao-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="phiao-menu-content"><div class="phiao-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="phiao-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="phiao-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="phiao-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="phiao-menu-content"><div class="phiao-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="phiao-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="phiao-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="phiao-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="phiao-menu-content"><div class="phiao-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="phiao-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="phiao-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="phiao-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="phiao-menu-content"><div class="phiao-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="phiao-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
+      <div class="mvec5-sidebar-list"><a class="mvec5-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="mvec5-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="mvec5-menu-content"><div class="mvec5-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="mvec5-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="mvec5-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="mvec5-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="mvec5-menu-content"><div class="mvec5-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="mvec5-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="mvec5-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="mvec5-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="mvec5-menu-content"><div class="mvec5-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="mvec5-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="mvec5-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="mvec5-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="mvec5-menu-content"><div class="mvec5-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="mvec5-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="mvec5-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="mvec5-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="mvec5-menu-content"><div class="mvec5-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="mvec5-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="mvec5-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="mvec5-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="mvec5-menu-content"><div class="mvec5-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="mvec5-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=x0581"></script>
-<script defer src="/src/cookie.js?v=x0581"></script>
+<script defer type="text/javascript" src="/src/js.js?v=h0kcy"></script>
+<script defer src="/src/cookie.js?v=h0kcy"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

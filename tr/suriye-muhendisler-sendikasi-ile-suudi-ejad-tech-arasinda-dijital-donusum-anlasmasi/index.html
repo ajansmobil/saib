@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=p6mxl" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=p6mxl" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=t21it" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=t21it" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=p6mxl" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=t21it" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=p6mxl"></script>
-<link rel="stylesheet" href="style.css?v=p6mxl">
+  <script type="text/javascript" src="/src/firebase.js?v=t21it"></script>
+<link rel="stylesheet" href="style.css?v=t21it">
 </head>
 
 <body>
-  <div id="header"><div class="q3j98">
+  <div id="header"><div class="kvvnj">
 
-  <div class="q3j98body">
-    <a href="/tr/"><img src="/img/logo.svg?v=p6mxl" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="kvvnjbody">
+    <a href="/tr/"><img src="/img/logo.svg?v=t21it" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="q3j98right">
-      <div class="q3j98languages ">
+    <div class="kvvnjright">
+      <div class="kvvnjlanguages ">
         <ul>
           <li><a href="/tr/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">tr</a></li><li><a href="/en/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">en</a></li><li><a href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">ar</a></li>
         </ul>
       </div>
-      <div class="q3j98contactlist">
+      <div class="kvvnjcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined q3j98-icon">phone</div>
+     <div class="material-symbols-outlined kvvnj-icon">phone</div>
      <div>
-      <div  class="q3j98-title">Bizi hemen arayın</div>
-      <div  class="q3j98-spot">0342 341 41 31</div>
+      <div  class="kvvnj-title">Bizi hemen arayın</div>
+      <div  class="kvvnj-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined q3j98-icon">mail</div>
+     <div class="material-symbols-outlined kvvnj-icon">mail</div>
      <div>
-      <div  class="q3j98-title">Bize yazın</div>
-      <div  class="q3j98-spot">info@saibdernegi.org</div>
+      <div  class="kvvnj-title">Bize yazın</div>
+      <div  class="kvvnj-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined q3j98-icon">location_on</div>
+     <div class="material-symbols-outlined kvvnj-icon">location_on</div>
      <div>
-      <div  class="q3j98-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="q3j98-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="kvvnj-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="kvvnj-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="q3j98-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="kvvnj-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="q3j98menubody">
-    <div class="q3j98menu" id="menu-3-root">
-      <div class="q3j98menulistbody">
-        <div class="q3j98menulist"><a class="q3j98menulist-menu" href="/tr/">Anasayfa </a><div class="q3j98menulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="kvvnjmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="kvvnjmenubody" id="menu-3-drawer">
+    <div class="kvvnjmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="kvvnjmenulistbody">
+        <div class="kvvnjmenulist"><a class="kvvnjmenulist-menu" href="/tr/">Anasayfa </a><div class="kvvnjmenulist-menu " >
 
       <a href="/tr/saib-kimdir/">
        Derneğimiz
       </a>
      
                     </div>
-    <div class="q3j98menulist-menu " >
+    <div class="kvvnjmenulist-menu " >
 
       <a href="/tr/haberler/">
        Haberler
       </a>
      
                     </div>
-    <div class="q3j98menulist-menu " >
+    <div class="kvvnjmenulist-menu " >
 
       <a href="/tr/uyelik-basvurusu/">
        Üyelik Başvurusu
       </a>
      
                     </div>
-    <div class="q3j98menulist-menu " >
+    <div class="kvvnjmenulist-menu " >
 
       <a href="/tr/subelerimiz/">
        Şubelerimiz
       </a>
      
                     </div>
-    <div class="q3j98menulist-menu " >
+    <div class="kvvnjmenulist-menu " >
 
       <a href="/tr/iletisim/">
        İletişim
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde kvvnjright içeriği: dil + iletişim (kvvnjmenulistbody altında) -->
+      <div class="kvvnjmenudrawer-right">
+        <div class="kvvnjmenudrawer-languages ">
+          <ul><li><a href="/tr/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">tr</a></li><li><a href="/en/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">en</a></li><li><a href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">ar</a></li></ul>
+        </div>
+        <div class="kvvnjmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined kvvnj-icon">phone</div>
+     <div>
+      <div  class="kvvnj-title">Bizi hemen arayın</div>
+      <div  class="kvvnj-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined kvvnj-icon">mail</div>
+     <div>
+      <div  class="kvvnj-title">Bize yazın</div>
+      <div  class="kvvnj-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined kvvnj-icon">location_on</div>
+     <div>
+      <div  class="kvvnj-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="kvvnj-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="kvvnjmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".kvvnj-mobile-toggle");
+      if (!root || !root.classList.contains("kvvnjmenu-open")) {
+        return;
+      }
+      root.classList.remove("kvvnjmenu-open");
+      if (overlay) {
+        overlay.classList.remove("kvvnjmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("kvvnjmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".kvvnj-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("q3j98menu-open")) {
-        root.classList.remove("q3j98menu-open");
+      var isOpen = root.classList.contains("kvvnjmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("q3j98menu-open");
+        root.classList.add("kvvnjmenu-open");
+        if (overlay) {
+          overlay.classList.add("kvvnjmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("kvvnjmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("kvvnjmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("kvvnjmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("kvvnjmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="ymult-page">
-  <header class="ymult-header">
-    <div class="ymult-header-meta">
+  <div id="content"><div class="phd4x-page">
+  <header class="phd4x-header">
+    <div class="phd4x-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>26 Aralık 2025 11:21</span>
     </div>
-    <h1 class="ymult-header-title">Suriye Mühendisler Sendikası ile Suudi Ejad Tech arasında dijital dönüşüm anlaşması</h1>
-    <p class="ymult-header-spot">ŞAM (SANA) – Suriye Mühendisler Sendikası, Suudi Arabistan merkezli GO Telecom grubunun iştiraki Ejad Tech şirketi ile Şam'daki sendika merkezinde bir iş birliği anlaşması imzaladı.</p>
+    <h1 class="phd4x-header-title">Suriye Mühendisler Sendikası ile Suudi Ejad Tech arasında dijital dönüşüm anlaşması</h1>
+    <p class="phd4x-header-spot">ŞAM (SANA) – Suriye Mühendisler Sendikası, Suudi Arabistan merkezli GO Telecom grubunun iştiraki Ejad Tech şirketi ile Şam'daki sendika merkezinde bir iş birliği anlaşması imzaladı.</p>
   </header>
 
-  <div class="ymult-body">
-    <article class="ymult-article">
-      <figure class="ymult-article-media">
-        <img src="/page/s77uwhtu0k/1-1024x683.jpg?v=p6mxl" alt="Page Haber"  loading="lazy"/>
+  <div class="phd4x-body">
+    <article class="phd4x-article">
+      <figure class="phd4x-article-media">
+        <img src="/page/s77uwhtu0k/1-1024x683.jpg?v=t21it" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="ymult-article-content"><p>İmzalanan mutabakat zaptı, iki kurum arasında kapsamlı bir dijital işbirliği çerçevesi oluşturuyor ve özellikle mühendislik alanında dijital sistemlerin geliştirilmesi, dijital dönüşüm projelerinin desteklenmesi ve ileri teknik danışmanlık hizmetlerinin sunulmasını kapsıyor. Bu anlaşmanın amacı, mühendislik çalışmalarında verimliliği artırmak ve hizmet kalitesini yükseltmek olarak belirtildi. Mühendisler Sendikası Başkanı Malik Hac Ali, anlaşmanın Suriye ve Suudi mühendisler arasında teknik ve mesleki iş birliğini güçlendireceğini ve Suriyeli mühendislerin dijital dönüşüm projelerine daha etkin katılım sağlayacağını vurguladı. Ejad Tech CEO'su Muhammed El-Bukmi ise bu girişimin Suudi Arabistan'ın Suriye kurumlarına, özellikle de Mühendisler Sendikası'na destek yaklaşımının bir parçası olduğunu ifade etti. El-Bukmi, nitelikli Suriyeli mühendisler için Suudi Arabistan'da ve şirketin Suriye'deki projelerinde istihdam fırsatları sunmayı hedeflediklerini belirtti. Anlaşma, teknik deneyim paylaşımı, lojistik altyapının iyileştirilmesi ve dijital platformların entegrasyonu gibi alanlarda da iş birliği öngörüyor. Bu adım, Suriye'nin uluslararası düzeyde mühendislik ve teknoloji alanında işbirliğini genişletme çabalarının bir parçası olarak görülüyor ve Suriyeli mühendislerin bilgi birikiminin bölgesel projelere entegre edilmesine katkı sağlayacak.</p></div>
+      <div class="phd4x-article-content"><p>İmzalanan mutabakat zaptı, iki kurum arasında kapsamlı bir dijital işbirliği çerçevesi oluşturuyor ve özellikle mühendislik alanında dijital sistemlerin geliştirilmesi, dijital dönüşüm projelerinin desteklenmesi ve ileri teknik danışmanlık hizmetlerinin sunulmasını kapsıyor. Bu anlaşmanın amacı, mühendislik çalışmalarında verimliliği artırmak ve hizmet kalitesini yükseltmek olarak belirtildi. Mühendisler Sendikası Başkanı Malik Hac Ali, anlaşmanın Suriye ve Suudi mühendisler arasında teknik ve mesleki iş birliğini güçlendireceğini ve Suriyeli mühendislerin dijital dönüşüm projelerine daha etkin katılım sağlayacağını vurguladı. Ejad Tech CEO'su Muhammed El-Bukmi ise bu girişimin Suudi Arabistan'ın Suriye kurumlarına, özellikle de Mühendisler Sendikası'na destek yaklaşımının bir parçası olduğunu ifade etti. El-Bukmi, nitelikli Suriyeli mühendisler için Suudi Arabistan'da ve şirketin Suriye'deki projelerinde istihdam fırsatları sunmayı hedeflediklerini belirtti. Anlaşma, teknik deneyim paylaşımı, lojistik altyapının iyileştirilmesi ve dijital platformların entegrasyonu gibi alanlarda da iş birliği öngörüyor. Bu adım, Suriye'nin uluslararası düzeyde mühendislik ve teknoloji alanında işbirliğini genişletme çabalarının bir parçası olarak görülüyor ve Suriyeli mühendislerin bilgi birikiminin bölgesel projelere entegre edilmesine katkı sağlayacak.</p></div>
     </article>
 
-    <aside class="ymult-sidebar">
-      <div class="ymult-sidebar-head">
+    <aside class="phd4x-sidebar">
+      <div class="phd4x-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="ymult-sidebar-list"><a class="ymult-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="ymult-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="ymult-menu-content"><div class="ymult-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="ymult-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="ymult-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="ymult-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="ymult-menu-content"><div class="ymult-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="ymult-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="ymult-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="ymult-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="ymult-menu-content"><div class="ymult-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="ymult-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="ymult-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="ymult-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="ymult-menu-content"><div class="ymult-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="ymult-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="ymult-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="ymult-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="ymult-menu-content"><div class="ymult-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="ymult-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="ymult-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="ymult-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="ymult-menu-content"><div class="ymult-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="ymult-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
+      <div class="phd4x-sidebar-list"><a class="phd4x-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="phd4x-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="phd4x-menu-content"><div class="phd4x-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="phd4x-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="phd4x-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="phd4x-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="phd4x-menu-content"><div class="phd4x-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="phd4x-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="phd4x-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="phd4x-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="phd4x-menu-content"><div class="phd4x-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="phd4x-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="phd4x-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="phd4x-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="phd4x-menu-content"><div class="phd4x-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="phd4x-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="phd4x-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="phd4x-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="phd4x-menu-content"><div class="phd4x-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="phd4x-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="phd4x-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="phd4x-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="phd4x-menu-content"><div class="phd4x-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="phd4x-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=p6mxl"></script>
-<script defer src="/src/cookie.js?v=p6mxl"></script>
+<script defer type="text/javascript" src="/src/js.js?v=t21it"></script>
+<script defer src="/src/cookie.js?v=t21it"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=krj1j" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=krj1j" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=x9cwk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=x9cwk" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=krj1j" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=x9cwk" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=krj1j"></script>
-<link rel="stylesheet" href="style.css?v=krj1j">
+  <script type="text/javascript" src="/src/firebase.js?v=x9cwk"></script>
+<link rel="stylesheet" href="style.css?v=x9cwk">
 </head>
 
 <body>
-  <div id="header"><div class="pcxii">
+  <div id="header"><div class="u6ew8">
 
-  <div class="pcxiibody">
-    <a href="/en/"><img src="/img/logo.svg?v=krj1j" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="u6ew8body">
+    <a href="/en/"><img src="/img/logo.svg?v=x9cwk" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="pcxiiright">
-      <div class="pcxiilanguages ">
+    <div class="u6ew8right">
+      <div class="u6ew8languages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="pcxiicontactlist">
+      <div class="u6ew8contactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined pcxii-icon">phone</div>
+     <div class="material-symbols-outlined u6ew8-icon">phone</div>
      <div>
-      <div  class="pcxii-title">Call us now</div>
-      <div  class="pcxii-spot">0342 341 41 31</div>
+      <div  class="u6ew8-title">Call us now</div>
+      <div  class="u6ew8-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined pcxii-icon">mail</div>
+     <div class="material-symbols-outlined u6ew8-icon">mail</div>
      <div>
-      <div  class="pcxii-title">Write to us</div>
-      <div  class="pcxii-spot">info@saibdernegi.org</div>
+      <div  class="u6ew8-title">Write to us</div>
+      <div  class="u6ew8-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined pcxii-icon">location_on</div>
+     <div class="material-symbols-outlined u6ew8-icon">location_on</div>
      <div>
-      <div  class="pcxii-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="pcxii-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="u6ew8-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="u6ew8-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="pcxii-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="u6ew8-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="pcxiimenubody">
-    <div class="pcxiimenu" id="menu-3-root">
-      <div class="pcxiimenulistbody">
-        <div class="pcxiimenulist"><a class="pcxiimenulist-menu" href="/en/">Home </a><div class="pcxiimenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="u6ew8menuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="u6ew8menubody" id="menu-3-drawer">
+    <div class="u6ew8menu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="u6ew8menulistbody">
+        <div class="u6ew8menulist"><a class="u6ew8menulist-menu" href="/en/">Home </a><div class="u6ew8menulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="pcxiimenulist-menu " >
+    <div class="u6ew8menulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="pcxiimenulist-menu " >
+    <div class="u6ew8menulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="pcxiimenulist-menu " >
+    <div class="u6ew8menulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="pcxiimenulist-menu " >
+    <div class="u6ew8menulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -161,26 +164,169 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde u6ew8right içeriği: dil + iletişim (u6ew8menulistbody altında) -->
+      <div class="u6ew8menudrawer-right">
+        <div class="u6ew8menudrawer-languages ">
+          <ul><li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li></ul>
+        </div>
+        <div class="u6ew8menudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined u6ew8-icon">phone</div>
+     <div>
+      <div  class="u6ew8-title">Call us now</div>
+      <div  class="u6ew8-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined u6ew8-icon">mail</div>
+     <div>
+      <div  class="u6ew8-title">Write to us</div>
+      <div  class="u6ew8-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined u6ew8-icon">location_on</div>
+     <div>
+      <div  class="u6ew8-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="u6ew8-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="u6ew8menuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".u6ew8-mobile-toggle");
+      if (!root || !root.classList.contains("u6ew8menu-open")) {
+        return;
+      }
+      root.classList.remove("u6ew8menu-open");
+      if (overlay) {
+        overlay.classList.remove("u6ew8menu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("u6ew8menu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".u6ew8-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("pcxiimenu-open")) {
-        root.classList.remove("pcxiimenu-open");
+      var isOpen = root.classList.contains("u6ew8menu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("pcxiimenu-open");
+        root.classList.add("u6ew8menu-open");
+        if (overlay) {
+          overlay.classList.add("u6ew8menu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("u6ew8menu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
-</script><div class="swiper-container dewjs">
-  <div class="swiper-wrapper" id="dewjs"><div class="swiper-slide"><img src="/img/mfzpnk/2.webp?v=1770878034237" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1770878034237" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1770878034237" alt="Saib Derneği"  loading="lazy"/></div></div>
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("u6ew8menu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("u6ew8menu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("u6ew8menu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
+</script><div class="swiper-container gv5kg">
+  <div class="swiper-wrapper" id="gv5kg"><div class="swiper-slide"><img src="/img/mfzpnk/2.webp?v=1770879589636" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1770879589636" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1770879589636" alt="Saib Derneği"  loading="lazy"/></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
@@ -195,7 +341,7 @@
     attempts++;
     if (typeof Swiper === "function") {
       clearInterval(timer);
-      new Swiper(".dewjs", {
+      new Swiper(".gv5kg", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -220,69 +366,69 @@
 })();
 </script>
 </div>
-  <div id="content"><div class="sliderxo36xp">
-  <div class="slider-o36xpt-itle">SAIB International Syrian Businessmen Association</div>
-  <div class="o36xp swiper-container">
+  <div id="content"><div class="sliderxwp6uq">
+  <div class="slider-wp6uqt-itle">SAIB International Syrian Businessmen Association</div>
+  <div class="wp6uq swiper-container">
     <div class="swiper-wrapper">
     <a href="/en/bize-katilin" class="swiper-slide">
-      <div class="swiper-o36xp">
-        <img class="img-o36xp" src="/page/we5uhxruok/ixfhw.jpg" alt="Join Us"  loading="lazy"/>
-        <div class="title-spot-o36xp">
-          <div class="title-o36xp">Join Us</div>
-          <div class="spot-o36xp">Join SAIB and be part of Turkey-Syria commercial cooperation. Membership application and details.</div>
+      <div class="swiper-wp6uq">
+        <img class="img-wp6uq" src="/page/we5uhxruok/ixfhw.jpg" alt="Join Us"  loading="lazy"/>
+        <div class="title-spot-wp6uq">
+          <div class="title-wp6uq">Join Us</div>
+          <div class="spot-wp6uq">Join SAIB and be part of Turkey-Syria commercial cooperation. Membership application and details.</div>
         </div>
-        <div class="button-o36xp">Read more...</div>
+        <div class="button-wp6uq">Read more...</div>
       </div>
     </a>
   
     <a href="/en/faaliyetlerimiz" class="swiper-slide">
-      <div class="swiper-o36xp">
-        <img class="img-o36xp" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="Our Activities"  loading="lazy"/>
-        <div class="title-spot-o36xp">
-          <div class="title-o36xp">Our Activities</div>
-          <div class="spot-o36xp">SAIB Activities - Economic, commercial, educational, consulting, social, cultural and international business collaborations.</div>
+      <div class="swiper-wp6uq">
+        <img class="img-wp6uq" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="Our Activities"  loading="lazy"/>
+        <div class="title-spot-wp6uq">
+          <div class="title-wp6uq">Our Activities</div>
+          <div class="spot-wp6uq">SAIB Activities - Economic, commercial, educational, consulting, social, cultural and international business collaborations.</div>
         </div>
-        <div class="button-o36xp">Read more...</div>
+        <div class="button-wp6uq">Read more...</div>
       </div>
     </a>
   
     <a href="/en/ihracat-rehberi" class="swiper-slide">
-      <div class="swiper-o36xp">
-        <img class="img-o36xp" src="/page/zq84rqm7rn/tk4uh.jpg" alt="Export Guide"  loading="lazy"/>
-        <div class="title-spot-o36xp">
-          <div class="title-o36xp">Export Guide</div>
-          <div class="spot-o36xp">Export Guide - Processes for exporting from Turkey to Syria and other countries, required documents and consulting services.</div>
+      <div class="swiper-wp6uq">
+        <img class="img-wp6uq" src="/page/zq84rqm7rn/tk4uh.jpg" alt="Export Guide"  loading="lazy"/>
+        <div class="title-spot-wp6uq">
+          <div class="title-wp6uq">Export Guide</div>
+          <div class="spot-wp6uq">Export Guide - Processes for exporting from Turkey to Syria and other countries, required documents and consulting services.</div>
         </div>
-        <div class="button-o36xp">Read more...</div>
+        <div class="button-wp6uq">Read more...</div>
       </div>
     </a>
   
     <a href="/en/is-agi" class="swiper-slide">
-      <div class="swiper-o36xp">
-        <img class="img-o36xp" src="/page/wxalr76gjn/kgn90.jpg" alt="Business Network"  loading="lazy"/>
-        <div class="title-spot-o36xp">
-          <div class="title-o36xp">Business Network</div>
-          <div class="spot-o36xp">Business Network - Business connections, partnerships and commercial opportunities among SAIB members. B2B networking opportunities.</div>
+      <div class="swiper-wp6uq">
+        <img class="img-wp6uq" src="/page/wxalr76gjn/kgn90.jpg" alt="Business Network"  loading="lazy"/>
+        <div class="title-spot-wp6uq">
+          <div class="title-wp6uq">Business Network</div>
+          <div class="spot-wp6uq">Business Network - Business connections, partnerships and commercial opportunities among SAIB members. B2B networking opportunities.</div>
         </div>
-        <div class="button-o36xp">Read more...</div>
+        <div class="button-wp6uq">Read more...</div>
       </div>
     </a>
   
     <a href="/en/uyelerimiz" class="swiper-slide">
-      <div class="swiper-o36xp">
-        <img class="img-o36xp" src="/page/h4qvry5vf3/llr1n.jpg" alt="Our Members"  loading="lazy"/>
-        <div class="title-spot-o36xp">
-          <div class="title-o36xp">Our Members</div>
-          <div class="spot-o36xp">SAIB Our Members - Information about business people, companies and founding members registered with our association.</div>
+      <div class="swiper-wp6uq">
+        <img class="img-wp6uq" src="/page/h4qvry5vf3/llr1n.jpg" alt="Our Members"  loading="lazy"/>
+        <div class="title-spot-wp6uq">
+          <div class="title-wp6uq">Our Members</div>
+          <div class="spot-wp6uq">SAIB Our Members - Information about business people, companies and founding members registered with our association.</div>
         </div>
-        <div class="button-o36xp">Read more...</div>
+        <div class="button-wp6uq">Read more...</div>
       </div>
     </a>
   </div>
-    <div class="swiper-pagination-o36xp"></div>
+    <div class="swiper-pagination-wp6uq"></div>
   </div>
-  <div class="swiper-button-next swiper-button-next-o36xp"></div>
-  <div class="swiper-button-prev swiper-button-prev-o36xp"></div>
+  <div class="swiper-button-next swiper-button-next-wp6uq"></div>
+  <div class="swiper-button-prev swiper-button-prev-wp6uq"></div>
 </div>
 
 <script> setTimeout(() => {
@@ -293,7 +439,7 @@
       attempts++;
       if (typeof Swiper === "function") {
         clearInterval(timer);
-        new Swiper(".o36xp", {
+        new Swiper(".wp6uq", {
           slidesPerView: 2,
           simulateTouch: true,
           loop: true,
@@ -308,12 +454,12 @@
             disableOnInteraction: true,
           },
           pagination: {
-            el: ".swiper-pagination-o36xp",
+            el: ".swiper-pagination-wp6uq",
             clickable: true,
           },
           navigation: {
-            nextEl: ".swiper-button-next-o36xp",
-            prevEl: ".swiper-button-prev-o36xp",
+            nextEl: ".swiper-button-next-wp6uq",
+            prevEl: ".swiper-button-prev-wp6uq",
           },
         });
       } else if (attempts >= maxAttempts) {
@@ -323,27 +469,27 @@
     }, 250);
   })();}, 100);
 </script>
-<div class="y73ps-out">
-  <div class="y73ps">
-    <div class="y73ps-left">
+<div class="a0rxo-out">
+  <div class="a0rxo">
+    <div class="a0rxo-left">
       <img
-        src="/img/sykhyk/logo.jpg?v=krj1j"
-        class="y73ps-left-img"
+        src="/img/sykhyk/logo.jpg?v=x9cwk"
+        class="a0rxo-left-img"
         alt="Tanıtım Modülü"
        loading="lazy"/>
     </div>
-    <div class="y73ps-right">
-      <div class="y73ps-right-body">
-        <div class="y73ps-right-body-name">Get to Know SAIB</div>
-        <div class="y73ps-right-body-spot"></div>
-        <div class="y73ps-right-body-chile">
-          <div class="y73ps-right-body-chile-row">
-            <div class="y73ps-right-body-chile-row-name">Our Vision</div>
-            <div class="y73ps-right-body-chile-row-spot">To establish permanent commercial bridges between Turkey and Syria, creating a strong network of economic cooperation in international markets.</div>
+    <div class="a0rxo-right">
+      <div class="a0rxo-right-body">
+        <div class="a0rxo-right-body-name">Get to Know SAIB</div>
+        <div class="a0rxo-right-body-spot"></div>
+        <div class="a0rxo-right-body-chile">
+          <div class="a0rxo-right-body-chile-row">
+            <div class="a0rxo-right-body-chile-row-name">Our Vision</div>
+            <div class="a0rxo-right-body-chile-row-spot">To establish permanent commercial bridges between Turkey and Syria, creating a strong network of economic cooperation in international markets.</div>
           </div>
-          <div class="y73ps-right-body-chile-row">
-            <div class="y73ps-right-body-chile-row-name">Our Mission</div>
-            <div class="y73ps-right-body-chile-row-spot">To increase production, investment and export potential; to unite industrialists, scientists and business people in a common organization and accelerate regional development.</div>
+          <div class="a0rxo-right-body-chile-row">
+            <div class="a0rxo-right-body-chile-row-name">Our Mission</div>
+            <div class="a0rxo-right-body-chile-row-spot">To increase production, investment and export potential; to unite industrialists, scientists and business people in a common organization and accelerate regional development.</div>
           </div>
         </div>
       </div>
@@ -351,73 +497,73 @@
   </div>
 </div>
 
-<div class="kunpi">
-  <div class="kunpi-body"><a class="kunpi-body-card" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=krj1j" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">62nd International Damascus Fair opens in Syria</h3><p class="kunpi-body-description">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/up26pe6nos/1-1024x683.jpg?v=krj1j" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Damascus Fair will open new cooperation doors in Turkey-Syria trade</h3><p class="kunpi-body-description">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg?v=krj1j" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Turkey-Syria Business Forum held in Aleppo</h3><p class="kunpi-body-description">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/pb8kpytxua/418345.jpg?v=krj1j" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Business world focuses on economic impacts of developments in Syria</h3><p class="kunpi-body-description">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=krj1j" alt="At least half of Syrians will return" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">At least half of Syrians will return</h3><p class="kunpi-body-description">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/kxn2hajzjw/418345.jpg?v=krj1j" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Syrian economy growing faster than expected, sanctions easing</h3><p class="kunpi-body-description">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=krj1j" alt="Turkey's exports to Syria increased by 54%, exceeding 3 billion dollars" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Turkey's exports to Syria increased by 54%, exceeding 3 billion dollars</h3><p class="kunpi-body-description">Turkey's exports to Syria increased by 54.1% in 2025 compared to the previous year, exceeding 3 billion dollars. This increase was achieved through the normalization of relations between the two countries and the strengthening of political stability in Syria.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/urdunun-suriyeye-ihracati-ilk-10-ayda-341-artti"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/e59xnwdnz3/418345.jpg?v=krj1j" alt="Jordan's exports to Syria increased by 341% in the first 10 months" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Jordan's exports to Syria increased by 341% in the first 10 months</h3><p class="kunpi-body-description">Jordan's national exports to Syria reached 203 million Jordanian dinars in the first 10 months of 2025, showing a 341.3% increase on an annual basis.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/kilis-halep-dogal-gaz-boru-hatti-acildi-turkiyeden-suriyeye-gaz-akisi-basladi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/gt342a4yxn/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=krj1j" alt="Kilis-Aleppo natural gas pipeline opened: Gas flow from Turkey to Syria begins" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Kilis-Aleppo natural gas pipeline opened: Gas flow from Turkey to Syria begins</h3><p class="kunpi-body-description">The repair of the Kilis-Aleppo natural gas pipeline with a daily capacity of 6 million cubic meters of gas has been completed. With the opening of the Turkey-Syria Natural Gas Pipeline, the export of natural gas from Azerbaijan to Syria via Kilis began as of August 2, 2025.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/sam-uluslararasi-havalimaninda-4-milyar-dolarlik-yatirim-basliyor"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/ba0xsfcroc/1-1024x683.jpg?v=krj1j" alt="4 billion dollar investment begins at Damascus International Airport" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">4 billion dollar investment begins at Damascus International Airport</h3><p class="kunpi-body-description">The 4 billion dollar rehabilitation and capacity increase project of Damascus International Airport, to be carried out by a consortium including Kalyon Construction and Cengiz Construction, has begun.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/turkiye-suriye-jetco-protokolu-imzalandi-ekonomik-ortaklikta-yeni-donem"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/gnsnm2xlkp/gnsnm2xlkp.jpg?v=krj1j" alt="Turkey-Syria JETCO protocol signed: New era in economic partnership" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Turkey-Syria JETCO protocol signed: New era in economic partnership</h3><p class="kunpi-body-description">Trade Minister Ömer Bolat said that they have made an offer to this country regarding the establishment of a new generation comprehensive economic partnership agreement between Turkey and Syria.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/20ftotac5y/1-1024x683.jpg?v=krj1j" alt="Saudi companies participate in &quot;Syria's Reconstruction 2025&quot; fair" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Saudi companies participate in "Syria's Reconstruction 2025" fair</h3><p class="kunpi-body-description">The "Reconstruction Syria 2025" fair held in Damascus witnessed intensive participation from Saudi companies specialized in construction, building materials and interior design. The event aims to strengthen economic cooperation between the two countries and increase investment and reconstruction opportunities in Syria.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/pp9qzxbhhn/418345.jpg?v=krj1j" alt="Digital payment cooperation between Central Bank of Syria and Mastercard" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Digital payment cooperation between Central Bank of Syria and Mastercard</h3><p class="kunpi-body-description">DAMASCUS (SANA) – The Central Bank of Syria announced that it signed a memorandum of understanding with Mastercard company to develop the infrastructure of digital payment systems in the country, share experience and increase financial inclusion.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/samda-birinci-suriye-guney-kore-ekonomik-forumu-duzenlendi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/gv7ipdhmqw/1-1024x683.jpg?v=krj1j" alt="First Syria-South Korea economic forum held in Damascus" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">First Syria-South Korea economic forum held in Damascus</h3><p class="kunpi-body-description">The First Syria-Korea Economic Forum held in Damascus addressed ways to develop economic and investment partnerships between the two countries and increase cooperation in the fields of development and reconstruction.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/f8n7tvdet5/418345.jpg?v=krj1j" alt="Turkish Interior Minister: More than 500,000 Syrians voluntarily returned to their country" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Turkish Interior Minister: More than 500,000 Syrians voluntarily returned to their country</h3><p class="kunpi-body-description">ANKARA (SANA) – Turkish Interior Minister Ali Yerlikaya announced that the number of Syrians who have voluntarily returned to their country since the collapse of the overthrown regime on December 8, 2024 has exceeded 500,000. Yerlikaya emphasized that Turkey continues to stand by Syrians in their voluntary return process.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=krj1j" alt="UAE businessman Khalaf Al-Habtoor: The purpose of our visit is to support the Syrian economy" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">UAE businessman Khalaf Al-Habtoor: The purpose of our visit is to support the Syrian economy</h3><p class="kunpi-body-description">DAMASCUS (SANA) – Businessman Khalaf Al-Habtoor from the United Arab Emirates today began a working visit to Syria to discuss a series of economic issues with relevant officials in Syria.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/el-omran-ve-suudi-al-shamaliya-grubu-arasinda-cimento-sektoru-isbirligi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/8kc5vfb3wl/1-1024x683.jpg?v=krj1j" alt="Cement sector cooperation between &quot;El Omran&quot; and Saudi &quot;Al-Shamaliya&quot; group" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Cement sector cooperation between "El Omran" and Saudi "Al-Shamaliya" group</h3><p class="kunpi-body-description">Mahmud Fadile, General Manager of the Syrian General Cement and Building Materials Company "El Omran", explained the details of the cooperation agreement signed with the Saudi "Al-Shamaliya" Cement Group at the Syria-Saudi Investment Forum held in Damascus on July 24.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/turkiyeden-sam-fuarina-genis-katilim-ve-suriyeye-destek-mesaji"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/7cacasidjy/7cacasidjy.jpg?v=krj1j" alt="Wide participation from Turkey to Damascus Fair and support message to Syria" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Wide participation from Turkey to Damascus Fair and support message to Syria</h3><p class="kunpi-body-description">Turkish Trade Minister Ömer Bolat emphasized that his country's participation in the 62nd Damascus International Fair demonstrates Turkey's great importance to the stability of Syria and the region.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/hkjcmu0fvu/418345.jpg?v=krj1j" alt="US Congressman: American companies aim to make significant investments in Syria" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">US Congressman: American companies aim to make significant investments in Syria</h3><p class="kunpi-body-description">WASHINGTON (SANA) – US House of Representatives member Marlin Stutzman stated that American companies aim to make large and significant investments in infrastructure, energy and banking sectors in Syria.</p><span class="kunpi-body-link">Read More</span></div></article></a><a class="kunpi-body-card" href="/en/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi"><article class="kunpi-body-item"><div class="kunpi-body-img"><img src="/page/s77uwhtu0k/1-1024x683.jpg?v=krj1j" alt="Digital transformation agreement between Syrian Engineers Union and Saudi Ejad Tech" loading="lazy"></div><div class="kunpi-body-content"><h3 class="kunpi-body-title">Digital transformation agreement between Syrian Engineers Union and Saudi Ejad Tech</h3><p class="kunpi-body-description">DAMASCUS (SANA) – The Syrian Engineers Union signed a cooperation agreement with Ejad Tech company, a subsidiary of Saudi Arabia-based GO Telecom group, at the union headquarters in Damascus.</p><span class="kunpi-body-link">Read More</span></div></article></a></div>
+<div class="em7f6">
+  <div class="em7f6-body"><a class="em7f6-body-card" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=x9cwk" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">62nd International Damascus Fair opens in Syria</h3><p class="em7f6-body-description">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/up26pe6nos/1-1024x683.jpg?v=x9cwk" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Damascus Fair will open new cooperation doors in Turkey-Syria trade</h3><p class="em7f6-body-description">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg?v=x9cwk" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Turkey-Syria Business Forum held in Aleppo</h3><p class="em7f6-body-description">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/pb8kpytxua/418345.jpg?v=x9cwk" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Business world focuses on economic impacts of developments in Syria</h3><p class="em7f6-body-description">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=x9cwk" alt="At least half of Syrians will return" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">At least half of Syrians will return</h3><p class="em7f6-body-description">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/kxn2hajzjw/418345.jpg?v=x9cwk" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Syrian economy growing faster than expected, sanctions easing</h3><p class="em7f6-body-description">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=x9cwk" alt="Turkey's exports to Syria increased by 54%, exceeding 3 billion dollars" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Turkey's exports to Syria increased by 54%, exceeding 3 billion dollars</h3><p class="em7f6-body-description">Turkey's exports to Syria increased by 54.1% in 2025 compared to the previous year, exceeding 3 billion dollars. This increase was achieved through the normalization of relations between the two countries and the strengthening of political stability in Syria.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/urdunun-suriyeye-ihracati-ilk-10-ayda-341-artti"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/e59xnwdnz3/418345.jpg?v=x9cwk" alt="Jordan's exports to Syria increased by 341% in the first 10 months" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Jordan's exports to Syria increased by 341% in the first 10 months</h3><p class="em7f6-body-description">Jordan's national exports to Syria reached 203 million Jordanian dinars in the first 10 months of 2025, showing a 341.3% increase on an annual basis.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/kilis-halep-dogal-gaz-boru-hatti-acildi-turkiyeden-suriyeye-gaz-akisi-basladi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/gt342a4yxn/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=x9cwk" alt="Kilis-Aleppo natural gas pipeline opened: Gas flow from Turkey to Syria begins" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Kilis-Aleppo natural gas pipeline opened: Gas flow from Turkey to Syria begins</h3><p class="em7f6-body-description">The repair of the Kilis-Aleppo natural gas pipeline with a daily capacity of 6 million cubic meters of gas has been completed. With the opening of the Turkey-Syria Natural Gas Pipeline, the export of natural gas from Azerbaijan to Syria via Kilis began as of August 2, 2025.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/sam-uluslararasi-havalimaninda-4-milyar-dolarlik-yatirim-basliyor"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/ba0xsfcroc/1-1024x683.jpg?v=x9cwk" alt="4 billion dollar investment begins at Damascus International Airport" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">4 billion dollar investment begins at Damascus International Airport</h3><p class="em7f6-body-description">The 4 billion dollar rehabilitation and capacity increase project of Damascus International Airport, to be carried out by a consortium including Kalyon Construction and Cengiz Construction, has begun.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/turkiye-suriye-jetco-protokolu-imzalandi-ekonomik-ortaklikta-yeni-donem"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/gnsnm2xlkp/gnsnm2xlkp.jpg?v=x9cwk" alt="Turkey-Syria JETCO protocol signed: New era in economic partnership" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Turkey-Syria JETCO protocol signed: New era in economic partnership</h3><p class="em7f6-body-description">Trade Minister Ömer Bolat said that they have made an offer to this country regarding the establishment of a new generation comprehensive economic partnership agreement between Turkey and Syria.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/20ftotac5y/1-1024x683.jpg?v=x9cwk" alt="Saudi companies participate in &quot;Syria's Reconstruction 2025&quot; fair" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Saudi companies participate in "Syria's Reconstruction 2025" fair</h3><p class="em7f6-body-description">The "Reconstruction Syria 2025" fair held in Damascus witnessed intensive participation from Saudi companies specialized in construction, building materials and interior design. The event aims to strengthen economic cooperation between the two countries and increase investment and reconstruction opportunities in Syria.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/pp9qzxbhhn/418345.jpg?v=x9cwk" alt="Digital payment cooperation between Central Bank of Syria and Mastercard" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Digital payment cooperation between Central Bank of Syria and Mastercard</h3><p class="em7f6-body-description">DAMASCUS (SANA) – The Central Bank of Syria announced that it signed a memorandum of understanding with Mastercard company to develop the infrastructure of digital payment systems in the country, share experience and increase financial inclusion.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/samda-birinci-suriye-guney-kore-ekonomik-forumu-duzenlendi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/gv7ipdhmqw/1-1024x683.jpg?v=x9cwk" alt="First Syria-South Korea economic forum held in Damascus" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">First Syria-South Korea economic forum held in Damascus</h3><p class="em7f6-body-description">The First Syria-Korea Economic Forum held in Damascus addressed ways to develop economic and investment partnerships between the two countries and increase cooperation in the fields of development and reconstruction.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/f8n7tvdet5/418345.jpg?v=x9cwk" alt="Turkish Interior Minister: More than 500,000 Syrians voluntarily returned to their country" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Turkish Interior Minister: More than 500,000 Syrians voluntarily returned to their country</h3><p class="em7f6-body-description">ANKARA (SANA) – Turkish Interior Minister Ali Yerlikaya announced that the number of Syrians who have voluntarily returned to their country since the collapse of the overthrown regime on December 8, 2024 has exceeded 500,000. Yerlikaya emphasized that Turkey continues to stand by Syrians in their voluntary return process.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=x9cwk" alt="UAE businessman Khalaf Al-Habtoor: The purpose of our visit is to support the Syrian economy" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">UAE businessman Khalaf Al-Habtoor: The purpose of our visit is to support the Syrian economy</h3><p class="em7f6-body-description">DAMASCUS (SANA) – Businessman Khalaf Al-Habtoor from the United Arab Emirates today began a working visit to Syria to discuss a series of economic issues with relevant officials in Syria.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/el-omran-ve-suudi-al-shamaliya-grubu-arasinda-cimento-sektoru-isbirligi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/8kc5vfb3wl/1-1024x683.jpg?v=x9cwk" alt="Cement sector cooperation between &quot;El Omran&quot; and Saudi &quot;Al-Shamaliya&quot; group" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Cement sector cooperation between "El Omran" and Saudi "Al-Shamaliya" group</h3><p class="em7f6-body-description">Mahmud Fadile, General Manager of the Syrian General Cement and Building Materials Company "El Omran", explained the details of the cooperation agreement signed with the Saudi "Al-Shamaliya" Cement Group at the Syria-Saudi Investment Forum held in Damascus on July 24.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/turkiyeden-sam-fuarina-genis-katilim-ve-suriyeye-destek-mesaji"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/7cacasidjy/7cacasidjy.jpg?v=x9cwk" alt="Wide participation from Turkey to Damascus Fair and support message to Syria" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Wide participation from Turkey to Damascus Fair and support message to Syria</h3><p class="em7f6-body-description">Turkish Trade Minister Ömer Bolat emphasized that his country's participation in the 62nd Damascus International Fair demonstrates Turkey's great importance to the stability of Syria and the region.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/hkjcmu0fvu/418345.jpg?v=x9cwk" alt="US Congressman: American companies aim to make significant investments in Syria" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">US Congressman: American companies aim to make significant investments in Syria</h3><p class="em7f6-body-description">WASHINGTON (SANA) – US House of Representatives member Marlin Stutzman stated that American companies aim to make large and significant investments in infrastructure, energy and banking sectors in Syria.</p><span class="em7f6-body-link">Read More</span></div></article></a><a class="em7f6-body-card" href="/en/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi"><article class="em7f6-body-item"><div class="em7f6-body-img"><img src="/page/s77uwhtu0k/1-1024x683.jpg?v=x9cwk" alt="Digital transformation agreement between Syrian Engineers Union and Saudi Ejad Tech" loading="lazy"></div><div class="em7f6-body-content"><h3 class="em7f6-body-title">Digital transformation agreement between Syrian Engineers Union and Saudi Ejad Tech</h3><p class="em7f6-body-description">DAMASCUS (SANA) – The Syrian Engineers Union signed a cooperation agreement with Ejad Tech company, a subsidiary of Saudi Arabia-based GO Telecom group, at the union headquarters in Damascus.</p><span class="em7f6-body-link">Read More</span></div></article></a></div>
 </div>
 
 
-<div class="sliderxvstx5">
-  <div class="sliderxvstx5title">Our Members</div>
-  <div class="vstx5 swiper-container">
+<div class="sliderxbd2ek">
+  <div class="sliderxbd2ektitle">Our Members</div>
+  <div class="bd2ek swiper-container">
     <div class="swiper-wrapper"><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildvstx52" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildbd2ek2" alt="Resim"  loading="lazy"/>
       </div>
     </div></div>
-    <div class="swiper-button-next swiper-button-next-vstx5"></div>
-    <div class="swiper-button-prev swiper-button-prev-vstx5"></div>
-    <div class="swiper-pagination-vstx5"></div>
+    <div class="swiper-button-next swiper-button-next-bd2ek"></div>
+    <div class="swiper-button-prev swiper-button-prev-bd2ek"></div>
+    <div class="swiper-pagination-bd2ek"></div>
   </div>
 </div>
 
 <script> setTimeout(() => {
-  var swiper = new Swiper(".vstx5", {
+  var swiper = new Swiper(".bd2ek", {
     slidesPerView: 2,
     simulateTouch: true,
     loop: true,
     pagination: {
-      el: ".swiper-pagination-vstx5",
+      el: ".swiper-pagination-bd2ek",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next-vstx5",
-      prevEl: ".swiper-button-prev-vstx5",
+      nextEl: ".swiper-button-next-bd2ek",
+      prevEl: ".swiper-button-prev-bd2ek",
     },
     breakpoints: {
       320: {
@@ -491,8 +637,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=krj1j"></script>
-<script defer src="/src/cookie.js?v=krj1j"></script>
+<script defer type="text/javascript" src="/src/js.js?v=x9cwk"></script>
+<script defer src="/src/cookie.js?v=x9cwk"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

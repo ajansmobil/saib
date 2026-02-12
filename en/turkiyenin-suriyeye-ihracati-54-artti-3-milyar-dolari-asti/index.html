@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=q27n0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=q27n0" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=dg8kd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=dg8kd" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=q27n0" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=dg8kd" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=q27n0"></script>
-<link rel="stylesheet" href="style.css?v=q27n0">
+  <script type="text/javascript" src="/src/firebase.js?v=dg8kd"></script>
+<link rel="stylesheet" href="style.css?v=dg8kd">
 </head>
 
 <body>
-  <div id="header"><div class="e9xao">
+  <div id="header"><div class="jr42e">
 
-  <div class="e9xaobody">
-    <a href="/en/"><img src="/img/logo.svg?v=q27n0" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="jr42ebody">
+    <a href="/en/"><img src="/img/logo.svg?v=dg8kd" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="e9xaoright">
-      <div class="e9xaolanguages ">
+    <div class="jr42eright">
+      <div class="jr42elanguages ">
         <ul>
           <li><a href="/tr/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">tr</a></li><li><a href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">en</a></li><li><a href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">ar</a></li>
         </ul>
       </div>
-      <div class="e9xaocontactlist">
+      <div class="jr42econtactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined e9xao-icon">phone</div>
+     <div class="material-symbols-outlined jr42e-icon">phone</div>
      <div>
-      <div  class="e9xao-title">Call us now</div>
-      <div  class="e9xao-spot">0342 341 41 31</div>
+      <div  class="jr42e-title">Call us now</div>
+      <div  class="jr42e-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined e9xao-icon">mail</div>
+     <div class="material-symbols-outlined jr42e-icon">mail</div>
      <div>
-      <div  class="e9xao-title">Write to us</div>
-      <div  class="e9xao-spot">info@saibdernegi.org</div>
+      <div  class="jr42e-title">Write to us</div>
+      <div  class="jr42e-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined e9xao-icon">location_on</div>
+     <div class="material-symbols-outlined jr42e-icon">location_on</div>
      <div>
-      <div  class="e9xao-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="e9xao-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="jr42e-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="jr42e-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="e9xao-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="jr42e-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="e9xaomenubody">
-    <div class="e9xaomenu" id="menu-3-root">
-      <div class="e9xaomenulistbody">
-        <div class="e9xaomenulist"><a class="e9xaomenulist-menu" href="/en/">Home </a><div class="e9xaomenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="jr42emenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="jr42emenubody" id="menu-3-drawer">
+    <div class="jr42emenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="jr42emenulistbody">
+        <div class="jr42emenulist"><a class="jr42emenulist-menu" href="/en/">Home </a><div class="jr42emenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="e9xaomenulist-menu " >
+    <div class="jr42emenulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="e9xaomenulist-menu " >
+    <div class="jr42emenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="e9xaomenulist-menu " >
+    <div class="jr42emenulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="e9xaomenulist-menu " >
+    <div class="jr42emenulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde jr42eright içeriği: dil + iletişim (jr42emenulistbody altında) -->
+      <div class="jr42emenudrawer-right">
+        <div class="jr42emenudrawer-languages ">
+          <ul><li><a href="/tr/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">tr</a></li><li><a href="/en/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">en</a></li><li><a href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti/">ar</a></li></ul>
+        </div>
+        <div class="jr42emenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined jr42e-icon">phone</div>
+     <div>
+      <div  class="jr42e-title">Call us now</div>
+      <div  class="jr42e-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined jr42e-icon">mail</div>
+     <div>
+      <div  class="jr42e-title">Write to us</div>
+      <div  class="jr42e-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined jr42e-icon">location_on</div>
+     <div>
+      <div  class="jr42e-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="jr42e-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="jr42emenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".jr42e-mobile-toggle");
+      if (!root || !root.classList.contains("jr42emenu-open")) {
+        return;
+      }
+      root.classList.remove("jr42emenu-open");
+      if (overlay) {
+        overlay.classList.remove("jr42emenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("jr42emenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".jr42e-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("e9xaomenu-open")) {
-        root.classList.remove("e9xaomenu-open");
+      var isOpen = root.classList.contains("jr42emenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("e9xaomenu-open");
+        root.classList.add("jr42emenu-open");
+        if (overlay) {
+          overlay.classList.add("jr42emenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("jr42emenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("jr42emenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("jr42emenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("jr42emenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="jibi7-page">
-  <header class="jibi7-header">
-    <div class="jibi7-header-meta">
+  <div id="content"><div class="p3kss-page">
+  <header class="p3kss-header">
+    <div class="p3kss-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="jibi7-header-title">Turkey's exports to Syria increased by 54%, exceeding 3 billion dollars</h1>
-    <p class="jibi7-header-spot">Turkey's exports to Syria increased by 54.1% in 2025 compared to the previous year, exceeding 3 billion dollars. This increase was achieved through the normalization of relations between the two countries and the strengthening of political stability in Syria.</p>
+    <h1 class="p3kss-header-title">Turkey's exports to Syria increased by 54%, exceeding 3 billion dollars</h1>
+    <p class="p3kss-header-spot">Turkey's exports to Syria increased by 54.1% in 2025 compared to the previous year, exceeding 3 billion dollars. This increase was achieved through the normalization of relations between the two countries and the strengthening of political stability in Syria.</p>
   </header>
 
-  <div class="jibi7-body">
-    <article class="jibi7-article">
-      <figure class="jibi7-article-media">
-        <img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=q27n0" alt="Page Haber"  loading="lazy"/>
+  <div class="p3kss-body">
+    <article class="p3kss-article">
+      <figure class="p3kss-article-media">
+        <img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=dg8kd" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="jibi7-article-content"><p>Turkish Deputy Trade Minister Özgür Volkan Ağar reported that exports from Turkey to Syria, which was $1.95 billion in 2024, rapidly increased in 2025 and exceeded the 3 billion dollar threshold. Ağar stated that with the end of the conflict period in Syria, trade began to develop successfully beyond the northern regions, also with the Damascus administration. Emphasizing that trade volume will grow even more as Syria gains stability in the coming period, Ağar expressed that trade between the two countries, which was at the level of $2.3 billion before 2011, is expected to exceed those levels again and rise even higher. It is stated that negotiations for a comprehensive economic partnership agreement with Syria have also begun, and mutual trade will be opened up through modernization of customs and free trade steps.</p></div>
+      <div class="p3kss-article-content"><p>Turkish Deputy Trade Minister Özgür Volkan Ağar reported that exports from Turkey to Syria, which was $1.95 billion in 2024, rapidly increased in 2025 and exceeded the 3 billion dollar threshold. Ağar stated that with the end of the conflict period in Syria, trade began to develop successfully beyond the northern regions, also with the Damascus administration. Emphasizing that trade volume will grow even more as Syria gains stability in the coming period, Ağar expressed that trade between the two countries, which was at the level of $2.3 billion before 2011, is expected to exceed those levels again and rise even higher. It is stated that negotiations for a comprehensive economic partnership agreement with Syria have also begun, and mutual trade will be opened up through modernization of customs and free trade steps.</p></div>
     </article>
 
-    <aside class="jibi7-sidebar">
-      <div class="jibi7-sidebar-head">
+    <aside class="p3kss-sidebar">
+      <div class="p3kss-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="jibi7-sidebar-list"><a class="jibi7-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="jibi7-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="jibi7-menu-content"><div class="jibi7-menu-name">62nd International Damascus Fair opens in Syria</div><p class="jibi7-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="jibi7-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="jibi7-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="jibi7-menu-content"><div class="jibi7-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="jibi7-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="jibi7-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="jibi7-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="jibi7-menu-content"><div class="jibi7-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="jibi7-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="jibi7-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="jibi7-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="jibi7-menu-content"><div class="jibi7-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="jibi7-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="jibi7-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="jibi7-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="jibi7-menu-content"><div class="jibi7-menu-name">At least half of Syrians will return</div><p class="jibi7-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="jibi7-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="jibi7-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="jibi7-menu-content"><div class="jibi7-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="jibi7-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
+      <div class="p3kss-sidebar-list"><a class="p3kss-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="p3kss-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="p3kss-menu-content"><div class="p3kss-menu-name">62nd International Damascus Fair opens in Syria</div><p class="p3kss-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="p3kss-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="p3kss-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="p3kss-menu-content"><div class="p3kss-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="p3kss-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="p3kss-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="p3kss-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="p3kss-menu-content"><div class="p3kss-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="p3kss-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="p3kss-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="p3kss-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="p3kss-menu-content"><div class="p3kss-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="p3kss-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="p3kss-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="p3kss-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="p3kss-menu-content"><div class="p3kss-menu-name">At least half of Syrians will return</div><p class="p3kss-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="p3kss-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="p3kss-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="p3kss-menu-content"><div class="p3kss-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="p3kss-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=q27n0"></script>
-<script defer src="/src/cookie.js?v=q27n0"></script>
+<script defer type="text/javascript" src="/src/js.js?v=dg8kd"></script>
+<script defer src="/src/cookie.js?v=dg8kd"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

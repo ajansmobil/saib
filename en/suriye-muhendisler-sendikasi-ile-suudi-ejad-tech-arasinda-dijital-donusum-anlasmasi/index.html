@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=ibr3t" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=ibr3t" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=ewiu6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=ewiu6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ibr3t" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=ewiu6" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=ibr3t"></script>
-<link rel="stylesheet" href="style.css?v=ibr3t">
+  <script type="text/javascript" src="/src/firebase.js?v=ewiu6"></script>
+<link rel="stylesheet" href="style.css?v=ewiu6">
 </head>
 
 <body>
-  <div id="header"><div class="deeto">
+  <div id="header"><div class="qfvah">
 
-  <div class="deetobody">
-    <a href="/en/"><img src="/img/logo.svg?v=ibr3t" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="qfvahbody">
+    <a href="/en/"><img src="/img/logo.svg?v=ewiu6" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="deetoright">
-      <div class="deetolanguages ">
+    <div class="qfvahright">
+      <div class="qfvahlanguages ">
         <ul>
           <li><a href="/tr/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">tr</a></li><li><a href="/en/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">en</a></li><li><a href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">ar</a></li>
         </ul>
       </div>
-      <div class="deetocontactlist">
+      <div class="qfvahcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined deeto-icon">phone</div>
+     <div class="material-symbols-outlined qfvah-icon">phone</div>
      <div>
-      <div  class="deeto-title">Call us now</div>
-      <div  class="deeto-spot">0342 341 41 31</div>
+      <div  class="qfvah-title">Call us now</div>
+      <div  class="qfvah-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined deeto-icon">mail</div>
+     <div class="material-symbols-outlined qfvah-icon">mail</div>
      <div>
-      <div  class="deeto-title">Write to us</div>
-      <div  class="deeto-spot">info@saibdernegi.org</div>
+      <div  class="qfvah-title">Write to us</div>
+      <div  class="qfvah-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined deeto-icon">location_on</div>
+     <div class="material-symbols-outlined qfvah-icon">location_on</div>
      <div>
-      <div  class="deeto-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="deeto-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="qfvah-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="qfvah-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="deeto-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="qfvah-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="deetomenubody">
-    <div class="deetomenu" id="menu-3-root">
-      <div class="deetomenulistbody">
-        <div class="deetomenulist"><a class="deetomenulist-menu" href="/en/">Home </a><div class="deetomenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="qfvahmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="qfvahmenubody" id="menu-3-drawer">
+    <div class="qfvahmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="qfvahmenulistbody">
+        <div class="qfvahmenulist"><a class="qfvahmenulist-menu" href="/en/">Home </a><div class="qfvahmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="deetomenulist-menu " >
+    <div class="qfvahmenulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="deetomenulist-menu " >
+    <div class="qfvahmenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="deetomenulist-menu " >
+    <div class="qfvahmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="deetomenulist-menu " >
+    <div class="qfvahmenulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde qfvahright içeriği: dil + iletişim (qfvahmenulistbody altında) -->
+      <div class="qfvahmenudrawer-right">
+        <div class="qfvahmenudrawer-languages ">
+          <ul><li><a href="/tr/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">tr</a></li><li><a href="/en/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">en</a></li><li><a href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi/">ar</a></li></ul>
+        </div>
+        <div class="qfvahmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined qfvah-icon">phone</div>
+     <div>
+      <div  class="qfvah-title">Call us now</div>
+      <div  class="qfvah-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined qfvah-icon">mail</div>
+     <div>
+      <div  class="qfvah-title">Write to us</div>
+      <div  class="qfvah-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined qfvah-icon">location_on</div>
+     <div>
+      <div  class="qfvah-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="qfvah-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="qfvahmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".qfvah-mobile-toggle");
+      if (!root || !root.classList.contains("qfvahmenu-open")) {
+        return;
+      }
+      root.classList.remove("qfvahmenu-open");
+      if (overlay) {
+        overlay.classList.remove("qfvahmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("qfvahmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".qfvah-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("deetomenu-open")) {
-        root.classList.remove("deetomenu-open");
+      var isOpen = root.classList.contains("qfvahmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("deetomenu-open");
+        root.classList.add("qfvahmenu-open");
+        if (overlay) {
+          overlay.classList.add("qfvahmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("qfvahmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("qfvahmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("qfvahmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("qfvahmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="xqlm1-page">
-  <header class="xqlm1-header">
-    <div class="xqlm1-header-meta">
+  <div id="content"><div class="g84bj-page">
+  <header class="g84bj-header">
+    <div class="g84bj-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="xqlm1-header-title">Digital transformation agreement between Syrian Engineers Union and Saudi Ejad Tech</h1>
-    <p class="xqlm1-header-spot">DAMASCUS (SANA) – The Syrian Engineers Union signed a cooperation agreement with Ejad Tech company, a subsidiary of Saudi Arabia-based GO Telecom group, at the union headquarters in Damascus.</p>
+    <h1 class="g84bj-header-title">Digital transformation agreement between Syrian Engineers Union and Saudi Ejad Tech</h1>
+    <p class="g84bj-header-spot">DAMASCUS (SANA) – The Syrian Engineers Union signed a cooperation agreement with Ejad Tech company, a subsidiary of Saudi Arabia-based GO Telecom group, at the union headquarters in Damascus.</p>
   </header>
 
-  <div class="xqlm1-body">
-    <article class="xqlm1-article">
-      <figure class="xqlm1-article-media">
-        <img src="/page/s77uwhtu0k/1-1024x683.jpg?v=ibr3t" alt="Page Haber"  loading="lazy"/>
+  <div class="g84bj-body">
+    <article class="g84bj-article">
+      <figure class="g84bj-article-media">
+        <img src="/page/s77uwhtu0k/1-1024x683.jpg?v=ewiu6" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="xqlm1-article-content"><p>The signed memorandum of understanding creates a comprehensive digital cooperation framework between the two institutions and covers especially the development of digital systems in the engineering field, support for digital transformation projects and the provision of advanced technical consulting services. The purpose of this agreement was stated as increasing efficiency in engineering work and raising service quality. Engineers Union President Malik Haj Ali emphasized that the agreement will strengthen technical and professional cooperation between Syrian and Saudi engineers and will enable Syrian engineers to participate more effectively in digital transformation projects. Ejad Tech CEO Mohammed Al-Bukmi expressed that this initiative is part of Saudi Arabia's support approach to Syrian institutions, especially the Engineers Union. Al-Bukmi stated that they aim to offer employment opportunities for qualified Syrian engineers in Saudi Arabia and in the company's projects in Syria. The agreement also envisages cooperation in areas such as technical experience sharing, improvement of logistics infrastructure and integration of digital platforms. This step is seen as part of Syria's efforts to expand cooperation in engineering and technology at the international level and will contribute to the integration of Syrian engineers' knowledge into regional projects.</p></div>
+      <div class="g84bj-article-content"><p>The signed memorandum of understanding creates a comprehensive digital cooperation framework between the two institutions and covers especially the development of digital systems in the engineering field, support for digital transformation projects and the provision of advanced technical consulting services. The purpose of this agreement was stated as increasing efficiency in engineering work and raising service quality. Engineers Union President Malik Haj Ali emphasized that the agreement will strengthen technical and professional cooperation between Syrian and Saudi engineers and will enable Syrian engineers to participate more effectively in digital transformation projects. Ejad Tech CEO Mohammed Al-Bukmi expressed that this initiative is part of Saudi Arabia's support approach to Syrian institutions, especially the Engineers Union. Al-Bukmi stated that they aim to offer employment opportunities for qualified Syrian engineers in Saudi Arabia and in the company's projects in Syria. The agreement also envisages cooperation in areas such as technical experience sharing, improvement of logistics infrastructure and integration of digital platforms. This step is seen as part of Syria's efforts to expand cooperation in engineering and technology at the international level and will contribute to the integration of Syrian engineers' knowledge into regional projects.</p></div>
     </article>
 
-    <aside class="xqlm1-sidebar">
-      <div class="xqlm1-sidebar-head">
+    <aside class="g84bj-sidebar">
+      <div class="g84bj-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="xqlm1-sidebar-list"><a class="xqlm1-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="xqlm1-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="xqlm1-menu-content"><div class="xqlm1-menu-name">62nd International Damascus Fair opens in Syria</div><p class="xqlm1-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="xqlm1-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="xqlm1-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="xqlm1-menu-content"><div class="xqlm1-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="xqlm1-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="xqlm1-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="xqlm1-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="xqlm1-menu-content"><div class="xqlm1-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="xqlm1-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="xqlm1-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="xqlm1-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="xqlm1-menu-content"><div class="xqlm1-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="xqlm1-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="xqlm1-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="xqlm1-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="xqlm1-menu-content"><div class="xqlm1-menu-name">At least half of Syrians will return</div><p class="xqlm1-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="xqlm1-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="xqlm1-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="xqlm1-menu-content"><div class="xqlm1-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="xqlm1-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
+      <div class="g84bj-sidebar-list"><a class="g84bj-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="g84bj-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="g84bj-menu-content"><div class="g84bj-menu-name">62nd International Damascus Fair opens in Syria</div><p class="g84bj-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="g84bj-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="g84bj-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="g84bj-menu-content"><div class="g84bj-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="g84bj-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="g84bj-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="g84bj-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="g84bj-menu-content"><div class="g84bj-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="g84bj-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="g84bj-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="g84bj-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="g84bj-menu-content"><div class="g84bj-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="g84bj-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="g84bj-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="g84bj-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="g84bj-menu-content"><div class="g84bj-menu-name">At least half of Syrians will return</div><p class="g84bj-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="g84bj-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="g84bj-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="g84bj-menu-content"><div class="g84bj-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="g84bj-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=ibr3t"></script>
-<script defer src="/src/cookie.js?v=ibr3t"></script>
+<script defer type="text/javascript" src="/src/js.js?v=ewiu6"></script>
+<script defer src="/src/cookie.js?v=ewiu6"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

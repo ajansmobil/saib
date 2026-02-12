@@ -1,10 +1,16 @@
 
-  .fftx8menulist-menu:hover .dropdown-content-fftx8 {
+
+  /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
+  .rnn6vmenudrawer-right {
+    display: none;
+  }
+
+  .rnn6vmenulist-menu:hover .dropdown-content-rnn6v {
     display: flex;
     flex-direction: column;
   }
 
-  .fftx8menulist-menu {
+  .rnn6vmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,53 +18,53 @@
     padding: 10px;
     font-size: 16px;
     color: #fff !important;
-    border-bottom: 1px solid #ddd;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
   }
 
-  .fftx8menulist-menu:hover {
+  .rnn6vmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
+    border-radius: 5px;
   }
 
-  .fftx8menulist-menu:hover>a {
+  .rnn6vmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .fftx8menulist-menu>a {
+  .rnn6vmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-fftx8 {
+  .dropdown-content-active-rnn6v {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-fftx8>a {
+  .dropdown-content-active-rnn6v>a {
     color: #000 !important;
   }
 
-  .dropdown-content-fftx8 {
+  .dropdown-content-rnn6v {
     display: none;
     position: absolute;
     background-color: #333;
     color: #fff;
-    z-index: 102;
+    z-index: 1000000;
     margin-top: 10px;
     padding: 5px;
   }
 
-  .dropdown-content-fftx8>a {
+  .dropdown-content-rnn6v>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-fftx8>a:hover {
+  .dropdown-content-rnn6v>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +81,7 @@
     width: 300px;
   }
 
-  .fftx8body {
+  .rnn6vbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .fftx8body > a {
+  .rnn6vbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +98,7 @@
     gap: 10px;
   }
 
-  .fftx8right {
+  .rnn6vright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .fftx8languages {
+  .rnn6vlanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .fftx8languages.lang-hidden {
+  .rnn6vlanguages.lang-hidden {
     display: none;
   }
 
-  .fftx8languages ul {
+  .rnn6vlanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +123,7 @@
     list-style: none;
   }
 
-  .fftx8languages li {
+  .rnn6vlanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .fftx8languages li a {
+  .rnn6vlanguages li a {
     color: #fff !important;
   }
 
-  .fftx8languages li a:hover {
+  .rnn6vlanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .fftx8languages li:hover {
+  .rnn6vlanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .fftx8contactlist {
+  .rnn6vcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .fftx8contactlist a {
+  .rnn6vcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +170,17 @@
     color: inherit;
   }
 
-  .fftx8-spot {
+  .rnn6v-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .fftx8-icon {
+  .rnn6v-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .fftx8 {
+  .rnn6v {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +188,7 @@
     justify-content: center;
   }
 
-  .fftx8menu {
+  .rnn6vmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +196,7 @@
     position: relative;
   }
 
-  .fftx8menubody {
+  .rnn6vmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +205,7 @@
   }
 
 
-  .fftx8menulist {
+  .rnn6vmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +216,16 @@
     box-sizing: border-box;
   }
   
-  .fftx8menulistbody {
+  .rnn6vmenulistbody {
     width: 100%;
   }
 
-  .fftx8-mobile-toggle {
+  /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
+  .rnn6vmenuoverlay {
+    display: none;
+  }
+
+  .rnn6v-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +237,30 @@
     font-size: 20px;
   }
 
-  .fftx8-mobile-toggle span {
+    .rnn6v-mobile-toggle span {
     font-size: 24px;
   }
 
+  /* Kapatma butonu sadece mobil drawer'da görünsün */
+  .rnn6vmenuclose {
+    display: none;
+  }
+
+  /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .fftx8menu {
+    .rnn6v {
+      position: sticky;
+      top: 0;
+      z-index: 1000000;
+      background-color: #fff;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .rnn6vmenu {
       overflow-x: auto;
     }
 
-    .fftx8menulist {
+    .rnn6vmenulist {
       flex-direction: row;
     }
 
@@ -243,78 +268,291 @@
       width: 200px;
     }
 
-    .fftx8body {
+    .rnn6vbody {
       display: flex;
       align-items: center;
-      justify-content: center;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .fftx8body {
+      justify-content: space-between;
       width: calc(100% - 20px);
       padding: 0 10px;
-      justify-content: space-between;
       gap: 10px;
     }
 
-    .fftx8right {
+    /* Mobilde dil+iletişim sadece drawer'da (rnn6vmenulistbody altında) */
+    .rnn6vbody .rnn6vright {
+      display: none;
+    }
+
+    .rnn6vright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .fftx8contactlist {
+    .rnn6vcontactlist {
       display: none;
     }
 
-    .fftx8languages.lang-hidden {
+    .rnn6vlanguages.lang-hidden {
       display: none;
     }
 
-    .fftx8languages {
+    .rnn6vlanguages {
       display: flex;
     }
 
-    .fftx8-mobile-toggle {
+    .rnn6v-mobile-toggle {
       display: inline-flex;
+      min-width: 44px;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
     }
 
-    .fftx8menulist {
+    .rnn6v-mobile-toggle:active {
+      opacity: 0.85;
+    }
+
+    /* Mobil app: overlay (backdrop) */
+    .rnn6vmenuoverlay {
       display: none;
-      flex-direction: column;
-      gap: 6px;
-      width: calc(100% - 24px);
-      padding: 12px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9998;
+      opacity: 0;
+      transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .fftx8menu.fftx8menu-open .fftx8menulist {
+    .rnn6vmenuoverlay.rnn6vmenu-open {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
+    .rnn6vmenubody {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 85%;
+      max-width: 320px;
+      height: 100%;
+      min-height: 100dvh;
+      padding-top: env(safe-area-inset-top, 0);
+      padding-right: env(safe-area-inset-right, 0);
+      padding-bottom: env(safe-area-inset-bottom, 0);
+      box-sizing: border-box;
+      background-color: #000;
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.2);
+      z-index: 9999999;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .rnn6vmenubody.rnn6vmenu-open {
+      right: 0;
+    }
+
+    .rnn6vmenubody .rnn6vmenu {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: none;
+      position: relative;
+      flex: 1;
+      min-height: 0;
       display: flex;
     }
 
-    .fftx8menulist-menu {
-      justify-content: flex-start;
-      text-align: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
+    .rnn6vmenuclose {
+      display: flex;
+      position: absolute;
+      top: calc(env(safe-area-inset-top, 0) + 4px);
+      right: calc(env(safe-area-inset-right, 0) + 4px);
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      border-radius: 50%;
+      background-color: transparent;
+      color: #fff;
+      font-size: 24px;
+      z-index: 100;
     }
 
-    .dropdown-content-fftx8 {
+    .rnn6vmenuclose:active {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .rnn6vmenuclose span {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
+    .rnn6vmenubody .rnn6vmenulistbody {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-top: calc(56px + env(safe-area-inset-top, 0));
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 16px;
+      min-height: 0;
+    }
+
+    .rnn6vmenulist {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      padding: 0;
+      flex: 0 1 auto;
+    }
+
+    /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
+    .rnn6vmenubody .rnn6vmenulist-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 48px;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+    .rnn6vmenubody .rnn6vmenulist-menu:last-child {
+      border-bottom: none;
+    }
+
+    .rnn6vmenubody .rnn6vmenulist-menu:active {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Drawer: rnn6vright içeriği (dil + iletişim) rnn6vmenulistbody altında */
+    .rnn6vmenubody .rnn6vmenudrawer-right {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      gap: 16px;
+      padding: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .rnn6vmenudrawer-right .rnn6vmenudrawer-languages.lang-hidden {
+      display: none;
+    }
+
+    .rnn6vmenudrawer-right .rnn6vmenudrawer-languages ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .rnn6vmenudrawer-right .rnn6vmenudrawer-languages li {
+      list-style: none;
+      margin: 0;
+    }
+
+    .rnn6vmenudrawer-right .rnn6vmenudrawer-languages a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      min-height: 36px;
+      padding: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .rnn6vmenudrawer-right .rnn6vmenudrawer-languages a:active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .rnn6vmenudrawer-contactlist {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .rnn6vmenudrawer-contactlist a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .rnn6vmenudrawer-contactlist .rnn6v-icon {
+      font-size: 24px;
+    }
+
+    .rnn6vmenudrawer-contactlist .rnn6v-spot {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .dropdown-content-rnn6v {
       position: static;
-      background-color: rgba(0, 0, 0, 0.85);
-      margin-top: 6px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-top: 4px;
+      margin-bottom: 8px;
       padding: 0;
       width: 100%;
+      border-radius: 8px;
     }
 
-    .dropdown-content-fftx8>a {
+    .rnn6vmenubody .dropdown-content-rnn6v>a {
+      display: block;
+      min-height: 44px;
+      padding: 12px 16px;
       border-width: 0 0 1px 0;
-      padding: 12px;
+      border-color: rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .rnn6vmenubody .dropdown-content-rnn6v>a:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* Hareket azaltma tercihi: animasyonları kısalt */
+  @media (prefers-reduced-motion: reduce) {
+    .rnn6vmenuoverlay,
+    .rnn6vmenubody {
+      transition: none;
     }
   }
 
 
-  .sebca {
+  .o2jyq {
     width: 100%;
     margin: 30px 0px 30px 0px;
     display: flex;
@@ -323,14 +561,14 @@
     position: relative;
   }
 
-  .sebcacontainertitle {
+  .o2jyqcontainertitle {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin: 0 0 20px 0;
   }
 
-  .sebcacontainerlist {
+  .o2jyqcontainerlist {
     padding: 10px;
     display: flex;
     border-radius: 8px;
@@ -339,26 +577,26 @@
     transition: background-color 0.3s ease;
   }
 
-  .sebcacontainerlist>div {
+  .o2jyqcontainerlist>div {
     display: flex;
     align-items: center;
     font-size: 20px;
     color: #444;
   }
 
-  .sebcacontainerlist:hover {
+  .o2jyqcontainerlist:hover {
     background-color: #f9f9f9;
     border-bottom-color: #1e3046;
   }
 
-  .sebcacontainer {
+  .o2jyqcontainer {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
   }
 
-  .sebcacontainerbody {
+  .o2jyqcontainerbody {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -368,7 +606,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .sebcabody {
+  .o2jyqbody {
     width: calc(var(--max) - 40px);
     background-color: #ebebeb;
     border: 1px solid #dedede;
@@ -376,19 +614,19 @@
     padding: 20px;
   }
 
-  .sebcacontainerlist>span {
+  .o2jyqcontainerlist>span {
     font-size: 24px;
     color: #1e3046;
   }
 
   @media screen and (max-width: 1024px) {
-    .sebcabody {
+    .o2jyqbody {
       width: 100%;
       padding: 20px;
       flex-direction: column;
     }
 
-    .sebcacontainerbody {
+    .o2jyqcontainerbody {
       padding: 15px;
     }
   }
@@ -418,13 +656,13 @@
       transform: scale(1);
     }
   }
-  .oo2nv-body {
+  .vwe6v-body {
     display: flex;
     align-items: center;
     justify-content: center;
     width: var(--max);
   }
-  .oo2nv-body-chile {
+  .vwe6v-body-chile {
     padding: 20px;
     display: flex;
     align-items: top;
@@ -432,10 +670,10 @@
     flex-direction: column;
     position: absolute;
   }
-  .oo2nv-body-chile > div {
+  .vwe6v-body-chile > div {
     width: 100% !important;
   }
-  .oo2nv2 {
+  .vwe6v2 {
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -446,22 +684,22 @@
     overflow: hidden;
     cursor: pointer;
   }
-  .oo2nv {
+  .vwe6v {
     display: flex;
     flex-direction: column;
   }
-  .oo2nv > svg {
+  .vwe6v > svg {
     width: 100vw;
   }
-  .oo2nvbotton {
+  .vwe6vbotton {
     transform: scaleY(-1);
     margin-bottom: -1px;
   }
  
-  .oo2nv-svg {
+  .vwe6v-svg {
     fill: #fff;
   }
-  .oo2nv-bg {
+  .vwe6v-bg {
     background-image: url("/img/mct10p/map.jpg?v={{random}}") !important;
     background-size: cover;
     background-position: center center;

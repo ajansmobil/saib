@@ -1,10 +1,16 @@
 
-  .dc2jpmenulist-menu:hover .dropdown-content-dc2jp {
+
+  /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
+  .es6aamenudrawer-right {
+    display: none;
+  }
+
+  .es6aamenulist-menu:hover .dropdown-content-es6aa {
     display: flex;
     flex-direction: column;
   }
 
-  .dc2jpmenulist-menu {
+  .es6aamenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,53 +18,53 @@
     padding: 10px;
     font-size: 16px;
     color: #fff !important;
-    border-bottom: 1px solid #ddd;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
   }
 
-  .dc2jpmenulist-menu:hover {
+  .es6aamenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
+    border-radius: 5px;
   }
 
-  .dc2jpmenulist-menu:hover>a {
+  .es6aamenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .dc2jpmenulist-menu>a {
+  .es6aamenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-dc2jp {
+  .dropdown-content-active-es6aa {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-dc2jp>a {
+  .dropdown-content-active-es6aa>a {
     color: #000 !important;
   }
 
-  .dropdown-content-dc2jp {
+  .dropdown-content-es6aa {
     display: none;
     position: absolute;
     background-color: #333;
     color: #fff;
-    z-index: 102;
+    z-index: 1000000;
     margin-top: 10px;
     padding: 5px;
   }
 
-  .dropdown-content-dc2jp>a {
+  .dropdown-content-es6aa>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-dc2jp>a:hover {
+  .dropdown-content-es6aa>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +81,7 @@
     width: 300px;
   }
 
-  .dc2jpbody {
+  .es6aabody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .dc2jpbody > a {
+  .es6aabody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +98,7 @@
     gap: 10px;
   }
 
-  .dc2jpright {
+  .es6aaright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .dc2jplanguages {
+  .es6aalanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .dc2jplanguages.lang-hidden {
+  .es6aalanguages.lang-hidden {
     display: none;
   }
 
-  .dc2jplanguages ul {
+  .es6aalanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +123,7 @@
     list-style: none;
   }
 
-  .dc2jplanguages li {
+  .es6aalanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .dc2jplanguages li a {
+  .es6aalanguages li a {
     color: #fff !important;
   }
 
-  .dc2jplanguages li a:hover {
+  .es6aalanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .dc2jplanguages li:hover {
+  .es6aalanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .dc2jpcontactlist {
+  .es6aacontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .dc2jpcontactlist a {
+  .es6aacontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +170,17 @@
     color: inherit;
   }
 
-  .dc2jp-spot {
+  .es6aa-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .dc2jp-icon {
+  .es6aa-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .dc2jp {
+  .es6aa {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +188,7 @@
     justify-content: center;
   }
 
-  .dc2jpmenu {
+  .es6aamenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +196,7 @@
     position: relative;
   }
 
-  .dc2jpmenubody {
+  .es6aamenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +205,7 @@
   }
 
 
-  .dc2jpmenulist {
+  .es6aamenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +216,16 @@
     box-sizing: border-box;
   }
   
-  .dc2jpmenulistbody {
+  .es6aamenulistbody {
     width: 100%;
   }
 
-  .dc2jp-mobile-toggle {
+  /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
+  .es6aamenuoverlay {
+    display: none;
+  }
+
+  .es6aa-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +237,30 @@
     font-size: 20px;
   }
 
-  .dc2jp-mobile-toggle span {
+    .es6aa-mobile-toggle span {
     font-size: 24px;
   }
 
+  /* Kapatma butonu sadece mobil drawer'da görünsün */
+  .es6aamenuclose {
+    display: none;
+  }
+
+  /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .dc2jpmenu {
+    .es6aa {
+      position: sticky;
+      top: 0;
+      z-index: 1000000;
+      background-color: #fff;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .es6aamenu {
       overflow-x: auto;
     }
 
-    .dc2jpmenulist {
+    .es6aamenulist {
       flex-direction: row;
     }
 
@@ -243,73 +268,286 @@
       width: 200px;
     }
 
-    .dc2jpbody {
+    .es6aabody {
       display: flex;
       align-items: center;
-      justify-content: center;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .dc2jpbody {
+      justify-content: space-between;
       width: calc(100% - 20px);
       padding: 0 10px;
-      justify-content: space-between;
       gap: 10px;
     }
 
-    .dc2jpright {
+    /* Mobilde dil+iletişim sadece drawer'da (es6aamenulistbody altında) */
+    .es6aabody .es6aaright {
+      display: none;
+    }
+
+    .es6aaright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .dc2jpcontactlist {
+    .es6aacontactlist {
       display: none;
     }
 
-    .dc2jplanguages.lang-hidden {
+    .es6aalanguages.lang-hidden {
       display: none;
     }
 
-    .dc2jplanguages {
+    .es6aalanguages {
       display: flex;
     }
 
-    .dc2jp-mobile-toggle {
+    .es6aa-mobile-toggle {
       display: inline-flex;
+      min-width: 44px;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
     }
 
-    .dc2jpmenulist {
+    .es6aa-mobile-toggle:active {
+      opacity: 0.85;
+    }
+
+    /* Mobil app: overlay (backdrop) */
+    .es6aamenuoverlay {
       display: none;
-      flex-direction: column;
-      gap: 6px;
-      width: calc(100% - 24px);
-      padding: 12px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9998;
+      opacity: 0;
+      transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .dc2jpmenu.dc2jpmenu-open .dc2jpmenulist {
+    .es6aamenuoverlay.es6aamenu-open {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
+    .es6aamenubody {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 85%;
+      max-width: 320px;
+      height: 100%;
+      min-height: 100dvh;
+      padding-top: env(safe-area-inset-top, 0);
+      padding-right: env(safe-area-inset-right, 0);
+      padding-bottom: env(safe-area-inset-bottom, 0);
+      box-sizing: border-box;
+      background-color: #000;
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.2);
+      z-index: 9999999;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .es6aamenubody.es6aamenu-open {
+      right: 0;
+    }
+
+    .es6aamenubody .es6aamenu {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: none;
+      position: relative;
+      flex: 1;
+      min-height: 0;
       display: flex;
     }
 
-    .dc2jpmenulist-menu {
-      justify-content: flex-start;
-      text-align: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
+    .es6aamenuclose {
+      display: flex;
+      position: absolute;
+      top: calc(env(safe-area-inset-top, 0) + 4px);
+      right: calc(env(safe-area-inset-right, 0) + 4px);
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      border-radius: 50%;
+      background-color: transparent;
+      color: #fff;
+      font-size: 24px;
+      z-index: 100;
     }
 
-    .dropdown-content-dc2jp {
+    .es6aamenuclose:active {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .es6aamenuclose span {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
+    .es6aamenubody .es6aamenulistbody {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-top: calc(56px + env(safe-area-inset-top, 0));
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 16px;
+      min-height: 0;
+    }
+
+    .es6aamenulist {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      padding: 0;
+      flex: 0 1 auto;
+    }
+
+    /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
+    .es6aamenubody .es6aamenulist-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 48px;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+    .es6aamenubody .es6aamenulist-menu:last-child {
+      border-bottom: none;
+    }
+
+    .es6aamenubody .es6aamenulist-menu:active {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Drawer: es6aaright içeriği (dil + iletişim) es6aamenulistbody altında */
+    .es6aamenubody .es6aamenudrawer-right {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      gap: 16px;
+      padding: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .es6aamenudrawer-right .es6aamenudrawer-languages.lang-hidden {
+      display: none;
+    }
+
+    .es6aamenudrawer-right .es6aamenudrawer-languages ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .es6aamenudrawer-right .es6aamenudrawer-languages li {
+      list-style: none;
+      margin: 0;
+    }
+
+    .es6aamenudrawer-right .es6aamenudrawer-languages a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      min-height: 36px;
+      padding: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .es6aamenudrawer-right .es6aamenudrawer-languages a:active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .es6aamenudrawer-contactlist {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .es6aamenudrawer-contactlist a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .es6aamenudrawer-contactlist .es6aa-icon {
+      font-size: 24px;
+    }
+
+    .es6aamenudrawer-contactlist .es6aa-spot {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .dropdown-content-es6aa {
       position: static;
-      background-color: rgba(0, 0, 0, 0.85);
-      margin-top: 6px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-top: 4px;
+      margin-bottom: 8px;
       padding: 0;
       width: 100%;
+      border-radius: 8px;
     }
 
-    .dropdown-content-dc2jp>a {
+    .es6aamenubody .dropdown-content-es6aa>a {
+      display: block;
+      min-height: 44px;
+      padding: 12px 16px;
       border-width: 0 0 1px 0;
-      padding: 12px;
+      border-color: rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .es6aamenubody .dropdown-content-es6aa>a:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* Hareket azaltma tercihi: animasyonları kısalt */
+  @media (prefers-reduced-motion: reduce) {
+    .es6aamenuoverlay,
+    .es6aamenubody {
+      transition: none;
     }
   }
 

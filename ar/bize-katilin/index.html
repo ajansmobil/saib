@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=bgtfw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=bgtfw" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=fyvxt" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=fyvxt" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=bgtfw" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=fyvxt" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=bgtfw"></script>
-<link rel="stylesheet" href="style.css?v=bgtfw">
+  <script type="text/javascript" src="/src/firebase.js?v=fyvxt"></script>
+<link rel="stylesheet" href="style.css?v=fyvxt">
 </head>
 
 <body>
-  <div id="header"><div class="qxv1b">
+  <div id="header"><div class="wzviu">
 
-  <div class="qxv1bbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=bgtfw" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="wzviubody">
+    <a href="/ar/"><img src="/img/logo.svg?v=fyvxt" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="qxv1bright">
-      <div class="qxv1blanguages ">
+    <div class="wzviuright">
+      <div class="wzviulanguages ">
         <ul>
           <li><a href="/tr/bize-katilin/">tr</a></li><li><a href="/en/bize-katilin/">en</a></li><li><a href="/ar/bize-katilin/">ar</a></li>
         </ul>
       </div>
-      <div class="qxv1bcontactlist">
+      <div class="wzviucontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined qxv1b-icon">phone</div>
+     <div class="material-symbols-outlined wzviu-icon">phone</div>
      <div>
-      <div  class="qxv1b-title">اتصل بنا الآن</div>
-      <div  class="qxv1b-spot">0342 341 41 31</div>
+      <div  class="wzviu-title">اتصل بنا الآن</div>
+      <div  class="wzviu-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined qxv1b-icon">mail</div>
+     <div class="material-symbols-outlined wzviu-icon">mail</div>
      <div>
-      <div  class="qxv1b-title">اكتب لنا</div>
-      <div  class="qxv1b-spot">info@saibdernegi.org</div>
+      <div  class="wzviu-title">اكتب لنا</div>
+      <div  class="wzviu-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined qxv1b-icon">location_on</div>
+     <div class="material-symbols-outlined wzviu-icon">location_on</div>
      <div>
-      <div  class="qxv1b-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
-      <div  class="qxv1b-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="wzviu-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="wzviu-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="qxv1b-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="wzviu-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="qxv1bmenubody">
-    <div class="qxv1bmenu" id="menu-3-root">
-      <div class="qxv1bmenulistbody">
-        <div class="qxv1bmenulist"><a class="qxv1bmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="qxv1bmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="wzviumenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="wzviumenubody" id="menu-3-drawer">
+    <div class="wzviumenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="wzviumenulistbody">
+        <div class="wzviumenulist"><a class="wzviumenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="wzviumenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        جمعيتنا
       </a>
      
                     </div>
-    <div class="qxv1bmenulist-menu " >
+    <div class="wzviumenulist-menu " >
 
       <a href="/ar/haberler/">
        الأخبار
       </a>
      
                     </div>
-    <div class="qxv1bmenulist-menu " >
+    <div class="wzviumenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        طلب العضوية
       </a>
      
                     </div>
-    <div class="qxv1bmenulist-menu " >
+    <div class="wzviumenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        فروعنا
       </a>
      
                     </div>
-    <div class="qxv1bmenulist-menu " >
+    <div class="wzviumenulist-menu " >
 
       <a href="/ar/iletisim/">
        اتصل بنا
@@ -161,46 +164,189 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde wzviuright içeriği: dil + iletişim (wzviumenulistbody altında) -->
+      <div class="wzviumenudrawer-right">
+        <div class="wzviumenudrawer-languages ">
+          <ul><li><a href="/tr/bize-katilin/">tr</a></li><li><a href="/en/bize-katilin/">en</a></li><li><a href="/ar/bize-katilin/">ar</a></li></ul>
+        </div>
+        <div class="wzviumenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined wzviu-icon">phone</div>
+     <div>
+      <div  class="wzviu-title">اتصل بنا الآن</div>
+      <div  class="wzviu-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined wzviu-icon">mail</div>
+     <div>
+      <div  class="wzviu-title">اكتب لنا</div>
+      <div  class="wzviu-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined wzviu-icon">location_on</div>
+     <div>
+      <div  class="wzviu-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="wzviu-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="wzviumenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".wzviu-mobile-toggle");
+      if (!root || !root.classList.contains("wzviumenu-open")) {
+        return;
+      }
+      root.classList.remove("wzviumenu-open");
+      if (overlay) {
+        overlay.classList.remove("wzviumenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("wzviumenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".wzviu-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("qxv1bmenu-open")) {
-        root.classList.remove("qxv1bmenu-open");
+      var isOpen = root.classList.contains("wzviumenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("qxv1bmenu-open");
+        root.classList.add("wzviumenu-open");
+        if (overlay) {
+          overlay.classList.add("wzviumenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("wzviumenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("wzviumenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("wzviumenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("wzviumenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="jpge9-title f36">
+  <div id="content"><div class="yw069-title f36">
   <h1>انضم إلينا</h1>
 </div>
-<div class="jpge9">
-  <div class="jpge9-menu-btn">
+<div class="yw069">
+  <div class="yw069-menu-btn">
     <span>قائمة الصفحات</span>
-    <span class="material-symbols-outlined jpge9-icon">menu</span>
+    <span class="material-symbols-outlined yw069-icon">menu</span>
   </div>
-  <div class="jpge9-menu-overlay" id="jpge9-menu-overlay" aria-hidden="true"></div>
-  <div class="jpge9-menu" id="jpge9-menu">
-    <button class="jpge9-menu-close" type="button" aria-label="إغلاق القائمة" aria-controls="jpge9-menu">
+  <div class="yw069-menu-overlay" id="yw069-menu-overlay" aria-hidden="true"></div>
+  <div class="yw069-menu" id="yw069-menu">
+    <button class="yw069-menu-close" type="button" aria-label="إغلاق القائمة" aria-controls="yw069-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="jpge9-menu-link active" href="/ar/bize-katilin/">انضم إلينا</a><a class="jpge9-menu-link" href="/ar/faaliyetlerimiz/">أنشطتنا</a><a class="jpge9-menu-link" href="/ar/ihracat-rehberi/">دليل التصدير</a><a class="jpge9-menu-link" href="/ar/is-agi/">شبكة الأعمال</a><a class="jpge9-menu-link" href="/ar/uyelerimiz/">أعضاؤنا</a>
+    <a class="yw069-menu-link active" href="/ar/bize-katilin/">انضم إلينا</a><a class="yw069-menu-link" href="/ar/faaliyetlerimiz/">أنشطتنا</a><a class="yw069-menu-link" href="/ar/ihracat-rehberi/">دليل التصدير</a><a class="yw069-menu-link" href="/ar/is-agi/">شبكة الأعمال</a><a class="yw069-menu-link" href="/ar/uyelerimiz/">أعضاؤنا</a>
   </div>
-  <div class="jpge9-desc">
+  <div class="yw069-desc">
     
-    <div class="jpge9-desc-body">
-            <img src="/page/we5uhxruok/ixfhw.jpg?v=bgtfw" width="100%" alt="انضم إلينا" loading="lazy" />
+    <div class="yw069-desc-body">
+            <img src="/page/we5uhxruok/ixfhw.jpg?v=fyvxt" width="100%" alt="انضم إلينا" loading="lazy" />
     </div>
-    <div class="jpge9-body"><p>انضم إلى سايب</p>
+    <div class="yw069-body"><p>انضم إلى سايب</p>
 <p></p>
 <p>معًا نحن أقوياء!</p>
 <p></p>
@@ -222,10 +368,10 @@
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".jpge9-menu-btn");
-    var menu = document.querySelector(".jpge9-menu");
-    var overlay = document.querySelector(".jpge9-menu-overlay");
-    var closeButton = document.querySelector(".jpge9-menu-close");
+    var menuToggleBtn = document.querySelector(".yw069-menu-btn");
+    var menu = document.querySelector(".yw069-menu");
+    var overlay = document.querySelector(".yw069-menu-overlay");
+    var closeButton = document.querySelector(".yw069-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -295,7 +441,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".jpge9-menu-close");
+      var closeBtn = event.target.closest(".yw069-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -343,15 +489,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".jpge9-top").forEach(function (button) {
+    document.querySelectorAll(".yw069-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".jpge9-menu-group");
+        var group = this.closest(".yw069-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".jpge9-sub");
+        var sub = group.querySelector(".yw069-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".jpge9-icon");
+        var icon = this.querySelector(".yw069-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -419,8 +565,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=bgtfw"></script>
-<script defer src="/src/cookie.js?v=bgtfw"></script>
+<script defer type="text/javascript" src="/src/js.js?v=fyvxt"></script>
+<script defer src="/src/cookie.js?v=fyvxt"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

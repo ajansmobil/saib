@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=od1h1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=od1h1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=x60j5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=x60j5" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=od1h1" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=x60j5" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=od1h1"></script>
-<link rel="stylesheet" href="style.css?v=od1h1">
+  <script type="text/javascript" src="/src/firebase.js?v=x60j5"></script>
+<link rel="stylesheet" href="style.css?v=x60j5">
 </head>
 
 <body>
-  <div id="header"><div class="gpvmn">
+  <div id="header"><div class="fza0s">
 
-  <div class="gpvmnbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=od1h1" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="fza0sbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=x60j5" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="gpvmnright">
-      <div class="gpvmnlanguages ">
+    <div class="fza0sright">
+      <div class="fza0slanguages ">
         <ul>
           <li><a href="/tr/haberler/">tr</a></li><li><a href="/en/haberler/">en</a></li><li><a href="/ar/haberler/">ar</a></li>
         </ul>
       </div>
-      <div class="gpvmncontactlist">
+      <div class="fza0scontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined gpvmn-icon">phone</div>
+     <div class="material-symbols-outlined fza0s-icon">phone</div>
      <div>
-      <div  class="gpvmn-title">اتصل بنا الآن</div>
-      <div  class="gpvmn-spot">0342 341 41 31</div>
+      <div  class="fza0s-title">اتصل بنا الآن</div>
+      <div  class="fza0s-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined gpvmn-icon">mail</div>
+     <div class="material-symbols-outlined fza0s-icon">mail</div>
      <div>
-      <div  class="gpvmn-title">اكتب لنا</div>
-      <div  class="gpvmn-spot">info@saibdernegi.org</div>
+      <div  class="fza0s-title">اكتب لنا</div>
+      <div  class="fza0s-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined gpvmn-icon">location_on</div>
+     <div class="material-symbols-outlined fza0s-icon">location_on</div>
      <div>
-      <div  class="gpvmn-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
-      <div  class="gpvmn-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="fza0s-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="fza0s-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="gpvmn-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="fza0s-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="gpvmnmenubody">
-    <div class="gpvmnmenu" id="menu-3-root">
-      <div class="gpvmnmenulistbody">
-        <div class="gpvmnmenulist"><a class="gpvmnmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="gpvmnmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="fza0smenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="fza0smenubody" id="menu-3-drawer">
+    <div class="fza0smenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="fza0smenulistbody">
+        <div class="fza0smenulist"><a class="fza0smenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="fza0smenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        جمعيتنا
       </a>
      
                     </div>
-    <div class="gpvmnmenulist-menu dropdown-content-active-gpvmn" >
+    <div class="fza0smenulist-menu dropdown-content-active-fza0s" >
 
       <a href="/ar/haberler/">
        الأخبار
       </a>
      
                     </div>
-    <div class="gpvmnmenulist-menu " >
+    <div class="fza0smenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        طلب العضوية
       </a>
      
                     </div>
-    <div class="gpvmnmenulist-menu " >
+    <div class="fza0smenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        فروعنا
       </a>
      
                     </div>
-    <div class="gpvmnmenulist-menu " >
+    <div class="fza0smenulist-menu " >
 
       <a href="/ar/iletisim/">
        اتصل بنا
@@ -161,27 +164,170 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde fza0sright içeriği: dil + iletişim (fza0smenulistbody altında) -->
+      <div class="fza0smenudrawer-right">
+        <div class="fza0smenudrawer-languages ">
+          <ul><li><a href="/tr/haberler/">tr</a></li><li><a href="/en/haberler/">en</a></li><li><a href="/ar/haberler/">ar</a></li></ul>
+        </div>
+        <div class="fza0smenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined fza0s-icon">phone</div>
+     <div>
+      <div  class="fza0s-title">اتصل بنا الآن</div>
+      <div  class="fza0s-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined fza0s-icon">mail</div>
+     <div>
+      <div  class="fza0s-title">اكتب لنا</div>
+      <div  class="fza0s-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined fza0s-icon">location_on</div>
+     <div>
+      <div  class="fza0s-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="fza0s-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="fza0smenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".fza0s-mobile-toggle");
+      if (!root || !root.classList.contains("fza0smenu-open")) {
+        return;
+      }
+      root.classList.remove("fza0smenu-open");
+      if (overlay) {
+        overlay.classList.remove("fza0smenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("fza0smenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".fza0s-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("gpvmnmenu-open")) {
-        root.classList.remove("gpvmnmenu-open");
+      var isOpen = root.classList.contains("fza0smenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("gpvmnmenu-open");
+        root.classList.add("fza0smenu-open");
+        if (overlay) {
+          overlay.classList.add("fza0smenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("fza0smenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("fza0smenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("fza0smenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("fza0smenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="t9x4e">
-  <div class="t9x4e-body"><a class="t9x4e-body-card" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=od1h1" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</h3><p class="t9x4e-body-description">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/up26pe6nos/1-1024x683.jpg?v=od1h1" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</h3><p class="t9x4e-body-description">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg?v=od1h1" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">انعقاد منتدى الأعمال التركي السوري في حلب</h3><p class="t9x4e-body-description">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/pb8kpytxua/418345.jpg?v=od1h1" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</h3><p class="t9x4e-body-description">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=od1h1" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">عودة نصف السوريين على الأقل</h3><p class="t9x4e-body-description">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/kxn2hajzjw/418345.jpg?v=od1h1" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</h3><p class="t9x4e-body-description">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=od1h1" alt="زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</h3><p class="t9x4e-body-description">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/urdunun-suriyeye-ihracati-ilk-10-ayda-341-artti"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/e59xnwdnz3/418345.jpg?v=od1h1" alt="زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى</h3><p class="t9x4e-body-description">بلغت الصادرات الوطنية للأردن إلى سوريا 203 مليون دينار أردني في الأشهر العشرة الأولى من عام 2025، مسجلة زيادة بنسبة 341.3% على أساس سنوي.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/kilis-halep-dogal-gaz-boru-hatti-acildi-turkiyeden-suriyeye-gaz-akisi-basladi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/gt342a4yxn/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=od1h1" alt="افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا</h3><p class="t9x4e-body-description">اكتمل إصلاح خط أنابيب الغاز الطبيعي كيليس-حلب الذي تبلغ قدرته اليومية 6 ملايين متر مكعب من الغاز. مع افتتاح خط أنابيب الغاز الطبيعي بين تركيا وسوريا، بدأ تصدير الغاز الطبيعي من أذربيجان إلى سوريا عبر كيليس اعتبارًا من 2 أغسطس 2025.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/sam-uluslararasi-havalimaninda-4-milyar-dolarlik-yatirim-basliyor"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/ba0xsfcroc/1-1024x683.jpg?v=od1h1" alt="بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي</h3><p class="t9x4e-body-description">بدأ مشروع إعادة التأهيل وزيادة السعة بقيمة 4 مليارات دولار لمطار دمشق الدولي، والذي سيتم تنفيذه من قبل اتحاد يضم كاليون للإنشاءات وجنكيز للإنشاءات.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/turkiye-suriye-jetco-protokolu-imzalandi-ekonomik-ortaklikta-yeni-donem"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/gnsnm2xlkp/gnsnm2xlkp.jpg?v=od1h1" alt="توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية</h3><p class="t9x4e-body-description">قال وزير التجارة عمر بولات إنهم قدموا عرضًا لهذا البلد بشأن إنشاء اتفاقية شراكة اقتصادية شاملة من الجيل الجديد بين تركيا وسوريا.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/20ftotac5y/1-1024x683.jpg?v=od1h1" alt="شركات سعودية تشارك في معرض &quot;إعادة إعمار سوريا 2025&quot;" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">شركات سعودية تشارك في معرض "إعادة إعمار سوريا 2025"</h3><p class="t9x4e-body-description">شهد معرض "إعمار سوريا 2025" الذي أقيم في دمشق مشاركة مكثفة من الشركات السعودية المتخصصة في البناء ومواد البناء والتصميم الداخلي. يهدف الحدث إلى تعزيز التعاون الاقتصادي بين البلدين وزيادة فرص الاستثمار وإعادة الإعمار في سوريا.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/pp9qzxbhhn/418345.jpg?v=od1h1" alt="تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد</h3><p class="t9x4e-body-description">دمشق (سانا) – أعلن البنك المركزي السوري أنه وقع مذكرة تفاهم مع شركة ماستركارد لتطوير البنية التحتية لأنظمة الدفع الرقمي في البلاد وتبادل الخبرات وزيادة الشمول المالي.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/samda-birinci-suriye-guney-kore-ekonomik-forumu-duzenlendi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/gv7ipdhmqw/1-1024x683.jpg?v=od1h1" alt="انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق</h3><p class="t9x4e-body-description">عالج المنتدى الاقتصادي السوري الكوري الأول الذي أقيم في دمشق سبل تطوير الشراكات الاقتصادية والاستثمارية بين البلدين وزيادة التعاون في مجالات التنمية وإعادة الهيكلة.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/f8n7tvdet5/418345.jpg?v=od1h1" alt="وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم</h3><p class="t9x4e-body-description">أنقرة (سانا) – أعلن وزير الداخلية التركي علي يارليكايا أن عدد السوريين الذين عادوا طواعية إلى بلدهم منذ سقوط النظام المخلوع في 8 ديسمبر 2024 قد تجاوز 500 ألف. أكد يارليكايا أن تركيا تواصل الوقوف إلى جانب السوريين في عملية عودتهم الطوعية.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=od1h1" alt="رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري</h3><p class="t9x4e-body-description">دمشق (سانا) – بدأ رجل الأعمال خلف الحبتور من الإمارات العربية المتحدة اليوم زيارة عمل إلى سوريا لمناقشة سلسلة من القضايا الاقتصادية مع المسؤولين المعنيين في سوريا.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/el-omran-ve-suudi-al-shamaliya-grubu-arasinda-cimento-sektoru-isbirligi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/8kc5vfb3wl/1-1024x683.jpg?v=od1h1" alt="تعاون قطاع الأسمنت بين &quot;العمران&quot; ومجموعة &quot;الشمالية&quot; السعودية" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">تعاون قطاع الأسمنت بين "العمران" ومجموعة "الشمالية" السعودية</h3><p class="t9x4e-body-description">شرح محمود فاضل، المدير العام لشركة الإسمنت ومواد البناء العامة السورية "العمران"، تفاصيل اتفاقية التعاون الموقعة مع مجموعة "الشمالية" السعودية للإسمنت في منتدى الاستثمار السوري السعودي الذي أقيم في دمشق في 24 يوليو.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/turkiyeden-sam-fuarina-genis-katilim-ve-suriyeye-destek-mesaji"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/7cacasidjy/7cacasidjy.jpg?v=od1h1" alt="مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا</h3><p class="t9x4e-body-description">أكد وزير التجارة التركي عمر بولات أن مشاركة بلاده في معرض دمشق الدولي الثاني والستين تظهر الأهمية الكبيرة التي توليها تركيا لاستقرار سوريا والمنطقة.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/hkjcmu0fvu/418345.jpg?v=od1h1" alt="عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا</h3><p class="t9x4e-body-description">واشنطن (سانا) – أكد عضو مجلس النواب الأمريكي مارلين ستوتزمان أن الشركات الأمريكية تهدف إلى إجراء استثمارات كبيرة ومهمة في قطاعات البنية التحتية والطاقة والخدمات المصرفية في سوريا.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a><a class="t9x4e-body-card" href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi"><article class="t9x4e-body-item"><div class="t9x4e-body-img"><img src="/page/s77uwhtu0k/1-1024x683.jpg?v=od1h1" alt="اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية" loading="lazy"></div><div class="t9x4e-body-content"><h3 class="t9x4e-body-title">اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية</h3><p class="t9x4e-body-description">دمشق (سانا) – وقعت نقابة المهندسين السوريين اتفاقية تعاون مع شركة إيجاد تك، التابعة لمجموعة GO Telecom المتمركزة في المملكة العربية السعودية، في مقر النقابة في دمشق.</p><span class="t9x4e-body-link">اقرأ المزيد</span></div></article></a></div>
+  <div id="content"><div class="tam0c">
+  <div class="tam0c-body"><a class="tam0c-body-card" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=x60j5" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</h3><p class="tam0c-body-description">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/up26pe6nos/1-1024x683.jpg?v=x60j5" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</h3><p class="tam0c-body-description">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg?v=x60j5" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">انعقاد منتدى الأعمال التركي السوري في حلب</h3><p class="tam0c-body-description">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/pb8kpytxua/418345.jpg?v=x60j5" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</h3><p class="tam0c-body-description">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=x60j5" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">عودة نصف السوريين على الأقل</h3><p class="tam0c-body-description">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/kxn2hajzjw/418345.jpg?v=x60j5" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</h3><p class="tam0c-body-description">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=x60j5" alt="زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</h3><p class="tam0c-body-description">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/urdunun-suriyeye-ihracati-ilk-10-ayda-341-artti"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/e59xnwdnz3/418345.jpg?v=x60j5" alt="زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى</h3><p class="tam0c-body-description">بلغت الصادرات الوطنية للأردن إلى سوريا 203 مليون دينار أردني في الأشهر العشرة الأولى من عام 2025، مسجلة زيادة بنسبة 341.3% على أساس سنوي.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/kilis-halep-dogal-gaz-boru-hatti-acildi-turkiyeden-suriyeye-gaz-akisi-basladi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/gt342a4yxn/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=x60j5" alt="افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا</h3><p class="tam0c-body-description">اكتمل إصلاح خط أنابيب الغاز الطبيعي كيليس-حلب الذي تبلغ قدرته اليومية 6 ملايين متر مكعب من الغاز. مع افتتاح خط أنابيب الغاز الطبيعي بين تركيا وسوريا، بدأ تصدير الغاز الطبيعي من أذربيجان إلى سوريا عبر كيليس اعتبارًا من 2 أغسطس 2025.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/sam-uluslararasi-havalimaninda-4-milyar-dolarlik-yatirim-basliyor"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/ba0xsfcroc/1-1024x683.jpg?v=x60j5" alt="بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي</h3><p class="tam0c-body-description">بدأ مشروع إعادة التأهيل وزيادة السعة بقيمة 4 مليارات دولار لمطار دمشق الدولي، والذي سيتم تنفيذه من قبل اتحاد يضم كاليون للإنشاءات وجنكيز للإنشاءات.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/turkiye-suriye-jetco-protokolu-imzalandi-ekonomik-ortaklikta-yeni-donem"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/gnsnm2xlkp/gnsnm2xlkp.jpg?v=x60j5" alt="توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية</h3><p class="tam0c-body-description">قال وزير التجارة عمر بولات إنهم قدموا عرضًا لهذا البلد بشأن إنشاء اتفاقية شراكة اقتصادية شاملة من الجيل الجديد بين تركيا وسوريا.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/20ftotac5y/1-1024x683.jpg?v=x60j5" alt="شركات سعودية تشارك في معرض &quot;إعادة إعمار سوريا 2025&quot;" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">شركات سعودية تشارك في معرض "إعادة إعمار سوريا 2025"</h3><p class="tam0c-body-description">شهد معرض "إعمار سوريا 2025" الذي أقيم في دمشق مشاركة مكثفة من الشركات السعودية المتخصصة في البناء ومواد البناء والتصميم الداخلي. يهدف الحدث إلى تعزيز التعاون الاقتصادي بين البلدين وزيادة فرص الاستثمار وإعادة الإعمار في سوريا.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/pp9qzxbhhn/418345.jpg?v=x60j5" alt="تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد</h3><p class="tam0c-body-description">دمشق (سانا) – أعلن البنك المركزي السوري أنه وقع مذكرة تفاهم مع شركة ماستركارد لتطوير البنية التحتية لأنظمة الدفع الرقمي في البلاد وتبادل الخبرات وزيادة الشمول المالي.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/samda-birinci-suriye-guney-kore-ekonomik-forumu-duzenlendi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/gv7ipdhmqw/1-1024x683.jpg?v=x60j5" alt="انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق</h3><p class="tam0c-body-description">عالج المنتدى الاقتصادي السوري الكوري الأول الذي أقيم في دمشق سبل تطوير الشراكات الاقتصادية والاستثمارية بين البلدين وزيادة التعاون في مجالات التنمية وإعادة الهيكلة.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/f8n7tvdet5/418345.jpg?v=x60j5" alt="وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم</h3><p class="tam0c-body-description">أنقرة (سانا) – أعلن وزير الداخلية التركي علي يارليكايا أن عدد السوريين الذين عادوا طواعية إلى بلدهم منذ سقوط النظام المخلوع في 8 ديسمبر 2024 قد تجاوز 500 ألف. أكد يارليكايا أن تركيا تواصل الوقوف إلى جانب السوريين في عملية عودتهم الطوعية.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=x60j5" alt="رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري</h3><p class="tam0c-body-description">دمشق (سانا) – بدأ رجل الأعمال خلف الحبتور من الإمارات العربية المتحدة اليوم زيارة عمل إلى سوريا لمناقشة سلسلة من القضايا الاقتصادية مع المسؤولين المعنيين في سوريا.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/el-omran-ve-suudi-al-shamaliya-grubu-arasinda-cimento-sektoru-isbirligi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/8kc5vfb3wl/1-1024x683.jpg?v=x60j5" alt="تعاون قطاع الأسمنت بين &quot;العمران&quot; ومجموعة &quot;الشمالية&quot; السعودية" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">تعاون قطاع الأسمنت بين "العمران" ومجموعة "الشمالية" السعودية</h3><p class="tam0c-body-description">شرح محمود فاضل، المدير العام لشركة الإسمنت ومواد البناء العامة السورية "العمران"، تفاصيل اتفاقية التعاون الموقعة مع مجموعة "الشمالية" السعودية للإسمنت في منتدى الاستثمار السوري السعودي الذي أقيم في دمشق في 24 يوليو.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/turkiyeden-sam-fuarina-genis-katilim-ve-suriyeye-destek-mesaji"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/7cacasidjy/7cacasidjy.jpg?v=x60j5" alt="مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا</h3><p class="tam0c-body-description">أكد وزير التجارة التركي عمر بولات أن مشاركة بلاده في معرض دمشق الدولي الثاني والستين تظهر الأهمية الكبيرة التي توليها تركيا لاستقرار سوريا والمنطقة.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/hkjcmu0fvu/418345.jpg?v=x60j5" alt="عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا</h3><p class="tam0c-body-description">واشنطن (سانا) – أكد عضو مجلس النواب الأمريكي مارلين ستوتزمان أن الشركات الأمريكية تهدف إلى إجراء استثمارات كبيرة ومهمة في قطاعات البنية التحتية والطاقة والخدمات المصرفية في سوريا.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a><a class="tam0c-body-card" href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi"><article class="tam0c-body-item"><div class="tam0c-body-img"><img src="/page/s77uwhtu0k/1-1024x683.jpg?v=x60j5" alt="اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية" loading="lazy"></div><div class="tam0c-body-content"><h3 class="tam0c-body-title">اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية</h3><p class="tam0c-body-description">دمشق (سانا) – وقعت نقابة المهندسين السوريين اتفاقية تعاون مع شركة إيجاد تك، التابعة لمجموعة GO Telecom المتمركزة في المملكة العربية السعودية، في مقر النقابة في دمشق.</p><span class="tam0c-body-link">اقرأ المزيد</span></div></article></a></div>
 </div>
 
 
@@ -241,8 +387,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=od1h1"></script>
-<script defer src="/src/cookie.js?v=od1h1"></script>
+<script defer type="text/javascript" src="/src/js.js?v=x60j5"></script>
+<script defer src="/src/cookie.js?v=x60j5"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=ubrju" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=ubrju" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=kmtvn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=kmtvn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=ubrju" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=kmtvn" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=ubrju"></script>
-<link rel="stylesheet" href="style.css?v=ubrju">
+  <script type="text/javascript" src="/src/firebase.js?v=kmtvn"></script>
+<link rel="stylesheet" href="style.css?v=kmtvn">
 </head>
 
 <body>
-  <div id="header"><div class="hnvl9">
+  <div id="header"><div class="eniy6">
 
-  <div class="hnvl9body">
-    <a href="/ar/"><img src="/img/logo.svg?v=ubrju" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="eniy6body">
+    <a href="/ar/"><img src="/img/logo.svg?v=kmtvn" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="hnvl9right">
-      <div class="hnvl9languages ">
+    <div class="eniy6right">
+      <div class="eniy6languages ">
         <ul>
           <li><a href="/tr/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">tr</a></li><li><a href="/en/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">en</a></li><li><a href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">ar</a></li>
         </ul>
       </div>
-      <div class="hnvl9contactlist">
+      <div class="eniy6contactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined hnvl9-icon">phone</div>
+     <div class="material-symbols-outlined eniy6-icon">phone</div>
      <div>
-      <div  class="hnvl9-title">اتصل بنا الآن</div>
-      <div  class="hnvl9-spot">0342 341 41 31</div>
+      <div  class="eniy6-title">اتصل بنا الآن</div>
+      <div  class="eniy6-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined hnvl9-icon">mail</div>
+     <div class="material-symbols-outlined eniy6-icon">mail</div>
      <div>
-      <div  class="hnvl9-title">اكتب لنا</div>
-      <div  class="hnvl9-spot">info@saibdernegi.org</div>
+      <div  class="eniy6-title">اكتب لنا</div>
+      <div  class="eniy6-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined hnvl9-icon">location_on</div>
+     <div class="material-symbols-outlined eniy6-icon">location_on</div>
      <div>
-      <div  class="hnvl9-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
-      <div  class="hnvl9-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="eniy6-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="eniy6-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="hnvl9-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="eniy6-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="hnvl9menubody">
-    <div class="hnvl9menu" id="menu-3-root">
-      <div class="hnvl9menulistbody">
-        <div class="hnvl9menulist"><a class="hnvl9menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="hnvl9menulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="eniy6menuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="eniy6menubody" id="menu-3-drawer">
+    <div class="eniy6menu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="eniy6menulistbody">
+        <div class="eniy6menulist"><a class="eniy6menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="eniy6menulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        جمعيتنا
       </a>
      
                     </div>
-    <div class="hnvl9menulist-menu " >
+    <div class="eniy6menulist-menu " >
 
       <a href="/ar/haberler/">
        الأخبار
       </a>
      
                     </div>
-    <div class="hnvl9menulist-menu " >
+    <div class="eniy6menulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        طلب العضوية
       </a>
      
                     </div>
-    <div class="hnvl9menulist-menu " >
+    <div class="eniy6menulist-menu " >
 
       <a href="/ar/subelerimiz/">
        فروعنا
       </a>
      
                     </div>
-    <div class="hnvl9menulist-menu " >
+    <div class="eniy6menulist-menu " >
 
       <a href="/ar/iletisim/">
        اتصل بنا
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde eniy6right içeriği: dil + iletişim (eniy6menulistbody altında) -->
+      <div class="eniy6menudrawer-right">
+        <div class="eniy6menudrawer-languages ">
+          <ul><li><a href="/tr/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">tr</a></li><li><a href="/en/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">en</a></li><li><a href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor/">ar</a></li></ul>
+        </div>
+        <div class="eniy6menudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined eniy6-icon">phone</div>
+     <div>
+      <div  class="eniy6-title">اتصل بنا الآن</div>
+      <div  class="eniy6-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined eniy6-icon">mail</div>
+     <div>
+      <div  class="eniy6-title">اكتب لنا</div>
+      <div  class="eniy6-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined eniy6-icon">location_on</div>
+     <div>
+      <div  class="eniy6-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="eniy6-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="eniy6menuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".eniy6-mobile-toggle");
+      if (!root || !root.classList.contains("eniy6menu-open")) {
+        return;
+      }
+      root.classList.remove("eniy6menu-open");
+      if (overlay) {
+        overlay.classList.remove("eniy6menu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("eniy6menu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".eniy6-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("hnvl9menu-open")) {
-        root.classList.remove("hnvl9menu-open");
+      var isOpen = root.classList.contains("eniy6menu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("hnvl9menu-open");
+        root.classList.add("eniy6menu-open");
+        if (overlay) {
+          overlay.classList.add("eniy6menu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("eniy6menu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("eniy6menu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("eniy6menu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("eniy6menu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="m8427-page">
-  <header class="m8427-header">
-    <div class="m8427-header-meta">
+  <div id="content"><div class="ry9se-page">
+  <header class="ry9se-header">
+    <div class="ry9se-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="m8427-header-title">عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا</h1>
-    <p class="m8427-header-spot">واشنطن (سانا) – أكد عضو مجلس النواب الأمريكي مارلين ستوتزمان أن الشركات الأمريكية تهدف إلى إجراء استثمارات كبيرة ومهمة في قطاعات البنية التحتية والطاقة والخدمات المصرفية في سوريا.</p>
+    <h1 class="ry9se-header-title">عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا</h1>
+    <p class="ry9se-header-spot">واشنطن (سانا) – أكد عضو مجلس النواب الأمريكي مارلين ستوتزمان أن الشركات الأمريكية تهدف إلى إجراء استثمارات كبيرة ومهمة في قطاعات البنية التحتية والطاقة والخدمات المصرفية في سوريا.</p>
   </header>
 
-  <div class="m8427-body">
-    <article class="m8427-article">
-      <figure class="m8427-article-media">
-        <img src="/page/hkjcmu0fvu/418345.jpg?v=ubrju" alt="Page Haber"  loading="lazy"/>
+  <div class="ry9se-body">
+    <article class="ry9se-article">
+      <figure class="ry9se-article-media">
+        <img src="/page/hkjcmu0fvu/418345.jpg?v=kmtvn" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="m8427-article-content"><p>لفت عضو الكونغرس ستوتزمان الانتباه إلى اهتمام عالم الأعمال الأمريكي بسوريا بقوله في منشوره على منصة التواصل الاجتماعي X إن "سوريا الحرة يمكن أن تكون ملاذًا لاستثمارات الشركات الأمريكية في قطاعات البنية التحتية والطاقة والخدمات المصرفية." أكد ستوتزمان، الذي كان جزءًا من وفد الكونغرس الأمريكي الذي زار سوريا، أيضًا في تصريحاته بعد الزيارة أن هناك العديد من الفرص للتعاون مع الحكومة السورية وأن العديد من رجال الأعمال الأمريكيين متحمسون لإجراء استثمارات كبيرة في سوريا. أعرب ستوتزمان عن أنه من المهم أيضًا الحفاظ على التنوع الديني والثقافي الغني للبلاد لإعادة إعمار سوريا ونجاحها المستقبلي. يؤكد الخبراء أنه مع تخفيف العقوبات في الولايات المتحدة، قد تستعد شركات الطاقة والبناء الأمريكية لدخول السوق السورية، وأن هذا أمر بالغ الأهمية لإعادة اندماج سوريا في النظام المالي العالمي. تم تقييم رسالة ستوتزمان كعلامة على أن الشركات الأمريكية مستعدة لتقييم فرص الاستثمار في سوريا بعد سنوات عديدة.</p></div>
+      <div class="ry9se-article-content"><p>لفت عضو الكونغرس ستوتزمان الانتباه إلى اهتمام عالم الأعمال الأمريكي بسوريا بقوله في منشوره على منصة التواصل الاجتماعي X إن "سوريا الحرة يمكن أن تكون ملاذًا لاستثمارات الشركات الأمريكية في قطاعات البنية التحتية والطاقة والخدمات المصرفية." أكد ستوتزمان، الذي كان جزءًا من وفد الكونغرس الأمريكي الذي زار سوريا، أيضًا في تصريحاته بعد الزيارة أن هناك العديد من الفرص للتعاون مع الحكومة السورية وأن العديد من رجال الأعمال الأمريكيين متحمسون لإجراء استثمارات كبيرة في سوريا. أعرب ستوتزمان عن أنه من المهم أيضًا الحفاظ على التنوع الديني والثقافي الغني للبلاد لإعادة إعمار سوريا ونجاحها المستقبلي. يؤكد الخبراء أنه مع تخفيف العقوبات في الولايات المتحدة، قد تستعد شركات الطاقة والبناء الأمريكية لدخول السوق السورية، وأن هذا أمر بالغ الأهمية لإعادة اندماج سوريا في النظام المالي العالمي. تم تقييم رسالة ستوتزمان كعلامة على أن الشركات الأمريكية مستعدة لتقييم فرص الاستثمار في سوريا بعد سنوات عديدة.</p></div>
     </article>
 
-    <aside class="m8427-sidebar">
-      <div class="m8427-sidebar-head">
+    <aside class="ry9se-sidebar">
+      <div class="ry9se-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="m8427-sidebar-list"><a class="m8427-menu-item" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="m8427-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="m8427-menu-content"><div class="m8427-menu-name">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</div><p class="m8427-menu-spot">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p></div></a><a class="m8427-menu-item" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="m8427-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="m8427-menu-content"><div class="m8427-menu-name">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</div><p class="m8427-menu-spot">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p></div></a><a class="m8427-menu-item" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="m8427-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="m8427-menu-content"><div class="m8427-menu-name">انعقاد منتدى الأعمال التركي السوري في حلب</div><p class="m8427-menu-spot">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p></div></a><a class="m8427-menu-item" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="m8427-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="m8427-menu-content"><div class="m8427-menu-name">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</div><p class="m8427-menu-spot">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p></div></a><a class="m8427-menu-item" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><div class="m8427-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="m8427-menu-content"><div class="m8427-menu-name">عودة نصف السوريين على الأقل</div><p class="m8427-menu-spot">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p></div></a><a class="m8427-menu-item" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="m8427-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="m8427-menu-content"><div class="m8427-menu-name">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</div><p class="m8427-menu-spot">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p></div></a></div>
+      <div class="ry9se-sidebar-list"><a class="ry9se-menu-item" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="ry9se-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="ry9se-menu-content"><div class="ry9se-menu-name">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</div><p class="ry9se-menu-spot">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p></div></a><a class="ry9se-menu-item" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="ry9se-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="ry9se-menu-content"><div class="ry9se-menu-name">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</div><p class="ry9se-menu-spot">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p></div></a><a class="ry9se-menu-item" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="ry9se-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="ry9se-menu-content"><div class="ry9se-menu-name">انعقاد منتدى الأعمال التركي السوري في حلب</div><p class="ry9se-menu-spot">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p></div></a><a class="ry9se-menu-item" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="ry9se-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="ry9se-menu-content"><div class="ry9se-menu-name">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</div><p class="ry9se-menu-spot">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p></div></a><a class="ry9se-menu-item" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><div class="ry9se-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="ry9se-menu-content"><div class="ry9se-menu-name">عودة نصف السوريين على الأقل</div><p class="ry9se-menu-spot">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p></div></a><a class="ry9se-menu-item" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="ry9se-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="ry9se-menu-content"><div class="ry9se-menu-name">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</div><p class="ry9se-menu-spot">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=ubrju"></script>
-<script defer src="/src/cookie.js?v=ubrju"></script>
+<script defer type="text/javascript" src="/src/js.js?v=kmtvn"></script>
+<script defer src="/src/cookie.js?v=kmtvn"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

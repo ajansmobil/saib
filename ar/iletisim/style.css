@@ -1,10 +1,16 @@
 
-  .ie8pzmenulist-menu:hover .dropdown-content-ie8pz {
+
+  /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
+  .ykufmmenudrawer-right {
+    display: none;
+  }
+
+  .ykufmmenulist-menu:hover .dropdown-content-ykufm {
     display: flex;
     flex-direction: column;
   }
 
-  .ie8pzmenulist-menu {
+  .ykufmmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,53 +18,53 @@
     padding: 10px;
     font-size: 16px;
     color: #fff !important;
-    border-bottom: 1px solid #ddd;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
   }
 
-  .ie8pzmenulist-menu:hover {
+  .ykufmmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
+    border-radius: 5px;
   }
 
-  .ie8pzmenulist-menu:hover>a {
+  .ykufmmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .ie8pzmenulist-menu>a {
+  .ykufmmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-ie8pz {
+  .dropdown-content-active-ykufm {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-ie8pz>a {
+  .dropdown-content-active-ykufm>a {
     color: #000 !important;
   }
 
-  .dropdown-content-ie8pz {
+  .dropdown-content-ykufm {
     display: none;
     position: absolute;
     background-color: #333;
     color: #fff;
-    z-index: 102;
+    z-index: 1000000;
     margin-top: 10px;
     padding: 5px;
   }
 
-  .dropdown-content-ie8pz>a {
+  .dropdown-content-ykufm>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-ie8pz>a:hover {
+  .dropdown-content-ykufm>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +81,7 @@
     width: 300px;
   }
 
-  .ie8pzbody {
+  .ykufmbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .ie8pzbody > a {
+  .ykufmbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +98,7 @@
     gap: 10px;
   }
 
-  .ie8pzright {
+  .ykufmright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .ie8pzlanguages {
+  .ykufmlanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .ie8pzlanguages.lang-hidden {
+  .ykufmlanguages.lang-hidden {
     display: none;
   }
 
-  .ie8pzlanguages ul {
+  .ykufmlanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +123,7 @@
     list-style: none;
   }
 
-  .ie8pzlanguages li {
+  .ykufmlanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .ie8pzlanguages li a {
+  .ykufmlanguages li a {
     color: #fff !important;
   }
 
-  .ie8pzlanguages li a:hover {
+  .ykufmlanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .ie8pzlanguages li:hover {
+  .ykufmlanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .ie8pzcontactlist {
+  .ykufmcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .ie8pzcontactlist a {
+  .ykufmcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +170,17 @@
     color: inherit;
   }
 
-  .ie8pz-spot {
+  .ykufm-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .ie8pz-icon {
+  .ykufm-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .ie8pz {
+  .ykufm {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +188,7 @@
     justify-content: center;
   }
 
-  .ie8pzmenu {
+  .ykufmmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +196,7 @@
     position: relative;
   }
 
-  .ie8pzmenubody {
+  .ykufmmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +205,7 @@
   }
 
 
-  .ie8pzmenulist {
+  .ykufmmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +216,16 @@
     box-sizing: border-box;
   }
   
-  .ie8pzmenulistbody {
+  .ykufmmenulistbody {
     width: 100%;
   }
 
-  .ie8pz-mobile-toggle {
+  /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
+  .ykufmmenuoverlay {
+    display: none;
+  }
+
+  .ykufm-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +237,30 @@
     font-size: 20px;
   }
 
-  .ie8pz-mobile-toggle span {
+    .ykufm-mobile-toggle span {
     font-size: 24px;
   }
 
+  /* Kapatma butonu sadece mobil drawer'da görünsün */
+  .ykufmmenuclose {
+    display: none;
+  }
+
+  /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .ie8pzmenu {
+    .ykufm {
+      position: sticky;
+      top: 0;
+      z-index: 1000000;
+      background-color: #fff;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    .ykufmmenu {
       overflow-x: auto;
     }
 
-    .ie8pzmenulist {
+    .ykufmmenulist {
       flex-direction: row;
     }
 
@@ -243,78 +268,291 @@
       width: 200px;
     }
 
-    .ie8pzbody {
+    .ykufmbody {
       display: flex;
       align-items: center;
-      justify-content: center;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .ie8pzbody {
+      justify-content: space-between;
       width: calc(100% - 20px);
       padding: 0 10px;
-      justify-content: space-between;
       gap: 10px;
     }
 
-    .ie8pzright {
+    /* Mobilde dil+iletişim sadece drawer'da (ykufmmenulistbody altında) */
+    .ykufmbody .ykufmright {
+      display: none;
+    }
+
+    .ykufmright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .ie8pzcontactlist {
+    .ykufmcontactlist {
       display: none;
     }
 
-    .ie8pzlanguages.lang-hidden {
+    .ykufmlanguages.lang-hidden {
       display: none;
     }
 
-    .ie8pzlanguages {
+    .ykufmlanguages {
       display: flex;
     }
 
-    .ie8pz-mobile-toggle {
+    .ykufm-mobile-toggle {
       display: inline-flex;
+      min-width: 44px;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
     }
 
-    .ie8pzmenulist {
+    .ykufm-mobile-toggle:active {
+      opacity: 0.85;
+    }
+
+    /* Mobil app: overlay (backdrop) */
+    .ykufmmenuoverlay {
       display: none;
-      flex-direction: column;
-      gap: 6px;
-      width: calc(100% - 24px);
-      padding: 12px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9998;
+      opacity: 0;
+      transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .ie8pzmenu.ie8pzmenu-open .ie8pzmenulist {
+    .ykufmmenuoverlay.ykufmmenu-open {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
+    .ykufmmenubody {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 85%;
+      max-width: 320px;
+      height: 100%;
+      min-height: 100dvh;
+      padding-top: env(safe-area-inset-top, 0);
+      padding-right: env(safe-area-inset-right, 0);
+      padding-bottom: env(safe-area-inset-bottom, 0);
+      box-sizing: border-box;
+      background-color: #000;
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.2);
+      z-index: 9999999;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+
+    .ykufmmenubody.ykufmmenu-open {
+      right: 0;
+    }
+
+    .ykufmmenubody .ykufmmenu {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: none;
+      position: relative;
+      flex: 1;
+      min-height: 0;
       display: flex;
     }
 
-    .ie8pzmenulist-menu {
-      justify-content: flex-start;
-      text-align: left;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
+    .ykufmmenuclose {
+      display: flex;
+      position: absolute;
+      top: calc(env(safe-area-inset-top, 0) + 4px);
+      right: calc(env(safe-area-inset-right, 0) + 4px);
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      padding: 0;
+      margin: 0;
+      border: none;
+      border-radius: 50%;
+      background-color: transparent;
+      color: #fff;
+      font-size: 24px;
+      z-index: 100;
     }
 
-    .dropdown-content-ie8pz {
+    .ykufmmenuclose:active {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .ykufmmenuclose span {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
+    .ykufmmenubody .ykufmmenulistbody {
+      flex: 1;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding-top: calc(56px + env(safe-area-inset-top, 0));
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 16px;
+      min-height: 0;
+    }
+
+    .ykufmmenulist {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      padding: 0;
+      flex: 0 1 auto;
+    }
+
+    /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
+    .ykufmmenubody .ykufmmenulist-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 48px;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+    .ykufmmenubody .ykufmmenulist-menu:last-child {
+      border-bottom: none;
+    }
+
+    .ykufmmenubody .ykufmmenulist-menu:active {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Drawer: ykufmright içeriği (dil + iletişim) ykufmmenulistbody altında */
+    .ykufmmenubody .ykufmmenudrawer-right {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      gap: 16px;
+      padding: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .ykufmmenudrawer-right .ykufmmenudrawer-languages.lang-hidden {
+      display: none;
+    }
+
+    .ykufmmenudrawer-right .ykufmmenudrawer-languages ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .ykufmmenudrawer-right .ykufmmenudrawer-languages li {
+      list-style: none;
+      margin: 0;
+    }
+
+    .ykufmmenudrawer-right .ykufmmenudrawer-languages a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 36px;
+      min-height: 36px;
+      padding: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .ykufmmenudrawer-right .ykufmmenudrawer-languages a:active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .ykufmmenudrawer-contactlist {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ykufmmenudrawer-contactlist a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .ykufmmenudrawer-contactlist .ykufm-icon {
+      font-size: 24px;
+    }
+
+    .ykufmmenudrawer-contactlist .ykufm-spot {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .dropdown-content-ykufm {
       position: static;
-      background-color: rgba(0, 0, 0, 0.85);
-      margin-top: 6px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-top: 4px;
+      margin-bottom: 8px;
       padding: 0;
       width: 100%;
+      border-radius: 8px;
     }
 
-    .dropdown-content-ie8pz>a {
+    .ykufmmenubody .dropdown-content-ykufm>a {
+      display: block;
+      min-height: 44px;
+      padding: 12px 16px;
       border-width: 0 0 1px 0;
-      padding: 12px;
+      border-color: rgba(255, 255, 255, 0.08);
+      box-sizing: border-box;
+    }
+
+    .ykufmmenubody .dropdown-content-ykufm>a:last-child {
+      border-bottom: none;
+    }
+  }
+
+  /* Hareket azaltma tercihi: animasyonları kısalt */
+  @media (prefers-reduced-motion: reduce) {
+    .ykufmmenuoverlay,
+    .ykufmmenubody {
+      transition: none;
     }
   }
 
 
-  .tryf2 {
+  .pk6zm {
     width: 100%;
     margin: 30px 0px 30px 0px;
     display: flex;
@@ -323,14 +561,14 @@
     position: relative;
   }
 
-  .tryf2containertitle {
+  .pk6zmcontainertitle {
     font-size: 28px;
     font-weight: bold;
     color: #333;
     margin: 0 0 20px 0;
   }
 
-  .tryf2containerlist {
+  .pk6zmcontainerlist {
     padding: 10px;
     display: flex;
     border-radius: 8px;
@@ -339,26 +577,26 @@
     transition: background-color 0.3s ease;
   }
 
-  .tryf2containerlist>div {
+  .pk6zmcontainerlist>div {
     display: flex;
     align-items: center;
     font-size: 20px;
     color: #444;
   }
 
-  .tryf2containerlist:hover {
+  .pk6zmcontainerlist:hover {
     background-color: #f9f9f9;
     border-bottom-color: #1e3046;
   }
 
-  .tryf2container {
+  .pk6zmcontainer {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 20px;
   }
 
-  .tryf2containerbody {
+  .pk6zmcontainerbody {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -368,7 +606,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .tryf2body {
+  .pk6zmbody {
     width: calc(var(--max) - 40px);
     background-color: #ebebeb;
     border: 1px solid #dedede;
@@ -376,19 +614,19 @@
     padding: 20px;
   }
 
-  .tryf2containerlist>span {
+  .pk6zmcontainerlist>span {
     font-size: 24px;
     color: #1e3046;
   }
 
   @media screen and (max-width: 1024px) {
-    .tryf2body {
+    .pk6zmbody {
       width: 100%;
       padding: 20px;
       flex-direction: column;
     }
 
-    .tryf2containerbody {
+    .pk6zmcontainerbody {
       padding: 15px;
     }
   }
@@ -418,13 +656,13 @@
       transform: scale(1);
     }
   }
-  .cb38x-body {
+  .mfbpn-body {
     display: flex;
     align-items: center;
     justify-content: center;
     width: var(--max);
   }
-  .cb38x-body-chile {
+  .mfbpn-body-chile {
     padding: 20px;
     display: flex;
     align-items: top;
@@ -432,10 +670,10 @@
     flex-direction: column;
     position: absolute;
   }
-  .cb38x-body-chile > div {
+  .mfbpn-body-chile > div {
     width: 100% !important;
   }
-  .cb38x2 {
+  .mfbpn2 {
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -446,22 +684,22 @@
     overflow: hidden;
     cursor: pointer;
   }
-  .cb38x {
+  .mfbpn {
     display: flex;
     flex-direction: column;
   }
-  .cb38x > svg {
+  .mfbpn > svg {
     width: 100vw;
   }
-  .cb38xbotton {
+  .mfbpnbotton {
     transform: scaleY(-1);
     margin-bottom: -1px;
   }
  
-  .cb38x-svg {
+  .mfbpn-svg {
     fill: #fff;
   }
-  .cb38x-bg {
+  .mfbpn-bg {
     background-image: url("/img/mct10p/map.jpg?v={{random}}") !important;
     background-size: cover;
     background-position: center center;

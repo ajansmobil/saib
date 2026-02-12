@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=hwqpn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=hwqpn" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=abqa1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=abqa1" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=hwqpn" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=abqa1" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=hwqpn"></script>
-<link rel="stylesheet" href="style.css?v=hwqpn">
+  <script type="text/javascript" src="/src/firebase.js?v=abqa1"></script>
+<link rel="stylesheet" href="style.css?v=abqa1">
 </head>
 
 <body>
-  <div id="header"><div class="wz4kb">
+  <div id="header"><div class="jybp1">
 
-  <div class="wz4kbbody">
-    <a href="/en/"><img src="/img/logo.svg?v=hwqpn" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="jybp1body">
+    <a href="/en/"><img src="/img/logo.svg?v=abqa1" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="wz4kbright">
-      <div class="wz4kblanguages ">
+    <div class="jybp1right">
+      <div class="jybp1languages ">
         <ul>
           <li><a href="/tr/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek/">tr</a></li><li><a href="/en/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek/">en</a></li><li><a href="/ar/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek/">ar</a></li>
         </ul>
       </div>
-      <div class="wz4kbcontactlist">
+      <div class="jybp1contactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined wz4kb-icon">phone</div>
+     <div class="material-symbols-outlined jybp1-icon">phone</div>
      <div>
-      <div  class="wz4kb-title">Call us now</div>
-      <div  class="wz4kb-spot">0342 341 41 31</div>
+      <div  class="jybp1-title">Call us now</div>
+      <div  class="jybp1-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined wz4kb-icon">mail</div>
+     <div class="material-symbols-outlined jybp1-icon">mail</div>
      <div>
-      <div  class="wz4kb-title">Write to us</div>
-      <div  class="wz4kb-spot">info@saibdernegi.org</div>
+      <div  class="jybp1-title">Write to us</div>
+      <div  class="jybp1-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined wz4kb-icon">location_on</div>
+     <div class="material-symbols-outlined jybp1-icon">location_on</div>
      <div>
-      <div  class="wz4kb-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="wz4kb-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="jybp1-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="jybp1-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="wz4kb-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="jybp1-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="wz4kbmenubody">
-    <div class="wz4kbmenu" id="menu-3-root">
-      <div class="wz4kbmenulistbody">
-        <div class="wz4kbmenulist"><a class="wz4kbmenulist-menu" href="/en/">Home </a><div class="wz4kbmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="jybp1menuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="jybp1menubody" id="menu-3-drawer">
+    <div class="jybp1menu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="jybp1menulistbody">
+        <div class="jybp1menulist"><a class="jybp1menulist-menu" href="/en/">Home </a><div class="jybp1menulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="wz4kbmenulist-menu " >
+    <div class="jybp1menulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="wz4kbmenulist-menu " >
+    <div class="jybp1menulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="wz4kbmenulist-menu " >
+    <div class="jybp1menulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="wz4kbmenulist-menu " >
+    <div class="jybp1menulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde jybp1right içeriği: dil + iletişim (jybp1menulistbody altında) -->
+      <div class="jybp1menudrawer-right">
+        <div class="jybp1menudrawer-languages ">
+          <ul><li><a href="/tr/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek/">tr</a></li><li><a href="/en/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek/">en</a></li><li><a href="/ar/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek/">ar</a></li></ul>
+        </div>
+        <div class="jybp1menudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined jybp1-icon">phone</div>
+     <div>
+      <div  class="jybp1-title">Call us now</div>
+      <div  class="jybp1-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined jybp1-icon">mail</div>
+     <div>
+      <div  class="jybp1-title">Write to us</div>
+      <div  class="jybp1-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined jybp1-icon">location_on</div>
+     <div>
+      <div  class="jybp1-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="jybp1-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="jybp1menuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".jybp1-mobile-toggle");
+      if (!root || !root.classList.contains("jybp1menu-open")) {
+        return;
+      }
+      root.classList.remove("jybp1menu-open");
+      if (overlay) {
+        overlay.classList.remove("jybp1menu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("jybp1menu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".jybp1-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("wz4kbmenu-open")) {
-        root.classList.remove("wz4kbmenu-open");
+      var isOpen = root.classList.contains("jybp1menu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("wz4kbmenu-open");
+        root.classList.add("jybp1menu-open");
+        if (overlay) {
+          overlay.classList.add("jybp1menu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("jybp1menu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("jybp1menu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("jybp1menu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("jybp1menu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="egb4k-page">
-  <header class="egb4k-header">
-    <div class="egb4k-header-meta">
+  <div id="content"><div class="juc38-page">
+  <header class="juc38-header">
+    <div class="juc38-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="egb4k-header-title">UAE businessman Khalaf Al-Habtoor: The purpose of our visit is to support the Syrian economy</h1>
-    <p class="egb4k-header-spot">DAMASCUS (SANA) – Businessman Khalaf Al-Habtoor from the United Arab Emirates today began a working visit to Syria to discuss a series of economic issues with relevant officials in Syria.</p>
+    <h1 class="juc38-header-title">UAE businessman Khalaf Al-Habtoor: The purpose of our visit is to support the Syrian economy</h1>
+    <p class="juc38-header-spot">DAMASCUS (SANA) – Businessman Khalaf Al-Habtoor from the United Arab Emirates today began a working visit to Syria to discuss a series of economic issues with relevant officials in Syria.</p>
   </header>
 
-  <div class="egb4k-body">
-    <article class="egb4k-article">
-      <figure class="egb4k-article-media">
-        <img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=hwqpn" alt="Page Haber"  loading="lazy"/>
+  <div class="juc38-body">
+    <article class="juc38-article">
+      <figure class="juc38-article-media">
+        <img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=abqa1" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="egb4k-article-content"><p>Khalaf Al-Habtoor, Chairman of the Board of Dubai-based Al Habtoor Group, came to Damascus in October 2025 and discussed economic cooperation opportunities with Syrian officials. Al-Habtoor, who was welcomed at Damascus Airport by the President of the Syrian Investment Authority, said in his statement to SANA that the purpose of his visit was to create job opportunities for Syrian youth and achieve concrete results that would support investment and production. The famous businessman, emphasizing that the UAE has always been with the Syrian people, expressed that there are many project ideas they can cooperate with Syrians and that these will turn into real partnerships in the future. Al-Habtoor stated that a new page focused on the economy has now opened in Syria, saying "I expect Syria to become one of the most important economic countries in the region within a few years. Syrians have an innate superior commercial intelligence." The UAE businessman praised the productivity and creativity of the Syrian people and stated that the most important area to focus on in relations between the two countries is economic cooperation. During this visit, various initiatives regarding tourism, infrastructure and investment projects were discussed, and the Al-Habtoor group examined potential investment areas in Syria on site. The visit was evaluated as a strong message that Gulf capital's participation in Syria's reconstruction process will increase.</p></div>
+      <div class="juc38-article-content"><p>Khalaf Al-Habtoor, Chairman of the Board of Dubai-based Al Habtoor Group, came to Damascus in October 2025 and discussed economic cooperation opportunities with Syrian officials. Al-Habtoor, who was welcomed at Damascus Airport by the President of the Syrian Investment Authority, said in his statement to SANA that the purpose of his visit was to create job opportunities for Syrian youth and achieve concrete results that would support investment and production. The famous businessman, emphasizing that the UAE has always been with the Syrian people, expressed that there are many project ideas they can cooperate with Syrians and that these will turn into real partnerships in the future. Al-Habtoor stated that a new page focused on the economy has now opened in Syria, saying "I expect Syria to become one of the most important economic countries in the region within a few years. Syrians have an innate superior commercial intelligence." The UAE businessman praised the productivity and creativity of the Syrian people and stated that the most important area to focus on in relations between the two countries is economic cooperation. During this visit, various initiatives regarding tourism, infrastructure and investment projects were discussed, and the Al-Habtoor group examined potential investment areas in Syria on site. The visit was evaluated as a strong message that Gulf capital's participation in Syria's reconstruction process will increase.</p></div>
     </article>
 
-    <aside class="egb4k-sidebar">
-      <div class="egb4k-sidebar-head">
+    <aside class="juc38-sidebar">
+      <div class="juc38-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="egb4k-sidebar-list"><a class="egb4k-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="egb4k-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="egb4k-menu-content"><div class="egb4k-menu-name">62nd International Damascus Fair opens in Syria</div><p class="egb4k-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="egb4k-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="egb4k-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="egb4k-menu-content"><div class="egb4k-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="egb4k-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="egb4k-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="egb4k-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="egb4k-menu-content"><div class="egb4k-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="egb4k-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="egb4k-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="egb4k-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="egb4k-menu-content"><div class="egb4k-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="egb4k-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="egb4k-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="egb4k-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="egb4k-menu-content"><div class="egb4k-menu-name">At least half of Syrians will return</div><p class="egb4k-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="egb4k-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="egb4k-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="egb4k-menu-content"><div class="egb4k-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="egb4k-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
+      <div class="juc38-sidebar-list"><a class="juc38-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="juc38-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="juc38-menu-content"><div class="juc38-menu-name">62nd International Damascus Fair opens in Syria</div><p class="juc38-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="juc38-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="juc38-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="juc38-menu-content"><div class="juc38-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="juc38-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="juc38-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="juc38-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="juc38-menu-content"><div class="juc38-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="juc38-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="juc38-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="juc38-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="juc38-menu-content"><div class="juc38-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="juc38-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="juc38-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="juc38-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="juc38-menu-content"><div class="juc38-menu-name">At least half of Syrians will return</div><p class="juc38-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="juc38-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="juc38-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="juc38-menu-content"><div class="juc38-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="juc38-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=hwqpn"></script>
-<script defer src="/src/cookie.js?v=hwqpn"></script>
+<script defer type="text/javascript" src="/src/js.js?v=abqa1"></script>
+<script defer src="/src/cookie.js?v=abqa1"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

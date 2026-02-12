@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=o2nal" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=o2nal" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=gk5xi" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=gk5xi" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=o2nal" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=gk5xi" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=o2nal"></script>
-<link rel="stylesheet" href="style.css?v=o2nal">
+  <script type="text/javascript" src="/src/firebase.js?v=gk5xi"></script>
+<link rel="stylesheet" href="style.css?v=gk5xi">
 </head>
 
 <body>
-  <div id="header"><div class="bfgyk">
+  <div id="header"><div class="osj63">
 
-  <div class="bfgykbody">
-    <a href="/ar/"><img src="/img/logo.svg?v=o2nal" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="osj63body">
+    <a href="/ar/"><img src="/img/logo.svg?v=gk5xi" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="bfgykright">
-      <div class="bfgyklanguages ">
+    <div class="osj63right">
+      <div class="osj63languages ">
         <ul>
           <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
         </ul>
       </div>
-      <div class="bfgykcontactlist">
+      <div class="osj63contactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined bfgyk-icon">phone</div>
+     <div class="material-symbols-outlined osj63-icon">phone</div>
      <div>
-      <div  class="bfgyk-title">اتصل بنا الآن</div>
-      <div  class="bfgyk-spot">0342 341 41 31</div>
+      <div  class="osj63-title">اتصل بنا الآن</div>
+      <div  class="osj63-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined bfgyk-icon">mail</div>
+     <div class="material-symbols-outlined osj63-icon">mail</div>
      <div>
-      <div  class="bfgyk-title">اكتب لنا</div>
-      <div  class="bfgyk-spot">info@saibdernegi.org</div>
+      <div  class="osj63-title">اكتب لنا</div>
+      <div  class="osj63-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined bfgyk-icon">location_on</div>
+     <div class="material-symbols-outlined osj63-icon">location_on</div>
      <div>
-      <div  class="bfgyk-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
-      <div  class="bfgyk-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="osj63-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="osj63-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="bfgyk-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="osj63-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="bfgykmenubody">
-    <div class="bfgykmenu" id="menu-3-root">
-      <div class="bfgykmenulistbody">
-        <div class="bfgykmenulist"><a class="bfgykmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="bfgykmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="osj63menuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="osj63menubody" id="menu-3-drawer">
+    <div class="osj63menu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="osj63menulistbody">
+        <div class="osj63menulist"><a class="osj63menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="osj63menulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        جمعيتنا
       </a>
      
                     </div>
-    <div class="bfgykmenulist-menu " >
+    <div class="osj63menulist-menu " >
 
       <a href="/ar/haberler/">
        الأخبار
       </a>
      
                     </div>
-    <div class="bfgykmenulist-menu " >
+    <div class="osj63menulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        طلب العضوية
       </a>
      
                     </div>
-    <div class="bfgykmenulist-menu " >
+    <div class="osj63menulist-menu " >
 
       <a href="/ar/subelerimiz/">
        فروعنا
       </a>
      
                     </div>
-    <div class="bfgykmenulist-menu " >
+    <div class="osj63menulist-menu " >
 
       <a href="/ar/iletisim/">
        اتصل بنا
@@ -161,26 +164,169 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde osj63right içeriği: dil + iletişim (osj63menulistbody altında) -->
+      <div class="osj63menudrawer-right">
+        <div class="osj63menudrawer-languages ">
+          <ul><li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li></ul>
+        </div>
+        <div class="osj63menudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined osj63-icon">phone</div>
+     <div>
+      <div  class="osj63-title">اتصل بنا الآن</div>
+      <div  class="osj63-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined osj63-icon">mail</div>
+     <div>
+      <div  class="osj63-title">اكتب لنا</div>
+      <div  class="osj63-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined osj63-icon">location_on</div>
+     <div>
+      <div  class="osj63-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="osj63-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="osj63menuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".osj63-mobile-toggle");
+      if (!root || !root.classList.contains("osj63menu-open")) {
+        return;
+      }
+      root.classList.remove("osj63menu-open");
+      if (overlay) {
+        overlay.classList.remove("osj63menu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("osj63menu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".osj63-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("bfgykmenu-open")) {
-        root.classList.remove("bfgykmenu-open");
+      var isOpen = root.classList.contains("osj63menu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("bfgykmenu-open");
+        root.classList.add("osj63menu-open");
+        if (overlay) {
+          overlay.classList.add("osj63menu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("osj63menu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
-</script><div class="swiper-container mud4z">
-  <div class="swiper-wrapper" id="mud4z"><div class="swiper-slide"><img src="/img/mfzpnk/2.webp?v=1770878034380" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1770878034380" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1770878034380" alt="Saib Derneği"  loading="lazy"/></div></div>
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("osj63menu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("osj63menu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("osj63menu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
+</script><div class="swiper-container jvzv5">
+  <div class="swiper-wrapper" id="jvzv5"><div class="swiper-slide"><img src="/img/mfzpnk/2.webp?v=1770879589764" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/1.jpg?v=1770879589764" alt="Saib Derneği"  loading="lazy"/></div><div class="swiper-slide"><img src="/img/mfzpnk/3.jpg?v=1770879589764" alt="Saib Derneği"  loading="lazy"/></div></div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
@@ -195,7 +341,7 @@
     attempts++;
     if (typeof Swiper === "function") {
       clearInterval(timer);
-      new Swiper(".mud4z", {
+      new Swiper(".jvzv5", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -220,69 +366,69 @@
 })();
 </script>
 </div>
-  <div id="content"><div class="sliderxabuwg">
-  <div class="slider-abuwgt-itle">جمعية سايب الدولية لرجال الأعمال السوريين</div>
-  <div class="abuwg swiper-container">
+  <div id="content"><div class="sliderxfau88">
+  <div class="slider-fau88t-itle">جمعية سايب الدولية لرجال الأعمال السوريين</div>
+  <div class="fau88 swiper-container">
     <div class="swiper-wrapper">
     <a href="/ar/bize-katilin" class="swiper-slide">
-      <div class="swiper-abuwg">
-        <img class="img-abuwg" src="/page/we5uhxruok/ixfhw.jpg" alt="انضم إلينا"  loading="lazy"/>
-        <div class="title-spot-abuwg">
-          <div class="title-abuwg">انضم إلينا</div>
-          <div class="spot-abuwg">انضم إلى سايب وكن جزءًا من التعاون التجاري بين تركيا وسوريا. طلب العضوية والتفاصيل.</div>
+      <div class="swiper-fau88">
+        <img class="img-fau88" src="/page/we5uhxruok/ixfhw.jpg" alt="انضم إلينا"  loading="lazy"/>
+        <div class="title-spot-fau88">
+          <div class="title-fau88">انضم إلينا</div>
+          <div class="spot-fau88">انضم إلى سايب وكن جزءًا من التعاون التجاري بين تركيا وسوريا. طلب العضوية والتفاصيل.</div>
         </div>
-        <div class="button-abuwg">اقرأ المزيد...</div>
+        <div class="button-fau88">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/faaliyetlerimiz" class="swiper-slide">
-      <div class="swiper-abuwg">
-        <img class="img-abuwg" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="أنشطتنا"  loading="lazy"/>
-        <div class="title-spot-abuwg">
-          <div class="title-abuwg">أنشطتنا</div>
-          <div class="spot-abuwg">أنشطة سايب - التعاون الاقتصادي والتجاري والتعليمي والاستشاري والاجتماعي والثقافي والدولي.</div>
+      <div class="swiper-fau88">
+        <img class="img-fau88" src="/page/ztx6fcnzrt/r5vhs.jpg" alt="أنشطتنا"  loading="lazy"/>
+        <div class="title-spot-fau88">
+          <div class="title-fau88">أنشطتنا</div>
+          <div class="spot-fau88">أنشطة سايب - التعاون الاقتصادي والتجاري والتعليمي والاستشاري والاجتماعي والثقافي والدولي.</div>
         </div>
-        <div class="button-abuwg">اقرأ المزيد...</div>
+        <div class="button-fau88">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/ihracat-rehberi" class="swiper-slide">
-      <div class="swiper-abuwg">
-        <img class="img-abuwg" src="/page/zq84rqm7rn/tk4uh.jpg" alt="دليل التصدير"  loading="lazy"/>
-        <div class="title-spot-abuwg">
-          <div class="title-abuwg">دليل التصدير</div>
-          <div class="spot-abuwg">دليل التصدير - عمليات التصدير من تركيا إلى سوريا ودول أخرى، المستندات المطلوبة وخدمات الاستشارات.</div>
+      <div class="swiper-fau88">
+        <img class="img-fau88" src="/page/zq84rqm7rn/tk4uh.jpg" alt="دليل التصدير"  loading="lazy"/>
+        <div class="title-spot-fau88">
+          <div class="title-fau88">دليل التصدير</div>
+          <div class="spot-fau88">دليل التصدير - عمليات التصدير من تركيا إلى سوريا ودول أخرى، المستندات المطلوبة وخدمات الاستشارات.</div>
         </div>
-        <div class="button-abuwg">اقرأ المزيد...</div>
+        <div class="button-fau88">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/is-agi" class="swiper-slide">
-      <div class="swiper-abuwg">
-        <img class="img-abuwg" src="/page/wxalr76gjn/kgn90.jpg" alt="شبكة الأعمال"  loading="lazy"/>
-        <div class="title-spot-abuwg">
-          <div class="title-abuwg">شبكة الأعمال</div>
-          <div class="spot-abuwg">شبكة الأعمال - روابط الأعمال والشراكات والفرص التجارية بين أعضاء سايب. فرص التواصل B2B.</div>
+      <div class="swiper-fau88">
+        <img class="img-fau88" src="/page/wxalr76gjn/kgn90.jpg" alt="شبكة الأعمال"  loading="lazy"/>
+        <div class="title-spot-fau88">
+          <div class="title-fau88">شبكة الأعمال</div>
+          <div class="spot-fau88">شبكة الأعمال - روابط الأعمال والشراكات والفرص التجارية بين أعضاء سايب. فرص التواصل B2B.</div>
         </div>
-        <div class="button-abuwg">اقرأ المزيد...</div>
+        <div class="button-fau88">اقرأ المزيد...</div>
       </div>
     </a>
   
     <a href="/ar/uyelerimiz" class="swiper-slide">
-      <div class="swiper-abuwg">
-        <img class="img-abuwg" src="/page/h4qvry5vf3/llr1n.jpg" alt="أعضاؤنا"  loading="lazy"/>
-        <div class="title-spot-abuwg">
-          <div class="title-abuwg">أعضاؤنا</div>
-          <div class="spot-abuwg">أعضاء سايب - معلومات حول رجال الأعمال والشركات والأعضاء المؤسسين المسجلين في جمعيتنا.</div>
+      <div class="swiper-fau88">
+        <img class="img-fau88" src="/page/h4qvry5vf3/llr1n.jpg" alt="أعضاؤنا"  loading="lazy"/>
+        <div class="title-spot-fau88">
+          <div class="title-fau88">أعضاؤنا</div>
+          <div class="spot-fau88">أعضاء سايب - معلومات حول رجال الأعمال والشركات والأعضاء المؤسسين المسجلين في جمعيتنا.</div>
         </div>
-        <div class="button-abuwg">اقرأ المزيد...</div>
+        <div class="button-fau88">اقرأ المزيد...</div>
       </div>
     </a>
   </div>
-    <div class="swiper-pagination-abuwg"></div>
+    <div class="swiper-pagination-fau88"></div>
   </div>
-  <div class="swiper-button-next swiper-button-next-abuwg"></div>
-  <div class="swiper-button-prev swiper-button-prev-abuwg"></div>
+  <div class="swiper-button-next swiper-button-next-fau88"></div>
+  <div class="swiper-button-prev swiper-button-prev-fau88"></div>
 </div>
 
 <script> setTimeout(() => {
@@ -293,7 +439,7 @@
       attempts++;
       if (typeof Swiper === "function") {
         clearInterval(timer);
-        new Swiper(".abuwg", {
+        new Swiper(".fau88", {
           slidesPerView: 2,
           simulateTouch: true,
           loop: true,
@@ -308,12 +454,12 @@
             disableOnInteraction: true,
           },
           pagination: {
-            el: ".swiper-pagination-abuwg",
+            el: ".swiper-pagination-fau88",
             clickable: true,
           },
           navigation: {
-            nextEl: ".swiper-button-next-abuwg",
-            prevEl: ".swiper-button-prev-abuwg",
+            nextEl: ".swiper-button-next-fau88",
+            prevEl: ".swiper-button-prev-fau88",
           },
         });
       } else if (attempts >= maxAttempts) {
@@ -323,27 +469,27 @@
     }, 250);
   })();}, 100);
 </script>
-<div class="xehrn-out">
-  <div class="xehrn">
-    <div class="xehrn-left">
+<div class="uxs03-out">
+  <div class="uxs03">
+    <div class="uxs03-left">
       <img
-        src="/img/sykhyk/logo.jpg?v=o2nal"
-        class="xehrn-left-img"
+        src="/img/sykhyk/logo.jpg?v=gk5xi"
+        class="uxs03-left-img"
         alt="Tanıtım Modülü"
        loading="lazy"/>
     </div>
-    <div class="xehrn-right">
-      <div class="xehrn-right-body">
-        <div class="xehrn-right-body-name">تعرف على سايب</div>
-        <div class="xehrn-right-body-spot"></div>
-        <div class="xehrn-right-body-chile">
-          <div class="xehrn-right-body-chile-row">
-            <div class="xehrn-right-body-chile-row-name">رؤيتنا</div>
-            <div class="xehrn-right-body-chile-row-spot">إنشاء جسور تجارية دائمة بين تركيا وسوريا، وإنشاء شبكة قوية من التعاون الاقتصادي في الأسواق الدولية.</div>
+    <div class="uxs03-right">
+      <div class="uxs03-right-body">
+        <div class="uxs03-right-body-name">تعرف على سايب</div>
+        <div class="uxs03-right-body-spot"></div>
+        <div class="uxs03-right-body-chile">
+          <div class="uxs03-right-body-chile-row">
+            <div class="uxs03-right-body-chile-row-name">رؤيتنا</div>
+            <div class="uxs03-right-body-chile-row-spot">إنشاء جسور تجارية دائمة بين تركيا وسوريا، وإنشاء شبكة قوية من التعاون الاقتصادي في الأسواق الدولية.</div>
           </div>
-          <div class="xehrn-right-body-chile-row">
-            <div class="xehrn-right-body-chile-row-name">مهمتنا</div>
-            <div class="xehrn-right-body-chile-row-spot">زيادة إمكانات الإنتاج والاستثمار والتصدير؛ توحيد الصناعيين والعلماء ورجال الأعمال في منظمة مشتركة وتسريع التنمية الإقليمية.</div>
+          <div class="uxs03-right-body-chile-row">
+            <div class="uxs03-right-body-chile-row-name">مهمتنا</div>
+            <div class="uxs03-right-body-chile-row-spot">زيادة إمكانات الإنتاج والاستثمار والتصدير؛ توحيد الصناعيين والعلماء ورجال الأعمال في منظمة مشتركة وتسريع التنمية الإقليمية.</div>
           </div>
         </div>
       </div>
@@ -351,73 +497,73 @@
   </div>
 </div>
 
-<div class="cpzxe">
-  <div class="cpzxe-body"><a class="cpzxe-body-card" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=o2nal" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</h3><p class="cpzxe-body-description">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/up26pe6nos/1-1024x683.jpg?v=o2nal" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</h3><p class="cpzxe-body-description">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg?v=o2nal" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">انعقاد منتدى الأعمال التركي السوري في حلب</h3><p class="cpzxe-body-description">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/pb8kpytxua/418345.jpg?v=o2nal" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</h3><p class="cpzxe-body-description">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=o2nal" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">عودة نصف السوريين على الأقل</h3><p class="cpzxe-body-description">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/kxn2hajzjw/418345.jpg?v=o2nal" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</h3><p class="cpzxe-body-description">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=o2nal" alt="زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</h3><p class="cpzxe-body-description">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/urdunun-suriyeye-ihracati-ilk-10-ayda-341-artti"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/e59xnwdnz3/418345.jpg?v=o2nal" alt="زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى</h3><p class="cpzxe-body-description">بلغت الصادرات الوطنية للأردن إلى سوريا 203 مليون دينار أردني في الأشهر العشرة الأولى من عام 2025، مسجلة زيادة بنسبة 341.3% على أساس سنوي.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/kilis-halep-dogal-gaz-boru-hatti-acildi-turkiyeden-suriyeye-gaz-akisi-basladi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/gt342a4yxn/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=o2nal" alt="افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا</h3><p class="cpzxe-body-description">اكتمل إصلاح خط أنابيب الغاز الطبيعي كيليس-حلب الذي تبلغ قدرته اليومية 6 ملايين متر مكعب من الغاز. مع افتتاح خط أنابيب الغاز الطبيعي بين تركيا وسوريا، بدأ تصدير الغاز الطبيعي من أذربيجان إلى سوريا عبر كيليس اعتبارًا من 2 أغسطس 2025.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/sam-uluslararasi-havalimaninda-4-milyar-dolarlik-yatirim-basliyor"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/ba0xsfcroc/1-1024x683.jpg?v=o2nal" alt="بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي</h3><p class="cpzxe-body-description">بدأ مشروع إعادة التأهيل وزيادة السعة بقيمة 4 مليارات دولار لمطار دمشق الدولي، والذي سيتم تنفيذه من قبل اتحاد يضم كاليون للإنشاءات وجنكيز للإنشاءات.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/turkiye-suriye-jetco-protokolu-imzalandi-ekonomik-ortaklikta-yeni-donem"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/gnsnm2xlkp/gnsnm2xlkp.jpg?v=o2nal" alt="توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية</h3><p class="cpzxe-body-description">قال وزير التجارة عمر بولات إنهم قدموا عرضًا لهذا البلد بشأن إنشاء اتفاقية شراكة اقتصادية شاملة من الجيل الجديد بين تركيا وسوريا.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/20ftotac5y/1-1024x683.jpg?v=o2nal" alt="شركات سعودية تشارك في معرض &quot;إعادة إعمار سوريا 2025&quot;" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">شركات سعودية تشارك في معرض "إعادة إعمار سوريا 2025"</h3><p class="cpzxe-body-description">شهد معرض "إعمار سوريا 2025" الذي أقيم في دمشق مشاركة مكثفة من الشركات السعودية المتخصصة في البناء ومواد البناء والتصميم الداخلي. يهدف الحدث إلى تعزيز التعاون الاقتصادي بين البلدين وزيادة فرص الاستثمار وإعادة الإعمار في سوريا.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/pp9qzxbhhn/418345.jpg?v=o2nal" alt="تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد</h3><p class="cpzxe-body-description">دمشق (سانا) – أعلن البنك المركزي السوري أنه وقع مذكرة تفاهم مع شركة ماستركارد لتطوير البنية التحتية لأنظمة الدفع الرقمي في البلاد وتبادل الخبرات وزيادة الشمول المالي.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/samda-birinci-suriye-guney-kore-ekonomik-forumu-duzenlendi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/gv7ipdhmqw/1-1024x683.jpg?v=o2nal" alt="انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق</h3><p class="cpzxe-body-description">عالج المنتدى الاقتصادي السوري الكوري الأول الذي أقيم في دمشق سبل تطوير الشراكات الاقتصادية والاستثمارية بين البلدين وزيادة التعاون في مجالات التنمية وإعادة الهيكلة.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/f8n7tvdet5/418345.jpg?v=o2nal" alt="وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم</h3><p class="cpzxe-body-description">أنقرة (سانا) – أعلن وزير الداخلية التركي علي يارليكايا أن عدد السوريين الذين عادوا طواعية إلى بلدهم منذ سقوط النظام المخلوع في 8 ديسمبر 2024 قد تجاوز 500 ألف. أكد يارليكايا أن تركيا تواصل الوقوف إلى جانب السوريين في عملية عودتهم الطوعية.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=o2nal" alt="رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري</h3><p class="cpzxe-body-description">دمشق (سانا) – بدأ رجل الأعمال خلف الحبتور من الإمارات العربية المتحدة اليوم زيارة عمل إلى سوريا لمناقشة سلسلة من القضايا الاقتصادية مع المسؤولين المعنيين في سوريا.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/el-omran-ve-suudi-al-shamaliya-grubu-arasinda-cimento-sektoru-isbirligi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/8kc5vfb3wl/1-1024x683.jpg?v=o2nal" alt="تعاون قطاع الأسمنت بين &quot;العمران&quot; ومجموعة &quot;الشمالية&quot; السعودية" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">تعاون قطاع الأسمنت بين "العمران" ومجموعة "الشمالية" السعودية</h3><p class="cpzxe-body-description">شرح محمود فاضل، المدير العام لشركة الإسمنت ومواد البناء العامة السورية "العمران"، تفاصيل اتفاقية التعاون الموقعة مع مجموعة "الشمالية" السعودية للإسمنت في منتدى الاستثمار السوري السعودي الذي أقيم في دمشق في 24 يوليو.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/turkiyeden-sam-fuarina-genis-katilim-ve-suriyeye-destek-mesaji"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/7cacasidjy/7cacasidjy.jpg?v=o2nal" alt="مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا</h3><p class="cpzxe-body-description">أكد وزير التجارة التركي عمر بولات أن مشاركة بلاده في معرض دمشق الدولي الثاني والستين تظهر الأهمية الكبيرة التي توليها تركيا لاستقرار سوريا والمنطقة.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/hkjcmu0fvu/418345.jpg?v=o2nal" alt="عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا</h3><p class="cpzxe-body-description">واشنطن (سانا) – أكد عضو مجلس النواب الأمريكي مارلين ستوتزمان أن الشركات الأمريكية تهدف إلى إجراء استثمارات كبيرة ومهمة في قطاعات البنية التحتية والطاقة والخدمات المصرفية في سوريا.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a><a class="cpzxe-body-card" href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi"><article class="cpzxe-body-item"><div class="cpzxe-body-img"><img src="/page/s77uwhtu0k/1-1024x683.jpg?v=o2nal" alt="اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية" loading="lazy"></div><div class="cpzxe-body-content"><h3 class="cpzxe-body-title">اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية</h3><p class="cpzxe-body-description">دمشق (سانا) – وقعت نقابة المهندسين السوريين اتفاقية تعاون مع شركة إيجاد تك، التابعة لمجموعة GO Telecom المتمركزة في المملكة العربية السعودية، في مقر النقابة في دمشق.</p><span class="cpzxe-body-link">اقرأ المزيد</span></div></article></a></div>
+<div class="g9era">
+  <div class="g9era-body"><a class="g9era-body-card" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=gk5xi" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</h3><p class="g9era-body-description">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/up26pe6nos/1-1024x683.jpg?v=gk5xi" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</h3><p class="g9era-body-description">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg?v=gk5xi" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">انعقاد منتدى الأعمال التركي السوري في حلب</h3><p class="g9era-body-description">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/pb8kpytxua/418345.jpg?v=gk5xi" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</h3><p class="g9era-body-description">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/suriyelilerin-en-az-yarisi-geri-doner"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=gk5xi" alt="عودة نصف السوريين على الأقل" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">عودة نصف السوريين على الأقل</h3><p class="g9era-body-description">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/kxn2hajzjw/418345.jpg?v=gk5xi" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</h3><p class="g9era-body-description">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg?v=gk5xi" alt="زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</h3><p class="g9era-body-description">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/urdunun-suriyeye-ihracati-ilk-10-ayda-341-artti"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/e59xnwdnz3/418345.jpg?v=gk5xi" alt="زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">زادت صادرات الأردن إلى سوريا بنسبة 341% في الأشهر العشرة الأولى</h3><p class="g9era-body-description">بلغت الصادرات الوطنية للأردن إلى سوريا 203 مليون دينار أردني في الأشهر العشرة الأولى من عام 2025، مسجلة زيادة بنسبة 341.3% على أساس سنوي.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/kilis-halep-dogal-gaz-boru-hatti-acildi-turkiyeden-suriyeye-gaz-akisi-basladi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/gt342a4yxn/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=gk5xi" alt="افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">افتتاح خط أنابيب الغاز الطبيعي كيليس-حلب: بدء تدفق الغاز من تركيا إلى سوريا</h3><p class="g9era-body-description">اكتمل إصلاح خط أنابيب الغاز الطبيعي كيليس-حلب الذي تبلغ قدرته اليومية 6 ملايين متر مكعب من الغاز. مع افتتاح خط أنابيب الغاز الطبيعي بين تركيا وسوريا، بدأ تصدير الغاز الطبيعي من أذربيجان إلى سوريا عبر كيليس اعتبارًا من 2 أغسطس 2025.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/sam-uluslararasi-havalimaninda-4-milyar-dolarlik-yatirim-basliyor"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/ba0xsfcroc/1-1024x683.jpg?v=gk5xi" alt="بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">بدء استثمار بقيمة 4 مليارات دولار في مطار دمشق الدولي</h3><p class="g9era-body-description">بدأ مشروع إعادة التأهيل وزيادة السعة بقيمة 4 مليارات دولار لمطار دمشق الدولي، والذي سيتم تنفيذه من قبل اتحاد يضم كاليون للإنشاءات وجنكيز للإنشاءات.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/turkiye-suriye-jetco-protokolu-imzalandi-ekonomik-ortaklikta-yeni-donem"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/gnsnm2xlkp/gnsnm2xlkp.jpg?v=gk5xi" alt="توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">توقيع بروتوكول JETCO بين تركيا وسوريا: عصر جديد في الشراكة الاقتصادية</h3><p class="g9era-body-description">قال وزير التجارة عمر بولات إنهم قدموا عرضًا لهذا البلد بشأن إنشاء اتفاقية شراكة اقتصادية شاملة من الجيل الجديد بين تركيا وسوريا.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/20ftotac5y/1-1024x683.jpg?v=gk5xi" alt="شركات سعودية تشارك في معرض &quot;إعادة إعمار سوريا 2025&quot;" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">شركات سعودية تشارك في معرض "إعادة إعمار سوريا 2025"</h3><p class="g9era-body-description">شهد معرض "إعمار سوريا 2025" الذي أقيم في دمشق مشاركة مكثفة من الشركات السعودية المتخصصة في البناء ومواد البناء والتصميم الداخلي. يهدف الحدث إلى تعزيز التعاون الاقتصادي بين البلدين وزيادة فرص الاستثمار وإعادة الإعمار في سوريا.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/pp9qzxbhhn/418345.jpg?v=gk5xi" alt="تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">تعاون الدفع الرقمي بين البنك المركزي السوري وماستركارد</h3><p class="g9era-body-description">دمشق (سانا) – أعلن البنك المركزي السوري أنه وقع مذكرة تفاهم مع شركة ماستركارد لتطوير البنية التحتية لأنظمة الدفع الرقمي في البلاد وتبادل الخبرات وزيادة الشمول المالي.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/samda-birinci-suriye-guney-kore-ekonomik-forumu-duzenlendi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/gv7ipdhmqw/1-1024x683.jpg?v=gk5xi" alt="انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">انعقاد المنتدى الاقتصادي السوري الكوري الجنوبي الأول في دمشق</h3><p class="g9era-body-description">عالج المنتدى الاقتصادي السوري الكوري الأول الذي أقيم في دمشق سبل تطوير الشراكات الاقتصادية والاستثمارية بين البلدين وزيادة التعاون في مجالات التنمية وإعادة الهيكلة.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/f8n7tvdet5/418345.jpg?v=gk5xi" alt="وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">وزير الداخلية التركي: عاد أكثر من 500 ألف سوري طواعية إلى بلدهم</h3><p class="g9era-body-description">أنقرة (سانا) – أعلن وزير الداخلية التركي علي يارليكايا أن عدد السوريين الذين عادوا طواعية إلى بلدهم منذ سقوط النظام المخلوع في 8 ديسمبر 2024 قد تجاوز 500 ألف. أكد يارليكايا أن تركيا تواصل الوقوف إلى جانب السوريين في عملية عودتهم الطوعية.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/baeli-is-adami-halef-el-habtur-ziyaretimizin-amaci-suriye-ekonomisini-desteklemek"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/gf4bthov2i/1536x864_cmsv2_b84f9008-5c37-5d17-9ad1-c51ef2417fd7-9401004.jpg?v=gk5xi" alt="رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">رجل الأعمال الإماراتي خلف الحبتور: الهدف من زيارتنا هو دعم الاقتصاد السوري</h3><p class="g9era-body-description">دمشق (سانا) – بدأ رجل الأعمال خلف الحبتور من الإمارات العربية المتحدة اليوم زيارة عمل إلى سوريا لمناقشة سلسلة من القضايا الاقتصادية مع المسؤولين المعنيين في سوريا.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/el-omran-ve-suudi-al-shamaliya-grubu-arasinda-cimento-sektoru-isbirligi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/8kc5vfb3wl/1-1024x683.jpg?v=gk5xi" alt="تعاون قطاع الأسمنت بين &quot;العمران&quot; ومجموعة &quot;الشمالية&quot; السعودية" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">تعاون قطاع الأسمنت بين "العمران" ومجموعة "الشمالية" السعودية</h3><p class="g9era-body-description">شرح محمود فاضل، المدير العام لشركة الإسمنت ومواد البناء العامة السورية "العمران"، تفاصيل اتفاقية التعاون الموقعة مع مجموعة "الشمالية" السعودية للإسمنت في منتدى الاستثمار السوري السعودي الذي أقيم في دمشق في 24 يوليو.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/turkiyeden-sam-fuarina-genis-katilim-ve-suriyeye-destek-mesaji"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/7cacasidjy/7cacasidjy.jpg?v=gk5xi" alt="مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">مشاركة واسعة من تركيا في معرض دمشق ورسالة دعم لسوريا</h3><p class="g9era-body-description">أكد وزير التجارة التركي عمر بولات أن مشاركة بلاده في معرض دمشق الدولي الثاني والستين تظهر الأهمية الكبيرة التي توليها تركيا لاستقرار سوريا والمنطقة.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/abdli-kongre-uyesi-amerikan-sirketleri-suriyede-onemli-yatirimlar-yapmayi-hedefliyor"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/hkjcmu0fvu/418345.jpg?v=gk5xi" alt="عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">عضو الكونغرس الأمريكي: تهدف الشركات الأمريكية إلى إجراء استثمارات كبيرة في سوريا</h3><p class="g9era-body-description">واشنطن (سانا) – أكد عضو مجلس النواب الأمريكي مارلين ستوتزمان أن الشركات الأمريكية تهدف إلى إجراء استثمارات كبيرة ومهمة في قطاعات البنية التحتية والطاقة والخدمات المصرفية في سوريا.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a><a class="g9era-body-card" href="/ar/suriye-muhendisler-sendikasi-ile-suudi-ejad-tech-arasinda-dijital-donusum-anlasmasi"><article class="g9era-body-item"><div class="g9era-body-img"><img src="/page/s77uwhtu0k/1-1024x683.jpg?v=gk5xi" alt="اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية" loading="lazy"></div><div class="g9era-body-content"><h3 class="g9era-body-title">اتفاقية التحول الرقمي بين نقابة المهندسين السوريين وإيجاد تك السعودية</h3><p class="g9era-body-description">دمشق (سانا) – وقعت نقابة المهندسين السوريين اتفاقية تعاون مع شركة إيجاد تك، التابعة لمجموعة GO Telecom المتمركزة في المملكة العربية السعودية، في مقر النقابة في دمشق.</p><span class="g9era-body-link">اقرأ المزيد</span></div></article></a></div>
 </div>
 
 
-<div class="sliderxlt89n">
-  <div class="sliderxlt89ntitle">أعضاؤنا</div>
-  <div class="lt89n swiper-container">
+<div class="sliderxjqswi">
+  <div class="sliderxjqswititle">أعضاؤنا</div>
+  <div class="jqswi swiper-container">
     <div class="swiper-wrapper"><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div><div class="swiper-slide">
       <div class="swiper-slide33">
-        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildlt89n2" alt="Resim"  loading="lazy"/>
+        <img onclick="imgfull('/img/nm9rmo/saib.jpg')" src="/img/nm9rmo/saib.jpg" class="modulchildjqswi2" alt="Resim"  loading="lazy"/>
       </div>
     </div></div>
-    <div class="swiper-button-next swiper-button-next-lt89n"></div>
-    <div class="swiper-button-prev swiper-button-prev-lt89n"></div>
-    <div class="swiper-pagination-lt89n"></div>
+    <div class="swiper-button-next swiper-button-next-jqswi"></div>
+    <div class="swiper-button-prev swiper-button-prev-jqswi"></div>
+    <div class="swiper-pagination-jqswi"></div>
   </div>
 </div>
 
 <script> setTimeout(() => {
-  var swiper = new Swiper(".lt89n", {
+  var swiper = new Swiper(".jqswi", {
     slidesPerView: 2,
     simulateTouch: true,
     loop: true,
     pagination: {
-      el: ".swiper-pagination-lt89n",
+      el: ".swiper-pagination-jqswi",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next-lt89n",
-      prevEl: ".swiper-button-prev-lt89n",
+      nextEl: ".swiper-button-next-jqswi",
+      prevEl: ".swiper-button-prev-jqswi",
     },
     breakpoints: {
       320: {
@@ -491,8 +637,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=o2nal"></script>
-<script defer src="/src/cookie.js?v=o2nal"></script>
+<script defer type="text/javascript" src="/src/js.js?v=gk5xi"></script>
+<script defer src="/src/cookie.js?v=gk5xi"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

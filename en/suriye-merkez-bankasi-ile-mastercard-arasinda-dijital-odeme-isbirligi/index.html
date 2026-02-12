@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=dmk68" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=dmk68" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=fl396" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=fl396" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=dmk68" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=fl396" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=dmk68"></script>
-<link rel="stylesheet" href="style.css?v=dmk68">
+  <script type="text/javascript" src="/src/firebase.js?v=fl396"></script>
+<link rel="stylesheet" href="style.css?v=fl396">
 </head>
 
 <body>
-  <div id="header"><div class="bn5vk">
+  <div id="header"><div class="s12hp">
 
-  <div class="bn5vkbody">
-    <a href="/en/"><img src="/img/logo.svg?v=dmk68" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="s12hpbody">
+    <a href="/en/"><img src="/img/logo.svg?v=fl396" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="bn5vkright">
-      <div class="bn5vklanguages ">
+    <div class="s12hpright">
+      <div class="s12hplanguages ">
         <ul>
           <li><a href="/tr/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi/">tr</a></li><li><a href="/en/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi/">en</a></li><li><a href="/ar/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi/">ar</a></li>
         </ul>
       </div>
-      <div class="bn5vkcontactlist">
+      <div class="s12hpcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined bn5vk-icon">phone</div>
+     <div class="material-symbols-outlined s12hp-icon">phone</div>
      <div>
-      <div  class="bn5vk-title">Call us now</div>
-      <div  class="bn5vk-spot">0342 341 41 31</div>
+      <div  class="s12hp-title">Call us now</div>
+      <div  class="s12hp-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined bn5vk-icon">mail</div>
+     <div class="material-symbols-outlined s12hp-icon">mail</div>
      <div>
-      <div  class="bn5vk-title">Write to us</div>
-      <div  class="bn5vk-spot">info@saibdernegi.org</div>
+      <div  class="s12hp-title">Write to us</div>
+      <div  class="s12hp-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined bn5vk-icon">location_on</div>
+     <div class="material-symbols-outlined s12hp-icon">location_on</div>
      <div>
-      <div  class="bn5vk-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="bn5vk-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="s12hp-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="s12hp-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="bn5vk-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="s12hp-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="bn5vkmenubody">
-    <div class="bn5vkmenu" id="menu-3-root">
-      <div class="bn5vkmenulistbody">
-        <div class="bn5vkmenulist"><a class="bn5vkmenulist-menu" href="/en/">Home </a><div class="bn5vkmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="s12hpmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="s12hpmenubody" id="menu-3-drawer">
+    <div class="s12hpmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="s12hpmenulistbody">
+        <div class="s12hpmenulist"><a class="s12hpmenulist-menu" href="/en/">Home </a><div class="s12hpmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="bn5vkmenulist-menu " >
+    <div class="s12hpmenulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="bn5vkmenulist-menu " >
+    <div class="s12hpmenulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="bn5vkmenulist-menu " >
+    <div class="s12hpmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="bn5vkmenulist-menu " >
+    <div class="s12hpmenulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde s12hpright içeriği: dil + iletişim (s12hpmenulistbody altında) -->
+      <div class="s12hpmenudrawer-right">
+        <div class="s12hpmenudrawer-languages ">
+          <ul><li><a href="/tr/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi/">tr</a></li><li><a href="/en/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi/">en</a></li><li><a href="/ar/suriye-merkez-bankasi-ile-mastercard-arasinda-dijital-odeme-isbirligi/">ar</a></li></ul>
+        </div>
+        <div class="s12hpmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined s12hp-icon">phone</div>
+     <div>
+      <div  class="s12hp-title">Call us now</div>
+      <div  class="s12hp-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined s12hp-icon">mail</div>
+     <div>
+      <div  class="s12hp-title">Write to us</div>
+      <div  class="s12hp-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined s12hp-icon">location_on</div>
+     <div>
+      <div  class="s12hp-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="s12hp-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="s12hpmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".s12hp-mobile-toggle");
+      if (!root || !root.classList.contains("s12hpmenu-open")) {
+        return;
+      }
+      root.classList.remove("s12hpmenu-open");
+      if (overlay) {
+        overlay.classList.remove("s12hpmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("s12hpmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".s12hp-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("bn5vkmenu-open")) {
-        root.classList.remove("bn5vkmenu-open");
+      var isOpen = root.classList.contains("s12hpmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("bn5vkmenu-open");
+        root.classList.add("s12hpmenu-open");
+        if (overlay) {
+          overlay.classList.add("s12hpmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("s12hpmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("s12hpmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("s12hpmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("s12hpmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="k4h1r-page">
-  <header class="k4h1r-header">
-    <div class="k4h1r-header-meta">
+  <div id="content"><div class="vl6eo-page">
+  <header class="vl6eo-header">
+    <div class="vl6eo-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="k4h1r-header-title">Digital payment cooperation between Central Bank of Syria and Mastercard</h1>
-    <p class="k4h1r-header-spot">DAMASCUS (SANA) – The Central Bank of Syria announced that it signed a memorandum of understanding with Mastercard company to develop the infrastructure of digital payment systems in the country, share experience and increase financial inclusion.</p>
+    <h1 class="vl6eo-header-title">Digital payment cooperation between Central Bank of Syria and Mastercard</h1>
+    <p class="vl6eo-header-spot">DAMASCUS (SANA) – The Central Bank of Syria announced that it signed a memorandum of understanding with Mastercard company to develop the infrastructure of digital payment systems in the country, share experience and increase financial inclusion.</p>
   </header>
 
-  <div class="k4h1r-body">
-    <article class="k4h1r-article">
-      <figure class="k4h1r-article-media">
-        <img src="/page/pp9qzxbhhn/418345.jpg?v=dmk68" alt="Page Haber"  loading="lazy"/>
+  <div class="vl6eo-body">
+    <article class="vl6eo-article">
+      <figure class="vl6eo-article-media">
+        <img src="/page/pp9qzxbhhn/418345.jpg?v=fl396" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="k4h1r-article-content"><p>According to the statement made by the Central Bank in September 2025, this strategic partnership aims to expand millions of people's access to basic financial services. The agreement reflects a common vision to strengthen financial inclusion and equal opportunity through technology. Adam Jones, President of Mastercard responsible for Western Arab Regions, stated that the agreement demonstrates both parties' belief in building a system based on financial inclusion and said "We want to offer the opportunities of the global payment world to the Syrian people, to integrate the latest financial innovations into the local service infrastructure." Thanks to this cooperation, the development of Syria's digital payment ecosystem, citizens and businesses gaining access to faster and more secure transactions, and the acceleration of the process of reintegration into international payment networks are expected.</p></div>
+      <div class="vl6eo-article-content"><p>According to the statement made by the Central Bank in September 2025, this strategic partnership aims to expand millions of people's access to basic financial services. The agreement reflects a common vision to strengthen financial inclusion and equal opportunity through technology. Adam Jones, President of Mastercard responsible for Western Arab Regions, stated that the agreement demonstrates both parties' belief in building a system based on financial inclusion and said "We want to offer the opportunities of the global payment world to the Syrian people, to integrate the latest financial innovations into the local service infrastructure." Thanks to this cooperation, the development of Syria's digital payment ecosystem, citizens and businesses gaining access to faster and more secure transactions, and the acceleration of the process of reintegration into international payment networks are expected.</p></div>
     </article>
 
-    <aside class="k4h1r-sidebar">
-      <div class="k4h1r-sidebar-head">
+    <aside class="vl6eo-sidebar">
+      <div class="vl6eo-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="k4h1r-sidebar-list"><a class="k4h1r-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="k4h1r-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="k4h1r-menu-content"><div class="k4h1r-menu-name">62nd International Damascus Fair opens in Syria</div><p class="k4h1r-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="k4h1r-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="k4h1r-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="k4h1r-menu-content"><div class="k4h1r-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="k4h1r-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="k4h1r-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="k4h1r-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="k4h1r-menu-content"><div class="k4h1r-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="k4h1r-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="k4h1r-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="k4h1r-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="k4h1r-menu-content"><div class="k4h1r-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="k4h1r-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="k4h1r-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="k4h1r-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="k4h1r-menu-content"><div class="k4h1r-menu-name">At least half of Syrians will return</div><p class="k4h1r-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="k4h1r-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="k4h1r-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="k4h1r-menu-content"><div class="k4h1r-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="k4h1r-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
+      <div class="vl6eo-sidebar-list"><a class="vl6eo-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="vl6eo-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="vl6eo-menu-content"><div class="vl6eo-menu-name">62nd International Damascus Fair opens in Syria</div><p class="vl6eo-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="vl6eo-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="vl6eo-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="vl6eo-menu-content"><div class="vl6eo-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="vl6eo-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="vl6eo-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="vl6eo-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="vl6eo-menu-content"><div class="vl6eo-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="vl6eo-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="vl6eo-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="vl6eo-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="vl6eo-menu-content"><div class="vl6eo-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="vl6eo-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="vl6eo-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="vl6eo-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="vl6eo-menu-content"><div class="vl6eo-menu-name">At least half of Syrians will return</div><p class="vl6eo-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="vl6eo-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="vl6eo-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="vl6eo-menu-content"><div class="vl6eo-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="vl6eo-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=dmk68"></script>
-<script defer src="/src/cookie.js?v=dmk68"></script>
+<script defer type="text/javascript" src="/src/js.js?v=fl396"></script>
+<script defer src="/src/cookie.js?v=fl396"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

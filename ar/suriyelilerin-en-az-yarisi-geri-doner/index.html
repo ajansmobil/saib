@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=s96df" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=s96df" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=o6wj6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=o6wj6" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=s96df" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=o6wj6" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=s96df"></script>
-<link rel="stylesheet" href="style.css?v=s96df">
+  <script type="text/javascript" src="/src/firebase.js?v=o6wj6"></script>
+<link rel="stylesheet" href="style.css?v=o6wj6">
 </head>
 
 <body>
-  <div id="header"><div class="ajdci">
+  <div id="header"><div class="dqc95">
 
-  <div class="ajdcibody">
-    <a href="/ar/"><img src="/img/logo.svg?v=s96df" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="dqc95body">
+    <a href="/ar/"><img src="/img/logo.svg?v=o6wj6" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="ajdciright">
-      <div class="ajdcilanguages ">
+    <div class="dqc95right">
+      <div class="dqc95languages ">
         <ul>
           <li><a href="/tr/suriyelilerin-en-az-yarisi-geri-doner/">tr</a></li><li><a href="/en/suriyelilerin-en-az-yarisi-geri-doner/">en</a></li><li><a href="/ar/suriyelilerin-en-az-yarisi-geri-doner/">ar</a></li>
         </ul>
       </div>
-      <div class="ajdcicontactlist">
+      <div class="dqc95contactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined ajdci-icon">phone</div>
+     <div class="material-symbols-outlined dqc95-icon">phone</div>
      <div>
-      <div  class="ajdci-title">اتصل بنا الآن</div>
-      <div  class="ajdci-spot">0342 341 41 31</div>
+      <div  class="dqc95-title">اتصل بنا الآن</div>
+      <div  class="dqc95-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined ajdci-icon">mail</div>
+     <div class="material-symbols-outlined dqc95-icon">mail</div>
      <div>
-      <div  class="ajdci-title">اكتب لنا</div>
-      <div  class="ajdci-spot">info@saibdernegi.org</div>
+      <div  class="dqc95-title">اكتب لنا</div>
+      <div  class="dqc95-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined ajdci-icon">location_on</div>
+     <div class="material-symbols-outlined dqc95-icon">location_on</div>
      <div>
-      <div  class="ajdci-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
-      <div  class="ajdci-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="dqc95-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="dqc95-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="ajdci-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="dqc95-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="ajdcimenubody">
-    <div class="ajdcimenu" id="menu-3-root">
-      <div class="ajdcimenulistbody">
-        <div class="ajdcimenulist"><a class="ajdcimenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="ajdcimenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="dqc95menuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="dqc95menubody" id="menu-3-drawer">
+    <div class="dqc95menu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="dqc95menulistbody">
+        <div class="dqc95menulist"><a class="dqc95menulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="dqc95menulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        جمعيتنا
       </a>
      
                     </div>
-    <div class="ajdcimenulist-menu " >
+    <div class="dqc95menulist-menu " >
 
       <a href="/ar/haberler/">
        الأخبار
       </a>
      
                     </div>
-    <div class="ajdcimenulist-menu " >
+    <div class="dqc95menulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        طلب العضوية
       </a>
      
                     </div>
-    <div class="ajdcimenulist-menu " >
+    <div class="dqc95menulist-menu " >
 
       <a href="/ar/subelerimiz/">
        فروعنا
       </a>
      
                     </div>
-    <div class="ajdcimenulist-menu " >
+    <div class="dqc95menulist-menu " >
 
       <a href="/ar/iletisim/">
        اتصل بنا
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde dqc95right içeriği: dil + iletişim (dqc95menulistbody altında) -->
+      <div class="dqc95menudrawer-right">
+        <div class="dqc95menudrawer-languages ">
+          <ul><li><a href="/tr/suriyelilerin-en-az-yarisi-geri-doner/">tr</a></li><li><a href="/en/suriyelilerin-en-az-yarisi-geri-doner/">en</a></li><li><a href="/ar/suriyelilerin-en-az-yarisi-geri-doner/">ar</a></li></ul>
+        </div>
+        <div class="dqc95menudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined dqc95-icon">phone</div>
+     <div>
+      <div  class="dqc95-title">اتصل بنا الآن</div>
+      <div  class="dqc95-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined dqc95-icon">mail</div>
+     <div>
+      <div  class="dqc95-title">اكتب لنا</div>
+      <div  class="dqc95-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined dqc95-icon">location_on</div>
+     <div>
+      <div  class="dqc95-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="dqc95-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="dqc95menuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".dqc95-mobile-toggle");
+      if (!root || !root.classList.contains("dqc95menu-open")) {
+        return;
+      }
+      root.classList.remove("dqc95menu-open");
+      if (overlay) {
+        overlay.classList.remove("dqc95menu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("dqc95menu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".dqc95-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("ajdcimenu-open")) {
-        root.classList.remove("ajdcimenu-open");
+      var isOpen = root.classList.contains("dqc95menu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("ajdcimenu-open");
+        root.classList.add("dqc95menu-open");
+        if (overlay) {
+          overlay.classList.add("dqc95menu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("dqc95menu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("dqc95menu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("dqc95menu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("dqc95menu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="q55ge-page">
-  <header class="q55ge-header">
-    <div class="q55ge-header-meta">
+  <div id="content"><div class="qyqzb-page">
+  <header class="qyqzb-header">
+    <div class="qyqzb-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="q55ge-header-title">عودة نصف السوريين على الأقل</h1>
-    <p class="q55ge-header-spot">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p>
+    <h1 class="qyqzb-header-title">عودة نصف السوريين على الأقل</h1>
+    <p class="qyqzb-header-spot">بعد سقوط نظام البعث، بدأ السوريون في العودة إلى بلدهم. قال رئيس جمعية رجال الأعمال السوريين خالد سافاوغلو: "نعتقد أن نصف السوريين على الأقل الذين يعيشون في تركيا سيعودون. أولئك الذين يرون أن بلدهم قد تحسنت سيعودون. ومع ذلك، لا يمكننا قطع روابطنا تمامًا. لدينا دين امتنان لهذا البلد. أكلنا الخبز هنا. نحن ممتنون لتركيا."</p>
   </header>
 
-  <div class="q55ge-body">
-    <article class="q55ge-article">
-      <figure class="q55ge-article-media">
-        <img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=s96df" alt="Page Haber"  loading="lazy"/>
+  <div class="qyqzb-body">
+    <article class="qyqzb-article">
+      <figure class="qyqzb-article-media">
+        <img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg?v=o6wj6" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="q55ge-article-content"><p>أكد سافاوغلو، الذي يعيش في تركيا منذ حوالي 10 سنوات وهو أيضًا مواطن تركي، أنه مع انهيار نظام الأسد، يقوم السوريون بإعدادات للعودة بحماس كبير. أعرب رئيس SURİAD أنه في المرحلة الأولى، سيعود نصف السوريين على الأقل إلى بلدهم، وسيقرر الباقون وفقًا للظروف. مؤكدًا أن رجال الأعمال السوريين في تركيا قد أنشأوا تراكمًا مهمًا لرأس المال وريادة الأعمال، قال سافاوغلو إن 15 ألف شركة سورية أنشئت في تركيا خلال فترة الحرب ساهمت في اقتصاد البلاد. أكد أنه مع توفير الأمن والاستقرار في سوريا، يمكن لجزء كبير من هذه الشركات نقل أنشطتها إلى بلدها، وأن فكرة إنشاء منطقة تجارة حرة معفاة من الضرائب في سوريا بنموذج 'دبي' ستجذب المستثمرين.</p></div>
+      <div class="qyqzb-article-content"><p>أكد سافاوغلو، الذي يعيش في تركيا منذ حوالي 10 سنوات وهو أيضًا مواطن تركي، أنه مع انهيار نظام الأسد، يقوم السوريون بإعدادات للعودة بحماس كبير. أعرب رئيس SURİAD أنه في المرحلة الأولى، سيعود نصف السوريين على الأقل إلى بلدهم، وسيقرر الباقون وفقًا للظروف. مؤكدًا أن رجال الأعمال السوريين في تركيا قد أنشأوا تراكمًا مهمًا لرأس المال وريادة الأعمال، قال سافاوغلو إن 15 ألف شركة سورية أنشئت في تركيا خلال فترة الحرب ساهمت في اقتصاد البلاد. أكد أنه مع توفير الأمن والاستقرار في سوريا، يمكن لجزء كبير من هذه الشركات نقل أنشطتها إلى بلدها، وأن فكرة إنشاء منطقة تجارة حرة معفاة من الضرائب في سوريا بنموذج 'دبي' ستجذب المستثمرين.</p></div>
     </article>
 
-    <aside class="q55ge-sidebar">
-      <div class="q55ge-sidebar-head">
+    <aside class="qyqzb-sidebar">
+      <div class="qyqzb-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="q55ge-sidebar-list"><a class="q55ge-menu-item" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="q55ge-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="q55ge-menu-content"><div class="q55ge-menu-name">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</div><p class="q55ge-menu-spot">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p></div></a><a class="q55ge-menu-item" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="q55ge-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="q55ge-menu-content"><div class="q55ge-menu-name">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</div><p class="q55ge-menu-spot">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p></div></a><a class="q55ge-menu-item" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="q55ge-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="q55ge-menu-content"><div class="q55ge-menu-name">انعقاد منتدى الأعمال التركي السوري في حلب</div><p class="q55ge-menu-spot">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p></div></a><a class="q55ge-menu-item" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="q55ge-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="q55ge-menu-content"><div class="q55ge-menu-name">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</div><p class="q55ge-menu-spot">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p></div></a><a class="q55ge-menu-item" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="q55ge-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="q55ge-menu-content"><div class="q55ge-menu-name">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</div><p class="q55ge-menu-spot">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p></div></a><a class="q55ge-menu-item" href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><div class="q55ge-menu-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg" alt="زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار" loading="lazy"></div><div class="q55ge-menu-content"><div class="q55ge-menu-name">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</div><p class="q55ge-menu-spot">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p></div></a></div>
+      <div class="qyqzb-sidebar-list"><a class="qyqzb-menu-item" href="/ar/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="qyqzb-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="افتتاح معرض دمشق الدولي الثاني والستين في سوريا" loading="lazy"></div><div class="qyqzb-menu-content"><div class="qyqzb-menu-name">افتتاح معرض دمشق الدولي الثاني والستين في سوريا</div><p class="qyqzb-menu-spot">تم افتتاح معرض دمشق الدولي الثاني والستين الذي أقيم في العاصمة السورية دمشق بعد سقوط نظام بشار الأسد بحضور الرئيس أحمد شara.</p></div></a><a class="qyqzb-menu-item" href="/ar/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="qyqzb-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية" loading="lazy"></div><div class="qyqzb-menu-content"><div class="qyqzb-menu-name">معرض دمشق سيفتح أبواب تعاون جديدة في التجارة التركية السورية</div><p class="qyqzb-menu-spot">أكد وزير التجارة عمر بولات أن معرض دمشق الدولي الثاني والستين الذي سيفتح أبوابه غدًا في سوريا له أهمية كبيرة من حيث مراجعة التعاون المتبادل بين البلدين، خاصة اتخاذ خطوات دولية في مجال الجمارك.</p></div></a><a class="qyqzb-menu-item" href="/ar/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="qyqzb-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="انعقاد منتدى الأعمال التركي السوري في حلب" loading="lazy"></div><div class="qyqzb-menu-content"><div class="qyqzb-menu-name">انعقاد منتدى الأعمال التركي السوري في حلب</div><p class="qyqzb-menu-spot">عُقد منتدى الأعمال التركي السوري المتعلق بقطاع البناء ومواد البناء في حلب شمال سوريا.</p></div></a><a class="qyqzb-menu-item" href="/ar/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="qyqzb-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا" loading="lazy"></div><div class="qyqzb-menu-content"><div class="qyqzb-menu-name">عالم الأعمال يركز على الآثار الاقتصادية للتطورات في سوريا</div><p class="qyqzb-menu-spot">يتوقع ممثلو عالم الأعمال أن العصر الجديد في سوريا سيخلق فرصًا جديدة لتركيا.</p></div></a><a class="qyqzb-menu-item" href="/ar/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="qyqzb-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف" loading="lazy"></div><div class="qyqzb-menu-content"><div class="qyqzb-menu-name">الاقتصاد السوري ينمو أسرع من المتوقع، العقوبات تتخفف</div><p class="qyqzb-menu-spot">أعلن محافظ البنك المركزي السوري عبد القادر حصريا أنه مع عودة اللاجئين وانتهاء الحرب الأهلية التي استمرت 14 عامًا، نما الاقتصاد في عام 2025 بشكل أسرع بكثير من معدل النمو المتوقع بنسبة 1% من قبل البنك الدولي.</p></div></a><a class="qyqzb-menu-item" href="/ar/turkiyenin-suriyeye-ihracati-54-artti-3-milyar-dolari-asti"><div class="qyqzb-menu-img"><img src="/page/8jh1hzg8fj/1-1024x683.jpg" alt="زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار" loading="lazy"></div><div class="qyqzb-menu-content"><div class="qyqzb-menu-name">زادت صادرات تركيا إلى سوريا بنسبة 54%، متجاوزة 3 مليارات دولار</div><p class="qyqzb-menu-spot">زادت صادرات تركيا إلى سوريا بنسبة 54.1% في عام 2025 مقارنة بالعام السابق، متجاوزة 3 مليارات دولار. تم تحقيق هذه الزيادة من خلال تطبيع العلاقات بين البلدين وتعزيز الاستقرار السياسي في سوريا.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=s96df"></script>
-<script defer src="/src/cookie.js?v=s96df"></script>
+<script defer type="text/javascript" src="/src/js.js?v=o6wj6"></script>
+<script defer src="/src/cookie.js?v=o6wj6"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

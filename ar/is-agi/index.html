@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=fjyiu" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=fjyiu" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=sb31s" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=sb31s" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=fjyiu" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=sb31s" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=fjyiu"></script>
-<link rel="stylesheet" href="style.css?v=fjyiu">
+  <script type="text/javascript" src="/src/firebase.js?v=sb31s"></script>
+<link rel="stylesheet" href="style.css?v=sb31s">
 </head>
 
 <body>
-  <div id="header"><div class="jqbsy">
+  <div id="header"><div class="cnisj">
 
-  <div class="jqbsybody">
-    <a href="/ar/"><img src="/img/logo.svg?v=fjyiu" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="cnisjbody">
+    <a href="/ar/"><img src="/img/logo.svg?v=sb31s" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="jqbsyright">
-      <div class="jqbsylanguages ">
+    <div class="cnisjright">
+      <div class="cnisjlanguages ">
         <ul>
           <li><a href="/tr/is-agi/">tr</a></li><li><a href="/en/is-agi/">en</a></li><li><a href="/ar/is-agi/">ar</a></li>
         </ul>
       </div>
-      <div class="jqbsycontactlist">
+      <div class="cnisjcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined jqbsy-icon">phone</div>
+     <div class="material-symbols-outlined cnisj-icon">phone</div>
      <div>
-      <div  class="jqbsy-title">اتصل بنا الآن</div>
-      <div  class="jqbsy-spot">0342 341 41 31</div>
+      <div  class="cnisj-title">اتصل بنا الآن</div>
+      <div  class="cnisj-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined jqbsy-icon">mail</div>
+     <div class="material-symbols-outlined cnisj-icon">mail</div>
      <div>
-      <div  class="jqbsy-title">اكتب لنا</div>
-      <div  class="jqbsy-spot">info@saibdernegi.org</div>
+      <div  class="cnisj-title">اكتب لنا</div>
+      <div  class="cnisj-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined jqbsy-icon">location_on</div>
+     <div class="material-symbols-outlined cnisj-icon">location_on</div>
      <div>
-      <div  class="jqbsy-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
-      <div  class="jqbsy-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="cnisj-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="cnisj-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="jqbsy-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="cnisj-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="jqbsymenubody">
-    <div class="jqbsymenu" id="menu-3-root">
-      <div class="jqbsymenulistbody">
-        <div class="jqbsymenulist"><a class="jqbsymenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="jqbsymenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="cnisjmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="cnisjmenubody" id="menu-3-drawer">
+    <div class="cnisjmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="cnisjmenulistbody">
+        <div class="cnisjmenulist"><a class="cnisjmenulist-menu" href="/ar/">الصفحة الرئيسية </a><div class="cnisjmenulist-menu " >
 
       <a href="/ar/saib-kimdir/">
        جمعيتنا
       </a>
      
                     </div>
-    <div class="jqbsymenulist-menu " >
+    <div class="cnisjmenulist-menu " >
 
       <a href="/ar/haberler/">
        الأخبار
       </a>
      
                     </div>
-    <div class="jqbsymenulist-menu " >
+    <div class="cnisjmenulist-menu " >
 
       <a href="/ar/uyelik-basvurusu/">
        طلب العضوية
       </a>
      
                     </div>
-    <div class="jqbsymenulist-menu " >
+    <div class="cnisjmenulist-menu " >
 
       <a href="/ar/subelerimiz/">
        فروعنا
       </a>
      
                     </div>
-    <div class="jqbsymenulist-menu " >
+    <div class="cnisjmenulist-menu " >
 
       <a href="/ar/iletisim/">
        اتصل بنا
@@ -161,46 +164,189 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde cnisjright içeriği: dil + iletişim (cnisjmenulistbody altında) -->
+      <div class="cnisjmenudrawer-right">
+        <div class="cnisjmenudrawer-languages ">
+          <ul><li><a href="/tr/is-agi/">tr</a></li><li><a href="/en/is-agi/">en</a></li><li><a href="/ar/is-agi/">ar</a></li></ul>
+        </div>
+        <div class="cnisjmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined cnisj-icon">phone</div>
+     <div>
+      <div  class="cnisj-title">اتصل بنا الآن</div>
+      <div  class="cnisj-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined cnisj-icon">mail</div>
+     <div>
+      <div  class="cnisj-title">اكتب لنا</div>
+      <div  class="cnisj-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined cnisj-icon">location_on</div>
+     <div>
+      <div  class="cnisj-title">باتيكنت محلة 9132 رقم شارع رقم: 5/د</div>
+      <div  class="cnisj-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="cnisjmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".cnisj-mobile-toggle");
+      if (!root || !root.classList.contains("cnisjmenu-open")) {
+        return;
+      }
+      root.classList.remove("cnisjmenu-open");
+      if (overlay) {
+        overlay.classList.remove("cnisjmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("cnisjmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".cnisj-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("jqbsymenu-open")) {
-        root.classList.remove("jqbsymenu-open");
+      var isOpen = root.classList.contains("cnisjmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("jqbsymenu-open");
+        root.classList.add("cnisjmenu-open");
+        if (overlay) {
+          overlay.classList.add("cnisjmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("cnisjmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("cnisjmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("cnisjmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("cnisjmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="mq7is-title f36">
+  <div id="content"><div class="viq19-title f36">
   <h1>شبكة الأعمال</h1>
 </div>
-<div class="mq7is">
-  <div class="mq7is-menu-btn">
+<div class="viq19">
+  <div class="viq19-menu-btn">
     <span>قائمة الصفحات</span>
-    <span class="material-symbols-outlined mq7is-icon">menu</span>
+    <span class="material-symbols-outlined viq19-icon">menu</span>
   </div>
-  <div class="mq7is-menu-overlay" id="mq7is-menu-overlay" aria-hidden="true"></div>
-  <div class="mq7is-menu" id="mq7is-menu">
-    <button class="mq7is-menu-close" type="button" aria-label="إغلاق القائمة" aria-controls="mq7is-menu">
+  <div class="viq19-menu-overlay" id="viq19-menu-overlay" aria-hidden="true"></div>
+  <div class="viq19-menu" id="viq19-menu">
+    <button class="viq19-menu-close" type="button" aria-label="إغلاق القائمة" aria-controls="viq19-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="mq7is-menu-link" href="/ar/bize-katilin/">انضم إلينا</a><a class="mq7is-menu-link" href="/ar/faaliyetlerimiz/">أنشطتنا</a><a class="mq7is-menu-link" href="/ar/ihracat-rehberi/">دليل التصدير</a><a class="mq7is-menu-link active" href="/ar/is-agi/">شبكة الأعمال</a><a class="mq7is-menu-link" href="/ar/uyelerimiz/">أعضاؤنا</a>
+    <a class="viq19-menu-link" href="/ar/bize-katilin/">انضم إلينا</a><a class="viq19-menu-link" href="/ar/faaliyetlerimiz/">أنشطتنا</a><a class="viq19-menu-link" href="/ar/ihracat-rehberi/">دليل التصدير</a><a class="viq19-menu-link active" href="/ar/is-agi/">شبكة الأعمال</a><a class="viq19-menu-link" href="/ar/uyelerimiz/">أعضاؤنا</a>
   </div>
-  <div class="mq7is-desc">
+  <div class="viq19-desc">
     
-    <div class="mq7is-desc-body">
-            <img src="/page/wxalr76gjn/kgn90.jpg?v=fjyiu" width="100%" alt="شبكة الأعمال" loading="lazy" />
+    <div class="viq19-desc-body">
+            <img src="/page/wxalr76gjn/kgn90.jpg?v=sb31s" width="100%" alt="شبكة الأعمال" loading="lazy" />
     </div>
-    <div class="mq7is-body"><p>شبكة أعمال سايب</p>
+    <div class="viq19-body"><p>شبكة أعمال سايب</p>
 <p></p>
 <p>روابط قوية، فرص عظيمة</p>
 <p></p>
@@ -246,10 +392,10 @@
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".mq7is-menu-btn");
-    var menu = document.querySelector(".mq7is-menu");
-    var overlay = document.querySelector(".mq7is-menu-overlay");
-    var closeButton = document.querySelector(".mq7is-menu-close");
+    var menuToggleBtn = document.querySelector(".viq19-menu-btn");
+    var menu = document.querySelector(".viq19-menu");
+    var overlay = document.querySelector(".viq19-menu-overlay");
+    var closeButton = document.querySelector(".viq19-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -319,7 +465,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".mq7is-menu-close");
+      var closeBtn = event.target.closest(".viq19-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -367,15 +513,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".mq7is-top").forEach(function (button) {
+    document.querySelectorAll(".viq19-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".mq7is-menu-group");
+        var group = this.closest(".viq19-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".mq7is-sub");
+        var sub = group.querySelector(".viq19-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".mq7is-icon");
+        var icon = this.querySelector(".viq19-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -443,8 +589,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=fjyiu"></script>
-<script defer src="/src/cookie.js?v=fjyiu"></script>
+<script defer type="text/javascript" src="/src/js.js?v=sb31s"></script>
+<script defer src="/src/cookie.js?v=sb31s"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=l8qz8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=l8qz8" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=k76yb" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=k76yb" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=l8qz8" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=k76yb" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=l8qz8"></script>
-<link rel="stylesheet" href="style.css?v=l8qz8">
+  <script type="text/javascript" src="/src/firebase.js?v=k76yb"></script>
+<link rel="stylesheet" href="style.css?v=k76yb">
 </head>
 
 <body>
-  <div id="header"><div class="wdz8q">
+  <div id="header"><div class="xfl45">
 
-  <div class="wdz8qbody">
-    <a href="/en/"><img src="/img/logo.svg?v=l8qz8" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="xfl45body">
+    <a href="/en/"><img src="/img/logo.svg?v=k76yb" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="wdz8qright">
-      <div class="wdz8qlanguages ">
+    <div class="xfl45right">
+      <div class="xfl45languages ">
         <ul>
           <li><a href="/tr/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu/">tr</a></li><li><a href="/en/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu/">en</a></li><li><a href="/ar/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu/">ar</a></li>
         </ul>
       </div>
-      <div class="wdz8qcontactlist">
+      <div class="xfl45contactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined wdz8q-icon">phone</div>
+     <div class="material-symbols-outlined xfl45-icon">phone</div>
      <div>
-      <div  class="wdz8q-title">Call us now</div>
-      <div  class="wdz8q-spot">0342 341 41 31</div>
+      <div  class="xfl45-title">Call us now</div>
+      <div  class="xfl45-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined wdz8q-icon">mail</div>
+     <div class="material-symbols-outlined xfl45-icon">mail</div>
      <div>
-      <div  class="wdz8q-title">Write to us</div>
-      <div  class="wdz8q-spot">info@saibdernegi.org</div>
+      <div  class="xfl45-title">Write to us</div>
+      <div  class="xfl45-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined wdz8q-icon">location_on</div>
+     <div class="material-symbols-outlined xfl45-icon">location_on</div>
      <div>
-      <div  class="wdz8q-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="wdz8q-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="xfl45-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="xfl45-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="wdz8q-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="xfl45-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="wdz8qmenubody">
-    <div class="wdz8qmenu" id="menu-3-root">
-      <div class="wdz8qmenulistbody">
-        <div class="wdz8qmenulist"><a class="wdz8qmenulist-menu" href="/en/">Home </a><div class="wdz8qmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="xfl45menuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="xfl45menubody" id="menu-3-drawer">
+    <div class="xfl45menu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="xfl45menulistbody">
+        <div class="xfl45menulist"><a class="xfl45menulist-menu" href="/en/">Home </a><div class="xfl45menulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="wdz8qmenulist-menu " >
+    <div class="xfl45menulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="wdz8qmenulist-menu " >
+    <div class="xfl45menulist-menu " >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="wdz8qmenulist-menu " >
+    <div class="xfl45menulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="wdz8qmenulist-menu " >
+    <div class="xfl45menulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde xfl45right içeriği: dil + iletişim (xfl45menulistbody altında) -->
+      <div class="xfl45menudrawer-right">
+        <div class="xfl45menudrawer-languages ">
+          <ul><li><a href="/tr/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu/">tr</a></li><li><a href="/en/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu/">en</a></li><li><a href="/ar/turkiye-icisleri-bakani-500-binden-fazla-suriyeli-gonullu-olarak-ulkesine-dondu/">ar</a></li></ul>
+        </div>
+        <div class="xfl45menudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined xfl45-icon">phone</div>
+     <div>
+      <div  class="xfl45-title">Call us now</div>
+      <div  class="xfl45-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined xfl45-icon">mail</div>
+     <div>
+      <div  class="xfl45-title">Write to us</div>
+      <div  class="xfl45-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined xfl45-icon">location_on</div>
+     <div>
+      <div  class="xfl45-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="xfl45-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="xfl45menuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".xfl45-mobile-toggle");
+      if (!root || !root.classList.contains("xfl45menu-open")) {
+        return;
+      }
+      root.classList.remove("xfl45menu-open");
+      if (overlay) {
+        overlay.classList.remove("xfl45menu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("xfl45menu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".xfl45-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("wdz8qmenu-open")) {
-        root.classList.remove("wdz8qmenu-open");
+      var isOpen = root.classList.contains("xfl45menu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("wdz8qmenu-open");
+        root.classList.add("xfl45menu-open");
+        if (overlay) {
+          overlay.classList.add("xfl45menu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("xfl45menu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("xfl45menu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("xfl45menu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("xfl45menu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="ghpim-page">
-  <header class="ghpim-header">
-    <div class="ghpim-header-meta">
+  <div id="content"><div class="gz0py-page">
+  <header class="gz0py-header">
+    <div class="gz0py-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>December 26, 2025 at 11:21 AM</span>
     </div>
-    <h1 class="ghpim-header-title">Turkish Interior Minister: More than 500,000 Syrians voluntarily returned to their country</h1>
-    <p class="ghpim-header-spot">ANKARA (SANA) – Turkish Interior Minister Ali Yerlikaya announced that the number of Syrians who have voluntarily returned to their country since the collapse of the overthrown regime on December 8, 2024 has exceeded 500,000. Yerlikaya emphasized that Turkey continues to stand by Syrians in their voluntary return process.</p>
+    <h1 class="gz0py-header-title">Turkish Interior Minister: More than 500,000 Syrians voluntarily returned to their country</h1>
+    <p class="gz0py-header-spot">ANKARA (SANA) – Turkish Interior Minister Ali Yerlikaya announced that the number of Syrians who have voluntarily returned to their country since the collapse of the overthrown regime on December 8, 2024 has exceeded 500,000. Yerlikaya emphasized that Turkey continues to stand by Syrians in their voluntary return process.</p>
   </header>
 
-  <div class="ghpim-body">
-    <article class="ghpim-article">
-      <figure class="ghpim-article-media">
-        <img src="/page/f8n7tvdet5/418345.jpg?v=l8qz8" alt="Page Haber"  loading="lazy"/>
+  <div class="gz0py-body">
+    <article class="gz0py-article">
+      <figure class="gz0py-article-media">
+        <img src="/page/f8n7tvdet5/418345.jpg?v=k76yb" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="ghpim-article-content"><p>Minister Yerlikaya announced in his post on the 'En Sosyal' platform as of December 2025 that a total of 509,387 Syrians have voluntarily returned to their country since December 8, 2024. Thus, the total number of Syrians who have left Turkey since 2016 has reached 1 million 249 thousand. Yerlikaya expressed that Turkey, as in the past, continues to provide the necessary support for the honorable and safe return of their Syrian brothers. The return of Syrians to their country is considered an important development that will contribute to the reconstruction and economic recovery process on the Syrian side while affecting the labor market in Turkey. The return of many Syrian business people to their country with the experience they gained from the businesses they established in Turkey could accelerate Syria's economic revival. Experts state that the safe return of Syrian refugees will have positive reflections both on the Turkish economy and on Syria's reconstruction.</p></div>
+      <div class="gz0py-article-content"><p>Minister Yerlikaya announced in his post on the 'En Sosyal' platform as of December 2025 that a total of 509,387 Syrians have voluntarily returned to their country since December 8, 2024. Thus, the total number of Syrians who have left Turkey since 2016 has reached 1 million 249 thousand. Yerlikaya expressed that Turkey, as in the past, continues to provide the necessary support for the honorable and safe return of their Syrian brothers. The return of Syrians to their country is considered an important development that will contribute to the reconstruction and economic recovery process on the Syrian side while affecting the labor market in Turkey. The return of many Syrian business people to their country with the experience they gained from the businesses they established in Turkey could accelerate Syria's economic revival. Experts state that the safe return of Syrian refugees will have positive reflections both on the Turkish economy and on Syria's reconstruction.</p></div>
     </article>
 
-    <aside class="ghpim-sidebar">
-      <div class="ghpim-sidebar-head">
+    <aside class="gz0py-sidebar">
+      <div class="gz0py-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="ghpim-sidebar-list"><a class="ghpim-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="ghpim-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="ghpim-menu-content"><div class="ghpim-menu-name">62nd International Damascus Fair opens in Syria</div><p class="ghpim-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="ghpim-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="ghpim-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="ghpim-menu-content"><div class="ghpim-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="ghpim-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="ghpim-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="ghpim-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="ghpim-menu-content"><div class="ghpim-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="ghpim-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="ghpim-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="ghpim-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="ghpim-menu-content"><div class="ghpim-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="ghpim-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="ghpim-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="ghpim-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="ghpim-menu-content"><div class="ghpim-menu-name">At least half of Syrians will return</div><p class="ghpim-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="ghpim-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="ghpim-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="ghpim-menu-content"><div class="ghpim-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="ghpim-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
+      <div class="gz0py-sidebar-list"><a class="gz0py-menu-item" href="/en/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="gz0py-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="62nd International Damascus Fair opens in Syria" loading="lazy"></div><div class="gz0py-menu-content"><div class="gz0py-menu-name">62nd International Damascus Fair opens in Syria</div><p class="gz0py-menu-spot">The opening of the 62nd International Damascus Fair, held in the Syrian capital Damascus after the fall of the Bashar al-Assad regime, was held with the participation of President Ahmed Shara.</p></div></a><a class="gz0py-menu-item" href="/en/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="gz0py-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Damascus Fair will open new cooperation doors in Turkey-Syria trade" loading="lazy"></div><div class="gz0py-menu-content"><div class="gz0py-menu-name">Damascus Fair will open new cooperation doors in Turkey-Syria trade</div><p class="gz0py-menu-spot">Trade Minister Ömer Bolat stated that the 62nd Damascus International Fair, which will open its doors tomorrow in Syria, is of great importance in terms of reviewing the mutual cooperation of the two countries, especially taking international steps in the customs field.</p></div></a><a class="gz0py-menu-item" href="/en/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="gz0py-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Turkey-Syria Business Forum held in Aleppo" loading="lazy"></div><div class="gz0py-menu-content"><div class="gz0py-menu-name">Turkey-Syria Business Forum held in Aleppo</div><p class="gz0py-menu-spot">The Turkey-Syria Business Forum related to the construction and building materials sector was held in Aleppo, northern Syria.</p></div></a><a class="gz0py-menu-item" href="/en/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="gz0py-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="Business world focuses on economic impacts of developments in Syria" loading="lazy"></div><div class="gz0py-menu-content"><div class="gz0py-menu-name">Business world focuses on economic impacts of developments in Syria</div><p class="gz0py-menu-spot">Business world representatives expect the new era in Syria to create new opportunities for Turkey.</p></div></a><a class="gz0py-menu-item" href="/en/suriyelilerin-en-az-yarisi-geri-doner"><div class="gz0py-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="At least half of Syrians will return" loading="lazy"></div><div class="gz0py-menu-content"><div class="gz0py-menu-name">At least half of Syrians will return</div><p class="gz0py-menu-spot">After the fall of the Baath regime, Syrians began to return to their country. Syrian Businessmen Association President Halit Savafoğlu said, "We think that at least half of the Syrians living in Turkey will return. Those who see that their country has improved will go back. However, we cannot completely break our ties. We have a debt of gratitude to this country. We ate bread here. We are grateful to Turkey."</p></div></a><a class="gz0py-menu-item" href="/en/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="gz0py-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Syrian economy growing faster than expected, sanctions easing" loading="lazy"></div><div class="gz0py-menu-content"><div class="gz0py-menu-name">Syrian economy growing faster than expected, sanctions easing</div><p class="gz0py-menu-spot">Central Bank of Syria Governor Abdulkadir Husriye announced that with the return of refugees and the end of the 14-year civil war, the economy grew much faster in 2025 than the 1% growth rate predicted by the World Bank.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=l8qz8"></script>
-<script defer src="/src/cookie.js?v=l8qz8"></script>
+<script defer type="text/javascript" src="/src/js.js?v=k76yb"></script>
+<script defer src="/src/cookie.js?v=k76yb"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

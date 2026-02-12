@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=m4xty" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=m4xty" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=cl9wh" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=cl9wh" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=m4xty" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=cl9wh" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=m4xty"></script>
-<link rel="stylesheet" href="style.css?v=m4xty">
+  <script type="text/javascript" src="/src/firebase.js?v=cl9wh"></script>
+<link rel="stylesheet" href="style.css?v=cl9wh">
 </head>
 
 <body>
-  <div id="header"><div class="naexv">
+  <div id="header"><div class="rrifp">
 
-  <div class="naexvbody">
-    <a href="/tr/"><img src="/img/logo.svg?v=m4xty" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="rrifpbody">
+    <a href="/tr/"><img src="/img/logo.svg?v=cl9wh" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="naexvright">
-      <div class="naexvlanguages ">
+    <div class="rrifpright">
+      <div class="rrifplanguages ">
         <ul>
           <li><a href="/tr/yasal-uyari/">tr</a></li><li><a href="/en/yasal-uyari/">en</a></li><li><a href="/ar/yasal-uyari/">ar</a></li>
         </ul>
       </div>
-      <div class="naexvcontactlist">
+      <div class="rrifpcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined naexv-icon">phone</div>
+     <div class="material-symbols-outlined rrifp-icon">phone</div>
      <div>
-      <div  class="naexv-title">Bizi hemen arayın</div>
-      <div  class="naexv-spot">0342 341 41 31</div>
+      <div  class="rrifp-title">Bizi hemen arayın</div>
+      <div  class="rrifp-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined naexv-icon">mail</div>
+     <div class="material-symbols-outlined rrifp-icon">mail</div>
      <div>
-      <div  class="naexv-title">Bize yazın</div>
-      <div  class="naexv-spot">info@saibdernegi.org</div>
+      <div  class="rrifp-title">Bize yazın</div>
+      <div  class="rrifp-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined naexv-icon">location_on</div>
+     <div class="material-symbols-outlined rrifp-icon">location_on</div>
      <div>
-      <div  class="naexv-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="naexv-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="rrifp-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="rrifp-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="naexv-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="rrifp-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="naexvmenubody">
-    <div class="naexvmenu" id="menu-3-root">
-      <div class="naexvmenulistbody">
-        <div class="naexvmenulist"><a class="naexvmenulist-menu" href="/tr/">Anasayfa </a><div class="naexvmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="rrifpmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="rrifpmenubody" id="menu-3-drawer">
+    <div class="rrifpmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="rrifpmenulistbody">
+        <div class="rrifpmenulist"><a class="rrifpmenulist-menu" href="/tr/">Anasayfa </a><div class="rrifpmenulist-menu " >
 
       <a href="/tr/saib-kimdir/">
        Derneğimiz
       </a>
      
                     </div>
-    <div class="naexvmenulist-menu " >
+    <div class="rrifpmenulist-menu " >
 
       <a href="/tr/haberler/">
        Haberler
       </a>
      
                     </div>
-    <div class="naexvmenulist-menu " >
+    <div class="rrifpmenulist-menu " >
 
       <a href="/tr/uyelik-basvurusu/">
        Üyelik Başvurusu
       </a>
      
                     </div>
-    <div class="naexvmenulist-menu " >
+    <div class="rrifpmenulist-menu " >
 
       <a href="/tr/subelerimiz/">
        Şubelerimiz
       </a>
      
                     </div>
-    <div class="naexvmenulist-menu " >
+    <div class="rrifpmenulist-menu " >
 
       <a href="/tr/iletisim/">
        İletişim
@@ -161,43 +164,186 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde rrifpright içeriği: dil + iletişim (rrifpmenulistbody altında) -->
+      <div class="rrifpmenudrawer-right">
+        <div class="rrifpmenudrawer-languages ">
+          <ul><li><a href="/tr/yasal-uyari/">tr</a></li><li><a href="/en/yasal-uyari/">en</a></li><li><a href="/ar/yasal-uyari/">ar</a></li></ul>
+        </div>
+        <div class="rrifpmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined rrifp-icon">phone</div>
+     <div>
+      <div  class="rrifp-title">Bizi hemen arayın</div>
+      <div  class="rrifp-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined rrifp-icon">mail</div>
+     <div>
+      <div  class="rrifp-title">Bize yazın</div>
+      <div  class="rrifp-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined rrifp-icon">location_on</div>
+     <div>
+      <div  class="rrifp-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="rrifp-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="rrifpmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".rrifp-mobile-toggle");
+      if (!root || !root.classList.contains("rrifpmenu-open")) {
+        return;
+      }
+      root.classList.remove("rrifpmenu-open");
+      if (overlay) {
+        overlay.classList.remove("rrifpmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("rrifpmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".rrifp-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("naexvmenu-open")) {
-        root.classList.remove("naexvmenu-open");
+      var isOpen = root.classList.contains("rrifpmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("naexvmenu-open");
+        root.classList.add("rrifpmenu-open");
+        if (overlay) {
+          overlay.classList.add("rrifpmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("rrifpmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("rrifpmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("rrifpmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("rrifpmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="rhh2b-title f36">
+  <div id="content"><div class="b61d5-title f36">
   <h1>Yasal Uyarı</h1>
 </div>
-<div class="rhh2b">
-  <div class="rhh2b-menu-btn">
+<div class="b61d5">
+  <div class="b61d5-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined rhh2b-icon">menu</span>
+    <span class="material-symbols-outlined b61d5-icon">menu</span>
   </div>
-  <div class="rhh2b-menu-overlay" id="rhh2b-menu-overlay" aria-hidden="true"></div>
-  <div class="rhh2b-menu" id="rhh2b-menu">
-    <button class="rhh2b-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="rhh2b-menu">
+  <div class="b61d5-menu-overlay" id="b61d5-menu-overlay" aria-hidden="true"></div>
+  <div class="b61d5-menu" id="b61d5-menu">
+    <button class="b61d5-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="b61d5-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="rhh2b-menu-link" href="/tr/saib-kimdir/">Saib Kimdir ?</a><a class="rhh2b-menu-link" href="/tr/yonetim-kurulu/">Yönetim Kurulu</a><a class="rhh2b-menu-link" href="/tr/baskanin-mesaji/">Başkanın Mesajı</a><a class="rhh2b-menu-link" href="/tr/misyon/">Misyon</a><a class="rhh2b-menu-link" href="/tr/vizyon/">Vizyon</a><a class="rhh2b-menu-link" href="/tr/uyelik-bilgileri/">Üyelik Bilgileri</a><a class="rhh2b-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="rhh2b-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="rhh2b-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="rhh2b-menu-link active" href="/tr/yasal-uyari/">Yasal Uyarı</a>
+    <a class="b61d5-menu-link" href="/tr/saib-kimdir/">Saib Kimdir ?</a><a class="b61d5-menu-link" href="/tr/yonetim-kurulu/">Yönetim Kurulu</a><a class="b61d5-menu-link" href="/tr/baskanin-mesaji/">Başkanın Mesajı</a><a class="b61d5-menu-link" href="/tr/misyon/">Misyon</a><a class="b61d5-menu-link" href="/tr/vizyon/">Vizyon</a><a class="b61d5-menu-link" href="/tr/uyelik-bilgileri/">Üyelik Bilgileri</a><a class="b61d5-menu-link" href="/tr/gizlilik-politikasi/">Gizlilik Politikası</a><a class="b61d5-menu-link" href="/tr/kisisel-veriler/">Kişisel Veriler</a><a class="b61d5-menu-link" href="/tr/kullanici-haklari/">Kullanıcı Hakları</a><a class="b61d5-menu-link active" href="/tr/yasal-uyari/">Yasal Uyarı</a>
   </div>
-  <div class="rhh2b-desc">
+  <div class="b61d5-desc">
     
-    <div class="rhh2b-body"><h2 style="font-size: 24px;">Yasal Uyarı ve Sorumluluk Reddi</h2>
+    <div class="b61d5-body"><h2 style="font-size: 24px;">Yasal Uyarı ve Sorumluluk Reddi</h2>
     <p style=" font-size: 16px;">
         SAİB Derneği web sitesinde yer alan tüm içerik, logo, tasarım, metin, görsel ve diğer materyaller 5846 sayılı Fikir ve Sanat Eserleri Kanunu ile 5651 sayılı İnternet Ortamında Yapılan Yayınların Düzenlenmesi Hakkında Kanun'un hükümleri uyarınca korunmaktadır. Sitemizde yer alan hiçbir içeriğin SAİB Derneği'nin yazılı izni olmaksızın kopyalanması, çoğaltılması, başka platformlarda paylaşılması, ticari amaçla kullanılması yasaktır. Bu kurallara aykırı hareket edenler hakkında yasal işlem başlatılacaktır.
     </p>
@@ -211,10 +357,10 @@
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".rhh2b-menu-btn");
-    var menu = document.querySelector(".rhh2b-menu");
-    var overlay = document.querySelector(".rhh2b-menu-overlay");
-    var closeButton = document.querySelector(".rhh2b-menu-close");
+    var menuToggleBtn = document.querySelector(".b61d5-menu-btn");
+    var menu = document.querySelector(".b61d5-menu");
+    var overlay = document.querySelector(".b61d5-menu-overlay");
+    var closeButton = document.querySelector(".b61d5-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -284,7 +430,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".rhh2b-menu-close");
+      var closeBtn = event.target.closest(".b61d5-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -332,15 +478,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".rhh2b-top").forEach(function (button) {
+    document.querySelectorAll(".b61d5-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".rhh2b-menu-group");
+        var group = this.closest(".b61d5-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".rhh2b-sub");
+        var sub = group.querySelector(".b61d5-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".rhh2b-icon");
+        var icon = this.querySelector(".b61d5-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -408,8 +554,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=m4xty"></script>
-<script defer src="/src/cookie.js?v=m4xty"></script>
+<script defer type="text/javascript" src="/src/js.js?v=cl9wh"></script>
+<script defer src="/src/cookie.js?v=cl9wh"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

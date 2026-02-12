@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=qa0kv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=qa0kv" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=oebnh" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=oebnh" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qa0kv" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=oebnh" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=qa0kv"></script>
-<link rel="stylesheet" href="style.css?v=qa0kv">
+  <script type="text/javascript" src="/src/firebase.js?v=oebnh"></script>
+<link rel="stylesheet" href="style.css?v=oebnh">
 </head>
 
 <body>
-  <div id="header"><div class="d556d">
+  <div id="header"><div class="uqung">
 
-  <div class="d556dbody">
-    <a href="/tr/"><img src="/img/logo.svg?v=qa0kv" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="uqungbody">
+    <a href="/tr/"><img src="/img/logo.svg?v=oebnh" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="d556dright">
-      <div class="d556dlanguages ">
+    <div class="uqungright">
+      <div class="uqunglanguages ">
         <ul>
           <li><a href="/tr/bize-katilin/">tr</a></li><li><a href="/en/bize-katilin/">en</a></li><li><a href="/ar/bize-katilin/">ar</a></li>
         </ul>
       </div>
-      <div class="d556dcontactlist">
+      <div class="uqungcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined d556d-icon">phone</div>
+     <div class="material-symbols-outlined uqung-icon">phone</div>
      <div>
-      <div  class="d556d-title">Bizi hemen arayın</div>
-      <div  class="d556d-spot">0342 341 41 31</div>
+      <div  class="uqung-title">Bizi hemen arayın</div>
+      <div  class="uqung-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined d556d-icon">mail</div>
+     <div class="material-symbols-outlined uqung-icon">mail</div>
      <div>
-      <div  class="d556d-title">Bize yazın</div>
-      <div  class="d556d-spot">info@saibdernegi.org</div>
+      <div  class="uqung-title">Bize yazın</div>
+      <div  class="uqung-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined d556d-icon">location_on</div>
+     <div class="material-symbols-outlined uqung-icon">location_on</div>
      <div>
-      <div  class="d556d-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="d556d-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="uqung-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="uqung-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="d556d-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="uqung-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="d556dmenubody">
-    <div class="d556dmenu" id="menu-3-root">
-      <div class="d556dmenulistbody">
-        <div class="d556dmenulist"><a class="d556dmenulist-menu" href="/tr/">Anasayfa </a><div class="d556dmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="uqungmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="uqungmenubody" id="menu-3-drawer">
+    <div class="uqungmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="uqungmenulistbody">
+        <div class="uqungmenulist"><a class="uqungmenulist-menu" href="/tr/">Anasayfa </a><div class="uqungmenulist-menu " >
 
       <a href="/tr/saib-kimdir/">
        Derneğimiz
       </a>
      
                     </div>
-    <div class="d556dmenulist-menu " >
+    <div class="uqungmenulist-menu " >
 
       <a href="/tr/haberler/">
        Haberler
       </a>
      
                     </div>
-    <div class="d556dmenulist-menu " >
+    <div class="uqungmenulist-menu " >
 
       <a href="/tr/uyelik-basvurusu/">
        Üyelik Başvurusu
       </a>
      
                     </div>
-    <div class="d556dmenulist-menu " >
+    <div class="uqungmenulist-menu " >
 
       <a href="/tr/subelerimiz/">
        Şubelerimiz
       </a>
      
                     </div>
-    <div class="d556dmenulist-menu " >
+    <div class="uqungmenulist-menu " >
 
       <a href="/tr/iletisim/">
        İletişim
@@ -161,46 +164,189 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde uqungright içeriği: dil + iletişim (uqungmenulistbody altında) -->
+      <div class="uqungmenudrawer-right">
+        <div class="uqungmenudrawer-languages ">
+          <ul><li><a href="/tr/bize-katilin/">tr</a></li><li><a href="/en/bize-katilin/">en</a></li><li><a href="/ar/bize-katilin/">ar</a></li></ul>
+        </div>
+        <div class="uqungmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined uqung-icon">phone</div>
+     <div>
+      <div  class="uqung-title">Bizi hemen arayın</div>
+      <div  class="uqung-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined uqung-icon">mail</div>
+     <div>
+      <div  class="uqung-title">Bize yazın</div>
+      <div  class="uqung-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined uqung-icon">location_on</div>
+     <div>
+      <div  class="uqung-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="uqung-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="uqungmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".uqung-mobile-toggle");
+      if (!root || !root.classList.contains("uqungmenu-open")) {
+        return;
+      }
+      root.classList.remove("uqungmenu-open");
+      if (overlay) {
+        overlay.classList.remove("uqungmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("uqungmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".uqung-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("d556dmenu-open")) {
-        root.classList.remove("d556dmenu-open");
+      var isOpen = root.classList.contains("uqungmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("d556dmenu-open");
+        root.classList.add("uqungmenu-open");
+        if (overlay) {
+          overlay.classList.add("uqungmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("uqungmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("uqungmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("uqungmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("uqungmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="w8pkh-title f36">
+  <div id="content"><div class="gojwi-title f36">
   <h1>Bize Katılın</h1>
 </div>
-<div class="w8pkh">
-  <div class="w8pkh-menu-btn">
+<div class="gojwi">
+  <div class="gojwi-menu-btn">
     <span>Menü</span>
-    <span class="material-symbols-outlined w8pkh-icon">menu</span>
+    <span class="material-symbols-outlined gojwi-icon">menu</span>
   </div>
-  <div class="w8pkh-menu-overlay" id="w8pkh-menu-overlay" aria-hidden="true"></div>
-  <div class="w8pkh-menu" id="w8pkh-menu">
-    <button class="w8pkh-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="w8pkh-menu">
+  <div class="gojwi-menu-overlay" id="gojwi-menu-overlay" aria-hidden="true"></div>
+  <div class="gojwi-menu" id="gojwi-menu">
+    <button class="gojwi-menu-close" type="button" aria-label="Menüyü Kapat" aria-controls="gojwi-menu">
       <span class="material-symbols-outlined" aria-hidden="true">close</span>
     </button>
-    <a class="w8pkh-menu-link active" href="/tr/bize-katilin/">Bize Katılın</a><a class="w8pkh-menu-link" href="/tr/faaliyetlerimiz/">Faaliyetlerimiz</a><a class="w8pkh-menu-link" href="/tr/ihracat-rehberi/">İhracat Rehberi</a><a class="w8pkh-menu-link" href="/tr/is-agi/">İş Ağı</a><a class="w8pkh-menu-link" href="/tr/uyelerimiz/">Üyelerimiz</a>
+    <a class="gojwi-menu-link active" href="/tr/bize-katilin/">Bize Katılın</a><a class="gojwi-menu-link" href="/tr/faaliyetlerimiz/">Faaliyetlerimiz</a><a class="gojwi-menu-link" href="/tr/ihracat-rehberi/">İhracat Rehberi</a><a class="gojwi-menu-link" href="/tr/is-agi/">İş Ağı</a><a class="gojwi-menu-link" href="/tr/uyelerimiz/">Üyelerimiz</a>
   </div>
-  <div class="w8pkh-desc">
+  <div class="gojwi-desc">
     
-    <div class="w8pkh-desc-body">
-            <img src="/page/we5uhxruok/ixfhw.jpg?v=qa0kv" width="100%" alt="Bize Katılın" loading="lazy" />
+    <div class="gojwi-desc-body">
+            <img src="/page/we5uhxruok/ixfhw.jpg?v=oebnh" width="100%" alt="Bize Katılın" loading="lazy" />
     </div>
-    <div class="w8pkh-body"><p>SAİB'e Katılın</p>
+    <div class="gojwi-body"><p>SAİB'e Katılın</p>
 <p></p>
 <p>Birlikte Güçlüyüz!</p>
 <p></p>
@@ -222,10 +368,10 @@
 
 <script>
   setTimeout(function() {
-    var menuToggleBtn = document.querySelector(".w8pkh-menu-btn");
-    var menu = document.querySelector(".w8pkh-menu");
-    var overlay = document.querySelector(".w8pkh-menu-overlay");
-    var closeButton = document.querySelector(".w8pkh-menu-close");
+    var menuToggleBtn = document.querySelector(".gojwi-menu-btn");
+    var menu = document.querySelector(".gojwi-menu");
+    var overlay = document.querySelector(".gojwi-menu-overlay");
+    var closeButton = document.querySelector(".gojwi-menu-close");
     
     if (!menuToggleBtn || !menu) {
       return;
@@ -295,7 +441,7 @@
     // Menü içindeki linklere tıklanınca kapat
     menu.addEventListener("click", function (event) {
       var link = event.target.closest("a");
-      var closeBtn = event.target.closest(".w8pkh-menu-close");
+      var closeBtn = event.target.closest(".gojwi-menu-close");
       if (link && !closeBtn) {
         closeMenu();
       }
@@ -343,15 +489,15 @@
     handleBreakpoint();
 
     // Alt menü toggle fonksiyonları
-    document.querySelectorAll(".w8pkh-top").forEach(function (button) {
+    document.querySelectorAll(".gojwi-top").forEach(function (button) {
       button.addEventListener("click", function (e) {
         e.stopPropagation();
-        var group = this.closest(".w8pkh-menu-group");
+        var group = this.closest(".gojwi-menu-group");
         if (!group) return;
-        var sub = group.querySelector(".w8pkh-sub");
+        var sub = group.querySelector(".gojwi-sub");
         var isOpen = group.classList.toggle("open");
         this.classList.toggle("active", isOpen);
-        var icon = this.querySelector(".w8pkh-icon");
+        var icon = this.querySelector(".gojwi-icon");
         if (icon) {
           icon.textContent = isOpen ? "expand_less" : "expand_more";
         }
@@ -419,8 +565,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=qa0kv"></script>
-<script defer src="/src/cookie.js?v=qa0kv"></script>
+<script defer type="text/javascript" src="/src/js.js?v=oebnh"></script>
+<script defer src="/src/cookie.js?v=oebnh"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği

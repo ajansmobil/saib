@@ -25,10 +25,10 @@
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=qqutr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=qqutr" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=eosgq" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=eosgq" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=qqutr" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=eosgq" type="image/png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,87 +72,90 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=qqutr"></script>
-<link rel="stylesheet" href="style.css?v=qqutr">
+  <script type="text/javascript" src="/src/firebase.js?v=eosgq"></script>
+<link rel="stylesheet" href="style.css?v=eosgq">
 </head>
 
 <body>
-  <div id="header"><div class="hnlwf">
+  <div id="header"><div class="wcwjw">
 
-  <div class="hnlwfbody">
-    <a href="/tr/"><img src="/img/logo.svg?v=qqutr" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
+  <div class="wcwjwbody">
+    <a href="/tr/"><img src="/img/logo.svg?v=eosgq" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="hnlwfright">
-      <div class="hnlwflanguages ">
+    <div class="wcwjwright">
+      <div class="wcwjwlanguages ">
         <ul>
           <li><a href="/tr/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor/">tr</a></li><li><a href="/en/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor/">en</a></li><li><a href="/ar/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor/">ar</a></li>
         </ul>
       </div>
-      <div class="hnlwfcontactlist">
+      <div class="wcwjwcontactlist">
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined hnlwf-icon">phone</div>
+     <div class="material-symbols-outlined wcwjw-icon">phone</div>
      <div>
-      <div  class="hnlwf-title">Bizi hemen arayın</div>
-      <div  class="hnlwf-spot">0342 341 41 31</div>
+      <div  class="wcwjw-title">Bizi hemen arayın</div>
+      <div  class="wcwjw-spot">0342 341 41 31</div>
      </div>
     </a>
     
     <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined hnlwf-icon">mail</div>
+     <div class="material-symbols-outlined wcwjw-icon">mail</div>
      <div>
-      <div  class="hnlwf-title">Bize yazın</div>
-      <div  class="hnlwf-spot">info@saibdernegi.org</div>
+      <div  class="wcwjw-title">Bize yazın</div>
+      <div  class="wcwjw-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
     <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
-     <div class="material-symbols-outlined hnlwf-icon">location_on</div>
+     <div class="material-symbols-outlined wcwjw-icon">location_on</div>
      <div>
-      <div  class="hnlwf-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="hnlwf-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="wcwjw-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="wcwjw-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="hnlwf-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+    <button type="button" class="wcwjw-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat" style="cursor: pointer;">
       <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="hnlwfmenubody">
-    <div class="hnlwfmenu" id="menu-3-root">
-      <div class="hnlwfmenulistbody">
-        <div class="hnlwfmenulist"><a class="hnlwfmenulist-menu" href="/tr/">Anasayfa </a><div class="hnlwfmenulist-menu " >
+  <!-- Mobil: sağdan açılan menü overlay (app tarzı) -->
+  <div class="wcwjwmenuoverlay" id="menu-3-overlay" onclick="menu3_toggle()" aria-hidden="true" style="cursor: pointer;"></div>
+  <div class="wcwjwmenubody" id="menu-3-drawer">
+    <div class="wcwjwmenu" id="menu-3-root">
+      <!-- Mobilde menü listesi üstte, X sağ üst köşede -->
+      <div class="wcwjwmenulistbody">
+        <div class="wcwjwmenulist"><a class="wcwjwmenulist-menu" href="/tr/">Anasayfa </a><div class="wcwjwmenulist-menu " >
 
       <a href="/tr/saib-kimdir/">
        Derneğimiz
       </a>
      
                     </div>
-    <div class="hnlwfmenulist-menu " >
+    <div class="wcwjwmenulist-menu " >
 
       <a href="/tr/haberler/">
        Haberler
       </a>
      
                     </div>
-    <div class="hnlwfmenulist-menu " >
+    <div class="wcwjwmenulist-menu " >
 
       <a href="/tr/uyelik-basvurusu/">
        Üyelik Başvurusu
       </a>
      
                     </div>
-    <div class="hnlwfmenulist-menu " >
+    <div class="wcwjwmenulist-menu " >
 
       <a href="/tr/subelerimiz/">
        Şubelerimiz
       </a>
      
                     </div>
-    <div class="hnlwfmenulist-menu " >
+    <div class="wcwjwmenulist-menu " >
 
       <a href="/tr/iletisim/">
        İletişim
@@ -161,49 +164,192 @@
                     </div>
     </div>
       </div>
+      <!-- Mobilde wcwjwright içeriği: dil + iletişim (wcwjwmenulistbody altında) -->
+      <div class="wcwjwmenudrawer-right">
+        <div class="wcwjwmenudrawer-languages ">
+          <ul><li><a href="/tr/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor/">tr</a></li><li><a href="/en/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor/">en</a></li><li><a href="/ar/suudi-sirketleri-suriyenin-yeniden-insasi-2025-fuarina-katiliyor/">ar</a></li></ul>
+        </div>
+        <div class="wcwjwmenudrawer-contactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined wcwjw-icon">phone</div>
+     <div>
+      <div  class="wcwjw-title">Bizi hemen arayın</div>
+      <div  class="wcwjw-spot">0342 341 41 31</div>
+     </div>
+    </a>
+    
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined wcwjw-icon">mail</div>
+     <div>
+      <div  class="wcwjw-title">Bize yazın</div>
+      <div  class="wcwjw-spot">info@saibdernegi.org</div>
+     </div>
+    </a>
+    
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined wcwjw-icon">location_on</div>
+     <div>
+      <div  class="wcwjw-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="wcwjw-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+     </div>
+    </a>
+    </div>
+      </div>
+      <button type="button" class="wcwjwmenuclose" onclick="menu3_toggle()" aria-label="Menüyü kapat" style="cursor: pointer;">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
     </div>
   </div>
 </div>
 
 <script>
   if (typeof menu3_toggle === "undefined") {
+    function menu3_close() {
+      var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".wcwjw-mobile-toggle");
+      if (!root || !root.classList.contains("wcwjwmenu-open")) {
+        return;
+      }
+      root.classList.remove("wcwjwmenu-open");
+      if (overlay) {
+        overlay.classList.remove("wcwjwmenu-open");
+        overlay.setAttribute("aria-hidden", "true");
+      }
+      if (drawer) {
+        drawer.classList.remove("wcwjwmenu-open");
+        drawer.style.transform = "";
+      }
+      if (menuBtn) {
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+      document.body.style.overflow = "";
+    }
+
     function menu3_toggle() {
       var root = document.getElementById("menu-3-root");
+      var overlay = document.getElementById("menu-3-overlay");
+      var drawer = document.getElementById("menu-3-drawer");
+      var menuBtn = document.querySelector(".wcwjw-mobile-toggle");
       if (!root) {
         return;
       }
-      if (root.classList.contains("hnlwfmenu-open")) {
-        root.classList.remove("hnlwfmenu-open");
+      var isOpen = root.classList.contains("wcwjwmenu-open");
+      if (isOpen) {
+        menu3_close();
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
       } else {
-        root.classList.add("hnlwfmenu-open");
+        root.classList.add("wcwjwmenu-open");
+        if (overlay) {
+          overlay.classList.add("wcwjwmenu-open");
+          overlay.setAttribute("aria-hidden", "false");
+        }
+        if (drawer) {
+          drawer.classList.add("wcwjwmenu-open");
+        }
+        if (menuBtn) {
+          menuBtn.setAttribute("aria-expanded", "true");
+        }
+        document.body.style.overflow = "hidden";
       }
     }
   }
+
+  /* Drawer içinde linke tıklanınca menü kapansın */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (drawer) {
+      drawer.addEventListener("click", function(e) {
+        var link = e.target.closest("a[href]");
+        if (link) {
+          menu3_close();
+        }
+      });
+    }
+  }, 100);
+
+  /* menu-open sağa çekilince (swipe) kapanır */
+  setTimeout(function() {
+    var drawer = document.getElementById("menu-3-drawer");
+    if (!drawer) {
+      return;
+    }
+    var touchStartX = 0;
+    var touchStartY = 0;
+    var touchDeltaX = 0;
+    var isHorizontalSwipe = false;
+
+    drawer.addEventListener("touchstart", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("wcwjwmenu-open")) {
+        return;
+      }
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+      touchDeltaX = 0;
+      isHorizontalSwipe = false;
+      drawer.style.transition = "none";
+    }, { passive: true });
+
+    drawer.addEventListener("touchmove", function(e) {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("wcwjwmenu-open")) {
+        return;
+      }
+      var x = e.touches[0].clientX;
+      var y = e.touches[0].clientY;
+      touchDeltaX = x - touchStartX;
+      var deltaY = Math.abs(y - touchStartY);
+      if (touchDeltaX > 15 && touchDeltaX > deltaY) {
+        isHorizontalSwipe = true;
+      }
+      if (isHorizontalSwipe && touchDeltaX > 0) {
+        e.preventDefault();
+        drawer.style.transform = "translateX(" + touchDeltaX + "px)";
+      }
+    }, { passive: false });
+
+    drawer.addEventListener("touchend", function() {
+      var root = document.getElementById("menu-3-root");
+      if (!root || !root.classList.contains("wcwjwmenu-open")) {
+        return;
+      }
+      drawer.style.transition = "";
+      if (touchDeltaX > 80) {
+        menu3_close();
+      } else {
+        drawer.style.transform = "";
+      }
+    }, { passive: true });
+  }, 100);
 </script></div>
-  <div id="content"><div class="w5taz-page">
-  <header class="w5taz-header">
-    <div class="w5taz-header-meta">
+  <div id="content"><div class="nt8ti-page">
+  <header class="nt8ti-header">
+    <div class="nt8ti-header-meta">
       <span class="material-symbols-outlined">schedule</span>
       <span>26 Aralık 2025 11:21</span>
     </div>
-    <h1 class="w5taz-header-title">Suudi şirketleri "Suriye'nin Yeniden İnşası 2025" fuarına katılıyor</h1>
-    <p class="w5taz-header-spot">Şam'da düzenlenen "İmar Suriye 2025" fuarı, inşaat, yapı malzemeleri ve iç tasarım alanında uzman Suudi şirketlerinin yoğun katılımına sahne oldu. Etkinlik, iki ülke arasındaki ekonomik iş birliğini güçlendirmeyi ve Suriye'de yatırım ve yeniden imar fırsatlarını artırmayı amaçlıyor.</p>
+    <h1 class="nt8ti-header-title">Suudi şirketleri "Suriye'nin Yeniden İnşası 2025" fuarına katılıyor</h1>
+    <p class="nt8ti-header-spot">Şam'da düzenlenen "İmar Suriye 2025" fuarı, inşaat, yapı malzemeleri ve iç tasarım alanında uzman Suudi şirketlerinin yoğun katılımına sahne oldu. Etkinlik, iki ülke arasındaki ekonomik iş birliğini güçlendirmeyi ve Suriye'de yatırım ve yeniden imar fırsatlarını artırmayı amaçlıyor.</p>
   </header>
 
-  <div class="w5taz-body">
-    <article class="w5taz-article">
-      <figure class="w5taz-article-media">
-        <img src="/page/20ftotac5y/1-1024x683.jpg?v=qqutr" alt="Page Haber"  loading="lazy"/>
+  <div class="nt8ti-body">
+    <article class="nt8ti-article">
+      <figure class="nt8ti-article-media">
+        <img src="/page/20ftotac5y/1-1024x683.jpg?v=eosgq" alt="Page Haber"  loading="lazy"/>
       </figure>
-      <div class="w5taz-article-content"><p>Ekim 2025'te Şam Uluslararası Fuar Alanı'nda başlayan 'Suriye'nin Yeniden İnşası 2025' fuarına 23 ülkeden 260 şirket katıldı. Suudi Arabistan'dan gelen önde gelen firmalar stand açarak ürün ve projelerini tanıttı. 47 yıllık geçmişe sahip Taif Nejdi Group, metal çatı kaplama ve boya ürünleriyle fuarda yer alırken, şirket yetkilileri Suriye'nin yatırım için ümit vadeden bir pazar olduğunu vurguladı. TDC İnşaat firması, Ortadoğu'da gerçekleştirdiği stratejik projelerdeki deneyimini sergiledi ve temsilcisi Fahd El Maliki, Suriye'nin kısa sürede ekonomik ve altyapısal büyüme kaydedeceğine inandıklarını belirtti. 'Unwan Decor' şirketi yerel ahşap ürünlerini sunarken, yöneticisi Arap şirketleri arasında yakın iş birliğinin büyük yeniden yapılanma projelerinin başarısı için şart olduğunu ifade etti. Riyad Seramik Fabrikası, günde 100 bin metrekare yüksek kaliteli seramik karo üretimi kapasitesini tanıtıp Suudi Arabistan'ın Suriye'nin yeniden yapılanma projelerine desteğini yineledi. Ayrıca 1936'dan beri faaliyet gösteren Al Dar duvar kağıdı firması, genç Suriyeli yeteneklere eğitim programları sunduğunu açıkladı. Fuarda Suudi şirket temsilcileri, Suriyeli kurumlarla ortak çalışmalar yaparak bilgi birikimi aktarımı ve üretim kapasitesinin gelişimine katkı sunmayı hedeflediklerini belirtti. Üç gün süren fuar, Suriye'nin altyapı ve üretim sektörlerinin yeniden inşası için bölgesel bir platform işlevi gördü ve fuar sonunda birçok Suudi yatırımcı, Suriye'de somut projelere yatırım yapma niyetini dile getirdi.</p></div>
+      <div class="nt8ti-article-content"><p>Ekim 2025'te Şam Uluslararası Fuar Alanı'nda başlayan 'Suriye'nin Yeniden İnşası 2025' fuarına 23 ülkeden 260 şirket katıldı. Suudi Arabistan'dan gelen önde gelen firmalar stand açarak ürün ve projelerini tanıttı. 47 yıllık geçmişe sahip Taif Nejdi Group, metal çatı kaplama ve boya ürünleriyle fuarda yer alırken, şirket yetkilileri Suriye'nin yatırım için ümit vadeden bir pazar olduğunu vurguladı. TDC İnşaat firması, Ortadoğu'da gerçekleştirdiği stratejik projelerdeki deneyimini sergiledi ve temsilcisi Fahd El Maliki, Suriye'nin kısa sürede ekonomik ve altyapısal büyüme kaydedeceğine inandıklarını belirtti. 'Unwan Decor' şirketi yerel ahşap ürünlerini sunarken, yöneticisi Arap şirketleri arasında yakın iş birliğinin büyük yeniden yapılanma projelerinin başarısı için şart olduğunu ifade etti. Riyad Seramik Fabrikası, günde 100 bin metrekare yüksek kaliteli seramik karo üretimi kapasitesini tanıtıp Suudi Arabistan'ın Suriye'nin yeniden yapılanma projelerine desteğini yineledi. Ayrıca 1936'dan beri faaliyet gösteren Al Dar duvar kağıdı firması, genç Suriyeli yeteneklere eğitim programları sunduğunu açıkladı. Fuarda Suudi şirket temsilcileri, Suriyeli kurumlarla ortak çalışmalar yaparak bilgi birikimi aktarımı ve üretim kapasitesinin gelişimine katkı sunmayı hedeflediklerini belirtti. Üç gün süren fuar, Suriye'nin altyapı ve üretim sektörlerinin yeniden inşası için bölgesel bir platform işlevi gördü ve fuar sonunda birçok Suudi yatırımcı, Suriye'de somut projelere yatırım yapma niyetini dile getirdi.</p></div>
     </article>
 
-    <aside class="w5taz-sidebar">
-      <div class="w5taz-sidebar-head">
+    <aside class="nt8ti-sidebar">
+      <div class="nt8ti-sidebar-head">
         <span class="material-symbols-outlined">library_books</span>
         <span>İlgili Haberler</span>
       </div>
-      <div class="w5taz-sidebar-list"><a class="w5taz-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="w5taz-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="w5taz-menu-content"><div class="w5taz-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="w5taz-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="w5taz-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="w5taz-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="w5taz-menu-content"><div class="w5taz-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="w5taz-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="w5taz-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="w5taz-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="w5taz-menu-content"><div class="w5taz-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="w5taz-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="w5taz-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="w5taz-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="w5taz-menu-content"><div class="w5taz-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="w5taz-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="w5taz-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="w5taz-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="w5taz-menu-content"><div class="w5taz-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="w5taz-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="w5taz-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="w5taz-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="w5taz-menu-content"><div class="w5taz-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="w5taz-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
+      <div class="nt8ti-sidebar-list"><a class="nt8ti-menu-item" href="/tr/suriyede-62-uluslararasi-sam-fuari-acildi"><div class="nt8ti-menu-img"><img src="/page/7cs0vs9azv/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriye'de 62. Uluslararası Şam Fuarı açıldı" loading="lazy"></div><div class="nt8ti-menu-content"><div class="nt8ti-menu-name">Suriye'de 62. Uluslararası Şam Fuarı açıldı</div><p class="nt8ti-menu-spot">Suriye'nin başkenti Şam'da, Beşşar Esed rejiminin yıkılmasının ardından düzenlenen 62. Uluslararası Şam Fuarı'nın açılışı, Cumhurbaşkanı Ahmed Şara'nın katılımıyla yapıldı.</p></div></a><a class="nt8ti-menu-item" href="/tr/sam-fuari-turkiye-suriye-ticaretinde-yeni-isbirligi-kapilari-acacak"><div class="nt8ti-menu-img"><img src="/page/up26pe6nos/1-1024x683.jpg" alt="Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak" loading="lazy"></div><div class="nt8ti-menu-content"><div class="nt8ti-menu-name">Şam Fuarı, Türkiye-Suriye ticaretinde yeni işbirliği kapıları açacak</div><p class="nt8ti-menu-spot">Ticaret Bakanı Bolat, 62. Şam Fuarı'nın iki ülkenin işbirliğini gözden geçirmesi ve gümrük alanında adımlar atılması açısından önemli olduğunu belirtti.</p></div></a><a class="nt8ti-menu-item" href="/tr/turkiye-suriye-is-forumu-halepte-duzenlendi"><div class="nt8ti-menu-img"><img src="/page/ijvoap19a5/ijvoap19a5.jpg" alt="Türkiye-Suriye İş Forumu Halep'te düzenlendi" loading="lazy"></div><div class="nt8ti-menu-content"><div class="nt8ti-menu-name">Türkiye-Suriye İş Forumu Halep'te düzenlendi</div><p class="nt8ti-menu-spot">İnşaat ve yapı malzemeleri sektörüyle ilgili Türkiye-Suriye İş Forumu, Suriye'nin kuzeyindeki Halep'te düzenlendi.</p></div></a><a class="nt8ti-menu-item" href="/tr/is-dunyasi-suriyedeki-gelismelerin-ekonomik-etkilerine-odaklandi"><div class="nt8ti-menu-img"><img src="/page/pb8kpytxua/418345.jpg" alt="İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı" loading="lazy"></div><div class="nt8ti-menu-content"><div class="nt8ti-menu-name">İş dünyası Suriye'deki gelişmelerin ekonomik etkilerine odaklandı</div><p class="nt8ti-menu-spot">İş dünyası temsilcileri, Suriye'deki yeni dönemin Türkiye için yeni imkanlar yaratmasını bekliyor.</p></div></a><a class="nt8ti-menu-item" href="/tr/suriyelilerin-en-az-yarisi-geri-doner"><div class="nt8ti-menu-img"><img src="/page/ti2c4nyogf/thumbs_b_c_5d9e37f56779035c2c6aefee9359c4b6.jpg" alt="Suriyelilerin en az yarısı geri döner" loading="lazy"></div><div class="nt8ti-menu-content"><div class="nt8ti-menu-name">Suriyelilerin en az yarısı geri döner</div><p class="nt8ti-menu-spot">Baas rejiminin yıkılmasının ardından Suriyelilerin ülkelerine dönüşü başladı. Suriyeli İş Adamları Derneği Başkanı Halit Savafoğlu, "Türkiye'de yaşayan Suriyelilerin en az yarısının geri döneceğini düşünüyoruz. Ülkelerinin düzeldiğini görenler geri gidecektir. Ancak bağlantıları tamamen koparamayız. Bu ülkeye vefa borcumuz var. Burada ekmek yedik. Türkiye'ye minnettarız" dedi.</p></div></a><a class="nt8ti-menu-item" href="/tr/suriye-ekonomisi-beklenenden-hizli-buyuyor-yaptirimlar-gevsiyor"><div class="nt8ti-menu-img"><img src="/page/kxn2hajzjw/418345.jpg" alt="Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor" loading="lazy"></div><div class="nt8ti-menu-content"><div class="nt8ti-menu-name">Suriye ekonomisi beklenenden hızlı büyüyor, yaptırımlar gevşiyor</div><p class="nt8ti-menu-spot">Suriye Merkez Bankası Başkanı Hüsriye, ekonominin 2025'te Dünya Bankası'nın öngördüğü %1'den çok daha hızlı büyüdüğünü açıkladı.</p></div></a></div>
     </aside>
   </div>
 </div>
@@ -265,8 +411,8 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=qqutr"></script>
-<script defer src="/src/cookie.js?v=qqutr"></script>
+<script defer type="text/javascript" src="/src/js.js?v=eosgq"></script>
+<script defer src="/src/cookie.js?v=eosgq"></script>
 
 <script>
   // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
