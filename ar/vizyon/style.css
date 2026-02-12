@@ -1,16 +1,16 @@
 
 
   /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
-  .krol9menudrawer-right {
+  .fxytbmenudrawer-right {
     display: none;
   }
 
-  .krol9menulist-menu:hover .dropdown-content-krol9 {
+  .fxytbmenulist-menu:hover .dropdown-content-fxytb {
     display: flex;
     flex-direction: column;
   }
 
-  .krol9menulist-menu {
+  .fxytbmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     white-space: nowrap;
   }
 
-  .krol9menulist-menu:hover {
+  .fxytbmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
@@ -32,29 +32,29 @@
     border-radius: 5px;
   }
 
-  .krol9menulist-menu:hover>a {
+  .fxytbmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .krol9menulist-menu>a {
+  .fxytbmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-krol9 {
+  .dropdown-content-active-fxytb {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-krol9>a {
+  .dropdown-content-active-fxytb>a {
     color: #000 !important;
   }
 
-  .dropdown-content-krol9 {
+  .dropdown-content-fxytb {
     display: none;
     position: absolute;
     background-color: #333;
@@ -64,7 +64,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-krol9>a {
+  .dropdown-content-fxytb>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -73,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-krol9>a:hover {
+  .dropdown-content-fxytb>a:hover {
     background-color: #000;
   }
 
@@ -81,7 +81,7 @@
     width: 300px;
   }
 
-  .krol9body {
+  .fxytbbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .krol9body > a {
+  .fxytbbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -98,7 +98,7 @@
     gap: 10px;
   }
 
-  .krol9right {
+  .fxytbright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .krol9languages {
+  .fxytblanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .krol9languages.lang-hidden {
+  .fxytblanguages.lang-hidden {
     display: none;
   }
 
-  .krol9languages ul {
+  .fxytblanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -123,7 +123,7 @@
     list-style: none;
   }
 
-  .krol9languages li {
+  .fxytblanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -141,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .krol9languages li a {
+  .fxytblanguages li a {
     color: #fff !important;
   }
 
-  .krol9languages li a:hover {
+  .fxytblanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .krol9languages li:hover {
+  .fxytblanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .krol9contactlist {
+  .fxytbcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .krol9contactlist a {
+  .fxytbcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -170,17 +170,17 @@
     color: inherit;
   }
 
-  .krol9-spot {
+  .fxytb-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .krol9-icon {
+  .fxytb-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .krol9 {
+  .fxytb {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
     justify-content: center;
   }
 
-  .krol9menu {
+  .fxytbmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -196,7 +196,7 @@
     position: relative;
   }
 
-  .krol9menubody {
+  .fxytbmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -205,7 +205,7 @@
   }
 
 
-  .krol9menulist {
+  .fxytbmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -216,16 +216,16 @@
     box-sizing: border-box;
   }
   
-  .krol9menulistbody {
+  .fxytbmenulistbody {
     width: 100%;
   }
 
   /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
-  .krol9menuoverlay {
+  .fxytbmenuoverlay {
     display: none;
   }
 
-  .krol9-mobile-toggle {
+  .fxytb-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -237,18 +237,18 @@
     font-size: 20px;
   }
 
-    .krol9-mobile-toggle span {
+    .fxytb-mobile-toggle span {
     font-size: 24px;
   }
 
   /* Kapatma butonu sadece mobil drawer'da görünsün */
-  .krol9menuclose {
+  .fxytbmenuclose {
     display: none;
   }
 
   /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .krol9 {
+    .fxytb {
       position: sticky;
       top: 0;
       z-index: 1000000;
@@ -256,11 +256,11 @@
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     }
 
-    .krol9menu {
+    .fxytbmenu {
       overflow-x: auto;
     }
 
-    .krol9menulist {
+    .fxytbmenulist {
       flex-direction: row;
     }
 
@@ -268,7 +268,7 @@
       width: 200px;
     }
 
-    .krol9body {
+    .fxytbbody {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -277,31 +277,31 @@
       gap: 10px;
     }
 
-    /* Mobilde dil+iletişim sadece drawer'da (krol9menulistbody altında) */
-    .krol9body .krol9right {
+    /* Mobilde dil+iletişim sadece drawer'da (fxytbmenulistbody altında) */
+    .fxytbbody .fxytbright {
       display: none;
     }
 
-    .krol9right {
+    .fxytbright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .krol9contactlist {
+    .fxytbcontactlist {
       display: none;
     }
 
-    .krol9languages.lang-hidden {
+    .fxytblanguages.lang-hidden {
       display: none;
     }
 
-    .krol9languages {
+    .fxytblanguages {
       display: flex;
     }
 
-    .krol9-mobile-toggle {
+    .fxytb-mobile-toggle {
       display: inline-flex;
       min-width: 44px;
       min-height: 44px;
@@ -309,12 +309,12 @@
       justify-content: center;
     }
 
-    .krol9-mobile-toggle:active {
+    .fxytb-mobile-toggle:active {
       opacity: 0.85;
     }
 
     /* Mobil app: overlay (backdrop) */
-    .krol9menuoverlay {
+    .fxytbmenuoverlay {
       display: none;
       position: fixed;
       top: 0;
@@ -328,13 +328,13 @@
       transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .krol9menuoverlay.krol9menu-open {
+    .fxytbmenuoverlay.fxytbmenu-open {
       display: block;
       opacity: 1;
     }
 
     /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
-    .krol9menubody {
+    .fxytbmenubody {
       position: fixed;
       top: 0;
       right: -100%;
@@ -355,11 +355,11 @@
       overflow: hidden;
     }
 
-    .krol9menubody.krol9menu-open {
+    .fxytbmenubody.fxytbmenu-open {
       right: 0;
     }
 
-    .krol9menubody .krol9menu {
+    .fxytbmenubody .fxytbmenu {
       flex-direction: column;
       align-items: stretch;
       width: 100%;
@@ -371,7 +371,7 @@
     }
 
     /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
-    .krol9menuclose {
+    .fxytbmenuclose {
       display: flex;
       position: absolute;
       top: calc(env(safe-area-inset-top, 0) + 4px);
@@ -392,17 +392,17 @@
       z-index: 100;
     }
 
-    .krol9menuclose:active {
+    .fxytbmenuclose:active {
       background-color: rgba(255, 255, 255, 0.12);
     }
 
-    .krol9menuclose span {
+    .fxytbmenuclose span {
       font-size: 24px;
       color: #fff;
     }
 
     /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
-    .krol9menubody .krol9menulistbody {
+    .fxytbmenubody .fxytbmenulistbody {
       flex: 1;
       overflow-y: auto;
       overflow-x: hidden;
@@ -414,7 +414,7 @@
       min-height: 0;
     }
 
-    .krol9menulist {
+    .fxytbmenulist {
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -424,7 +424,7 @@
     }
 
     /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
-    .krol9menubody .krol9menulist-menu {
+    .fxytbmenubody .fxytbmenulist-menu {
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -436,16 +436,16 @@
       box-sizing: border-box;
     }
 
-    .krol9menubody .krol9menulist-menu:last-child {
+    .fxytbmenubody .fxytbmenulist-menu:last-child {
       border-bottom: none;
     }
 
-    .krol9menubody .krol9menulist-menu:active {
+    .fxytbmenubody .fxytbmenulist-menu:active {
       background-color: rgba(255, 255, 255, 0.08);
     }
 
-    /* Drawer: krol9right içeriği (dil + iletişim) krol9menulistbody altında */
-    .krol9menubody .krol9menudrawer-right {
+    /* Drawer: fxytbright içeriği (dil + iletişim) fxytbmenulistbody altında */
+    .fxytbmenubody .fxytbmenudrawer-right {
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
@@ -455,11 +455,11 @@
       background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .krol9menudrawer-right .krol9menudrawer-languages.lang-hidden {
+    .fxytbmenudrawer-right .fxytbmenudrawer-languages.lang-hidden {
       display: none;
     }
 
-    .krol9menudrawer-right .krol9menudrawer-languages ul {
+    .fxytbmenudrawer-right .fxytbmenudrawer-languages ul {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -468,12 +468,12 @@
       list-style: none;
     }
 
-    .krol9menudrawer-right .krol9menudrawer-languages li {
+    .fxytbmenudrawer-right .fxytbmenudrawer-languages li {
       list-style: none;
       margin: 0;
     }
 
-    .krol9menudrawer-right .krol9menudrawer-languages a {
+    .fxytbmenudrawer-right .fxytbmenudrawer-languages a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -490,17 +490,17 @@
       cursor: pointer;
     }
 
-    .krol9menudrawer-right .krol9menudrawer-languages a:active {
+    .fxytbmenudrawer-right .fxytbmenudrawer-languages a:active {
       background-color: rgba(255, 255, 255, 0.2);
     }
 
-    .krol9menudrawer-contactlist {
+    .fxytbmenudrawer-contactlist {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .krol9menudrawer-contactlist a {
+    .fxytbmenudrawer-contactlist a {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -510,16 +510,16 @@
       cursor: pointer;
     }
 
-    .krol9menudrawer-contactlist .krol9-icon {
+    .fxytbmenudrawer-contactlist .fxytb-icon {
       font-size: 24px;
     }
 
-    .krol9menudrawer-contactlist .krol9-spot {
+    .fxytbmenudrawer-contactlist .fxytb-spot {
       font-size: 13px;
       color: rgba(255, 255, 255, 0.85);
     }
 
-    .dropdown-content-krol9 {
+    .dropdown-content-fxytb {
       position: static;
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 4px;
@@ -529,7 +529,7 @@
       border-radius: 8px;
     }
 
-    .krol9menubody .dropdown-content-krol9>a {
+    .fxytbmenubody .dropdown-content-fxytb>a {
       display: block;
       min-height: 44px;
       padding: 12px 16px;
@@ -538,15 +538,15 @@
       box-sizing: border-box;
     }
 
-    .krol9menubody .dropdown-content-krol9>a:last-child {
+    .fxytbmenubody .dropdown-content-fxytb>a:last-child {
       border-bottom: none;
     }
   }
 
   /* Hareket azaltma tercihi: animasyonları kısalt */
   @media (prefers-reduced-motion: reduce) {
-    .krol9menuoverlay,
-    .krol9menubody {
+    .fxytbmenuoverlay,
+    .fxytbmenubody {
       transition: none;
     }
   }
@@ -556,7 +556,7 @@
     justify-content: start;
   }
 
-  .pfobs {
+  .lqguu {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -565,11 +565,11 @@
     box-sizing: border-box;
   }
 
-  .pfobs * {
+  .lqguu * {
     box-sizing: border-box;
   }
 
-  .pfobs-menu-btn {
+  .lqguu-menu-btn {
     display: none;
     background-color: #85260f;
     padding: 10px 20px;
@@ -581,11 +581,11 @@
     align-items: center;
   }
 
-  .pfobs-menu-btn .pfobs-icon {
+  .lqguu-menu-btn .lqguu-icon {
     font-size: 20px;
   }
 
-  .pfobs-menu {
+  .lqguu-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -596,15 +596,15 @@
     float: left;
   }
 
-  .pfobs-desc {
+  .lqguu-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .pfobs-menu-link,
-  .pfobs-top {
+  .lqguu-menu-link,
+  .lqguu-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -619,52 +619,52 @@
     text-align: left;
   }
 
-  .pfobs-menu-link.active,
-  .pfobs-menu-link:hover,
-  .pfobs-top.active,
-  .pfobs-top:hover {
+  .lqguu-menu-link.active,
+  .lqguu-menu-link:hover,
+  .lqguu-top.active,
+  .lqguu-top:hover {
     background-color: #85260f;
     color: #fff;
   }
 
-  .pfobs-menu-group {
+  .lqguu-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .pfobs-top {
+  .lqguu-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .pfobs-top > div {
+  .lqguu-top > div {
     text-align: left;
   }
 
-  .pfobs-top .pfobs-icon {
+  .lqguu-top .lqguu-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .pfobs-menu-group.open .pfobs-top .pfobs-icon {
+  .lqguu-menu-group.open .lqguu-top .lqguu-icon {
     transform: rotate(180deg);
   }
 
-  .pfobs-sub {
+  .lqguu-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .pfobs-sub.show {
+  .lqguu-sub.show {
     display: flex;
   }
 
-  .pfobs-sub-link {
+  .lqguu-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -674,13 +674,13 @@
     text-align: left;
   }
 
-  .pfobs-sub-link.active,
-  .pfobs-sub-link:hover {
+  .lqguu-sub-link.active,
+  .lqguu-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .pfobs-desc-menu {
+  .lqguu-desc-menu {
     width: 200px;
     background-color: #85260f;
     display: flex;
@@ -688,19 +688,19 @@
     border-radius: 5px;
   }
 
-  .pfobs-desc-menu > div {
+  .lqguu-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .pfobs-desc-body {
+  .lqguu-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .pfobs-title {
+  .lqguu-title {
     width: 100%;
     height: 100px;
     background-color: #85260f;
@@ -713,7 +713,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .pfobs-title::before {
+  .lqguu-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -728,7 +728,7 @@
     z-index: 1;
   }
 
-  .pfobs-title h1 {
+  .lqguu-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -736,39 +736,39 @@
     color: #fff !important;
   }
 
-  .pfobs-body {
+  .lqguu-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .pfobs-img {
+  .lqguu-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .pfobs-img img {
+  .lqguu-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .pfobs-menu-overlay {
+    .lqguu-menu-overlay {
       display: none !important;
     }
 
-    .pfobs-menu-close {
+    .lqguu-menu-close {
       display: none !important;
     }
 
-    .pfobs-desc {
+    .lqguu-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .pfobs-menu {
+    .lqguu-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -780,17 +780,17 @@
       padding: 10px;
     }
 
-    .pfobs-menu-link {
+    .lqguu-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .pfobs-top {
+    .lqguu-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .pfobs-menu-btn {
+    .lqguu-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -799,13 +799,13 @@
       z-index: 1;
     }
 
-    .pfobs-menu-btn:focus {
+    .lqguu-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .pfobs-menu-overlay {
+    .lqguu-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -819,13 +819,13 @@
       pointer-events: none;
     }
 
-    .pfobs-menu-overlay.active {
+    .lqguu-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .pfobs {
+    .lqguu {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -834,18 +834,18 @@
       margin-top: 0px;
     }
 
-    .pfobs-img {
+    .lqguu-img {
       width: 100%;
     }
 
-    .pfobs-body {
+    .lqguu-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .pfobs-menu {
+    .lqguu-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -867,13 +867,13 @@
       visibility: hidden;
     }
 
-    .pfobs-menu.active {
+    .lqguu-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .pfobs-menu-close {
+    .lqguu-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -889,21 +889,21 @@
     }
 
     /* Menü içeriği için padding */
-    .pfobs-menu > .pfobs-menu-group,
-    .pfobs-menu > .pfobs-menu-link {
+    .lqguu-menu > .lqguu-menu-group,
+    .lqguu-menu > .lqguu-menu-link {
       padding: 10px;
     }
 
-    .pfobs-menu-close span {
+    .lqguu-menu-close span {
       font-size: 28px;
     }
 
-    .pfobs-menu-close:focus {
+    .lqguu-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .pfobs-desc {
+    .lqguu-desc {
       width: 100% !important;
       order: 2;
     }

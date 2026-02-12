@@ -1,16 +1,16 @@
 
 
   /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
-  .eejfomenudrawer-right {
+  .hoappmenudrawer-right {
     display: none;
   }
 
-  .eejfomenulist-menu:hover .dropdown-content-eejfo {
+  .hoappmenulist-menu:hover .dropdown-content-hoapp {
     display: flex;
     flex-direction: column;
   }
 
-  .eejfomenulist-menu {
+  .hoappmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     white-space: nowrap;
   }
 
-  .eejfomenulist-menu:hover {
+  .hoappmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
@@ -32,29 +32,29 @@
     border-radius: 5px;
   }
 
-  .eejfomenulist-menu:hover>a {
+  .hoappmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .eejfomenulist-menu>a {
+  .hoappmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-eejfo {
+  .dropdown-content-active-hoapp {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-eejfo>a {
+  .dropdown-content-active-hoapp>a {
     color: #000 !important;
   }
 
-  .dropdown-content-eejfo {
+  .dropdown-content-hoapp {
     display: none;
     position: absolute;
     background-color: #333;
@@ -64,7 +64,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-eejfo>a {
+  .dropdown-content-hoapp>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -73,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-eejfo>a:hover {
+  .dropdown-content-hoapp>a:hover {
     background-color: #000;
   }
 
@@ -81,7 +81,7 @@
     width: 300px;
   }
 
-  .eejfobody {
+  .hoappbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .eejfobody > a {
+  .hoappbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -98,7 +98,7 @@
     gap: 10px;
   }
 
-  .eejforight {
+  .hoappright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .eejfolanguages {
+  .hoapplanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .eejfolanguages.lang-hidden {
+  .hoapplanguages.lang-hidden {
     display: none;
   }
 
-  .eejfolanguages ul {
+  .hoapplanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -123,7 +123,7 @@
     list-style: none;
   }
 
-  .eejfolanguages li {
+  .hoapplanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -141,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .eejfolanguages li a {
+  .hoapplanguages li a {
     color: #fff !important;
   }
 
-  .eejfolanguages li a:hover {
+  .hoapplanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .eejfolanguages li:hover {
+  .hoapplanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .eejfocontactlist {
+  .hoappcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .eejfocontactlist a {
+  .hoappcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -170,17 +170,17 @@
     color: inherit;
   }
 
-  .eejfo-spot {
+  .hoapp-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .eejfo-icon {
+  .hoapp-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .eejfo {
+  .hoapp {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
     justify-content: center;
   }
 
-  .eejfomenu {
+  .hoappmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -196,7 +196,7 @@
     position: relative;
   }
 
-  .eejfomenubody {
+  .hoappmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -205,7 +205,7 @@
   }
 
 
-  .eejfomenulist {
+  .hoappmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -216,16 +216,16 @@
     box-sizing: border-box;
   }
   
-  .eejfomenulistbody {
+  .hoappmenulistbody {
     width: 100%;
   }
 
   /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
-  .eejfomenuoverlay {
+  .hoappmenuoverlay {
     display: none;
   }
 
-  .eejfo-mobile-toggle {
+  .hoapp-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -237,18 +237,18 @@
     font-size: 20px;
   }
 
-    .eejfo-mobile-toggle span {
+    .hoapp-mobile-toggle span {
     font-size: 24px;
   }
 
   /* Kapatma butonu sadece mobil drawer'da görünsün */
-  .eejfomenuclose {
+  .hoappmenuclose {
     display: none;
   }
 
   /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .eejfo {
+    .hoapp {
       position: sticky;
       top: 0;
       z-index: 1000000;
@@ -256,11 +256,11 @@
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     }
 
-    .eejfomenu {
+    .hoappmenu {
       overflow-x: auto;
     }
 
-    .eejfomenulist {
+    .hoappmenulist {
       flex-direction: row;
     }
 
@@ -268,7 +268,7 @@
       width: 200px;
     }
 
-    .eejfobody {
+    .hoappbody {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -277,31 +277,31 @@
       gap: 10px;
     }
 
-    /* Mobilde dil+iletişim sadece drawer'da (eejfomenulistbody altında) */
-    .eejfobody .eejforight {
+    /* Mobilde dil+iletişim sadece drawer'da (hoappmenulistbody altında) */
+    .hoappbody .hoappright {
       display: none;
     }
 
-    .eejforight {
+    .hoappright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .eejfocontactlist {
+    .hoappcontactlist {
       display: none;
     }
 
-    .eejfolanguages.lang-hidden {
+    .hoapplanguages.lang-hidden {
       display: none;
     }
 
-    .eejfolanguages {
+    .hoapplanguages {
       display: flex;
     }
 
-    .eejfo-mobile-toggle {
+    .hoapp-mobile-toggle {
       display: inline-flex;
       min-width: 44px;
       min-height: 44px;
@@ -309,12 +309,12 @@
       justify-content: center;
     }
 
-    .eejfo-mobile-toggle:active {
+    .hoapp-mobile-toggle:active {
       opacity: 0.85;
     }
 
     /* Mobil app: overlay (backdrop) */
-    .eejfomenuoverlay {
+    .hoappmenuoverlay {
       display: none;
       position: fixed;
       top: 0;
@@ -328,13 +328,13 @@
       transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .eejfomenuoverlay.eejfomenu-open {
+    .hoappmenuoverlay.hoappmenu-open {
       display: block;
       opacity: 1;
     }
 
     /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
-    .eejfomenubody {
+    .hoappmenubody {
       position: fixed;
       top: 0;
       right: -100%;
@@ -355,11 +355,11 @@
       overflow: hidden;
     }
 
-    .eejfomenubody.eejfomenu-open {
+    .hoappmenubody.hoappmenu-open {
       right: 0;
     }
 
-    .eejfomenubody .eejfomenu {
+    .hoappmenubody .hoappmenu {
       flex-direction: column;
       align-items: stretch;
       width: 100%;
@@ -371,7 +371,7 @@
     }
 
     /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
-    .eejfomenuclose {
+    .hoappmenuclose {
       display: flex;
       position: absolute;
       top: calc(env(safe-area-inset-top, 0) + 4px);
@@ -392,17 +392,17 @@
       z-index: 100;
     }
 
-    .eejfomenuclose:active {
+    .hoappmenuclose:active {
       background-color: rgba(255, 255, 255, 0.12);
     }
 
-    .eejfomenuclose span {
+    .hoappmenuclose span {
       font-size: 24px;
       color: #fff;
     }
 
     /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
-    .eejfomenubody .eejfomenulistbody {
+    .hoappmenubody .hoappmenulistbody {
       flex: 1;
       overflow-y: auto;
       overflow-x: hidden;
@@ -414,7 +414,7 @@
       min-height: 0;
     }
 
-    .eejfomenulist {
+    .hoappmenulist {
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -424,7 +424,7 @@
     }
 
     /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
-    .eejfomenubody .eejfomenulist-menu {
+    .hoappmenubody .hoappmenulist-menu {
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -436,16 +436,16 @@
       box-sizing: border-box;
     }
 
-    .eejfomenubody .eejfomenulist-menu:last-child {
+    .hoappmenubody .hoappmenulist-menu:last-child {
       border-bottom: none;
     }
 
-    .eejfomenubody .eejfomenulist-menu:active {
+    .hoappmenubody .hoappmenulist-menu:active {
       background-color: rgba(255, 255, 255, 0.08);
     }
 
-    /* Drawer: eejforight içeriği (dil + iletişim) eejfomenulistbody altında */
-    .eejfomenubody .eejfomenudrawer-right {
+    /* Drawer: hoappright içeriği (dil + iletişim) hoappmenulistbody altında */
+    .hoappmenubody .hoappmenudrawer-right {
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
@@ -455,11 +455,11 @@
       background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .eejfomenudrawer-right .eejfomenudrawer-languages.lang-hidden {
+    .hoappmenudrawer-right .hoappmenudrawer-languages.lang-hidden {
       display: none;
     }
 
-    .eejfomenudrawer-right .eejfomenudrawer-languages ul {
+    .hoappmenudrawer-right .hoappmenudrawer-languages ul {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -468,12 +468,12 @@
       list-style: none;
     }
 
-    .eejfomenudrawer-right .eejfomenudrawer-languages li {
+    .hoappmenudrawer-right .hoappmenudrawer-languages li {
       list-style: none;
       margin: 0;
     }
 
-    .eejfomenudrawer-right .eejfomenudrawer-languages a {
+    .hoappmenudrawer-right .hoappmenudrawer-languages a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -490,17 +490,17 @@
       cursor: pointer;
     }
 
-    .eejfomenudrawer-right .eejfomenudrawer-languages a:active {
+    .hoappmenudrawer-right .hoappmenudrawer-languages a:active {
       background-color: rgba(255, 255, 255, 0.2);
     }
 
-    .eejfomenudrawer-contactlist {
+    .hoappmenudrawer-contactlist {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .eejfomenudrawer-contactlist a {
+    .hoappmenudrawer-contactlist a {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -510,16 +510,16 @@
       cursor: pointer;
     }
 
-    .eejfomenudrawer-contactlist .eejfo-icon {
+    .hoappmenudrawer-contactlist .hoapp-icon {
       font-size: 24px;
     }
 
-    .eejfomenudrawer-contactlist .eejfo-spot {
+    .hoappmenudrawer-contactlist .hoapp-spot {
       font-size: 13px;
       color: rgba(255, 255, 255, 0.85);
     }
 
-    .dropdown-content-eejfo {
+    .dropdown-content-hoapp {
       position: static;
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 4px;
@@ -529,7 +529,7 @@
       border-radius: 8px;
     }
 
-    .eejfomenubody .dropdown-content-eejfo>a {
+    .hoappmenubody .dropdown-content-hoapp>a {
       display: block;
       min-height: 44px;
       padding: 12px 16px;
@@ -538,15 +538,15 @@
       box-sizing: border-box;
     }
 
-    .eejfomenubody .dropdown-content-eejfo>a:last-child {
+    .hoappmenubody .dropdown-content-hoapp>a:last-child {
       border-bottom: none;
     }
   }
 
   /* Hareket azaltma tercihi: animasyonları kısalt */
   @media (prefers-reduced-motion: reduce) {
-    .eejfomenuoverlay,
-    .eejfomenubody {
+    .hoappmenuoverlay,
+    .hoappmenubody {
       transition: none;
     }
   }
@@ -556,7 +556,7 @@
     justify-content: start;
   }
 
-  .vicro {
+  .rncre {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -565,11 +565,11 @@
     box-sizing: border-box;
   }
 
-  .vicro * {
+  .rncre * {
     box-sizing: border-box;
   }
 
-  .vicro-menu-btn {
+  .rncre-menu-btn {
     display: none;
     background-color: #85260f;
     padding: 10px 20px;
@@ -581,11 +581,11 @@
     align-items: center;
   }
 
-  .vicro-menu-btn .vicro-icon {
+  .rncre-menu-btn .rncre-icon {
     font-size: 20px;
   }
 
-  .vicro-menu {
+  .rncre-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -596,15 +596,15 @@
     float: left;
   }
 
-  .vicro-desc {
+  .rncre-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .vicro-menu-link,
-  .vicro-top {
+  .rncre-menu-link,
+  .rncre-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -619,52 +619,52 @@
     text-align: left;
   }
 
-  .vicro-menu-link.active,
-  .vicro-menu-link:hover,
-  .vicro-top.active,
-  .vicro-top:hover {
+  .rncre-menu-link.active,
+  .rncre-menu-link:hover,
+  .rncre-top.active,
+  .rncre-top:hover {
     background-color: #85260f;
     color: #fff;
   }
 
-  .vicro-menu-group {
+  .rncre-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .vicro-top {
+  .rncre-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .vicro-top > div {
+  .rncre-top > div {
     text-align: left;
   }
 
-  .vicro-top .vicro-icon {
+  .rncre-top .rncre-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .vicro-menu-group.open .vicro-top .vicro-icon {
+  .rncre-menu-group.open .rncre-top .rncre-icon {
     transform: rotate(180deg);
   }
 
-  .vicro-sub {
+  .rncre-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .vicro-sub.show {
+  .rncre-sub.show {
     display: flex;
   }
 
-  .vicro-sub-link {
+  .rncre-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -674,13 +674,13 @@
     text-align: left;
   }
 
-  .vicro-sub-link.active,
-  .vicro-sub-link:hover {
+  .rncre-sub-link.active,
+  .rncre-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .vicro-desc-menu {
+  .rncre-desc-menu {
     width: 200px;
     background-color: #85260f;
     display: flex;
@@ -688,19 +688,19 @@
     border-radius: 5px;
   }
 
-  .vicro-desc-menu > div {
+  .rncre-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .vicro-desc-body {
+  .rncre-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .vicro-title {
+  .rncre-title {
     width: 100%;
     height: 100px;
     background-color: #85260f;
@@ -713,7 +713,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .vicro-title::before {
+  .rncre-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -728,7 +728,7 @@
     z-index: 1;
   }
 
-  .vicro-title h1 {
+  .rncre-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -736,39 +736,39 @@
     color: #fff !important;
   }
 
-  .vicro-body {
+  .rncre-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .vicro-img {
+  .rncre-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .vicro-img img {
+  .rncre-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .vicro-menu-overlay {
+    .rncre-menu-overlay {
       display: none !important;
     }
 
-    .vicro-menu-close {
+    .rncre-menu-close {
       display: none !important;
     }
 
-    .vicro-desc {
+    .rncre-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .vicro-menu {
+    .rncre-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -780,17 +780,17 @@
       padding: 10px;
     }
 
-    .vicro-menu-link {
+    .rncre-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .vicro-top {
+    .rncre-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .vicro-menu-btn {
+    .rncre-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -799,13 +799,13 @@
       z-index: 1;
     }
 
-    .vicro-menu-btn:focus {
+    .rncre-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .vicro-menu-overlay {
+    .rncre-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -819,13 +819,13 @@
       pointer-events: none;
     }
 
-    .vicro-menu-overlay.active {
+    .rncre-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .vicro {
+    .rncre {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -834,18 +834,18 @@
       margin-top: 0px;
     }
 
-    .vicro-img {
+    .rncre-img {
       width: 100%;
     }
 
-    .vicro-body {
+    .rncre-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .vicro-menu {
+    .rncre-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -867,13 +867,13 @@
       visibility: hidden;
     }
 
-    .vicro-menu.active {
+    .rncre-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .vicro-menu-close {
+    .rncre-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -889,21 +889,21 @@
     }
 
     /* Menü içeriği için padding */
-    .vicro-menu > .vicro-menu-group,
-    .vicro-menu > .vicro-menu-link {
+    .rncre-menu > .rncre-menu-group,
+    .rncre-menu > .rncre-menu-link {
       padding: 10px;
     }
 
-    .vicro-menu-close span {
+    .rncre-menu-close span {
       font-size: 28px;
     }
 
-    .vicro-menu-close:focus {
+    .rncre-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .vicro-desc {
+    .rncre-desc {
       width: 100% !important;
       order: 2;
     }
