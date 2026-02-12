@@ -1,10 +1,10 @@
 
-  .sggcpmenulist-menu:hover .dropdown-content-sggcp {
+  .rundbmenulist-menu:hover .dropdown-content-rundb {
     display: flex;
     flex-direction: column;
   }
 
-  .sggcpmenulist-menu {
+  .rundbmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .sggcpmenulist-menu:hover {
+  .rundbmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .sggcpmenulist-menu:hover>a {
+  .rundbmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .sggcpmenulist-menu>a {
+  .rundbmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-sggcp {
+  .dropdown-content-active-rundb {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-sggcp>a {
+  .dropdown-content-active-rundb>a {
     color: #000 !important;
   }
 
-  .dropdown-content-sggcp {
+  .dropdown-content-rundb {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-sggcp>a {
+  .dropdown-content-rundb>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-sggcp>a:hover {
+  .dropdown-content-rundb>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .sggcpbody {
+  .rundbbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .sggcpbody > a {
+  .rundbbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .sggcpright {
+  .rundbright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .sggcplanguages {
+  .rundblanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .sggcplanguages.lang-hidden {
+  .rundblanguages.lang-hidden {
     display: none;
   }
 
-  .sggcplanguages ul {
+  .rundblanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .sggcplanguages li {
+  .rundblanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .sggcplanguages li a {
+  .rundblanguages li a {
     color: #fff !important;
   }
 
-  .sggcplanguages li a:hover {
+  .rundblanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .sggcplanguages li:hover {
+  .rundblanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .sggcpcontactlist {
+  .rundbcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .sggcpcontactlist a {
+  .rundbcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .sggcp-spot {
+  .rundb-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .sggcp-icon {
+  .rundb-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .sggcp {
+  .rundb {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .sggcpmenu {
+  .rundbmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .sggcpmenubody {
+  .rundbmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .sggcpmenulist {
+  .rundbmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .sggcpmenulistbody {
+  .rundbmenulistbody {
     width: 100%;
   }
 
-  .sggcp-mobile-toggle {
+  .rundb-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .sggcp-mobile-toggle span {
+  .rundb-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .sggcpmenu {
+    .rundbmenu {
       overflow-x: auto;
     }
 
-    .sggcpmenulist {
+    .rundbmenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .sggcpbody {
+    .rundbbody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .sggcpbody {
+    .rundbbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .sggcpright {
+    .rundbright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .sggcpcontactlist {
+    .rundbcontactlist {
       display: none;
     }
 
-    .sggcplanguages.lang-hidden {
+    .rundblanguages.lang-hidden {
       display: none;
     }
 
-    .sggcplanguages {
+    .rundblanguages {
       display: flex;
     }
 
-    .sggcp-mobile-toggle {
+    .rundb-mobile-toggle {
       display: inline-flex;
     }
 
-    .sggcpmenulist {
+    .rundbmenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .sggcpmenu.sggcpmenu-open .sggcpmenulist {
+    .rundbmenu.rundbmenu-open .rundbmenulist {
       display: flex;
     }
 
-    .sggcpmenulist-menu {
+    .rundbmenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-sggcp {
+    .dropdown-content-rundb {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-sggcp>a {
+    .dropdown-content-rundb>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
