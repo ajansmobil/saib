@@ -1,10 +1,10 @@
 
-  .db2nkmenulist-menu:hover .dropdown-content-db2nk {
+  .iamhomenulist-menu:hover .dropdown-content-iamho {
     display: flex;
     flex-direction: column;
   }
 
-  .db2nkmenulist-menu {
+  .iamhomenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .db2nkmenulist-menu:hover {
+  .iamhomenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .db2nkmenulist-menu:hover>a {
+  .iamhomenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .db2nkmenulist-menu>a {
+  .iamhomenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-db2nk {
+  .dropdown-content-active-iamho {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-db2nk>a {
+  .dropdown-content-active-iamho>a {
     color: #000 !important;
   }
 
-  .dropdown-content-db2nk {
+  .dropdown-content-iamho {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-db2nk>a {
+  .dropdown-content-iamho>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-db2nk>a:hover {
+  .dropdown-content-iamho>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .db2nkbody {
+  .iamhobody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .db2nkbody > a {
+  .iamhobody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .db2nkright {
+  .iamhoright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .db2nklanguages {
+  .iamholanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .db2nklanguages.lang-hidden {
+  .iamholanguages.lang-hidden {
     display: none;
   }
 
-  .db2nklanguages ul {
+  .iamholanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .db2nklanguages li {
+  .iamholanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .db2nklanguages li a {
+  .iamholanguages li a {
     color: #fff !important;
   }
 
-  .db2nklanguages li a:hover {
+  .iamholanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .db2nklanguages li:hover {
+  .iamholanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .db2nkcontactlist {
+  .iamhocontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .db2nkcontactlist a {
+  .iamhocontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .db2nk-spot {
+  .iamho-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .db2nk-icon {
+  .iamho-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .db2nk {
+  .iamho {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .db2nkmenu {
+  .iamhomenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .db2nkmenubody {
+  .iamhomenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .db2nkmenulist {
+  .iamhomenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .db2nkmenulistbody {
+  .iamhomenulistbody {
     width: 100%;
   }
 
-  .db2nk-mobile-toggle {
+  .iamho-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .db2nk-mobile-toggle span {
+  .iamho-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .db2nkmenu {
+    .iamhomenu {
       overflow-x: auto;
     }
 
-    .db2nkmenulist {
+    .iamhomenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .db2nkbody {
+    .iamhobody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .db2nkbody {
+    .iamhobody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .db2nkright {
+    .iamhoright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .db2nkcontactlist {
+    .iamhocontactlist {
       display: none;
     }
 
-    .db2nklanguages.lang-hidden {
+    .iamholanguages.lang-hidden {
       display: none;
     }
 
-    .db2nklanguages {
+    .iamholanguages {
       display: flex;
     }
 
-    .db2nk-mobile-toggle {
+    .iamho-mobile-toggle {
       display: inline-flex;
     }
 
-    .db2nkmenulist {
+    .iamhomenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .db2nkmenu.db2nkmenu-open .db2nkmenulist {
+    .iamhomenu.iamhomenu-open .iamhomenulist {
       display: flex;
     }
 
-    .db2nkmenulist-menu {
+    .iamhomenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-db2nk {
+    .dropdown-content-iamho {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-db2nk>a {
+    .dropdown-content-iamho>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
