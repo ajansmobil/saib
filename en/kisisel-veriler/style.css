@@ -1,10 +1,10 @@
 
-  .si3inmenulist-menu:hover .dropdown-content-si3in {
+  .hisymmenulist-menu:hover .dropdown-content-hisym {
     display: flex;
     flex-direction: column;
   }
 
-  .si3inmenulist-menu {
+  .hisymmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,36 +19,36 @@
     white-space: nowrap;
   }
 
-  .si3inmenulist-menu:hover {
+  .hisymmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .si3inmenulist-menu:hover>a {
+  .hisymmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .si3inmenulist-menu>a {
+  .hisymmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-si3in {
+  .dropdown-content-active-hisym {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-si3in>a {
+  .dropdown-content-active-hisym>a {
     color: #000 !important;
   }
 
-  .dropdown-content-si3in {
+  .dropdown-content-hisym {
     display: none;
     position: absolute;
     background-color: #333;
@@ -58,7 +58,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-si3in>a {
+  .dropdown-content-hisym>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -67,7 +67,7 @@
     color: #fff;
   }
 
-  .dropdown-content-si3in>a:hover {
+  .dropdown-content-hisym>a:hover {
     background-color: #000;
   }
 
@@ -75,7 +75,7 @@
     width: 300px;
   }
 
-  .si3inbody {
+  .hisymbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@
     justify-content: space-between;
   }
 
-  .si3inbody > a {
+  .hisymbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -92,7 +92,7 @@
     gap: 10px;
   }
 
-  .si3inright {
+  .hisymright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -101,15 +101,15 @@
     align-items: flex-end;
   }
 
-  .si3inlanguages {
+  .hisymlanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .si3inlanguages.lang-hidden {
+  .hisymlanguages.lang-hidden {
     display: none;
   }
 
-  .si3inlanguages ul {
+  .hisymlanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -117,7 +117,7 @@
     list-style: none;
   }
 
-  .si3inlanguages li {
+  .hisymlanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -135,28 +135,28 @@
     transition: all 0.3s ease;
   }
 
-  .si3inlanguages li a {
+  .hisymlanguages li a {
     color: #fff !important;
   }
 
-  .si3inlanguages li a:hover {
+  .hisymlanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .si3inlanguages li:hover {
+  .hisymlanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .si3incontactlist {
+  .hisymcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .si3incontactlist a {
+  .hisymcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -164,17 +164,17 @@
     color: inherit;
   }
 
-  .si3in-spot {
+  .hisym-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .si3in-icon {
+  .hisym-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .si3in {
+  .hisym {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -182,7 +182,7 @@
     justify-content: center;
   }
 
-  .si3inmenu {
+  .hisymmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -190,7 +190,7 @@
     position: relative;
   }
 
-  .si3inmenubody {
+  .hisymmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -199,7 +199,7 @@
   }
 
 
-  .si3inmenulist {
+  .hisymmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -210,11 +210,11 @@
     box-sizing: border-box;
   }
   
-  .si3inmenulistbody {
+  .hisymmenulistbody {
     width: 100%;
   }
 
-  .si3in-mobile-toggle {
+  .hisym-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -226,16 +226,16 @@
     font-size: 20px;
   }
 
-  .si3in-mobile-toggle span {
+  .hisym-mobile-toggle span {
     font-size: 24px;
   }
 
   @media screen and (max-width: 1024px) {
-    .si3inmenu {
+    .hisymmenu {
       overflow-x: auto;
     }
 
-    .si3inmenulist {
+    .hisymmenulist {
       flex-direction: row;
     }
 
@@ -243,7 +243,7 @@
       width: 200px;
     }
 
-    .si3inbody {
+    .hisymbody {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -251,37 +251,37 @@
   }
 
   @media screen and (max-width: 768px) {
-    .si3inbody {
+    .hisymbody {
       width: calc(100% - 20px);
       padding: 0 10px;
       justify-content: space-between;
       gap: 10px;
     }
 
-    .si3inright {
+    .hisymright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .si3incontactlist {
+    .hisymcontactlist {
       display: none;
     }
 
-    .si3inlanguages.lang-hidden {
+    .hisymlanguages.lang-hidden {
       display: none;
     }
 
-    .si3inlanguages {
+    .hisymlanguages {
       display: flex;
     }
 
-    .si3in-mobile-toggle {
+    .hisym-mobile-toggle {
       display: inline-flex;
     }
 
-    .si3inmenulist {
+    .hisymmenulist {
       display: none;
       flex-direction: column;
       gap: 6px;
@@ -289,17 +289,17 @@
       padding: 12px;
     }
 
-    .si3inmenu.si3inmenu-open .si3inmenulist {
+    .hisymmenu.hisymmenu-open .hisymmenulist {
       display: flex;
     }
 
-    .si3inmenulist-menu {
+    .hisymmenulist-menu {
       justify-content: flex-start;
       text-align: left;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .dropdown-content-si3in {
+    .dropdown-content-hisym {
       position: static;
       background-color: rgba(0, 0, 0, 0.85);
       margin-top: 6px;
@@ -307,7 +307,7 @@
       width: 100%;
     }
 
-    .dropdown-content-si3in>a {
+    .dropdown-content-hisym>a {
       border-width: 0 0 1px 0;
       padding: 12px;
     }
@@ -318,7 +318,7 @@
     justify-content: start;
   }
 
-  .pupe5 {
+  .h6k8a {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -327,11 +327,11 @@
     box-sizing: border-box;
   }
 
-  .pupe5 * {
+  .h6k8a * {
     box-sizing: border-box;
   }
 
-  .pupe5-menu-btn {
+  .h6k8a-menu-btn {
     display: none;
     background-color: #85260f;
     padding: 10px 20px;
@@ -343,11 +343,11 @@
     align-items: center;
   }
 
-  .pupe5-menu-btn .pupe5-icon {
+  .h6k8a-menu-btn .h6k8a-icon {
     font-size: 20px;
   }
 
-  .pupe5-menu {
+  .h6k8a-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -358,15 +358,15 @@
     float: left;
   }
 
-  .pupe5-desc {
+  .h6k8a-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .pupe5-menu-link,
-  .pupe5-top {
+  .h6k8a-menu-link,
+  .h6k8a-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -381,52 +381,52 @@
     text-align: left;
   }
 
-  .pupe5-menu-link.active,
-  .pupe5-menu-link:hover,
-  .pupe5-top.active,
-  .pupe5-top:hover {
+  .h6k8a-menu-link.active,
+  .h6k8a-menu-link:hover,
+  .h6k8a-top.active,
+  .h6k8a-top:hover {
     background-color: #85260f;
     color: #fff;
   }
 
-  .pupe5-menu-group {
+  .h6k8a-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .pupe5-top {
+  .h6k8a-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .pupe5-top > div {
+  .h6k8a-top > div {
     text-align: left;
   }
 
-  .pupe5-top .pupe5-icon {
+  .h6k8a-top .h6k8a-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .pupe5-menu-group.open .pupe5-top .pupe5-icon {
+  .h6k8a-menu-group.open .h6k8a-top .h6k8a-icon {
     transform: rotate(180deg);
   }
 
-  .pupe5-sub {
+  .h6k8a-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .pupe5-sub.show {
+  .h6k8a-sub.show {
     display: flex;
   }
 
-  .pupe5-sub-link {
+  .h6k8a-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -436,13 +436,13 @@
     text-align: left;
   }
 
-  .pupe5-sub-link.active,
-  .pupe5-sub-link:hover {
+  .h6k8a-sub-link.active,
+  .h6k8a-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .pupe5-desc-menu {
+  .h6k8a-desc-menu {
     width: 200px;
     background-color: #85260f;
     display: flex;
@@ -450,19 +450,19 @@
     border-radius: 5px;
   }
 
-  .pupe5-desc-menu > div {
+  .h6k8a-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .pupe5-desc-body {
+  .h6k8a-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .pupe5-title {
+  .h6k8a-title {
     width: 100%;
     height: 100px;
     background-color: #85260f;
@@ -475,7 +475,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .pupe5-title::before {
+  .h6k8a-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -490,7 +490,7 @@
     z-index: 1;
   }
 
-  .pupe5-title h1 {
+  .h6k8a-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -498,39 +498,39 @@
     color: #fff !important;
   }
 
-  .pupe5-body {
+  .h6k8a-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .pupe5-img {
+  .h6k8a-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .pupe5-img img {
+  .h6k8a-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .pupe5-menu-overlay {
+    .h6k8a-menu-overlay {
       display: none !important;
     }
 
-    .pupe5-menu-close {
+    .h6k8a-menu-close {
       display: none !important;
     }
 
-    .pupe5-desc {
+    .h6k8a-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .pupe5-menu {
+    .h6k8a-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -542,17 +542,17 @@
       padding: 10px;
     }
 
-    .pupe5-menu-link {
+    .h6k8a-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .pupe5-top {
+    .h6k8a-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .pupe5-menu-btn {
+    .h6k8a-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -561,13 +561,13 @@
       z-index: 1;
     }
 
-    .pupe5-menu-btn:focus {
+    .h6k8a-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .pupe5-menu-overlay {
+    .h6k8a-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -581,13 +581,13 @@
       pointer-events: none;
     }
 
-    .pupe5-menu-overlay.active {
+    .h6k8a-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .pupe5 {
+    .h6k8a {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -596,18 +596,18 @@
       margin-top: 0px;
     }
 
-    .pupe5-img {
+    .h6k8a-img {
       width: 100%;
     }
 
-    .pupe5-body {
+    .h6k8a-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .pupe5-menu {
+    .h6k8a-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -629,13 +629,13 @@
       visibility: hidden;
     }
 
-    .pupe5-menu.active {
+    .h6k8a-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .pupe5-menu-close {
+    .h6k8a-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -651,21 +651,21 @@
     }
 
     /* Menü içeriği için padding */
-    .pupe5-menu > .pupe5-menu-group,
-    .pupe5-menu > .pupe5-menu-link {
+    .h6k8a-menu > .h6k8a-menu-group,
+    .h6k8a-menu > .h6k8a-menu-link {
       padding: 10px;
     }
 
-    .pupe5-menu-close span {
+    .h6k8a-menu-close span {
       font-size: 28px;
     }
 
-    .pupe5-menu-close:focus {
+    .h6k8a-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .pupe5-desc {
+    .h6k8a-desc {
       width: 100% !important;
       order: 2;
     }
