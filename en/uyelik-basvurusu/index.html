@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,22 +12,43 @@
   <meta http-equiv="Pragma" content="cache" />
   <meta http-equiv="Expires" content="3600" />
   <title>Membership Application</title>
+  <meta property="og:title" content="Membership Application" />
   <meta name="description" content="SAIB Membership Application - Information about the requirements, membership types and fees to become a member of our association." />
   <meta name="keywords" content="Membership, Application, Membership Requirements, Fees, Regular Member, Honorary Member" />
-  <meta property="og:title" content="Membership Application" />
   <meta property="og:description" content="SAIB Membership Application - Information about the requirements, membership types and fees to become a member of our association." />
   <meta property="og:image" content="https://saibdernegi.org/img/icon.png" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://saibdernegi.org/en/uyelik-basvurusu/" />
 
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/rubik/rubik-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin />
 
   <link rel="preload" href="/src/rubik.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/css.css?v=nq5c2" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="preload" href="/src/cookie.css?v=nq5c2" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/css.css?v=kv85x" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <link rel="preload" href="/src/cookie.css?v=kv85x" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <link rel="preload" href="/src/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <link rel="shortcut icon" href="/img/icon.png?v=nq5c2" type="image/png" />
+  <link rel="shortcut icon" href="/img/icon.png?v=kv85x" type="image/png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Saib Derneği",
+  "description": "SAİB - Uluslararası Suriye İş Adamları Birliği Derneği. Gaziantep merkezli, Türkiye ve Suriye arasındaki ekonomik iş birliğini geliştirmeyi hedefleyen uluslararası sivil toplum kuruluşu.",
+  "url": "https://saibdernegi.org",
+  "logo": "https://saibdernegi.org/img/logo.svg",
+  "image": "https://saibdernegi.org/img/logo.svg"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Saib Derneği",
+  "url": "https://saibdernegi.org",
+  "logo": "https://saibdernegi.org/img/logo.svg"
+}
+</script>
   
   <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
@@ -51,87 +72,87 @@
   const db = firebase.firestore();
 </script>
 
-  <script type="text/javascript" src="/src/firebase.js?v=nq5c2"></script>
-<link rel="stylesheet" href="style.css?v=nq5c2">
+  <script type="text/javascript" src="/src/firebase.js?v=kv85x"></script>
+<link rel="stylesheet" href="style.css?v=kv85x">
 </head>
 
 <body>
-  <div id="header"><div class="xsjb0">
+  <div id="header"><div class="fm5tz">
 
-  <div class="xsjb0body">
-    <a href="/en/"><img src="/img/logo.svg?v=nq5c2" class="module-logo" alt="Saib Derneği Logo" /></a>
+  <div class="fm5tzbody">
+    <a href="/en/"><img src="/img/logo.svg?v=kv85x" class="module-logo" alt="Saib Derneği Logo" loading="lazy" /></a>
 
 
-    <div class="xsjb0right">
-      <div class="xsjb0languages ">
+    <div class="fm5tzright">
+      <div class="fm5tzlanguages ">
         <ul>
-          <li><a href="/tr/">tr</a></li><li><a href="/en/">en</a></li><li><a href="/ar/">ar</a></li>
+          <li><a href="/tr/uyelik-basvurusu/">tr</a></li><li><a href="/en/uyelik-basvurusu/">en</a></li><li><a href="/ar/uyelik-basvurusu/">ar</a></li>
         </ul>
       </div>
-      <div class="xsjb0contactlist">
-    <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined xsjb0-icon">phone</div>
+      <div class="fm5tzcontactlist">
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined fm5tz-icon">phone</div>
      <div>
-      <div  class="xsjb0-title">Call us now</div>
-      <div  class="xsjb0-spot">0342 341 41 31</div>
+      <div  class="fm5tz-title">Call us now</div>
+      <div  class="fm5tz-spot">0342 341 41 31</div>
      </div>
     </a>
     
-    <a href="info@saibdernegi.org" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined xsjb0-icon">mail</div>
+    <a href="info@saibdernegi.org" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined fm5tz-icon">mail</div>
      <div>
-      <div  class="xsjb0-title">Write to us</div>
-      <div  class="xsjb0-spot">info@saibdernegi.org</div>
+      <div  class="fm5tz-title">Write to us</div>
+      <div  class="fm5tz-spot">info@saibdernegi.org</div>
      </div>
     </a>
     
-    <a href="undefined" class="mobil-closed" target="_new">
-     <div class="material-symbols-outlined xsjb0-icon">location_on</div>
+    <a href="undefined" class="mobil-closed" target="_blank" rel="noopener noreferrer">
+     <div class="material-symbols-outlined fm5tz-icon">location_on</div>
      <div>
-      <div  class="xsjb0-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
-      <div  class="xsjb0-spot">ŞEHİTKAMİL / GAZİANTEP</div>
+      <div  class="fm5tz-title">BATIKENT MH 9132 NOLU SK NO: 5/D</div>
+      <div  class="fm5tz-spot">ŞEHİTKAMİL / GAZİANTEP</div>
      </div>
     </a>
     </div>
     </div>
 
 
-    <button type="button" class="xsjb0-mobile-toggle" onclick="menu3_toggle()">
-      <span class="material-symbols-outlined">menu</span>
+    <button type="button" class="fm5tz-mobile-toggle" onclick="menu3_toggle()" aria-label="Menüyü aç/kapat">
+      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
     </button>
   </div>
-  <div class="xsjb0menubody">
-    <div class="xsjb0menu" id="menu-3-root">
-      <div class="xsjb0menulistbody">
-        <div class="xsjb0menulist"><a class="xsjb0menulist-menu" href="/en/">Home </a><div class="xsjb0menulist-menu " >
+  <div class="fm5tzmenubody">
+    <div class="fm5tzmenu" id="menu-3-root">
+      <div class="fm5tzmenulistbody">
+        <div class="fm5tzmenulist"><a class="fm5tzmenulist-menu" href="/en/">Home </a><div class="fm5tzmenulist-menu " >
 
       <a href="/en/saib-kimdir/">
        Our Association
       </a>
      
                     </div>
-    <div class="xsjb0menulist-menu " >
+    <div class="fm5tzmenulist-menu " >
 
       <a href="/en/haberler/">
        News
       </a>
      
                     </div>
-    <div class="xsjb0menulist-menu dropdown-content-active-xsjb0" >
+    <div class="fm5tzmenulist-menu dropdown-content-active-fm5tz" >
 
       <a href="/en/uyelik-basvurusu/">
        Membership Application
       </a>
      
                     </div>
-    <div class="xsjb0menulist-menu " >
+    <div class="fm5tzmenulist-menu " >
 
       <a href="/en/subelerimiz/">
        Our Branches
       </a>
      
                     </div>
-    <div class="xsjb0menulist-menu " >
+    <div class="fm5tzmenulist-menu " >
 
       <a href="/en/iletisim/">
        Contact
@@ -151,23 +172,24 @@
       if (!root) {
         return;
       }
-      if (root.classList.contains("xsjb0menu-open")) {
-        root.classList.remove("xsjb0menu-open");
+      if (root.classList.contains("fm5tzmenu-open")) {
+        root.classList.remove("fm5tzmenu-open");
       } else {
-        root.classList.add("xsjb0menu-open");
+        root.classList.add("fm5tzmenu-open");
       }
     }
   }
 </script></div>
-  <div id="content"><div class="wt7id" id="wt7id-membership-b1711e">
-  <div class="wt7id-wrapper">
-    <div class="wt7id-header">
-      <div class="wt7id-organization"></div>
-      <div class="wt7id-title">Üyelik Formu</div>
-      <div class="wt7id-subtitle">Lütfen formu doldurunuz.</div>
+  <div id="content"><h1 style="display: none;">Membership Application</h1>
+<div class="yflp6" id="yflp6-membership-b1711e">
+  <div class="yflp6-wrapper">
+    <div class="yflp6-header">
+      <div class="yflp6-organization"></div>
+      <div class="yflp6-title">Üyelik Formu</div>
+      <div class="yflp6-subtitle">Lütfen formu doldurunuz.</div>
     </div>
     <form
-      class="wt7id-form"
+      class="yflp6-form"
       autocomplete="on"
       data-collection="uyelik"
       data-status-field="status"
@@ -182,22 +204,22 @@
       data-organization=""
       data-form-title="Üyelik Formu"
     >
-      <div class="wt7id-alert" role="status" aria-live="polite" style="display: none;"></div>
-      <section class="wt7id-section"><div class="wt7id-section-header">Personal Information</div><div class="wt7id-section-body"><div class="wt7id-row"><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-fullName"><span class="wt7id-label-text">Full Name</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-fullName" name="fullName" placeholder="Enter your full name" required /></div><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-identityNumber"><span class="wt7id-label-text">National ID Number</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-identityNumber" name="identityNumber" placeholder="11-digit national ID number" required maxlength="11" /></div></div><div class="wt7id-row"><div class="wt7id-field wt7id-field-small"><label class="wt7id-field-label" for="wt7id-membership-b1711e-birthDate"><span class="wt7id-label-text">Date of Birth</span></label><input class="wt7id-input" type="date" id="wt7id-membership-b1711e-birthDate" name="birthDate" placeholder="Day-Month-Year" required /></div><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-birthPlace"><span class="wt7id-label-text">Place of Birth</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-birthPlace" name="birthPlace" placeholder="City / Country" required /></div></div><div class="wt7id-row"><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-registeredProvince"><span class="wt7id-label-text">Registered Province</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-registeredProvince" name="registeredProvince" placeholder="Province name" required /></div><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-registeredDistrict"><span class="wt7id-label-text">District</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-registeredDistrict" name="registeredDistrict" placeholder="District name" required /></div></div></div></section><section class="wt7id-section"><div class="wt7id-section-header">Education Information</div><div class="wt7id-section-body"><div class="wt7id-row"><div class="wt7id-field wt7id-field-checkbox" data-columns="3"><div class="wt7id-field-label"><span class="wt7id-label-text">Education Level</span></div><div class="wt7id-checkbox-list"><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-educationLevels-0"><input type="checkbox" id="wt7id-membership-b1711e-educationLevels-0" name="educationLevels[]" value="primary" /><span>Primary School</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-educationLevels-1"><input type="checkbox" id="wt7id-membership-b1711e-educationLevels-1" name="educationLevels[]" value="secondary" /><span>Middle School</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-educationLevels-2"><input type="checkbox" id="wt7id-membership-b1711e-educationLevels-2" name="educationLevels[]" value="highschool" /><span>High School</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-educationLevels-3"><input type="checkbox" id="wt7id-membership-b1711e-educationLevels-3" name="educationLevels[]" value="bachelor" /><span>Bachelor&#39;s</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-educationLevels-4"><input type="checkbox" id="wt7id-membership-b1711e-educationLevels-4" name="educationLevels[]" value="postgraduate" /><span>Postgraduate</span></label></div></div><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-graduatedSchool"><span class="wt7id-label-text">School</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-graduatedSchool" name="graduatedSchool" placeholder="Institution you graduated from" /></div></div><div class="wt7id-row"><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-primaryForeignLanguage"><span class="wt7id-label-text">Foreign Language</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-primaryForeignLanguage" name="primaryForeignLanguage" placeholder="Language name" /></div><div class="wt7id-field wt7id-field-small"><label class="wt7id-field-label" for="wt7id-membership-b1711e-primaryForeignLanguageLevel"><span class="wt7id-label-text">Proficiency</span></label><select class="wt7id-select" id="wt7id-membership-b1711e-primaryForeignLanguageLevel" name="primaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div><div class="wt7id-row"><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-secondaryForeignLanguage"><span class="wt7id-label-text">Second Foreign Language</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-secondaryForeignLanguage" name="secondaryForeignLanguage" placeholder="Language name" /></div><div class="wt7id-field wt7id-field-small"><label class="wt7id-field-label" for="wt7id-membership-b1711e-secondaryForeignLanguageLevel"><span class="wt7id-label-text">Proficiency</span></label><select class="wt7id-select" id="wt7id-membership-b1711e-secondaryForeignLanguageLevel" name="secondaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div></div></section><section class="wt7id-section"><div class="wt7id-section-header">Company Information</div><div class="wt7id-section-body"><div class="wt7id-row"><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-companyName"><span class="wt7id-label-text">Company Name</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-companyName" name="companyName" placeholder="Registered name" required /></div><div class="wt7id-field wt7id-field-small"><label class="wt7id-field-label" for="wt7id-membership-b1711e-establishmentYear"><span class="wt7id-label-text">Year Founded</span></label><input class="wt7id-input" type="number" id="wt7id-membership-b1711e-establishmentYear" name="establishmentYear" placeholder="YYYY" /></div></div><div class="wt7id-row"><div class="wt7id-subheading">Contact Information</div></div><div class="wt7id-row"><div class="wt7id-field wt7id-field-wide"><label class="wt7id-field-label" for="wt7id-membership-b1711e-companyAddress"><span class="wt7id-label-text">Address</span></label><textarea class="wt7id-textarea" id="wt7id-membership-b1711e-companyAddress" name="companyAddress" rows="3" placeholder="Company headquarters address"></textarea></div></div><div class="wt7id-row"><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-companyWebsite"><span class="wt7id-label-text">Website</span></label><input class="wt7id-input" type="url" id="wt7id-membership-b1711e-companyWebsite" name="companyWebsite" placeholder="https://" /></div><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-companyPhone"><span class="wt7id-label-text">Mobile Phone</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-companyPhone" name="companyPhone" placeholder="+90 5XX XXX XX XX" /></div></div><div class="wt7id-row"><div class="wt7id-field wt7id-field-checkbox" data-columns="3"><div class="wt7id-field-label"><span class="wt7id-label-text">Business Sector</span></div><div class="wt7id-checkbox-list"><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-companySectors-0"><input type="checkbox" id="wt7id-membership-b1711e-companySectors-0" name="companySectors[]" value="industry" /><span>Industry</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-companySectors-1"><input type="checkbox" id="wt7id-membership-b1711e-companySectors-1" name="companySectors[]" value="services" /><span>Services</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-companySectors-2"><input type="checkbox" id="wt7id-membership-b1711e-companySectors-2" name="companySectors[]" value="agriculture" /><span>Agriculture</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-companySectors-3"><input type="checkbox" id="wt7id-membership-b1711e-companySectors-3" name="companySectors[]" value="finance" /><span>Financial</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-companySectors-4"><input type="checkbox" id="wt7id-membership-b1711e-companySectors-4" name="companySectors[]" value="contractor" /><span>Contractor</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-companySectors-5"><input type="checkbox" id="wt7id-membership-b1711e-companySectors-5" name="companySectors[]" value="other" /><span>Other</span></label></div></div></div><div class="wt7id-row"><div class="wt7id-field wt7id-field-checkbox" data-columns="3"><div class="wt7id-field-label"><span class="wt7id-label-text">Business Activity</span></div><div class="wt7id-checkbox-list"><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-businessActivities-0"><input type="checkbox" id="wt7id-membership-b1711e-businessActivities-0" name="businessActivities[]" value="producer" /><span>Manufacturer</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-businessActivities-1"><input type="checkbox" id="wt7id-membership-b1711e-businessActivities-1" name="businessActivities[]" value="wholesaler" /><span>Wholesaler</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-businessActivities-2"><input type="checkbox" id="wt7id-membership-b1711e-businessActivities-2" name="businessActivities[]" value="importer" /><span>Importer</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-businessActivities-3"><input type="checkbox" id="wt7id-membership-b1711e-businessActivities-3" name="businessActivities[]" value="exporter" /><span>Exporter</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-businessActivities-4"><input type="checkbox" id="wt7id-membership-b1711e-businessActivities-4" name="businessActivities[]" value="logistics" /><span>Logistics</span></label><label class="wt7id-checkbox-item" for="wt7id-membership-b1711e-businessActivities-5"><input type="checkbox" id="wt7id-membership-b1711e-businessActivities-5" name="businessActivities[]" value="other" /><span>Other</span></label></div></div></div><div class="wt7id-row"><div class="wt7id-field"><label class="wt7id-field-label" for="wt7id-membership-b1711e-annualRevenue"><span class="wt7id-label-text">Annual Revenue</span></label><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-annualRevenue" name="annualRevenue" placeholder="e.g. 50,000,000 ₺" /></div><div class="wt7id-field wt7id-field-small"><label class="wt7id-field-label" for="wt7id-membership-b1711e-employeeCount"><span class="wt7id-label-text">Number of Employees</span></label><input class="wt7id-input" type="number" id="wt7id-membership-b1711e-employeeCount" name="employeeCount" placeholder="e.g. 45" /></div></div></div></section><section class="wt7id-section"><div class="wt7id-section-header">Current Memberships in Other Organizations<div class="wt7id-section-subtitle">(Party, Association, Foundation, Group, Club)</div></div><div class="wt7id-section-body"><div class="wt7id-line-list-wrapper"><div class="wt7id-field-label wt7id-line-list-label"><span class="wt7id-label-text">Organization / Role</span></div><div class="wt7id-line-list"><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-otherMemberships-0"><span class="wt7id-line-number">1)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-otherMemberships-0" name="otherMemberships[0]" placeholder="Organization name and your role" /></label><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-otherMemberships-1"><span class="wt7id-line-number">2)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-otherMemberships-1" name="otherMemberships[1]" placeholder="Organization name and your role" /></label><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-otherMemberships-2"><span class="wt7id-line-number">3)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-otherMemberships-2" name="otherMemberships[2]" placeholder="Organization name and your role" /></label><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-otherMemberships-3"><span class="wt7id-line-number">4)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-otherMemberships-3" name="otherMemberships[3]" placeholder="Organization name and your role" /></label><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-otherMemberships-4"><span class="wt7id-line-number">5)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-otherMemberships-4" name="otherMemberships[4]" placeholder="Organization name and your role" /></label><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-otherMemberships-5"><span class="wt7id-line-number">6)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-otherMemberships-5" name="otherMemberships[5]" placeholder="Organization name and your role" /></label></div></div></div></section><section class="wt7id-section"><div class="wt7id-section-header">References Supporting the Application</div><div class="wt7id-section-body"><div class="wt7id-line-list-wrapper"><div class="wt7id-field-label wt7id-line-list-label"><span class="wt7id-label-text">Full Name</span></div><div class="wt7id-line-list"><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-references-0"><span class="wt7id-line-number">1)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-references-0" name="references[0]" placeholder="Reference name and contact details" /></label><label class="wt7id-line-list-item" for="wt7id-membership-b1711e-references-1"><span class="wt7id-line-number">2)</span><input class="wt7id-input" type="text" id="wt7id-membership-b1711e-references-1" name="references[1]" placeholder="Reference name and contact details" /></label></div></div></div></section>
-      <div class="wt7id-actions">
-        <button type="submit" class="wt7id-submit">
+      <div class="yflp6-alert" role="status" aria-live="polite" style="display: none;"></div>
+      <section class="yflp6-section"><div class="yflp6-section-header">Personal Information</div><div class="yflp6-section-body"><div class="yflp6-row"><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-fullName"><span class="yflp6-label-text">Full Name</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-fullName" name="fullName" placeholder="Enter your full name" required /></div><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-identityNumber"><span class="yflp6-label-text">National ID Number</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-identityNumber" name="identityNumber" placeholder="11-digit national ID number" required maxlength="11" /></div></div><div class="yflp6-row"><div class="yflp6-field yflp6-field-small"><label class="yflp6-field-label" for="yflp6-membership-b1711e-birthDate"><span class="yflp6-label-text">Date of Birth</span></label><input class="yflp6-input" type="date" id="yflp6-membership-b1711e-birthDate" name="birthDate" placeholder="Day-Month-Year" required /></div><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-birthPlace"><span class="yflp6-label-text">Place of Birth</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-birthPlace" name="birthPlace" placeholder="City / Country" required /></div></div><div class="yflp6-row"><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-registeredProvince"><span class="yflp6-label-text">Registered Province</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-registeredProvince" name="registeredProvince" placeholder="Province name" required /></div><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-registeredDistrict"><span class="yflp6-label-text">District</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-registeredDistrict" name="registeredDistrict" placeholder="District name" required /></div></div></div></section><section class="yflp6-section"><div class="yflp6-section-header">Education Information</div><div class="yflp6-section-body"><div class="yflp6-row"><div class="yflp6-field yflp6-field-checkbox" data-columns="3"><div class="yflp6-field-label"><span class="yflp6-label-text">Education Level</span></div><div class="yflp6-checkbox-list"><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-educationLevels-0"><input type="checkbox" id="yflp6-membership-b1711e-educationLevels-0" name="educationLevels[]" value="primary" /><span>Primary School</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-educationLevels-1"><input type="checkbox" id="yflp6-membership-b1711e-educationLevels-1" name="educationLevels[]" value="secondary" /><span>Middle School</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-educationLevels-2"><input type="checkbox" id="yflp6-membership-b1711e-educationLevels-2" name="educationLevels[]" value="highschool" /><span>High School</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-educationLevels-3"><input type="checkbox" id="yflp6-membership-b1711e-educationLevels-3" name="educationLevels[]" value="bachelor" /><span>Bachelor&#39;s</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-educationLevels-4"><input type="checkbox" id="yflp6-membership-b1711e-educationLevels-4" name="educationLevels[]" value="postgraduate" /><span>Postgraduate</span></label></div></div><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-graduatedSchool"><span class="yflp6-label-text">School</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-graduatedSchool" name="graduatedSchool" placeholder="Institution you graduated from" /></div></div><div class="yflp6-row"><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-primaryForeignLanguage"><span class="yflp6-label-text">Foreign Language</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-primaryForeignLanguage" name="primaryForeignLanguage" placeholder="Language name" /></div><div class="yflp6-field yflp6-field-small"><label class="yflp6-field-label" for="yflp6-membership-b1711e-primaryForeignLanguageLevel"><span class="yflp6-label-text">Proficiency</span></label><select class="yflp6-select" id="yflp6-membership-b1711e-primaryForeignLanguageLevel" name="primaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div><div class="yflp6-row"><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-secondaryForeignLanguage"><span class="yflp6-label-text">Second Foreign Language</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-secondaryForeignLanguage" name="secondaryForeignLanguage" placeholder="Language name" /></div><div class="yflp6-field yflp6-field-small"><label class="yflp6-field-label" for="yflp6-membership-b1711e-secondaryForeignLanguageLevel"><span class="yflp6-label-text">Proficiency</span></label><select class="yflp6-select" id="yflp6-membership-b1711e-secondaryForeignLanguageLevel" name="secondaryForeignLanguageLevel"><option value=""></option><option value="intermediate">Intermediate</option><option value="good">Good</option><option value="excellent">Excellent</option></select></div></div></div></section><section class="yflp6-section"><div class="yflp6-section-header">Company Information</div><div class="yflp6-section-body"><div class="yflp6-row"><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-companyName"><span class="yflp6-label-text">Company Name</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-companyName" name="companyName" placeholder="Registered name" required /></div><div class="yflp6-field yflp6-field-small"><label class="yflp6-field-label" for="yflp6-membership-b1711e-establishmentYear"><span class="yflp6-label-text">Year Founded</span></label><input class="yflp6-input" type="number" id="yflp6-membership-b1711e-establishmentYear" name="establishmentYear" placeholder="YYYY" /></div></div><div class="yflp6-row"><div class="yflp6-subheading">Contact Information</div></div><div class="yflp6-row"><div class="yflp6-field yflp6-field-wide"><label class="yflp6-field-label" for="yflp6-membership-b1711e-companyAddress"><span class="yflp6-label-text">Address</span></label><textarea class="yflp6-textarea" id="yflp6-membership-b1711e-companyAddress" name="companyAddress" rows="3" placeholder="Company headquarters address"></textarea></div></div><div class="yflp6-row"><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-companyWebsite"><span class="yflp6-label-text">Website</span></label><input class="yflp6-input" type="url" id="yflp6-membership-b1711e-companyWebsite" name="companyWebsite" placeholder="https://" /></div><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-companyPhone"><span class="yflp6-label-text">Mobile Phone</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-companyPhone" name="companyPhone" placeholder="+90 5XX XXX XX XX" /></div></div><div class="yflp6-row"><div class="yflp6-field yflp6-field-checkbox" data-columns="3"><div class="yflp6-field-label"><span class="yflp6-label-text">Business Sector</span></div><div class="yflp6-checkbox-list"><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-companySectors-0"><input type="checkbox" id="yflp6-membership-b1711e-companySectors-0" name="companySectors[]" value="industry" /><span>Industry</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-companySectors-1"><input type="checkbox" id="yflp6-membership-b1711e-companySectors-1" name="companySectors[]" value="services" /><span>Services</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-companySectors-2"><input type="checkbox" id="yflp6-membership-b1711e-companySectors-2" name="companySectors[]" value="agriculture" /><span>Agriculture</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-companySectors-3"><input type="checkbox" id="yflp6-membership-b1711e-companySectors-3" name="companySectors[]" value="finance" /><span>Financial</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-companySectors-4"><input type="checkbox" id="yflp6-membership-b1711e-companySectors-4" name="companySectors[]" value="contractor" /><span>Contractor</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-companySectors-5"><input type="checkbox" id="yflp6-membership-b1711e-companySectors-5" name="companySectors[]" value="other" /><span>Other</span></label></div></div></div><div class="yflp6-row"><div class="yflp6-field yflp6-field-checkbox" data-columns="3"><div class="yflp6-field-label"><span class="yflp6-label-text">Business Activity</span></div><div class="yflp6-checkbox-list"><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-businessActivities-0"><input type="checkbox" id="yflp6-membership-b1711e-businessActivities-0" name="businessActivities[]" value="producer" /><span>Manufacturer</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-businessActivities-1"><input type="checkbox" id="yflp6-membership-b1711e-businessActivities-1" name="businessActivities[]" value="wholesaler" /><span>Wholesaler</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-businessActivities-2"><input type="checkbox" id="yflp6-membership-b1711e-businessActivities-2" name="businessActivities[]" value="importer" /><span>Importer</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-businessActivities-3"><input type="checkbox" id="yflp6-membership-b1711e-businessActivities-3" name="businessActivities[]" value="exporter" /><span>Exporter</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-businessActivities-4"><input type="checkbox" id="yflp6-membership-b1711e-businessActivities-4" name="businessActivities[]" value="logistics" /><span>Logistics</span></label><label class="yflp6-checkbox-item" for="yflp6-membership-b1711e-businessActivities-5"><input type="checkbox" id="yflp6-membership-b1711e-businessActivities-5" name="businessActivities[]" value="other" /><span>Other</span></label></div></div></div><div class="yflp6-row"><div class="yflp6-field"><label class="yflp6-field-label" for="yflp6-membership-b1711e-annualRevenue"><span class="yflp6-label-text">Annual Revenue</span></label><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-annualRevenue" name="annualRevenue" placeholder="e.g. 50,000,000 ₺" /></div><div class="yflp6-field yflp6-field-small"><label class="yflp6-field-label" for="yflp6-membership-b1711e-employeeCount"><span class="yflp6-label-text">Number of Employees</span></label><input class="yflp6-input" type="number" id="yflp6-membership-b1711e-employeeCount" name="employeeCount" placeholder="e.g. 45" /></div></div></div></section><section class="yflp6-section"><div class="yflp6-section-header">Current Memberships in Other Organizations<div class="yflp6-section-subtitle">(Party, Association, Foundation, Group, Club)</div></div><div class="yflp6-section-body"><div class="yflp6-line-list-wrapper"><div class="yflp6-field-label yflp6-line-list-label"><span class="yflp6-label-text">Organization / Role</span></div><div class="yflp6-line-list"><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-otherMemberships-0"><span class="yflp6-line-number">1)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-otherMemberships-0" name="otherMemberships[0]" placeholder="Organization name and your role" /></label><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-otherMemberships-1"><span class="yflp6-line-number">2)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-otherMemberships-1" name="otherMemberships[1]" placeholder="Organization name and your role" /></label><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-otherMemberships-2"><span class="yflp6-line-number">3)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-otherMemberships-2" name="otherMemberships[2]" placeholder="Organization name and your role" /></label><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-otherMemberships-3"><span class="yflp6-line-number">4)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-otherMemberships-3" name="otherMemberships[3]" placeholder="Organization name and your role" /></label><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-otherMemberships-4"><span class="yflp6-line-number">5)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-otherMemberships-4" name="otherMemberships[4]" placeholder="Organization name and your role" /></label><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-otherMemberships-5"><span class="yflp6-line-number">6)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-otherMemberships-5" name="otherMemberships[5]" placeholder="Organization name and your role" /></label></div></div></div></section><section class="yflp6-section"><div class="yflp6-section-header">References Supporting the Application</div><div class="yflp6-section-body"><div class="yflp6-line-list-wrapper"><div class="yflp6-field-label yflp6-line-list-label"><span class="yflp6-label-text">Full Name</span></div><div class="yflp6-line-list"><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-references-0"><span class="yflp6-line-number">1)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-references-0" name="references[0]" placeholder="Reference name and contact details" /></label><label class="yflp6-line-list-item" for="yflp6-membership-b1711e-references-1"><span class="yflp6-line-number">2)</span><input class="yflp6-input" type="text" id="yflp6-membership-b1711e-references-1" name="references[1]" placeholder="Reference name and contact details" /></label></div></div></div></section>
+      <div class="yflp6-actions">
+        <button type="submit" class="yflp6-submit">
           <span class="material-symbols-outlined">send</span>
           <span>Gönder</span>
         </button>
       </div>
     </form>
-    <div class="wt7id-footer">
-      <div class="wt7id-footer-note">Formu eksiksiz doldurmanız gerekmektedir.</div>
+    <div class="yflp6-footer">
+      <div class="yflp6-footer-note">Formu eksiksiz doldurmanız gerekmektedir.</div>
     </div>
-    <div class="wt7id-status-overlay" aria-live="assertive" aria-hidden="true" data-thanks="Kaydolduğunuz için teşekkürler.">
-      <div class="wt7id-status-content">
-        <div class="wt7id-status-spinner" role="presentation"></div>
-        <div class="wt7id-status-text">Üyelik kaydı yapılıyor...</div>
+    <div class="yflp6-status-overlay" aria-live="assertive" aria-hidden="true" data-thanks="Kaydolduğunuz için teşekkürler.">
+      <div class="yflp6-status-content">
+        <div class="yflp6-status-spinner" role="presentation"></div>
+        <div class="yflp6-status-text">Üyelik kaydı yapılıyor...</div>
       </div>
     </div>
   </div>
@@ -205,7 +227,7 @@
 
 <script>
   (function () {
-    var moduleId = "wt7id-membership-b1711e";
+    var moduleId = "yflp6-membership-b1711e";
     var MAX_ATTEMPTS = 40;
     var RETRY_DELAY = 200;
 
@@ -216,10 +238,10 @@
       if (!message) {
         alertBox.style.display = "none";
         alertBox.textContent = "";
-        alertBox.className = "wt7id-alert";
+        alertBox.className = "yflp6-alert";
         return;
       }
-      alertBox.className = "wt7id-alert wt7id-alert-" + type;
+      alertBox.className = "yflp6-alert yflp6-alert-" + type;
       alertBox.textContent = message;
       alertBox.style.display = "block";
     }
@@ -317,15 +339,15 @@
         }
         return;
       }
-      var form = root.querySelector(".wt7id-form");
+      var form = root.querySelector(".yflp6-form");
       if (!form) {
         return;
       }
-      if (form.getAttribute("data-wt7id-ready") === "true") {
+      if (form.getAttribute("data-yflp6-ready") === "true") {
         return;
       }
-      var statusOverlay = root.querySelector(".wt7id-status-overlay");
-      var statusTextNode = statusOverlay ? statusOverlay.querySelector(".wt7id-status-text") : null;
+      var statusOverlay = root.querySelector(".yflp6-status-overlay");
+      var statusTextNode = statusOverlay ? statusOverlay.querySelector(".yflp6-status-text") : null;
       var overlayTimer = null;
       var overlayThanksMessage = statusOverlay ? statusOverlay.getAttribute("data-thanks") || "" : "";
 
@@ -358,8 +380,8 @@
           applyHide();
         }
       }
-      var alertBox = form.querySelector(".wt7id-alert");
-      var submitButton = form.querySelector(".wt7id-submit");
+      var alertBox = form.querySelector(".yflp6-alert");
+      var submitButton = form.querySelector(".yflp6-submit");
       var submitLabelNode = submitButton ? submitButton.querySelector("span:last-child") : null;
       var defaultButtonText = submitLabelNode ? submitLabelNode.textContent : "";
       var firebaseReady = typeof dataAddWeb === "function" && typeof db !== "undefined";
@@ -379,10 +401,10 @@
         return;
       }
       showAlert(alertBox, "", "");
-      form.setAttribute("data-wt7id-ready", "true");
+      form.setAttribute("data-yflp6-ready", "true");
       if (submitButton) {
         submitButton.disabled = false;
-        submitButton.classList.remove("wt7id-submit-disabled");
+        submitButton.classList.remove("yflp6-submit-disabled");
       }
       var isSubmitting = false;
       form.addEventListener("submit", function (event) {
@@ -423,7 +445,7 @@
         isSubmitting = true;
         if (submitButton) {
           submitButton.disabled = true;
-          submitButton.classList.add("wt7id-submit-disabled");
+          submitButton.classList.add("yflp6-submit-disabled");
         }
         if (submitLabelNode) {
           submitLabelNode.textContent = form.getAttribute("data-submitting") || defaultButtonText;
@@ -454,7 +476,7 @@
             isSubmitting = false;
             if (submitButton) {
               submitButton.disabled = false;
-              submitButton.classList.remove("wt7id-submit-disabled");
+              submitButton.classList.remove("yflp6-submit-disabled");
             }
             if (submitLabelNode) {
               submitLabelNode.textContent = defaultButtonText;
@@ -526,7 +548,26 @@
 
 
 <script defer src="/src/swiper-bundle.min.js"></script>
-<script defer type="text/javascript" src="/src/js.js?v=nq5c2"></script>
-<script defer src="/src/cookie.js?v=nq5c2"></script>
+<script defer type="text/javascript" src="/src/js.js?v=kv85x"></script>
+<script defer src="/src/cookie.js?v=kv85x"></script>
+
+<script>
+  // RTL dil kontrolü - Arapça için sağdan sola yazım desteği
+  setTimeout(function() {
+    var currentPath = window.location.pathname;
+    var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
+    
+    // URL'den dil kodunu çıkar (/ar/, /he/, /fa/ gibi)
+    var langMatch = currentPath.match(/^\/([a-z]{2})\//);
+    var currentLang = langMatch ? langMatch[1] : '';
+    
+    // Eğer RTL dil ise dir="rtl" set et
+    if (rtlLanguages.indexOf(currentLang) !== -1) {
+      document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+    }
+  }, 100);
+</script>
 
 </html>
