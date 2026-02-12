@@ -1,16 +1,16 @@
 
 
   /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
-  .bsav7menudrawer-right {
+  .ioclzmenudrawer-right {
     display: none;
   }
 
-  .bsav7menulist-menu:hover .dropdown-content-bsav7 {
+  .ioclzmenulist-menu:hover .dropdown-content-ioclz {
     display: flex;
     flex-direction: column;
   }
 
-  .bsav7menulist-menu {
+  .ioclzmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     white-space: nowrap;
   }
 
-  .bsav7menulist-menu:hover {
+  .ioclzmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
@@ -32,29 +32,29 @@
     border-radius: 5px;
   }
 
-  .bsav7menulist-menu:hover>a {
+  .ioclzmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .bsav7menulist-menu>a {
+  .ioclzmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-bsav7 {
+  .dropdown-content-active-ioclz {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-bsav7>a {
+  .dropdown-content-active-ioclz>a {
     color: #000 !important;
   }
 
-  .dropdown-content-bsav7 {
+  .dropdown-content-ioclz {
     display: none;
     position: absolute;
     background-color: #333;
@@ -64,7 +64,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-bsav7>a {
+  .dropdown-content-ioclz>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -73,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-bsav7>a:hover {
+  .dropdown-content-ioclz>a:hover {
     background-color: #000;
   }
 
@@ -81,7 +81,7 @@
     width: 300px;
   }
 
-  .bsav7body {
+  .ioclzbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .bsav7body > a {
+  .ioclzbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -98,7 +98,7 @@
     gap: 10px;
   }
 
-  .bsav7right {
+  .ioclzright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .bsav7languages {
+  .ioclzlanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .bsav7languages.lang-hidden {
+  .ioclzlanguages.lang-hidden {
     display: none;
   }
 
-  .bsav7languages ul {
+  .ioclzlanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -123,7 +123,7 @@
     list-style: none;
   }
 
-  .bsav7languages li {
+  .ioclzlanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -141,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .bsav7languages li a {
+  .ioclzlanguages li a {
     color: #fff !important;
   }
 
-  .bsav7languages li a:hover {
+  .ioclzlanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .bsav7languages li:hover {
+  .ioclzlanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .bsav7contactlist {
+  .ioclzcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .bsav7contactlist a {
+  .ioclzcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -170,17 +170,17 @@
     color: inherit;
   }
 
-  .bsav7-spot {
+  .ioclz-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .bsav7-icon {
+  .ioclz-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .bsav7 {
+  .ioclz {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
     justify-content: center;
   }
 
-  .bsav7menu {
+  .ioclzmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -196,7 +196,7 @@
     position: relative;
   }
 
-  .bsav7menubody {
+  .ioclzmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -205,7 +205,7 @@
   }
 
 
-  .bsav7menulist {
+  .ioclzmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -216,16 +216,16 @@
     box-sizing: border-box;
   }
   
-  .bsav7menulistbody {
+  .ioclzmenulistbody {
     width: 100%;
   }
 
   /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
-  .bsav7menuoverlay {
+  .ioclzmenuoverlay {
     display: none;
   }
 
-  .bsav7-mobile-toggle {
+  .ioclz-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -237,18 +237,18 @@
     font-size: 20px;
   }
 
-    .bsav7-mobile-toggle span {
+    .ioclz-mobile-toggle span {
     font-size: 24px;
   }
 
   /* Kapatma butonu sadece mobil drawer'da görünsün */
-  .bsav7menuclose {
+  .ioclzmenuclose {
     display: none;
   }
 
   /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .bsav7 {
+    .ioclz {
       position: sticky;
       top: 0;
       z-index: 1000000;
@@ -256,11 +256,11 @@
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     }
 
-    .bsav7menu {
+    .ioclzmenu {
       overflow-x: auto;
     }
 
-    .bsav7menulist {
+    .ioclzmenulist {
       flex-direction: row;
     }
 
@@ -268,7 +268,7 @@
       width: 200px;
     }
 
-    .bsav7body {
+    .ioclzbody {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -277,31 +277,31 @@
       gap: 10px;
     }
 
-    /* Mobilde dil+iletişim sadece drawer'da (bsav7menulistbody altında) */
-    .bsav7body .bsav7right {
+    /* Mobilde dil+iletişim sadece drawer'da (ioclzmenulistbody altında) */
+    .ioclzbody .ioclzright {
       display: none;
     }
 
-    .bsav7right {
+    .ioclzright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .bsav7contactlist {
+    .ioclzcontactlist {
       display: none;
     }
 
-    .bsav7languages.lang-hidden {
+    .ioclzlanguages.lang-hidden {
       display: none;
     }
 
-    .bsav7languages {
+    .ioclzlanguages {
       display: flex;
     }
 
-    .bsav7-mobile-toggle {
+    .ioclz-mobile-toggle {
       display: inline-flex;
       min-width: 44px;
       min-height: 44px;
@@ -309,12 +309,12 @@
       justify-content: center;
     }
 
-    .bsav7-mobile-toggle:active {
+    .ioclz-mobile-toggle:active {
       opacity: 0.85;
     }
 
     /* Mobil app: overlay (backdrop) */
-    .bsav7menuoverlay {
+    .ioclzmenuoverlay {
       display: none;
       position: fixed;
       top: 0;
@@ -328,13 +328,13 @@
       transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .bsav7menuoverlay.bsav7menu-open {
+    .ioclzmenuoverlay.ioclzmenu-open {
       display: block;
       opacity: 1;
     }
 
     /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
-    .bsav7menubody {
+    .ioclzmenubody {
       position: fixed;
       top: 0;
       right: -100%;
@@ -355,11 +355,11 @@
       overflow: hidden;
     }
 
-    .bsav7menubody.bsav7menu-open {
+    .ioclzmenubody.ioclzmenu-open {
       right: 0;
     }
 
-    .bsav7menubody .bsav7menu {
+    .ioclzmenubody .ioclzmenu {
       flex-direction: column;
       align-items: stretch;
       width: 100%;
@@ -371,7 +371,7 @@
     }
 
     /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
-    .bsav7menuclose {
+    .ioclzmenuclose {
       display: flex;
       position: absolute;
       top: calc(env(safe-area-inset-top, 0) + 4px);
@@ -392,17 +392,17 @@
       z-index: 100;
     }
 
-    .bsav7menuclose:active {
+    .ioclzmenuclose:active {
       background-color: rgba(255, 255, 255, 0.12);
     }
 
-    .bsav7menuclose span {
+    .ioclzmenuclose span {
       font-size: 24px;
       color: #fff;
     }
 
     /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
-    .bsav7menubody .bsav7menulistbody {
+    .ioclzmenubody .ioclzmenulistbody {
       flex: 1;
       overflow-y: auto;
       overflow-x: hidden;
@@ -414,7 +414,7 @@
       min-height: 0;
     }
 
-    .bsav7menulist {
+    .ioclzmenulist {
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -424,7 +424,7 @@
     }
 
     /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
-    .bsav7menubody .bsav7menulist-menu {
+    .ioclzmenubody .ioclzmenulist-menu {
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -436,16 +436,16 @@
       box-sizing: border-box;
     }
 
-    .bsav7menubody .bsav7menulist-menu:last-child {
+    .ioclzmenubody .ioclzmenulist-menu:last-child {
       border-bottom: none;
     }
 
-    .bsav7menubody .bsav7menulist-menu:active {
+    .ioclzmenubody .ioclzmenulist-menu:active {
       background-color: rgba(255, 255, 255, 0.08);
     }
 
-    /* Drawer: bsav7right içeriği (dil + iletişim) bsav7menulistbody altında */
-    .bsav7menubody .bsav7menudrawer-right {
+    /* Drawer: ioclzright içeriği (dil + iletişim) ioclzmenulistbody altında */
+    .ioclzmenubody .ioclzmenudrawer-right {
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
@@ -455,11 +455,11 @@
       background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .bsav7menudrawer-right .bsav7menudrawer-languages.lang-hidden {
+    .ioclzmenudrawer-right .ioclzmenudrawer-languages.lang-hidden {
       display: none;
     }
 
-    .bsav7menudrawer-right .bsav7menudrawer-languages ul {
+    .ioclzmenudrawer-right .ioclzmenudrawer-languages ul {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -468,12 +468,12 @@
       list-style: none;
     }
 
-    .bsav7menudrawer-right .bsav7menudrawer-languages li {
+    .ioclzmenudrawer-right .ioclzmenudrawer-languages li {
       list-style: none;
       margin: 0;
     }
 
-    .bsav7menudrawer-right .bsav7menudrawer-languages a {
+    .ioclzmenudrawer-right .ioclzmenudrawer-languages a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -490,17 +490,17 @@
       cursor: pointer;
     }
 
-    .bsav7menudrawer-right .bsav7menudrawer-languages a:active {
+    .ioclzmenudrawer-right .ioclzmenudrawer-languages a:active {
       background-color: rgba(255, 255, 255, 0.2);
     }
 
-    .bsav7menudrawer-contactlist {
+    .ioclzmenudrawer-contactlist {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .bsav7menudrawer-contactlist a {
+    .ioclzmenudrawer-contactlist a {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -510,16 +510,16 @@
       cursor: pointer;
     }
 
-    .bsav7menudrawer-contactlist .bsav7-icon {
+    .ioclzmenudrawer-contactlist .ioclz-icon {
       font-size: 24px;
     }
 
-    .bsav7menudrawer-contactlist .bsav7-spot {
+    .ioclzmenudrawer-contactlist .ioclz-spot {
       font-size: 13px;
       color: rgba(255, 255, 255, 0.85);
     }
 
-    .dropdown-content-bsav7 {
+    .dropdown-content-ioclz {
       position: static;
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 4px;
@@ -529,7 +529,7 @@
       border-radius: 8px;
     }
 
-    .bsav7menubody .dropdown-content-bsav7>a {
+    .ioclzmenubody .dropdown-content-ioclz>a {
       display: block;
       min-height: 44px;
       padding: 12px 16px;
@@ -538,15 +538,15 @@
       box-sizing: border-box;
     }
 
-    .bsav7menubody .dropdown-content-bsav7>a:last-child {
+    .ioclzmenubody .dropdown-content-ioclz>a:last-child {
       border-bottom: none;
     }
   }
 
   /* Hareket azaltma tercihi: animasyonları kısalt */
   @media (prefers-reduced-motion: reduce) {
-    .bsav7menuoverlay,
-    .bsav7menubody {
+    .ioclzmenuoverlay,
+    .ioclzmenubody {
       transition: none;
     }
   }
@@ -556,7 +556,7 @@
     justify-content: start;
   }
 
-  .tayit {
+  .v8q34 {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -565,11 +565,11 @@
     box-sizing: border-box;
   }
 
-  .tayit * {
+  .v8q34 * {
     box-sizing: border-box;
   }
 
-  .tayit-menu-btn {
+  .v8q34-menu-btn {
     display: none;
     background-color: #85260f;
     padding: 10px 20px;
@@ -581,11 +581,11 @@
     align-items: center;
   }
 
-  .tayit-menu-btn .tayit-icon {
+  .v8q34-menu-btn .v8q34-icon {
     font-size: 20px;
   }
 
-  .tayit-menu {
+  .v8q34-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -596,15 +596,15 @@
     float: left;
   }
 
-  .tayit-desc {
+  .v8q34-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .tayit-menu-link,
-  .tayit-top {
+  .v8q34-menu-link,
+  .v8q34-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -619,52 +619,52 @@
     text-align: left;
   }
 
-  .tayit-menu-link.active,
-  .tayit-menu-link:hover,
-  .tayit-top.active,
-  .tayit-top:hover {
+  .v8q34-menu-link.active,
+  .v8q34-menu-link:hover,
+  .v8q34-top.active,
+  .v8q34-top:hover {
     background-color: #85260f;
     color: #fff;
   }
 
-  .tayit-menu-group {
+  .v8q34-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .tayit-top {
+  .v8q34-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .tayit-top > div {
+  .v8q34-top > div {
     text-align: left;
   }
 
-  .tayit-top .tayit-icon {
+  .v8q34-top .v8q34-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .tayit-menu-group.open .tayit-top .tayit-icon {
+  .v8q34-menu-group.open .v8q34-top .v8q34-icon {
     transform: rotate(180deg);
   }
 
-  .tayit-sub {
+  .v8q34-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .tayit-sub.show {
+  .v8q34-sub.show {
     display: flex;
   }
 
-  .tayit-sub-link {
+  .v8q34-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -674,13 +674,13 @@
     text-align: left;
   }
 
-  .tayit-sub-link.active,
-  .tayit-sub-link:hover {
+  .v8q34-sub-link.active,
+  .v8q34-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .tayit-desc-menu {
+  .v8q34-desc-menu {
     width: 200px;
     background-color: #85260f;
     display: flex;
@@ -688,19 +688,19 @@
     border-radius: 5px;
   }
 
-  .tayit-desc-menu > div {
+  .v8q34-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .tayit-desc-body {
+  .v8q34-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .tayit-title {
+  .v8q34-title {
     width: 100%;
     height: 100px;
     background-color: #85260f;
@@ -713,7 +713,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .tayit-title::before {
+  .v8q34-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -728,7 +728,7 @@
     z-index: 1;
   }
 
-  .tayit-title h1 {
+  .v8q34-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -736,39 +736,39 @@
     color: #fff !important;
   }
 
-  .tayit-body {
+  .v8q34-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .tayit-img {
+  .v8q34-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .tayit-img img {
+  .v8q34-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .tayit-menu-overlay {
+    .v8q34-menu-overlay {
       display: none !important;
     }
 
-    .tayit-menu-close {
+    .v8q34-menu-close {
       display: none !important;
     }
 
-    .tayit-desc {
+    .v8q34-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .tayit-menu {
+    .v8q34-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -780,17 +780,17 @@
       padding: 10px;
     }
 
-    .tayit-menu-link {
+    .v8q34-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .tayit-top {
+    .v8q34-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .tayit-menu-btn {
+    .v8q34-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -799,13 +799,13 @@
       z-index: 1;
     }
 
-    .tayit-menu-btn:focus {
+    .v8q34-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .tayit-menu-overlay {
+    .v8q34-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -819,13 +819,13 @@
       pointer-events: none;
     }
 
-    .tayit-menu-overlay.active {
+    .v8q34-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .tayit {
+    .v8q34 {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -834,18 +834,18 @@
       margin-top: 0px;
     }
 
-    .tayit-img {
+    .v8q34-img {
       width: 100%;
     }
 
-    .tayit-body {
+    .v8q34-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .tayit-menu {
+    .v8q34-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -867,13 +867,13 @@
       visibility: hidden;
     }
 
-    .tayit-menu.active {
+    .v8q34-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .tayit-menu-close {
+    .v8q34-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -889,21 +889,21 @@
     }
 
     /* Menü içeriği için padding */
-    .tayit-menu > .tayit-menu-group,
-    .tayit-menu > .tayit-menu-link {
+    .v8q34-menu > .v8q34-menu-group,
+    .v8q34-menu > .v8q34-menu-link {
       padding: 10px;
     }
 
-    .tayit-menu-close span {
+    .v8q34-menu-close span {
       font-size: 28px;
     }
 
-    .tayit-menu-close:focus {
+    .v8q34-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .tayit-desc {
+    .v8q34-desc {
       width: 100% !important;
       order: 2;
     }

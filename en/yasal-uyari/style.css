@@ -1,16 +1,16 @@
 
 
   /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
-  .lqujmmenudrawer-right {
+  .fwogamenudrawer-right {
     display: none;
   }
 
-  .lqujmmenulist-menu:hover .dropdown-content-lqujm {
+  .fwogamenulist-menu:hover .dropdown-content-fwoga {
     display: flex;
     flex-direction: column;
   }
 
-  .lqujmmenulist-menu {
+  .fwogamenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     white-space: nowrap;
   }
 
-  .lqujmmenulist-menu:hover {
+  .fwogamenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
@@ -32,29 +32,29 @@
     border-radius: 5px;
   }
 
-  .lqujmmenulist-menu:hover>a {
+  .fwogamenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .lqujmmenulist-menu>a {
+  .fwogamenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-lqujm {
+  .dropdown-content-active-fwoga {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-lqujm>a {
+  .dropdown-content-active-fwoga>a {
     color: #000 !important;
   }
 
-  .dropdown-content-lqujm {
+  .dropdown-content-fwoga {
     display: none;
     position: absolute;
     background-color: #333;
@@ -64,7 +64,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-lqujm>a {
+  .dropdown-content-fwoga>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -73,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-lqujm>a:hover {
+  .dropdown-content-fwoga>a:hover {
     background-color: #000;
   }
 
@@ -81,7 +81,7 @@
     width: 300px;
   }
 
-  .lqujmbody {
+  .fwogabody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .lqujmbody > a {
+  .fwogabody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -98,7 +98,7 @@
     gap: 10px;
   }
 
-  .lqujmright {
+  .fwogaright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .lqujmlanguages {
+  .fwogalanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .lqujmlanguages.lang-hidden {
+  .fwogalanguages.lang-hidden {
     display: none;
   }
 
-  .lqujmlanguages ul {
+  .fwogalanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -123,7 +123,7 @@
     list-style: none;
   }
 
-  .lqujmlanguages li {
+  .fwogalanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -141,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .lqujmlanguages li a {
+  .fwogalanguages li a {
     color: #fff !important;
   }
 
-  .lqujmlanguages li a:hover {
+  .fwogalanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .lqujmlanguages li:hover {
+  .fwogalanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .lqujmcontactlist {
+  .fwogacontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .lqujmcontactlist a {
+  .fwogacontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -170,17 +170,17 @@
     color: inherit;
   }
 
-  .lqujm-spot {
+  .fwoga-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .lqujm-icon {
+  .fwoga-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .lqujm {
+  .fwoga {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
     justify-content: center;
   }
 
-  .lqujmmenu {
+  .fwogamenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -196,7 +196,7 @@
     position: relative;
   }
 
-  .lqujmmenubody {
+  .fwogamenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -205,7 +205,7 @@
   }
 
 
-  .lqujmmenulist {
+  .fwogamenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -216,16 +216,16 @@
     box-sizing: border-box;
   }
   
-  .lqujmmenulistbody {
+  .fwogamenulistbody {
     width: 100%;
   }
 
   /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
-  .lqujmmenuoverlay {
+  .fwogamenuoverlay {
     display: none;
   }
 
-  .lqujm-mobile-toggle {
+  .fwoga-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -237,18 +237,18 @@
     font-size: 20px;
   }
 
-    .lqujm-mobile-toggle span {
+    .fwoga-mobile-toggle span {
     font-size: 24px;
   }
 
   /* Kapatma butonu sadece mobil drawer'da görünsün */
-  .lqujmmenuclose {
+  .fwogamenuclose {
     display: none;
   }
 
   /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
   @media screen and (max-width: 1024px) {
-    .lqujm {
+    .fwoga {
       position: sticky;
       top: 0;
       z-index: 1000000;
@@ -256,11 +256,11 @@
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     }
 
-    .lqujmmenu {
+    .fwogamenu {
       overflow-x: auto;
     }
 
-    .lqujmmenulist {
+    .fwogamenulist {
       flex-direction: row;
     }
 
@@ -268,7 +268,7 @@
       width: 200px;
     }
 
-    .lqujmbody {
+    .fwogabody {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -277,31 +277,31 @@
       gap: 10px;
     }
 
-    /* Mobilde dil+iletişim sadece drawer'da (lqujmmenulistbody altında) */
-    .lqujmbody .lqujmright {
+    /* Mobilde dil+iletişim sadece drawer'da (fwogamenulistbody altında) */
+    .fwogabody .fwogaright {
       display: none;
     }
 
-    .lqujmright {
+    .fwogaright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .lqujmcontactlist {
+    .fwogacontactlist {
       display: none;
     }
 
-    .lqujmlanguages.lang-hidden {
+    .fwogalanguages.lang-hidden {
       display: none;
     }
 
-    .lqujmlanguages {
+    .fwogalanguages {
       display: flex;
     }
 
-    .lqujm-mobile-toggle {
+    .fwoga-mobile-toggle {
       display: inline-flex;
       min-width: 44px;
       min-height: 44px;
@@ -309,12 +309,12 @@
       justify-content: center;
     }
 
-    .lqujm-mobile-toggle:active {
+    .fwoga-mobile-toggle:active {
       opacity: 0.85;
     }
 
     /* Mobil app: overlay (backdrop) */
-    .lqujmmenuoverlay {
+    .fwogamenuoverlay {
       display: none;
       position: fixed;
       top: 0;
@@ -328,13 +328,13 @@
       transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .lqujmmenuoverlay.lqujmmenu-open {
+    .fwogamenuoverlay.fwogamenu-open {
       display: block;
       opacity: 1;
     }
 
     /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
-    .lqujmmenubody {
+    .fwogamenubody {
       position: fixed;
       top: 0;
       right: -100%;
@@ -355,11 +355,11 @@
       overflow: hidden;
     }
 
-    .lqujmmenubody.lqujmmenu-open {
+    .fwogamenubody.fwogamenu-open {
       right: 0;
     }
 
-    .lqujmmenubody .lqujmmenu {
+    .fwogamenubody .fwogamenu {
       flex-direction: column;
       align-items: stretch;
       width: 100%;
@@ -371,7 +371,7 @@
     }
 
     /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
-    .lqujmmenuclose {
+    .fwogamenuclose {
       display: flex;
       position: absolute;
       top: calc(env(safe-area-inset-top, 0) + 4px);
@@ -392,17 +392,17 @@
       z-index: 100;
     }
 
-    .lqujmmenuclose:active {
+    .fwogamenuclose:active {
       background-color: rgba(255, 255, 255, 0.12);
     }
 
-    .lqujmmenuclose span {
+    .fwogamenuclose span {
       font-size: 24px;
       color: #fff;
     }
 
     /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
-    .lqujmmenubody .lqujmmenulistbody {
+    .fwogamenubody .fwogamenulistbody {
       flex: 1;
       overflow-y: auto;
       overflow-x: hidden;
@@ -414,7 +414,7 @@
       min-height: 0;
     }
 
-    .lqujmmenulist {
+    .fwogamenulist {
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -424,7 +424,7 @@
     }
 
     /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
-    .lqujmmenubody .lqujmmenulist-menu {
+    .fwogamenubody .fwogamenulist-menu {
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -436,16 +436,16 @@
       box-sizing: border-box;
     }
 
-    .lqujmmenubody .lqujmmenulist-menu:last-child {
+    .fwogamenubody .fwogamenulist-menu:last-child {
       border-bottom: none;
     }
 
-    .lqujmmenubody .lqujmmenulist-menu:active {
+    .fwogamenubody .fwogamenulist-menu:active {
       background-color: rgba(255, 255, 255, 0.08);
     }
 
-    /* Drawer: lqujmright içeriği (dil + iletişim) lqujmmenulistbody altında */
-    .lqujmmenubody .lqujmmenudrawer-right {
+    /* Drawer: fwogaright içeriği (dil + iletişim) fwogamenulistbody altında */
+    .fwogamenubody .fwogamenudrawer-right {
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
@@ -455,11 +455,11 @@
       background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .lqujmmenudrawer-right .lqujmmenudrawer-languages.lang-hidden {
+    .fwogamenudrawer-right .fwogamenudrawer-languages.lang-hidden {
       display: none;
     }
 
-    .lqujmmenudrawer-right .lqujmmenudrawer-languages ul {
+    .fwogamenudrawer-right .fwogamenudrawer-languages ul {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -468,12 +468,12 @@
       list-style: none;
     }
 
-    .lqujmmenudrawer-right .lqujmmenudrawer-languages li {
+    .fwogamenudrawer-right .fwogamenudrawer-languages li {
       list-style: none;
       margin: 0;
     }
 
-    .lqujmmenudrawer-right .lqujmmenudrawer-languages a {
+    .fwogamenudrawer-right .fwogamenudrawer-languages a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -490,17 +490,17 @@
       cursor: pointer;
     }
 
-    .lqujmmenudrawer-right .lqujmmenudrawer-languages a:active {
+    .fwogamenudrawer-right .fwogamenudrawer-languages a:active {
       background-color: rgba(255, 255, 255, 0.2);
     }
 
-    .lqujmmenudrawer-contactlist {
+    .fwogamenudrawer-contactlist {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .lqujmmenudrawer-contactlist a {
+    .fwogamenudrawer-contactlist a {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -510,16 +510,16 @@
       cursor: pointer;
     }
 
-    .lqujmmenudrawer-contactlist .lqujm-icon {
+    .fwogamenudrawer-contactlist .fwoga-icon {
       font-size: 24px;
     }
 
-    .lqujmmenudrawer-contactlist .lqujm-spot {
+    .fwogamenudrawer-contactlist .fwoga-spot {
       font-size: 13px;
       color: rgba(255, 255, 255, 0.85);
     }
 
-    .dropdown-content-lqujm {
+    .dropdown-content-fwoga {
       position: static;
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 4px;
@@ -529,7 +529,7 @@
       border-radius: 8px;
     }
 
-    .lqujmmenubody .dropdown-content-lqujm>a {
+    .fwogamenubody .dropdown-content-fwoga>a {
       display: block;
       min-height: 44px;
       padding: 12px 16px;
@@ -538,15 +538,15 @@
       box-sizing: border-box;
     }
 
-    .lqujmmenubody .dropdown-content-lqujm>a:last-child {
+    .fwogamenubody .dropdown-content-fwoga>a:last-child {
       border-bottom: none;
     }
   }
 
   /* Hareket azaltma tercihi: animasyonları kısalt */
   @media (prefers-reduced-motion: reduce) {
-    .lqujmmenuoverlay,
-    .lqujmmenubody {
+    .fwogamenuoverlay,
+    .fwogamenubody {
       transition: none;
     }
   }
@@ -556,7 +556,7 @@
     justify-content: start;
   }
 
-  .dojgp {
+  .nifdb {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -565,11 +565,11 @@
     box-sizing: border-box;
   }
 
-  .dojgp * {
+  .nifdb * {
     box-sizing: border-box;
   }
 
-  .dojgp-menu-btn {
+  .nifdb-menu-btn {
     display: none;
     background-color: #85260f;
     padding: 10px 20px;
@@ -581,11 +581,11 @@
     align-items: center;
   }
 
-  .dojgp-menu-btn .dojgp-icon {
+  .nifdb-menu-btn .nifdb-icon {
     font-size: 20px;
   }
 
-  .dojgp-menu {
+  .nifdb-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -596,15 +596,15 @@
     float: left;
   }
 
-  .dojgp-desc {
+  .nifdb-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .dojgp-menu-link,
-  .dojgp-top {
+  .nifdb-menu-link,
+  .nifdb-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -619,52 +619,52 @@
     text-align: left;
   }
 
-  .dojgp-menu-link.active,
-  .dojgp-menu-link:hover,
-  .dojgp-top.active,
-  .dojgp-top:hover {
+  .nifdb-menu-link.active,
+  .nifdb-menu-link:hover,
+  .nifdb-top.active,
+  .nifdb-top:hover {
     background-color: #85260f;
     color: #fff;
   }
 
-  .dojgp-menu-group {
+  .nifdb-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .dojgp-top {
+  .nifdb-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .dojgp-top > div {
+  .nifdb-top > div {
     text-align: left;
   }
 
-  .dojgp-top .dojgp-icon {
+  .nifdb-top .nifdb-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .dojgp-menu-group.open .dojgp-top .dojgp-icon {
+  .nifdb-menu-group.open .nifdb-top .nifdb-icon {
     transform: rotate(180deg);
   }
 
-  .dojgp-sub {
+  .nifdb-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .dojgp-sub.show {
+  .nifdb-sub.show {
     display: flex;
   }
 
-  .dojgp-sub-link {
+  .nifdb-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -674,13 +674,13 @@
     text-align: left;
   }
 
-  .dojgp-sub-link.active,
-  .dojgp-sub-link:hover {
+  .nifdb-sub-link.active,
+  .nifdb-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .dojgp-desc-menu {
+  .nifdb-desc-menu {
     width: 200px;
     background-color: #85260f;
     display: flex;
@@ -688,19 +688,19 @@
     border-radius: 5px;
   }
 
-  .dojgp-desc-menu > div {
+  .nifdb-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .dojgp-desc-body {
+  .nifdb-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .dojgp-title {
+  .nifdb-title {
     width: 100%;
     height: 100px;
     background-color: #85260f;
@@ -713,7 +713,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .dojgp-title::before {
+  .nifdb-title::before {
     content: "";
     position: absolute;
     top: 0;
@@ -728,7 +728,7 @@
     z-index: 1;
   }
 
-  .dojgp-title h1 {
+  .nifdb-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -736,39 +736,39 @@
     color: #fff !important;
   }
 
-  .dojgp-body {
+  .nifdb-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .dojgp-img {
+  .nifdb-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .dojgp-img img {
+  .nifdb-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .dojgp-menu-overlay {
+    .nifdb-menu-overlay {
       display: none !important;
     }
 
-    .dojgp-menu-close {
+    .nifdb-menu-close {
       display: none !important;
     }
 
-    .dojgp-desc {
+    .nifdb-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .dojgp-menu {
+    .nifdb-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -780,17 +780,17 @@
       padding: 10px;
     }
 
-    .dojgp-menu-link {
+    .nifdb-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .dojgp-top {
+    .nifdb-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .dojgp-menu-btn {
+    .nifdb-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -799,13 +799,13 @@
       z-index: 1;
     }
 
-    .dojgp-menu-btn:focus {
+    .nifdb-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
     /* Overlay/Backdrop */
-    .dojgp-menu-overlay {
+    .nifdb-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -819,13 +819,13 @@
       pointer-events: none;
     }
 
-    .dojgp-menu-overlay.active {
+    .nifdb-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .dojgp {
+    .nifdb {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -834,18 +834,18 @@
       margin-top: 0px;
     }
 
-    .dojgp-img {
+    .nifdb-img {
       width: 100%;
     }
 
-    .dojgp-body {
+    .nifdb-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
     /* Slide-in Menü - Soldan */
-    .dojgp-menu {
+    .nifdb-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -867,13 +867,13 @@
       visibility: hidden;
     }
 
-    .dojgp-menu.active {
+    .nifdb-menu.active {
       left: 0;
       visibility: visible;
     }
 
     /* Kapatma Butonu */
-    .dojgp-menu-close {
+    .nifdb-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -889,21 +889,21 @@
     }
 
     /* Menü içeriği için padding */
-    .dojgp-menu > .dojgp-menu-group,
-    .dojgp-menu > .dojgp-menu-link {
+    .nifdb-menu > .nifdb-menu-group,
+    .nifdb-menu > .nifdb-menu-link {
       padding: 10px;
     }
 
-    .dojgp-menu-close span {
+    .nifdb-menu-close span {
       font-size: 28px;
     }
 
-    .dojgp-menu-close:focus {
+    .nifdb-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .dojgp-desc {
+    .nifdb-desc {
       width: 100% !important;
       order: 2;
     }
