@@ -59,7 +59,7 @@ var texts = design.texts || {};
 var moduleId = "modulex-membership-" + (json.id || Math.floor(Math.random() * 100000));
 var modulePrefix = moduleId + "-";
 
-// Renkler ve firebase ayarları artık index.html içinde manuel olarak tanımlı
+// Renkler ve modül ayarları artık index.html içinde manuel olarak tanımlı
 
 function getFieldName(field) {
   if (field.name) {
@@ -380,7 +380,7 @@ var errorMessage = getLangValue(texts.error, lang, "Bir hata oluştu.");
 var loginRequiredMessage = getLangValue(texts.loginRequired, lang, "Giriş yapmalısınız.");
 var waitingMessage = getLangValue(texts.waiting, lang, "Form hazırlanıyor, lütfen bekleyiniz.");
 
-// Firebase ayarları artık index.html içinde manuel olarak tanımlı (data-collection, data-status-field, vb.)
+// Veri/modül ayarları artık index.html içinde manuel olarak tanımlı (data-collection, data-status-field, vb.)
 
 html = html
   .replace(new RegExp("{{moduleId}}", "g"), moduleId)
