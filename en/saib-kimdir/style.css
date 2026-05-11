@@ -1,16 +1,16 @@
 
 
-  /* Drawer içi dil+iletişim alanı sadece mobilde görünür */
-  .s4skmmenudrawer-right {
+  
+  .spaxmmenudrawer-right {
     display: none;
   }
 
-  .s4skmmenulist-menu:hover .dropdown-content-s4skm {
+  .spaxmmenulist-menu:hover .dropdown-content-spaxm {
     display: flex;
     flex-direction: column;
   }
 
-  .s4skmmenulist-menu {
+  .spaxmmenulist-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     white-space: nowrap;
   }
 
-  .s4skmmenulist-menu:hover {
+  .spaxmmenulist-menu:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
@@ -32,29 +32,29 @@
     border-radius: 5px;
   }
 
-  .s4skmmenulist-menu:hover>a {
+  .spaxmmenulist-menu:hover>a {
     color: #000 !important;
   }
 
-  .s4skmmenulist-menu>a {
+  .spaxmmenulist-menu>a {
     display: block;
     width: 100%;
     height: 100%;
     color: #fff !important;
   }
 
-  .dropdown-content-active-s4skm {
+  .dropdown-content-active-spaxm {
     background-color: #e0e0e0;
     border-radius: 5px;
     color: #000 !important;
     cursor: pointer;
   }
 
-  .dropdown-content-active-s4skm>a {
+  .dropdown-content-active-spaxm>a {
     color: #000 !important;
   }
 
-  .dropdown-content-s4skm {
+  .dropdown-content-spaxm {
     display: none;
     position: absolute;
     background-color: #333;
@@ -64,7 +64,7 @@
     padding: 5px;
   }
 
-  .dropdown-content-s4skm>a {
+  .dropdown-content-spaxm>a {
     width: inherit;
     padding: 10px;
     border: solid;
@@ -73,7 +73,7 @@
     color: #fff;
   }
 
-  .dropdown-content-s4skm>a:hover {
+  .dropdown-content-spaxm>a:hover {
     background-color: #000;
   }
 
@@ -81,7 +81,7 @@
     width: 300px;
   }
 
-  .s4skmbody {
+  .spaxmbody {
     width: var(--max);
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     justify-content: space-between;
   }
 
-  .s4skmbody > a {
+  .spaxmbody > a {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -98,7 +98,7 @@
     gap: 10px;
   }
 
-  .s4skmright {
+  .spaxmright {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -107,15 +107,15 @@
     align-items: flex-end;
   }
 
-  .s4skmlanguages {
+  .spaxmlanguages {
     margin: -5px 0px -5px 0px;
   }
 
-  .s4skmlanguages.lang-hidden {
+  .spaxmlanguages.lang-hidden {
     display: none;
   }
 
-  .s4skmlanguages ul {
+  .spaxmlanguages ul {
     display: flex;
     gap: 5px;
     margin: 0;
@@ -123,7 +123,7 @@
     list-style: none;
   }
 
-  .s4skmlanguages li {
+  .spaxmlanguages li {
     list-style: none;
     border: 1px solid #111;
     padding: 5px;
@@ -141,28 +141,28 @@
     transition: all 0.3s ease;
   }
 
-  .s4skmlanguages li a {
+  .spaxmlanguages li a {
     color: #fff !important;
   }
 
-  .s4skmlanguages li a:hover {
+  .spaxmlanguages li a:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .s4skmlanguages li:hover {
+  .spaxmlanguages li:hover {
     border: 1px solid #000;
     color: #000;
   }
 
-  .s4skmcontactlist {
+  .spaxmcontactlist {
     display: flex;
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  .s4skmcontactlist a {
+  .spaxmcontactlist a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -170,17 +170,17 @@
     color: inherit;
   }
 
-  .s4skm-spot {
+  .spaxm-spot {
     font-size: 16px;
     color: --spotcolor--;
   }
 
-  .s4skm-icon {
+  .spaxm-icon {
     font-size: 36px !important;
     color: --iconcolor--;
   }
 
-  .s4skm {
+  .spaxm {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -188,7 +188,7 @@
     justify-content: center;
   }
 
-  .s4skmmenu {
+  .spaxmmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -196,7 +196,7 @@
     position: relative;
   }
 
-  .s4skmmenubody {
+  .spaxmmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -205,7 +205,7 @@
   }
 
 
-  .s4skmmenulist {
+  .spaxmmenulist {
     padding: 10px;
     background-color: #000;
     border-radius: 5px;
@@ -216,16 +216,16 @@
     box-sizing: border-box;
   }
   
-  .s4skmmenulistbody {
+  .spaxmmenulistbody {
     width: 100%;
   }
 
-  /* Overlay sadece mobilde kullanılır, masaüstünde gizli */
-  .s4skmmenuoverlay {
+  
+  .spaxmmenuoverlay {
     display: none;
   }
 
-  .s4skm-mobile-toggle {
+  .spaxm-mobile-toggle {
     display: none;
     background: #000;
     color: #fff;
@@ -237,18 +237,18 @@
     font-size: 20px;
   }
 
-    .s4skm-mobile-toggle span {
+    .spaxm-mobile-toggle span {
     font-size: 24px;
   }
 
-  /* Kapatma butonu sadece mobil drawer'da görünsün */
-  .s4skmmenuclose {
+  
+  .spaxmmenuclose {
     display: none;
   }
 
-  /* 1024px ve altında mobil düzen (drawer, hamburger, overlay) */
+  
   @media screen and (max-width: 1024px) {
-    .s4skm {
+    .spaxm {
       position: sticky;
       top: 0;
       z-index: 1000000;
@@ -256,11 +256,11 @@
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     }
 
-    .s4skmmenu {
+    .spaxmmenu {
       overflow-x: auto;
     }
 
-    .s4skmmenulist {
+    .spaxmmenulist {
       flex-direction: row;
     }
 
@@ -268,7 +268,7 @@
       width: 200px;
     }
 
-    .s4skmbody {
+    .spaxmbody {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -277,31 +277,31 @@
       gap: 10px;
     }
 
-    /* Mobilde dil+iletişim sadece drawer'da (s4skmmenulistbody altında) */
-    .s4skmbody .s4skmright {
+    
+    .spaxmbody .spaxmright {
       display: none;
     }
 
-    .s4skmright {
+    .spaxmright {
       flex: 1;
       display: flex;
       justify-content: flex-end;
       gap: 12px;
     }
 
-    .s4skmcontactlist {
+    .spaxmcontactlist {
       display: none;
     }
 
-    .s4skmlanguages.lang-hidden {
+    .spaxmlanguages.lang-hidden {
       display: none;
     }
 
-    .s4skmlanguages {
+    .spaxmlanguages {
       display: flex;
     }
 
-    .s4skm-mobile-toggle {
+    .spaxm-mobile-toggle {
       display: inline-flex;
       min-width: 44px;
       min-height: 44px;
@@ -309,12 +309,12 @@
       justify-content: center;
     }
 
-    .s4skm-mobile-toggle:active {
+    .spaxm-mobile-toggle:active {
       opacity: 0.85;
     }
 
-    /* Mobil app: overlay (backdrop) */
-    .s4skmmenuoverlay {
+    
+    .spaxmmenuoverlay {
       display: none;
       position: fixed;
       top: 0;
@@ -328,13 +328,13 @@
       transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .s4skmmenuoverlay.s4skmmenu-open {
+    .spaxmmenuoverlay.spaxmmenu-open {
       display: block;
       opacity: 1;
     }
 
-    /* Mobil app: sağdan kayan drawer (safe-area uyumlu) */
-    .s4skmmenubody {
+    
+    .spaxmmenubody {
       position: fixed;
       top: 0;
       right: -100%;
@@ -355,11 +355,11 @@
       overflow: hidden;
     }
 
-    .s4skmmenubody.s4skmmenu-open {
+    .spaxmmenubody.spaxmmenu-open {
       right: 0;
     }
 
-    .s4skmmenubody .s4skmmenu {
+    .spaxmmenubody .spaxmmenu {
       flex-direction: column;
       align-items: stretch;
       width: 100%;
@@ -370,8 +370,8 @@
       display: flex;
     }
 
-    /* App tarzı üst bar: kapatma butonu (48px dokunma alanı, safe-area uyumlu) */
-    .s4skmmenuclose {
+    
+    .spaxmmenuclose {
       display: flex;
       position: absolute;
       top: calc(env(safe-area-inset-top, 0) + 4px);
@@ -392,17 +392,17 @@
       z-index: 100;
     }
 
-    .s4skmmenuclose:active {
+    .spaxmmenuclose:active {
       background-color: rgba(255, 255, 255, 0.12);
     }
 
-    .s4skmmenuclose span {
+    .spaxmmenuclose span {
       font-size: 24px;
       color: #fff;
     }
 
-    /* Menü listesi: app tarzı üstte, kaydırılabilir alan */
-    .s4skmmenubody .s4skmmenulistbody {
+    
+    .spaxmmenubody .spaxmmenulistbody {
       flex: 1;
       overflow-y: auto;
       overflow-x: hidden;
@@ -414,7 +414,7 @@
       min-height: 0;
     }
 
-    .s4skmmenulist {
+    .spaxmmenulist {
       display: flex;
       flex-direction: column;
       gap: 0;
@@ -423,8 +423,8 @@
       flex: 0 1 auto;
     }
 
-    /* App tarzı menü satırları: 48px min yükseklik, net ayırıcı */
-    .s4skmmenubody .s4skmmenulist-menu {
+    
+    .spaxmmenubody .spaxmmenulist-menu {
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -436,16 +436,16 @@
       box-sizing: border-box;
     }
 
-    .s4skmmenubody .s4skmmenulist-menu:last-child {
+    .spaxmmenubody .spaxmmenulist-menu:last-child {
       border-bottom: none;
     }
 
-    .s4skmmenubody .s4skmmenulist-menu:active {
+    .spaxmmenubody .spaxmmenulist-menu:active {
       background-color: rgba(255, 255, 255, 0.08);
     }
 
-    /* Drawer: s4skmright içeriği (dil + iletişim) s4skmmenulistbody altında */
-    .s4skmmenubody .s4skmmenudrawer-right {
+    
+    .spaxmmenubody .spaxmmenudrawer-right {
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
@@ -455,11 +455,11 @@
       background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .s4skmmenudrawer-right .s4skmmenudrawer-languages.lang-hidden {
+    .spaxmmenudrawer-right .spaxmmenudrawer-languages.lang-hidden {
       display: none;
     }
 
-    .s4skmmenudrawer-right .s4skmmenudrawer-languages ul {
+    .spaxmmenudrawer-right .spaxmmenudrawer-languages ul {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -468,12 +468,12 @@
       list-style: none;
     }
 
-    .s4skmmenudrawer-right .s4skmmenudrawer-languages li {
+    .spaxmmenudrawer-right .spaxmmenudrawer-languages li {
       list-style: none;
       margin: 0;
     }
 
-    .s4skmmenudrawer-right .s4skmmenudrawer-languages a {
+    .spaxmmenudrawer-right .spaxmmenudrawer-languages a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -490,17 +490,17 @@
       cursor: pointer;
     }
 
-    .s4skmmenudrawer-right .s4skmmenudrawer-languages a:active {
+    .spaxmmenudrawer-right .spaxmmenudrawer-languages a:active {
       background-color: rgba(255, 255, 255, 0.2);
     }
 
-    .s4skmmenudrawer-contactlist {
+    .spaxmmenudrawer-contactlist {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .s4skmmenudrawer-contactlist a {
+    .spaxmmenudrawer-contactlist a {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -510,16 +510,16 @@
       cursor: pointer;
     }
 
-    .s4skmmenudrawer-contactlist .s4skm-icon {
+    .spaxmmenudrawer-contactlist .spaxm-icon {
       font-size: 24px;
     }
 
-    .s4skmmenudrawer-contactlist .s4skm-spot {
+    .spaxmmenudrawer-contactlist .spaxm-spot {
       font-size: 13px;
       color: rgba(255, 255, 255, 0.85);
     }
 
-    .dropdown-content-s4skm {
+    .dropdown-content-spaxm {
       position: static;
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 4px;
@@ -529,7 +529,7 @@
       border-radius: 8px;
     }
 
-    .s4skmmenubody .dropdown-content-s4skm>a {
+    .spaxmmenubody .dropdown-content-spaxm>a {
       display: block;
       min-height: 44px;
       padding: 12px 16px;
@@ -538,15 +538,15 @@
       box-sizing: border-box;
     }
 
-    .s4skmmenubody .dropdown-content-s4skm>a:last-child {
+    .spaxmmenubody .dropdown-content-spaxm>a:last-child {
       border-bottom: none;
     }
   }
 
-  /* Hareket azaltma tercihi: animasyonları kısalt */
+  
   @media (prefers-reduced-motion: reduce) {
-    .s4skmmenuoverlay,
-    .s4skmmenubody {
+    .spaxmmenuoverlay,
+    .spaxmmenubody {
       transition: none;
     }
   }
@@ -556,7 +556,7 @@
     justify-content: start;
   }
 
-  .gu97j {
+  .d3woq {
     width: var(--max);
     margin-top: 20px;
     gap: 10px;
@@ -565,11 +565,11 @@
     box-sizing: border-box;
   }
 
-  .gu97j * {
+  .d3woq * {
     box-sizing: border-box;
   }
 
-  .gu97j-menu-btn {
+  .d3woq-menu-btn {
     display: none;
     background-color: #85260f;
     padding: 10px 20px;
@@ -581,11 +581,11 @@
     align-items: center;
   }
 
-  .gu97j-menu-btn .gu97j-icon {
+  .d3woq-menu-btn .d3woq-icon {
     font-size: 20px;
   }
 
-  .gu97j-menu {
+  .d3woq-menu {
     width: 250px;
     background-color: var(--bgcolor);
     border-radius: 5px;
@@ -596,15 +596,15 @@
     float: left;
   }
 
-  .gu97j-desc {
+  .d3woq-desc {
     display: flex;
     flex-direction: column;
     gap: 10px;
     float: right;
   }
 
-  .gu97j-menu-link,
-  .gu97j-top {
+  .d3woq-menu-link,
+  .d3woq-top {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -619,52 +619,52 @@
     text-align: left;
   }
 
-  .gu97j-menu-link.active,
-  .gu97j-menu-link:hover,
-  .gu97j-top.active,
-  .gu97j-top:hover {
+  .d3woq-menu-link.active,
+  .d3woq-menu-link:hover,
+  .d3woq-top.active,
+  .d3woq-top:hover {
     background-color: #85260f;
     color: #fff;
   }
 
-  .gu97j-menu-group {
+  .d3woq-menu-group {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
 
-  .gu97j-top {
+  .d3woq-top {
     width: 100%;
     border: none;
     font-weight: 600;
     text-align: left;
   }
   
-  .gu97j-top > div {
+  .d3woq-top > div {
     text-align: left;
   }
 
-  .gu97j-top .gu97j-icon {
+  .d3woq-top .d3woq-icon {
     font-size: 14px;
     transition: transform 0.2s ease;
   }
 
-  .gu97j-menu-group.open .gu97j-top .gu97j-icon {
+  .d3woq-menu-group.open .d3woq-top .d3woq-icon {
     transform: rotate(180deg);
   }
 
-  .gu97j-sub {
+  .d3woq-sub {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding-left: 8px;
   }
 
-  .gu97j-sub.show {
+  .d3woq-sub.show {
     display: flex;
   }
 
-  .gu97j-sub-link {
+  .d3woq-sub-link {
     background-color: #fff;
     padding: 8px 10px;
     border-radius: 5px;
@@ -674,13 +674,13 @@
     text-align: left;
   }
 
-  .gu97j-sub-link.active,
-  .gu97j-sub-link:hover {
+  .d3woq-sub-link.active,
+  .d3woq-sub-link:hover {
     background-color: rgba(39, 156, 144, 0.12);
     color: inherit;
   }
 
-  .gu97j-desc-menu {
+  .d3woq-desc-menu {
     width: 200px;
     background-color: #85260f;
     display: flex;
@@ -688,19 +688,19 @@
     border-radius: 5px;
   }
 
-  .gu97j-desc-menu > div {
+  .d3woq-desc-menu > div {
     padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     margin: 5px;
   }
 
-  .gu97j-desc-body {
+  .d3woq-desc-body {
     display: flex;
     justify-content: space-between;
   }
 
-  .gu97j-title {
+  .d3woq-title {
     width: 100%;
     height: 100px;
     background-color: #85260f;
@@ -713,14 +713,15 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
-  .gu97j-title::before {
+  .d3woq-title::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/page/hakkimizda/bg/{{bgimg}}");
+    
+    background-image: none; 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -728,7 +729,7 @@
     z-index: 1;
   }
 
-  .gu97j-title h1 {
+  .d3woq-title h1 {
     position: relative;
     z-index: 2;
     font-size: 32px;
@@ -736,39 +737,39 @@
     color: #fff !important;
   }
 
-  .gu97j-body {
+  .d3woq-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
   }
 
-  .gu97j-img {
+  .d3woq-img {
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(var(--max) - 460px);
   }
 
-  .gu97j-img img {
+  .d3woq-img img {
     width: 100%;
   }
 
 
   @media screen and (min-width: 1025px) {
-    .gu97j-menu-overlay {
+    .d3woq-menu-overlay {
       display: none !important;
     }
 
-    .gu97j-menu-close {
+    .d3woq-menu-close {
       display: none !important;
     }
 
-    .gu97j-desc {
+    .d3woq-desc {
       width: calc(var(--max) - 290px);
     }
 
-    .gu97j-menu {
+    .d3woq-menu {
       position: static !important;
       left: auto !important;
       width: 250px !important;
@@ -780,17 +781,17 @@
       padding: 10px;
     }
 
-    .gu97j-menu-link {
+    .d3woq-menu-link {
       padding: 10px 10px 10px 10px;
     }
 
-    .gu97j-top {
+    .d3woq-top {
       padding: 10px 10px 10px 10px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .gu97j-menu-btn {
+    .d3woq-menu-btn {
       display: flex;
       width: 100%;
       margin: 0;
@@ -799,13 +800,13 @@
       z-index: 1;
     }
 
-    .gu97j-menu-btn:focus {
+    .d3woq-menu-btn:focus {
       outline: 2px solid #fff;
       outline-offset: 2px;
     }
 
-    /* Overlay/Backdrop */
-    .gu97j-menu-overlay {
+    
+    .d3woq-menu-overlay {
       display: none;
       position: fixed;
       top: 0;
@@ -819,13 +820,13 @@
       pointer-events: none;
     }
 
-    .gu97j-menu-overlay.active {
+    .d3woq-menu-overlay.active {
       display: block;
       opacity: 1;
       pointer-events: auto;
     }
 
-    .gu97j {
+    .d3woq {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -834,18 +835,18 @@
       margin-top: 0px;
     }
 
-    .gu97j-img {
+    .d3woq-img {
       width: 100%;
     }
 
-    .gu97j-body {
+    .d3woq-body {
       width: 100%;
       order: 3;
       padding: 10px;
     }
 
-    /* Slide-in Menü - Soldan */
-    .gu97j-menu {
+    
+    .d3woq-menu {
       position: fixed;
       top: 0;
       left: -100%;
@@ -867,13 +868,13 @@
       visibility: hidden;
     }
 
-    .gu97j-menu.active {
+    .d3woq-menu.active {
       left: 0;
       visibility: visible;
     }
 
-    /* Kapatma Butonu */
-    .gu97j-menu-close {
+    
+    .d3woq-menu-close {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -888,22 +889,22 @@
       flex-shrink: 0;
     }
 
-    /* Menü içeriği için padding */
-    .gu97j-menu > .gu97j-menu-group,
-    .gu97j-menu > .gu97j-menu-link {
+    
+    .d3woq-menu > .d3woq-menu-group,
+    .d3woq-menu > .d3woq-menu-link {
       padding: 10px;
     }
 
-    .gu97j-menu-close span {
+    .d3woq-menu-close span {
       font-size: 28px;
     }
 
-    .gu97j-menu-close:focus {
+    .d3woq-menu-close:focus {
       outline: 2px solid currentColor;
       outline-offset: -2px;
     }
 
-    .gu97j-desc {
+    .d3woq-desc {
       width: 100% !important;
       order: 2;
     }

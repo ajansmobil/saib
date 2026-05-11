@@ -1,20 +1,14 @@
-// CSS ayrı dosyada yüklenecek (cookie.css)
 
-// Cookie kontrolü
 function checkCookie(name) {
   return document.cookie
     .split(";")
     .some((c) => c.trim().startsWith(name + "="));
 }
-
-// Cookie ayarla
 function setCookie(name, value, days) {
   const date = new Date();
   date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
   document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
 }
-
-// Cookie bildirimi göster
 function showCookieNotice() {
   if (!checkCookie("cookieConsent")) {
     const banner = document.createElement("div");
@@ -27,8 +21,6 @@ function showCookieNotice() {
             </div>
         `;
     document.body.appendChild(banner);
-
-    // Modal oluştur
     const modal = document.createElement("div");
     modal.className = "cookie-modal";
     modal.innerHTML = `
@@ -48,27 +40,19 @@ function showCookieNotice() {
             </div>
         `;
     document.body.appendChild(modal);
-
-    // Overlay oluştur
     const overlay = document.createElement("div");
     overlay.className = "modal-overlay";
     document.body.appendChild(overlay);
   }
 }
-
-// Cookie detaylarını göster
 function showCookieDetails() {
   document.querySelector(".cookie-modal").classList.add("active");
   document.querySelector(".modal-overlay").classList.add("active");
 }
-
-// Cookieleri kabul et
 function acceptCookies() {
   setCookie("cookieConsent", "true", 365);
   document.querySelector(".cookie-banner")?.remove();
   document.querySelector(".cookie-modal")?.remove();
   document.querySelector(".modal-overlay")?.remove();
 }
-
-// Sayfa yüklendiğinde çalıştır
 window.addEventListener("load", showCookieNotice);
