@@ -602,6 +602,7 @@
       var submitButton = form.querySelector(".modulex-submit");
       var submitLabelNode = submitButton ? submitButton.querySelector("span:last-child") : null;
       var defaultButtonText = submitLabelNode ? submitLabelNode.textContent : "";
+
       var dataReady = typeof dataAddWeb === "function";
       if (!dataReady) {
         var waitingMessage = form.getAttribute("data-waiting") || "";

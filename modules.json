@@ -10,7 +10,15 @@
         "logo": "logo.svg",
         "logosize": 300,
         "logosizemobil": 200,
-        "color": "#000"
+        "color": "#000",
+        "menuToggleAria": {
+          "tr": "Menüyü aç/kapat",
+          "en": "Open or close menu"
+        },
+        "menuCloseAria": {
+          "tr": "Menüyü kapat",
+          "en": "Close menu"
+        }
       },
       "id": "ebbpbt",
       "version": "1.0.0",
@@ -67,7 +75,12 @@
         "bgcolor": "#85260f",
         "color": "#fff",
         "img": "",
-        "imgwidth": "250px"
+        "imgwidth": "250px",
+        "stil": "",
+        "showlang": true,
+        "showsocial": true,
+        "social": [],
+        "langcolor": ""
       },
       "data": [],
       "id": "a1b1uf",
@@ -139,6 +152,12 @@
           "tr": "Company olarak 25 yıldır profesyonel personel kadromuz ile ithalat, ihracat, danışmanlık, lojistik ve transit ticaret alanlarında hizmet sunmaktan onur duyuyoruz. Ürünü olsun ya da olmasın, tüm firmalar için profesyonel ve kurumsal danışmanlık hizmeti sunarak firmaların etkin şekilde ithalat ya da ihracat yapmalarını sağlıyoruz.",
           "en": "",
           "ar": ""
+        },
+        "stil": "",
+        "title": {
+          "tr": "Kurumsal",
+          "en": "Corporate",
+          "ar": "مؤسسي"
         }
       },
       "id": "sykhyk",
@@ -178,7 +197,57 @@
         "font-size": "32",
         "backgroundcolor": "#85260f",
         "menu-active": "#85260f",
-        "textcolor": "#fff"
+        "textcolor": "#fff",
+        "stil": "",
+        "activetext": "#fff",
+        "bgcolor": "#ffffff",
+        "border_radius": "8px",
+        "card_shadow": "0 10px 28px rgba(0, 0, 0, 0.08)",
+        "color": "#111111",
+        "colortitle": "#111111",
+        "coloractive": "#000000",
+        "ui": {
+          "tr": {
+            "home": "Anasayfa",
+            "products": "Ürünler",
+            "dimensions": "Ölçüler",
+            "dimNote": "Standart üretim referansıdır; proje bazında özelleştirilebilir.",
+            "quote": "Teklif Al",
+            "whatsapp": "WhatsApp",
+            "prev": "Önceki",
+            "next": "Sonraki"
+          },
+          "en": {
+            "home": "Home",
+            "products": "Products",
+            "dimensions": "Dimensions",
+            "dimNote": "Standard production reference; customizable per project.",
+            "quote": "Get Quote",
+            "whatsapp": "WhatsApp",
+            "prev": "Previous",
+            "next": "Next"
+          },
+          "ar": {
+            "home": "الرئيسية",
+            "products": "المنتجات",
+            "dimensions": "الأبعاد",
+            "dimNote": "مرجع إنتاج قياسي؛ قابل للتخصيص حسب المشروع.",
+            "quote": "عرض سعر",
+            "whatsapp": "واتساب",
+            "prev": "السابق",
+            "next": "التالي"
+          }
+        },
+        "noTitle": {
+          "tr": "Başlık Yok",
+          "en": "No title",
+          "ar": "بدون عنوان"
+        },
+        "productNavAria": {
+          "tr": "Ürün navigasyonu",
+          "en": "Product navigation",
+          "ar": "تنقل المنتج"
+        }
       },
       "id": "onx8x4",
       "version": "1.0.0",
@@ -193,10 +262,29 @@
       "desing": {
         "height": "200",
         "opacity": "0.5",
-        "backgroundcolor": "#fff",
+        "backgroundcolor": "#ffffff",
         "color": "#1e3046",
         "img": "map.jpg",
-        "externalUrl": "https://www.google.com/maps/search/Ayd%C4%B1nlar+Mah.+3044+nolu+Cad.+No%3A8%2F1+%C5%9Eehitkamil%2FGaziantep"
+        "externalUrl": "https://www.google.com/maps/search/Ayd%C4%B1nlar+Mah.+3044+nolu+Cad.+No%3A8%2F1+%C5%9Eehitkamil%2FGaziantep",
+        "stil": "",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "badgeText": {
+          "tr": "Konumumuz",
+          "en": "Our Location",
+          "ar": "موقعنا"
+        },
+        "infoTitle": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "اتصل بنا"
+        },
+        "directions": {
+          "tr": "Yol tarifi al",
+          "en": "Get directions",
+          "ar": "احصل على الاتجاهات"
+        }
       },
       "id": "mct10p",
       "version": "1.0.0",
@@ -214,7 +302,9 @@
           "en": "Contact Us",
           "ar": "اتصل بنا"
         },
-        "margin": "30px 0px 30px 0px"
+        "margin": "30px 0px 30px 0px",
+        "stil": "",
+        "linkcolor": "#1B3A6B"
       },
       "data": [
         {
@@ -259,6 +349,12 @@
           "tr": "Haberi Oku",
           "en": "Read More",
           "ar": "اقرأ المزيد"
+        },
+        "emptyList": {
+          "tr": "Gösterilecek haber bulunamadı.",
+          "en": "No news to display.",
+          "de": "Keine Nachrichten anzuzeigen.",
+          "ar": "لا توجد أخبار للعرض."
         }
       },
       "version": "1.0.0",
@@ -276,7 +372,11 @@
       "desing": {
         "category": "page",
         "page": "page",
-        "max": 6
+        "max": 6,
+        "relatedTitle": {
+          "tr": "İlgili Haberler",
+          "en": "Related News"
+        }
       },
       "index": 9
     },
@@ -343,7 +443,11 @@
       "id": "qoxavt",
       "desing": {
         "img": "popup.jpg",
-        "delay": 0
+        "delay": 0,
+        "notFoundText": {
+          "tr": "Resim bulunamadı",
+          "en": "Image not found"
+        }
       },
       "version": "1.0.0",
       "icon": "open_in_new"
@@ -360,7 +464,9 @@
         "font-size": "32",
         "backgroundcolor": "#000",
         "menu-active": "#000",
-        "category": "kurumsal"
+        "category": "kurumsal",
+        "textcolor": "#ffffff",
+        "activetext": "#ffffff"
       },
       "version": "1.0.0",
       "icon": "web",
@@ -954,6 +1060,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Page Desing 2",
+      "desing": {
+        "height": "100",
+        "opacity": "0.5",
+        "font-size": "50",
+        "backgroundcolor": "#000",
+        "textcolor": "#fff",
+        "category": "page"
+      },
+      "category": "page",
+      "description": "Page Desing 2 modülü. 2 farklı web projesinde kullanılmaktadır. İçerik sunumu ve görsel düzenleme için tasarlanmıştır.",
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "mpgs8u",
+      "path": "page-text",
+      "local": "body",
+      "data": [],
+      "index": 14
     }
   ]
 }
