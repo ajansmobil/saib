@@ -576,6 +576,16 @@
     }
   }
 
+  
+  @media (prefers-color-scheme: dark) {
+    .h0000-logo:not([src*="acik"]) {
+      background: #ffffff;
+      padding: 4px 10px;
+      border-radius: 8px;
+      box-sizing: content-box;
+    }
+  }
+
 
   .b0000 {
     width: 100%;
@@ -601,11 +611,11 @@
     display: flex;
     flex-direction: column;
     background: #ffffff;
-    background: --card_bg--;
+    background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 18px 38px rgba(15, 23, 42, 0.12);
-    box-shadow: --card_shadow--;
+    box-shadow: 0 18px 38px rgba(15, 23, 42, 0.12);
     transition:
       transform 0.35s ease,
       box-shadow 0.35s ease;

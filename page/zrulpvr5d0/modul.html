@@ -122,6 +122,15 @@
     flex: 1;
     opacity: 0.9;
   }
+  .yk-sube-modul .yk-sube-baskan {
+    font-weight: 600;
+    padding-top: 0.45rem;
+  }
+  .yk-sube-modul .yk-sube-tel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
   .yk-sube-modul .yk-sube-tel a {
     display: inline-flex;
     align-items: center;
@@ -152,8 +161,12 @@
   <h2 class="yk-bolum-baslik">{{section_branches}}</h2>
   <ul class="yk-sube-listesi">
     <li class="yk-sube-karti">
-      <h3 class="yk-sube-isim">{{branch_1_name}}</h3>
+      <h3 class="yk-sube-isim">{{branch_1_title}}</h3>
       <div class="yk-meta">
+        <div class="yk-meta-satir">
+          <span class="yk-meta-ikon" aria-hidden="true">&#128100;</span>
+          <span class="yk-meta-metin yk-sube-baskan">{{branch_1_name}}</span>
+        </div>
         <div class="yk-meta-satir">
           <span class="yk-meta-ikon" aria-hidden="true">&#128205;</span>
           <span class="yk-meta-metin">{{branch_1_location}}</span>
@@ -165,8 +178,12 @@
       </div>
     </li>
     <li class="yk-sube-karti">
-      <h3 class="yk-sube-isim">{{branch_2_name}}</h3>
+      <h3 class="yk-sube-isim">{{branch_2_title}}</h3>
       <div class="yk-meta">
+        <div class="yk-meta-satir">
+          <span class="yk-meta-ikon" aria-hidden="true">&#128100;</span>
+          <span class="yk-meta-metin yk-sube-baskan">{{branch_2_name}}</span>
+        </div>
         <div class="yk-meta-satir">
           <span class="yk-meta-ikon" aria-hidden="true">&#128205;</span>
           <span class="yk-meta-metin">{{branch_2_location}}</span>
@@ -174,6 +191,24 @@
         <div class="yk-meta-satir">
           <span class="yk-meta-ikon" aria-hidden="true">&#128222;</span>
           <span class="yk-meta-metin yk-sube-tel"><a href="tel:{{branch_2_phone_raw}}">{{branch_2_phone}}</a></span>
+        </div>
+      </div>
+    </li>
+    <li class="yk-sube-karti">
+      <h3 class="yk-sube-isim">{{branch_3_title}}</h3>
+      <div class="yk-meta">
+        <div class="yk-meta-satir">
+          <span class="yk-meta-ikon" aria-hidden="true">&#128100;</span>
+          <span class="yk-meta-metin yk-sube-baskan">{{branch_3_name}}</span>
+        </div>
+        <div class="yk-meta-satir">
+          <span class="yk-meta-ikon" aria-hidden="true">&#128205;</span>
+          <span class="yk-meta-metin">{{branch_3_location}}</span>
+        </div>
+        <div class="yk-meta-satir">
+          <span class="yk-meta-ikon" aria-hidden="true">&#128222;</span>
+          <span class="yk-meta-metin yk-sube-tel"><a href="tel:{{branch_3_phone_raw}}">{{branch_3_phone}}</a>
+          <a href="tel:{{branch_3_phone2_raw}}">{{branch_3_phone2}}</a></span>
         </div>
       </div>
     </li>

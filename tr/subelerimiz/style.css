@@ -576,6 +576,16 @@
     }
   }
 
+  
+  @media (prefers-color-scheme: dark) {
+    .h0000-logo:not([src*="acik"]) {
+      background: #ffffff;
+      padding: 4px 10px;
+      border-radius: 8px;
+      box-sizing: content-box;
+    }
+  }
+
 
   .yk-sube-modul {
     max-width: 900px;
@@ -699,6 +709,15 @@
   .yk-sube-modul .yk-meta-metin {
     flex: 1;
     opacity: 0.9;
+  }
+  .yk-sube-modul .yk-sube-baskan {
+    font-weight: 600;
+    padding-top: 0.45rem;
+  }
+  .yk-sube-modul .yk-sube-tel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
   .yk-sube-modul .yk-sube-tel a {
     display: inline-flex;
